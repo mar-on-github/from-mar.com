@@ -16,3 +16,12 @@ function closeNav() {
     document.getElementById("mySidebar").style.width = "0";
     document.getElementById("main").style.marginLeft = "0";
 }
+
+function ToggleGreyScale() {
+    var element = document.body;
+    if (element.classList.contains('grey')) {
+        element.classList.remove('grey');
+    } else {
+        element.classList.add('grey');
+    }
+}

@@ -1,5 +1,5 @@
 <?php
-function ReturnUniversalHeader($Pagename) {
+function ReturnUniversalHeader($PageName) {
 $UniversalHeader = ("<head>
     <title>Mar's site - $PageName</title>
     <meta charset=\"UTF-8\">
@@ -44,3 +44,4 @@ function ReturnMenuLinksFromJSON($where) {
 }
 return $MenuLinksOut;
 }
+require_once __DIR__ . '/vendor/autoload.php';

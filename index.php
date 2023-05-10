@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <?php
-include_once(__DIR__ . "/./snippet.php");
+include_once(__DIR__ . "/./init.php");
 print(ReturnUniversalHeader("Home"));
 ?>
-  <body>
+  <body class="body">
   <button class="openbtn" onclick="openNav()">☰</button>
     <div class="sidebar" id="mySidebar"><a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
       <?php print(ReturnMenuLinksFromJSON("side"))?>
