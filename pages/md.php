@@ -21,19 +21,38 @@
     $FileMetaData['posted'] = $MarkDownFileMetaData[$file]["date"]["posted"];
     $FileMetaData['edited'] = $MarkDownFileMetaData[$file]["date"]["edited"];
     $FileMetaData['wasedited'] = (($MarkDownFileMetaData[$file]["date"]["edited"]) != ($MarkDownFileMetaData[$file]["date"]["posted"]));
+    if ($FileMetaData['type'] !== 'page') {
+      $FileMetaData['category'] = $MarkDownFileMetaData[$file]["category"];
+    }
+
 
 
   print(ReturnUniversalHeader($FileMetaData['title']));
   
 ?>
-  <body class="body">
+  <body class="body" >
   <button class="openbtn" onclick="openNav()">☰</button>
     <div class="sidebar" id="mySidebar"><a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
       <?php print(ReturnMenuLinksFromJSON("side"))?>
+</div>
+<div class="pageinfosidebar">
+      <p class="pageinfo-title"><?php print($FileMetaData['title']); ?></p>
+      <ul>
+        <li><?php print($FileMetaData['type']); ?></li>
+        <li>Posted: <span class="unparsedtimestamp"><?php print($FileMetaData['posted']); ?></span></li>
+        <?php if ($FileMetaData['wasedited']) {
+          print ('<li>Edited: <span class="unparsedtimestamp">' . $FileMetaData['edited'] . "</span></li>");
+          } 
+        if (isset($FileMetaData['category'])) {
+          print ('<li>Category: ' . $FileMetaData['category'] . "</li>");
+        }
+        ?>
+      </ul>
+      <p class="pageinfo-shortversion"><?php print($FileMetaData['short']); ?></p>
     </div>
     <div class="content" align="center">
         <?php
-                echo $PageContent;
+                print $PageContent;
                 if (!empty($_GET['id'])) {
                     echo '<hr><p><a href="/">Go back home</a></p>';
                 }
@@ -43,20 +62,23 @@
     <div class="bottombar" id="mybottombar">
       <?php print(ReturnMenuLinksFromJSON("bottom"))?>
     </div>
-  <script type="text/javascript">
-    var today = new Date()
-    var curHr = today.getHours()
-    var wishes = null;
-
-    if (curHr < 12) {
-      var wishes = "Morning";
-    } else if (curHr < 18) {
-      var wishes = "Afternoon";
-    } else {
-      var wishes = "Evening";
+    <script lang="javascript">
+      function ParseTimestamps() {
+        var elements = document.getElementsByClassName('unparsedtimestamp');
+        for (var i = 0, length = elements.length; i < length; i++) {
+        let timestamp = elements[i].innerHTML;
+        console.log("Parsing timestamp.");
+        const jstimestamp = timestamp * 1000;
+        const dateObject = new Date(jstimestamp);
+        const data = dateObject.toLocaleString();
+        const date = data.substring(0, data.length-3);
+        elements[i].innerHTML = date;
+        elements[i].className = 'entrydate';
+        setTimeout(ParseTimestamps, 25);
+        break;
     }
-
-    document.getElementById("wishes").innerHTML = wishes;
+  }
+  setTimeout(ParseTimestamps, 25);
   </script>
   <script src="/assets/scripts/responsivemenus.js"></script>
   </body>

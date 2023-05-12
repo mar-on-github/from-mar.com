@@ -1,10 +1,14 @@
 [
     {
+        "to": "/pages/md.php?id=1",
+        "name": "<span class='emoji-block'>👋</span> About me"
+    },
+    {
         "to": "/pages/md.php?id=2",
         "name": "<span class='emoji-block'>&#128206;</span> Links by me"
     },
     {
-        "to": "/blog/",
+        "to": "/pages/md.php?id=3",
         "name": "<img src=\"/assets/img/sbm_512×512.png\" widht=\"25px\" height=\"25px\" class='emoji-block'> Stories By Mar 🤍"
     }
 ]

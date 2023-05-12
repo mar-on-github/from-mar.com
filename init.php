@@ -33,6 +33,7 @@ function ReturnMenuLinksFromJSON($where) {
     $MenuLinksOut2 = $MenuLinksOut . menulink($MenuLink['to'],$MenuLink['name']) . "\n";
     $MenuLinksOut = $MenuLinksOut2;
   }
+  $MenuLinksOut = $MenuLinksOut . '<a href="javascript:void(0)" onclick="ToggleFilters()" id="filtertoggle">Filter</a>';
 }
   if ($where == "side") {
     $MenuLink_Array = json_decode(file_get_contents(__DIR__ . '/assets/json/sidebar.json'), true);
