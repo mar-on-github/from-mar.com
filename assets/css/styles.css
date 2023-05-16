@@ -224,7 +224,8 @@
     overflow: auto;
     padding: 0;
     position: fixed;
-    width: 300px
+    width: 300px;
+    z-index: 30
 }
 
 .sidebar .closebtn {
@@ -267,9 +268,10 @@ div.content {
     height: 600px;
     /* height: 350px; */
     margin-left: 305px;
-    margin-bottom: 300px;
+    /* margin-bottom: 300px; */
     overflow: auto;
-    padding: 30px
+    padding: 30px;
+    z-index: 20
 }
 
 div.ephew-formlabels {
@@ -460,11 +462,13 @@ ul.timeline {
     border-radius: 30px 0 0 0;
     bottom: 0px;
     overflow: hidden;
-    position: absolute;
+    position: fixed;
     width: 90%;
-    z-index: 30;
+    z-index: 110;
     right: 0px;
+    margin: 0px;
 }
+
 
 .bottombar .icon {
     display: none

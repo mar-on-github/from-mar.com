@@ -17,6 +17,11 @@ function closeNav() {
     document.getElementById("main").style.marginLeft = "0";
 }
 
+function TouchContentUnfocusfromMenu() {
+    closeNav()
+    document.getElementById("mybottombar").className = "bottombar";
+}
+
 function ToggleFilters() {
     console.log(document.body.style.filter)
     switch (document.body.style.filter) {

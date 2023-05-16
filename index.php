@@ -13,7 +13,7 @@ print(ReturnUniversalHeader("Home"));
 
       <h1>Good <span id="wishes">day</span>!</h1>
     </div>
-    <div class="bottombar" id="mybottombar">
+    <div class="bottombar" id="mybottombar" onclick="unrollbottombar()" >
       <?php print(ReturnMenuLinksFromJSON("bottom"))?>
     </div>
   <script type="text/javascript">
