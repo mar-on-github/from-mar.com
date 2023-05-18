@@ -5,16 +5,17 @@ function unrollbottombar() {
     } else {
         x.className = "bottombar";
     }
+    console.log("fn unrollbottombar() triggered")
 }
 
 function openNav() {
     document.getElementById("mySidebar").style.width = "250px";
-    document.getElementById("main").style.marginLeft = "250px";
+    // (document.getElementsByClassName("content")[0]).style.marginLeft = "250px";
 }
 
 function closeNav() {
     document.getElementById("mySidebar").style.width = "0";
-    document.getElementById("main").style.marginLeft = "0";
+    // (document.getElementsByClassName("content")[0]).style.marginLeft = "0";
 }
 
 function TouchContentUnfocusfromMenu() {
