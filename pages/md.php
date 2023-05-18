@@ -35,7 +35,7 @@
     <div class="sidebar" id="mySidebar"><a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
       <?php print(ReturnMenuLinksFromJSON("side"))?>
 </div>
-<div class="pageinfosidebar">
+<div class="pageinfosidebar" onclick="HidePageInfo()">
       <p class="pageinfo-title"><?php print($FileMetaData['title']); ?></p>
       <ul>
         <li><?php print($FileMetaData['type']); ?></li>
@@ -50,6 +50,11 @@
       </ul>
       <p class="pageinfo-shortversion"><?php print($FileMetaData['short']); ?></p>
     </div>
+    <script>
+      function HidePageInfo() {
+        (document.getElementsByClassName('pageinfosidebar')[0]).style.display = "none";
+      }
+    </script>
     <div class="content" align="center">
         <?php
                 print $PageContent;
