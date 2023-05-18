@@ -5,6 +5,8 @@ $UniversalHeader = ("<head>
     <meta charset=\"UTF-8\">
     <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">
     <link href=\"/assets/css/styles.css\" rel=\"stylesheet\">
+    <link rel=\"icon\" type=\"image/png\" href=\"/assets/img/marsitelogo.png\">
+    <link rel=\"icon\" type=\"image/x-icon\" href=\"/assets/img/marsitelogo.ico\">
     <!-- START -->
     <!-- ad blocker detection -->
     " . file_get_contents(__DIR__ . "/assets/scripts/abdtct.html") .  "
