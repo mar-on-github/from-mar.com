@@ -6,6 +6,9 @@ $UniversalHeader = ("<head>
     <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">
     <link href=\"/assets/css/styles.css\" rel=\"stylesheet\">
     <!-- START -->
+    <!-- ad blocker detection -->
+    " . file_get_contents(__DIR__ . "/assets/scripts/abdtct.html") .  "
+    <!-- End of ad blocker detection -->
     <!-- Global site tag (gtag.js) - Google Analytics --> 
     <script async src=\"https://www.googletagmanager.com/gtag/js?id=G-8RFJ2KWF0Y\"></script> <script> window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'G-8RFJ2KWF0Y'); </script>
 
@@ -33,7 +36,7 @@ function ReturnMenuLinksFromJSON($where) {
     $MenuLinksOut2 = $MenuLinksOut . menulink($MenuLink['to'],$MenuLink['name']) . "\n";
     $MenuLinksOut = $MenuLinksOut2;
   }
-  $MenuLinksOut = $MenuLinksOut . '<a href="javascript:void(0)" onclick="ToggleFilters()" id="filtertoggle">Filter</a>';
+  $MenuLinksOut = '<a href="javascript:void(0);" class="icon" onclick="unrollbottombar()">&#9776;</a>' . $MenuLinksOut . '<a href="javascript:void(0)" onclick="ToggleFilters()" id="filtertoggle">Filter</a>';
 }
   if ($where == "side") {
     $MenuLink_Array = json_decode(file_get_contents(__DIR__ . '/assets/json/sidebar.json'), true);

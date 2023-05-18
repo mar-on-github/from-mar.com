@@ -12,6 +12,7 @@ print(ReturnUniversalHeader("Home"));
     <div class="content" align="center">
 
       <h1>Good <span id="wishes">day</span>!</h1>
+      <p>I didn't know what to put on this page, so pick a link from the sidebar or bottom bar menus.</p>
     </div>
     <div class="bottombar" id="mybottombar" onclick="unrollbottombar()" >
       <?php print(ReturnMenuLinksFromJSON("bottom"))?>
