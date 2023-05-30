@@ -1,4 +1,21 @@
 <?php
+// Send users where they need to be
+switch($_SERVER['REQUEST_URI']) {
+    case '/':
+        header("Location: /index.php");
+        die;
+        break;
+    case '/blog/':
+    case '/blog':
+        header("Location: /pages/md.php?id=3");
+        die;
+        break;
+    case '/blog/link-in-bio/':
+    case '/blog/link-in-bio':
+        header("Location: /pages/md.php?id=2");
+        die;
+        break;
+}
 function ReturnUniversalHeader($PageName) {
 $UniversalHeader = ("<head>
     <title>Mar's site - $PageName</title>
@@ -18,7 +35,7 @@ $UniversalHeader = ("<head>
      crossorigin=\"anonymous\"></script>
     <script type=\"text/javascript\">
       var id_user = 722415;
-      var domains_exclude = ['from-mar.com', 'www.buymeacoffee.com'];
+      var domains_exclude = ['from-mar.com', 'www.buymeacoffee.com', 'localhost'];
     </script>
     <script type=\"text/javascript\" src=\"https://adfoc.us/js/fullpage/script.js\"></script>
     <!-- END -->
