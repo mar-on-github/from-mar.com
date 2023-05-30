@@ -7,7 +7,7 @@ switch($_SERVER['REQUEST_URI']) {
         break;
     case '/blog/':
     case '/blog':
-        header("Location: /pages/md.php?id=3");
+        header("Location: /pages/blog.php");
         die;
         break;
     case '/blog/link-in-bio/':

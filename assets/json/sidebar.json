@@ -8,7 +8,7 @@
         "name": "<span class='emoji-block'>&#128206;</span> Links by me"
     },
     {
-        "to": "/pages/md.php?id=3",
-        "name": "<img src=\"/assets/img/sbm_512×512.png\" widht=\"25px\" height=\"25px\" class='emoji-block'> Stories By Mar 🤍"
+        "to": "/pages/blog.php",
+        "name": "<img src=\"/assets/img/sbm_512×512.png\" widht=\"25px\" height=\"25px\" class='emoji-block'> Mar's blog! 🤍"
     }
 ]

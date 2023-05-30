@@ -13,4 +13,10 @@
   date:
     posted: 1683723800
     edited: 1683723800
-  
+'posts/wordpress-2023-05-30':
+  title: No more Wordpress
+  short: This site no longer runs on Wordpress, this is how and why I did it.
+  type: post
+  filename: wordpress-2023-05-30
+  date:
+    posted: 1685451731

@@ -35,7 +35,7 @@
     <div class="sidebar" id="mySidebar"><a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
       <?php print(ReturnMenuLinksFromJSON("side"))?>
 </div>
-<div class="pageinfosidebar" onclick="HidePageInfo()">
+<div class="pageinfosidebar" onclick="HidePageInfo()" onmouseover="setTimeout(() => {HidePageInfo();}, '500');">
       <p class="pageinfo-title"><?php print($FileMetaData['title']); ?></p>
       <ul>
         <li><?php print($FileMetaData['type']); ?></li>
@@ -52,7 +52,9 @@
     </div>
     <script>
       function HidePageInfo() {
-        (document.getElementsByClassName('pageinfosidebar')[0]).style.display = "none";
+        (document.getElementsByClassName('pageinfosidebar')[0]).style.transition = "all 1.5s ease-out";
+        (document.getElementsByClassName('pageinfosidebar')[0]).style.opacity = "0%";
+        setTimeout(() => {(document.getElementsByClassName('pageinfosidebar')[0]).style.display = "none";}, '1700');
       }
     </script>
     <div class="content" align="center">
