@@ -1,26 +1,28 @@
 <?php
 function ReturnUniversalHeader($PageName) {
-$UniversalHeader = ("<head>
+$UniversalHeader = (`<head>
     <title>Mar's site - $PageName</title>
-    <meta charset=\"UTF-8\">
-    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">
-    <link href=\"/assets/css/styles.css\" rel=\"stylesheet\">
-    <link rel=\"icon\" type=\"image/png\" href=\"/assets/img/marsitelogo.png\">
-    <link rel=\"icon\" type=\"image/x-icon\" href=\"/assets/img/marsitelogo.ico\">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="/assets/css/styles.css" rel="stylesheet">
+    <link rel="icon" type="image/png" href="/assets/img/marsitelogo.png">
+    <link rel="icon" type="image/x-icon" href="/assets/img/marsitelogo.ico">
     <!-- START -->
     <!-- ad blocker detection -->
     " . file_get_contents(__DIR__ . "/assets/scripts/abdtct.html") .  "
     <!-- End of ad blocker detection -->
     <!-- Global site tag (gtag.js) - Google Analytics --> 
-    <script async src=\"https://www.googletagmanager.com/gtag/js?id=G-8RFJ2KWF0Y\"></script> <script> window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'G-8RFJ2KWF0Y'); </script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-8RFJ2KWF0Y"></script> <script> window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'G-8RFJ2KWF0Y'); </script>
 
-    <script type=\"text/javascript\">
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5016013452104530"
+     crossorigin="anonymous"></script>
+    <script type="text/javascript">
       var id_user = 722415;
       var domains_exclude = ['from-mar.com', 'www.buymeacoffee.com'];
     </script>
-    <script type=\"text/javascript\" src=\"https://adfoc.us/js/fullpage/script.js\"></script>
+    <script type="text/javascript" src="https://adfoc.us/js/fullpage/script.js"></script>
     <!-- END -->
-  </head>");
+  </head>`);
   return($UniversalHeader);
 }
 function menulink($gotohref, $linktitle){
