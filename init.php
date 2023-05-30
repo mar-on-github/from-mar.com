@@ -16,6 +16,13 @@ switch($_SERVER['REQUEST_URI']) {
         header("Location: /pages/md.php?id=2");
         die;
         break;
+    case '/aboutme':
+    case '/aboutme/':
+    case '/about-me':
+    case '/about-me/':
+        header("Location: /pages/md.php?id=1");
+        die;
+        break;
 }
 function ReturnUniversalHeader($PageName) {
 $UniversalHeader = ("<head>
