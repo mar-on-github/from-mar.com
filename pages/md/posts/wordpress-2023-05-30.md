@@ -14,7 +14,7 @@ Updates are necessary, especially on a huge and well-known web-faced piece of so
 
 I also wanted to get something more in my themes, instead of having to edit an existing theme template. Additionally, the WordPress editor is jam-full of functions, and I love it. However I don't need all that when posting simple messages like this one! MarkDown is a fine way of creating posts, and (currently typing from Typora) it's just plain text, _`unless you want to make it complicated by adding HTML`_, it's great. Simple, but great.
 
-### Ephew
+### "Ephew"
 
 My solution to the problems I had? Initially none. Until I scrolled through older projects. "Ephew", the code name for an old social media platform concept, has served me earlier. Ephew as a project, was an absolute mess. But it had so many reusable components that it had helped me out with creating [Logger-Diary Online](https://logger-diary.online/) earlier, and throwing a selection of its code into my VSCode made me built up a new way of approaching my site: It's just a static site anyways.
 
