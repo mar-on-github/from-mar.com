@@ -39,3 +39,7 @@ switch ($_SERVER['REQUEST_URI']) {
         die;
 
 }
+// If we're here... we hit a 404 I think!
+$file = '404 trigger';
+require_once(__DIR__ . '/pages/md.php');
+die;

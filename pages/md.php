@@ -22,17 +22,25 @@
     if ($FileMetaData['type'] !== 'page') {
       $FileMetaData['category'] = $MarkDownFileMetaData[$file]["category"];
     }
-if (isset($MarkDownFileMetaData[$file]["content"])) {
+if ((isset($MarkDownFileMetaData[$file]['content'])) and (!empty($MarkDownFileMetaData[$file]['content']))) {
     $PageContent = $Parsedown->text($MarkDownFileMetaData[$file]["content"]);
     } else {
     if (file_exists(__DIR__ . "/md/" . $file . ".md")) {
         $PageContent = $Parsedown->text(file_get_contents(__DIR__."/md/". $file .".md"));
     } else {
-        $PageContent = "Could not find that...";
+        $FileMetaData = array(
+          "title" => "four-oh-four 😮 `404`",
+          "short" => "404 page or post not found!",
+          "type" => "page",
+          "posted" => time(),
+          "wasedited" => false,
+        );
+        header("HTTP/1.0 404 Not Found");
+    $PageContent = $Parsedown->text("Could not find that...\n\rMaybe retry typing the correct adress? Or just use a link!\n\r\n\r\n\rHere, take [this link home](/)!");
     }
 }
 
-if (isset($MarkDownFileMetaData[$file]['blogmodeoverride'])) {
+if ((isset($MarkDownFileMetaData[$file]['blogmodeoverride'])) and (!empty($MarkDownFileMetaData[$file]['blogmodeoverride']))) {
   $blogmode = $MarkDownFileMetaData[$file]['blogmodeoverride'];
 } else {
   $blogmode = ($FileMetaData['type'] == "post");
@@ -70,7 +78,7 @@ print(ReturnUniversalHeader($FileMetaData['title'],$blogmode));
     </script>
     <div class="content" align="center">
         <?php
-                print "<h1>" . ($FileMetaData['title']) . "</h2>";
+                print "<h1>" . ($Parsedown->text(($FileMetaData['title']))) . "</h2>";
                 print $PageContent;
                 if (!empty($_GET['id'])) {
                   if ($blogmode) {

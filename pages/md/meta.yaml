@@ -1,3 +1,16 @@
+# For now, new posts should be added above older ones, as the order of this file will set the order of the timeline.
+# posts
+
+'posts/wordpress-2023-05-30':
+  title: No more Wordpress
+  short: This site no longer runs on Wordpress, this is how and why I did it.
+  type: post
+  filename: wordpress-2023-05-30
+  category: Meta
+  date:
+    posted: 1685451731
+    edited: 1685451731
+#pages
 '1':
   title: About me
   short: About mar
@@ -13,16 +26,7 @@
   date:
     posted: 1683723800
     edited: 1683723800
-'posts/wordpress-2023-05-30':
-  title: No more Wordpress
-  short: This site no longer runs on Wordpress, this is how and why I did it.
-  type: post
-  filename: wordpress-2023-05-30
-  category: Meta
-  date:
-    posted: 1685451731
-    edited: 1685451731
-'posts/test':
+'tests/mdinyaml':
   title: No more .md files
   short: YAML stores these b*tches too now.
   content: |
@@ -33,7 +37,7 @@
   category: Meta
   type: page
   blogmodeoverride: true
-  filename: wordpress-2023-05-30
+  filename: test
   date:
     posted: 1685887840
-    edited: 1685887840
+    edited: 2685887840
