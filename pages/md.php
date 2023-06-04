@@ -30,8 +30,12 @@ if (isset($MarkDownFileMetaData[$file]["content"])) {
     }
 }
 
-$blog = ($FileMetaData['type'] == "post");
-  print(ReturnUniversalHeader($FileMetaData['title'],$blog));
+if (isset($MarkDownFileMetaData[$file]['blogmodeoverride'])) {
+  $blogmode = $MarkDownFileMetaData[$file]['blogmodeoverride'];
+} else {
+  $blogmode = ($FileMetaData['type'] == "post");
+}
+print(ReturnUniversalHeader($FileMetaData['title'],$blogmode));
   
 ?>
   <body class="body" >
@@ -63,9 +67,10 @@ $blog = ($FileMetaData['type'] == "post");
     </script>
     <div class="content" align="center">
         <?php
+                print "<h1>" . ($FileMetaData['title']) . "</h2>";
                 print $PageContent;
                 if (!empty($_GET['id'])) {
-                    echo '<hr><p><a href="/">Go back home</a></p>';
+                    echo '<hr><p style="position: sticky;right: 10px;width: 30%;margin-left: 60%;"><a href="/">Go back home</a></p>';
                 }
             ?>
 
@@ -84,7 +89,7 @@ $blog = ($FileMetaData['type'] == "post");
         const data = dateObject.toLocaleString();
         const date = data.substring(0, data.length-3);
         elements[i].innerHTML = date;
-        elements[i].className = 'entrydate';
+        elements[i].classList.remove('unparsedtimestamp');
         setTimeout(ParseTimestamps, 25);
         break;
     }

@@ -966,7 +966,7 @@ ul.timeline {
     text-align: center;
     margin: auto;
     margin-top: 10px;
-    margin-bottom: 30px;
+    margin-bottom: 15px;
     display: block;
     width: 100px;
     height: 100px;
@@ -980,13 +980,13 @@ ul.timeline {
 }
 
 .sidebar a.active {
-    background-color: #aaaa04;
-    color: #ff0
-}
-
-.sidebar a:hover:not(.active) {
     background-color: #f47a7a;
     color: #aa9fd7
+}
+
+.sidebar a:hover /*:not(.active)*/ {
+    background-color: #f7f7f7;
+    color: #431be4
 }
 
 #filtertoggle {
@@ -1032,4 +1032,25 @@ h1 {
 
 h1.login-title {
     color: #666
+}
+/* .post-listpreview #post-listpreview-h {
+    border-bottom: solid 2px #000;
+} */
+.post-listpreview th {
+    /* text-decoration: underline; */
+    font-size: 22px;
+    border-bottom: solid 2px #000;
+    font-weight: 90;
+}
+.post-listpreview .post-date {
+    font-style: italic;
+    font-size: 16px;
+}
+.post-listpreview .post-title {
+    font-size: 16px;
+}
+.post-listpreview .post-desc {
+    font-size: 13px;
+    margin-bottom: 10px;
+    border-bottom: solid 2px #0000002a;
 }

@@ -18,18 +18,21 @@
   short: This site no longer runs on Wordpress, this is how and why I did it.
   type: post
   filename: wordpress-2023-05-30
+  category: Meta
   date:
     posted: 1685451731
     edited: 1685451731
 'posts/test':
   title: No more .md files
+  short: YAML stores these b*tches too now.
   content: |
     ### Heading
 
     * Bullet
     * Points
-  short: YAML stores these b*tches too now.
+  category: Meta
   type: page
+  blogmodeoverride: true
   filename: wordpress-2023-05-30
   date:
     posted: 1685887840

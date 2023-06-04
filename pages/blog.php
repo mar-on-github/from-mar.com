@@ -25,17 +25,17 @@
       }
     </script>
     <div class="content" align="center">
-        <table>
-  <tr>
-    <th>Posted on</th>
-    <th>Title</th>
+        <table class="post-listpreview">
+  <tr id="post-listpreview-h">
+    <th id="h-post-date">Posted on</th>
+    <th id="h-post-title">Title</th>
   </tr>
         <?php
         // print(var_dump($MarkDownFileMetaData));
                 foreach($MarkDownFileMetaData as $data) {
 
                     if (($data['type'] == "post")) {
-                        echo "<tr><td><span class=\"unparsedtimestamp\" style=\"font-style: italic;\">". $data['date']['posted'] . "</span></td><td><a href=\"/pages/md.php?id=posts/" . $data['filename'] . "\"><h3>" . $data['title'] . "</h3></a></td></tr><tr><td></td><td>". $data['short'] . "</td></tr>";
+                        echo "<tr><td><span class=\"unparsedtimestamp post-date\">". $data['date']['posted'] . "</span></td><td><a href=\"/pages/md.php?id=posts/" . $data['filename'] . "\"><span class=\"post-title\">" . $data['title'] . "</span></a></td></tr><tr><td></td><td class=\"post-desc\">". $data['short'] . "</td></tr>";
                     }
                 }
             ?>
@@ -55,7 +55,7 @@
         const data = dateObject.toLocaleString();
         const date = data.substring(0, data.length-3);
         elements[i].innerHTML = date;
-        elements[i].className = 'entrydate';
+        elements[i].classList.remove('unparsedtimestamp');
         setTimeout(ParseTimestamps, 25);
         break;
     }
