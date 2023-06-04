@@ -1,4 +1,3 @@
-# No more WordPress
 
 This site no longer runs on WordPress, this is how and why I did it.
 
