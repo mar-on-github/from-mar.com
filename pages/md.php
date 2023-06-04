@@ -41,6 +41,7 @@ print(ReturnUniversalHeader($FileMetaData['title'],$blogmode));
   <body class="body" >
   <button class="openbtn" onclick="openNav()">☰</button>
     <div class="sidebar" id="mySidebar"><a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+    <?php if ($blogmode) {print ('<img src="/assets/img/sbm_2019style_1080×1080.png" id="sbmheaderlogo">');} ?>
       <?php print(ReturnMenuLinksFromJSON("side"))?>
 </div>
 <div class="pageinfosidebar" onclick="HidePageInfo()" onmouseover="setTimeout(() => {HidePageInfo();}, '500');">
@@ -70,7 +71,12 @@ print(ReturnUniversalHeader($FileMetaData['title'],$blogmode));
                 print "<h1>" . ($FileMetaData['title']) . "</h2>";
                 print $PageContent;
                 if (!empty($_GET['id'])) {
-                    echo '<hr><p style="position: sticky;right: 10px;width: 30%;margin-left: 60%;"><a href="/">Go back home</a></p>';
+                  if ($blogmode) {
+                    echo '<hr><p style="position: sticky;right: 10px;width: 30%;margin-left: 60%;"><a href="/pages/blog.php">Go back home</a></p>';
+                  } else {
+            echo '<hr><p style="position: sticky;right: 10px;width: 30%;margin-left: 60%;"><a href="/">Go back home</a></p>';
+
+          }
                 }
             ?>
 
