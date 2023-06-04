@@ -5,6 +5,7 @@ switch($_SERVER['REQUEST_URI']) {
         header("Location: /index.php");
         die;
         break;
+    case '/pages/md.php?id=3':
     case '/blog/':
     case '/blog':
         header("Location: /pages/blog.php");
@@ -13,6 +14,13 @@ switch($_SERVER['REQUEST_URI']) {
     case '/blog/link-in-bio/':
     case '/blog/link-in-bio':
         header("Location: /pages/md.php?id=2");
+        die;
+        break;
+    case '/aboutme':
+    case '/aboutme/':
+    case '/about-me':
+    case '/about-me/':
+        header("Location: /pages/md.php?id=1");
         die;
         break;
 }
