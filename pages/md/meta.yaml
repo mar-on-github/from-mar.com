@@ -36,8 +36,15 @@
     * Points
   category: Meta
   type: page
-  blogmodeoverride: true
-  filename: test
+  modeoverride: blog
   date:
     posted: 1685887840
     edited: 2685887840
+'discord/docs/rules':
+  title: Server rules
+  short: Rules for the 'BLUB!!' discord server.
+  modeoverride: discord
+  type: page
+  date:
+    posted: 1676247185
+    edited: 1685887840

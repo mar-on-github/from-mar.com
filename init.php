@@ -1,14 +1,19 @@
 <?php
-function ReturnUniversalHeader(string $PageName, bool $blogstyles = false)
-{
-  if ($blogstyles) {
-    $StylesheetRefer = '<link media="(prefers-color-scheme: light)" rel="stylesheet" href="/assets/css/blog-light.css" content-type="text/css" charset="utf-8" /><link media="(prefers-color-scheme: dark)" rel="stylesheet" href="/assets/css/blog-dark.css" content-type="text/css" charset="utf-8" />
+function ReturnUniversalHeader(string $PageName, $specialstyles = false){
+  switch ($specialstyles) {
+    case 'discord':
+      $StylesheetRefer = '<link rel="stylesheet" href="/assets/css/discord.css" content-type="text/css" charset="utf-8" /><link rel="icon" type="image/png" href="/assets/img/blublogo.png">';
+      break;
+    case 'blog':
+    case true:
+      $StylesheetRefer = '<link media="(prefers-color-scheme: light)" rel="stylesheet" href="/assets/css/blog-light.css" content-type="text/css" charset="utf-8" /><link media="(prefers-color-scheme: dark)" rel="stylesheet" href="/assets/css/blog-dark.css" content-type="text/css" charset="utf-8" />
   <link rel="icon" type="image/png" href="/assets/img/sbm_512×512.png">';
-  } else {
-    $StylesheetRefer = '<link rel="stylesheet" href="/assets/css/main.css" content-type="text/css" charset="utf-8" /><link rel="icon" type="image/png" href="/assets/img/marsitelogo.png"><link rel="icon" type="image/x-icon" href="/assets/img/marsitelogo.ico">
-  ';
+      break;
+    case false:
+    default:
+      $StylesheetRefer = '<link rel="stylesheet" href="/assets/css/main.css" content-type="text/css" charset="utf-8" /><link rel="icon" type="image/png" href="/assets/img/marsitelogo.png"><link rel="icon" type="image/x-icon" href="/assets/img/marsitelogo.ico">';
+      break;
   }
-  $StylesheetRefer =
     $UniversalHeader = ("<head>
     <title>Mar's site - $PageName</title>
     <meta charset=\"UTF-8\">

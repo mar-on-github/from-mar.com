@@ -179,7 +179,7 @@ blockquote {
 }
 
 body {
-    background-color: #a7cec5;
+    background-color: #545a62;color: #d66666;
     font-family: 'Ubuntu', sans-serif;
     font-size: 14px;
     margin: 0;
@@ -259,12 +259,6 @@ h1 {
     text-align: center
 }
 
-h2 {
-    font-size: 21px;
-    font-weight: 275;
-    margin: 0 auto 21px;
-    text-align: center
-}
 
 h3 {
     font-size: 19px;
@@ -663,6 +657,7 @@ h2 {
     font-weight: 275;
     margin: 0 auto 21px;
     text-align: center
+    ;color: #738bd7
 }
 
 h3 {
@@ -880,32 +875,23 @@ ul.timeline {
 }
 
 .bottombar .active {
-    background-color: #04AA6D
+    background-color: #738bd7;
+    color: #161616
 }
 
-.bottombar a:hover:not(.active) {
-    background-color: #0F0
+.bottombar a:not(#filtertoggle,:hover) {
+    color: whitesmoke
 }
 
-.bottombar a:not(#filtertoggle) {
-    color: #a74646
+button:hover,.bottombar a:hover {
+    background-color: #d66666;
+    color: #161616
 }
 
-.ephew-buttons {
-    background-color: #a9c3bc;
-    color: #5c5c8a
+button:not(:hover){
+    background-color: #738bd7;
+    color: #d66666;
 }
-
-.ephew-buttons:focus {
-    background-color: #00dfa7a1;
-    color: #1e1eb9
-}
-
-.ephew-buttons:hover {
-    background-color: #a9c3bc;
-    color: #515174
-}
-
 .ephew-form {
     background-color: #fff
 }
@@ -958,20 +944,10 @@ ul.timeline {
 }
 
 .sidebar {
-    background-color: #5e636e;
-    box-shadow: 4px 3px 8px 1px #05bddd
+    background-color: #232425;
 }
 .sidebar #sbmheaderlogo {
-    padding: 15px;
-    text-align: center;
-    margin: auto;
-    margin-top: 10px;
-    margin-bottom: 15px;
-    display: block;
-    width: 100px;
-    height: 100px;
-    background: #99cfcf;
-    border-radius: 30px;
+    display: none;
  }
 
 .sidebar a {
@@ -1009,7 +985,7 @@ ul.timeline {
 }
 
 div.bottombar {
-    background-image: linear-gradient(to right, #fad3e0, #eeeed6);
+    background-image: linear-gradient(to right, #fad3e060, #464646d6);
     /* background-image: linear-gradient(to right, #fad3e0, #EEDEAB); */
 }
 
@@ -1027,7 +1003,7 @@ div.timeline {
 }
 
 h1 {
-    color: #2a2a2a
+    color: #738bd7
 }
 
 h1.login-title {

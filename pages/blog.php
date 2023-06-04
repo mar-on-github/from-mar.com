@@ -4,20 +4,26 @@
   include_once(__DIR__ . "/../init.php");
   use Symfony\Component\Yaml\Yaml;
   $Parsedown = new Parsedown();
-  if (!empty($_GET['id'])) {
-      $file = $_GET['id'];
-  } else {
-      $file = "index";
+  if (!isset($filtercat)) {
+    if (!empty($_GET['cat'])) {
+        $filtercat = $_GET['cat'];
+    }
+  }
+$navbartypes = "1";
+$uniheadertype = "blog";
+  if ($filtercat == "discord") {
+    $navbartypes = "discord";
+    $uniheadertype = "discord";
   }
   $MarkDownFileMetaData = Yaml::parseFile(__DIR__ . '/md/meta.yaml');
-  print(ReturnUniversalHeader("Stories By Mar 🤍",1));
+  print(ReturnUniversalHeader("Stories By Mar 🤍", $uniheadertype));
   
 ?>
   <body class="body" >
   <button class="openbtn" onclick="openNav()">☰</button>
     <div class="sidebar" id="mySidebar"><a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
       <img src="/assets/img/sbm_2019style_1080×1080.png" id="sbmheaderlogo">
-      <?php print(ReturnMenuLinksFromJSON("side"))?>
+      <?php print(ReturnMenuLinksFromJSON("side",$navbartypes))?>
 </div>
     <script>
       function HidePageInfo() {
@@ -25,6 +31,13 @@
       }
     </script>
     <div class="content" align="center">
+      <h1>Mar's blog! 🤍</h1>
+      <?php if (isset($filtercat)) {
+        echo ("<h2>Category: <code>" . $filtercat . "</code></h2>");
+      } else {
+        echo("");
+      }
+      ?>
         <table class="post-listpreview">
   <tr id="post-listpreview-h">
     <th id="h-post-date">Posted on</th>
@@ -35,14 +48,33 @@
                 foreach($MarkDownFileMetaData as $data) {
 
                     if (($data['type'] == "post")) {
+                        if (isset($filtercat) and ($data['category'] !== $filtercat)) {break;}
+                        $resultscount= $resultscount + 1;
                         echo "<tr><td><span class=\"unparsedtimestamp post-date\">". $data['date']['posted'] . "</span></td><td><a href=\"/blog?p=posts/" . $data['filename'] . "\"><span class=\"post-title\">" . $data['title'] . "</span></a></td></tr><tr><td></td><td class=\"post-desc\">". $data['short'] . "</td></tr>";
                     }
                 }
             ?>
-
+        </table>
+        <p><?php 
+        if (!isset($resultscount) or $resultscount == 0) {
+          echo("No results found.");
+          echo("
+          <style>
+          .post-listpreview {
+            display: none;
+          }
+          </style>
+          ");
+        } else {
+          if ($resultscount == 1) {
+            echo ("<small>Showing 1 result.</small>");
+          } else {
+            echo("<small>Showing " . $resultscount . " results.</small>");
+        }
+        }?></p>
 </div>
     <div class="bottombar" id="mybottombar">
-      <?php print(ReturnMenuLinksFromJSON("bottom"))?>
+      <?php print(ReturnMenuLinksFromJSON("bottom",$navbartypes))?>
     </div>
     <script lang="javascript">
       function ParseTimestamps() {

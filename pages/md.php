@@ -40,19 +40,24 @@ if ((isset($MarkDownFileMetaData[$file]['content'])) and (!empty($MarkDownFileMe
     }
 }
 
-if ((isset($MarkDownFileMetaData[$file]['blogmodeoverride'])) and (!empty($MarkDownFileMetaData[$file]['blogmodeoverride']))) {
-  $blogmode = $MarkDownFileMetaData[$file]['blogmodeoverride'];
-} else {
-  $blogmode = ($FileMetaData['type'] == "post");
+if ((isset($MarkDownFileMetaData[$file]['modeoverride'])) and (!empty($MarkDownFileMetaData[$file]['modeoverride']))) {
+  $viewmode = $MarkDownFileMetaData[$file]['modeoverride'];
+} elseif ($FileMetaData['type'] == "post") {
+  $viewmode = 'blog';
 }
-print(ReturnUniversalHeader($FileMetaData['title'],$blogmode));
+$navbartypes = "1";
+if ($viewmode == "discord") {
+  $navbartypes = "discord";
+}
+
+print(ReturnUniversalHeader($FileMetaData['title'],$viewmode));
   
 ?>
   <body class="body" >
   <button class="openbtn" onclick="openNav()">☰</button>
     <div class="sidebar" id="mySidebar"><a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
-    <?php if ($blogmode) {print ('<img src="/assets/img/sbm_2019style_1080×1080.png" id="sbmheaderlogo">');} ?>
-      <?php print(ReturnMenuLinksFromJSON("side"))?>
+    <?php if ($viewmode == 'blog') {print ('<img src="/assets/img/sbm_2019style_1080×1080.png" id="sbmheaderlogo">');} ?>
+      <?php print(ReturnMenuLinksFromJSON("side",$navbartypes))?>
 </div>
 <div class="pageinfosidebar" onclick="HidePageInfo()" onmouseover="setTimeout(() => {HidePageInfo();}, '500');">
       <p class="pageinfo-title"><?php print($FileMetaData['title']); ?></p>
@@ -80,8 +85,8 @@ print(ReturnUniversalHeader($FileMetaData['title'],$blogmode));
         <?php
                 print "<h1>" . ($Parsedown->text(($FileMetaData['title']))) . "</h2>";
                 print $PageContent;
-                if (!empty($_GET['id'])) {
-                  if ($blogmode) {
+                if (!empty($file)) {
+                  if ($viewmode == 'blog') {
                     echo '<hr><p style="position: sticky;right: 10px;width: 30%;margin-left: 60%;"><a href="/blog/">Go back home</a></p>';
                   } else {
             echo '<hr><p style="position: sticky;right: 10px;width: 30%;margin-left: 60%;"><a href="/">Go back home</a></p>';
@@ -92,7 +97,7 @@ print(ReturnUniversalHeader($FileMetaData['title'],$blogmode));
 
 </div>
     <div class="bottombar" id="mybottombar">
-      <?php print(ReturnMenuLinksFromJSON("bottom"))?>
+      <?php print(ReturnMenuLinksFromJSON("bottom",$navbartypes))?>
     </div>
     <script lang="javascript">
       function ParseTimestamps() {

@@ -57,7 +57,7 @@
     width: 25px
 }
 
-.ephew-button-big {
+.huge-button {
     border: 0;
     border-radius: 20px 20px 5px 5px;
     cursor: pointer;
@@ -70,7 +70,7 @@
     width: 90%
 }
 
-.ephew-button-small {
+.small-button {
     border: 0;
     border-radius: 5px 5px 20px 20px;
     cursor: pointer;
@@ -510,7 +510,7 @@ ul.timeline {
     text-align: center
 }
 
-.ephew-button-big {
+.huge-button {
     border: 0;
     border-radius: 20px 20px 5px 5px;
     cursor: pointer;
@@ -523,7 +523,7 @@ ul.timeline {
     width: 90%
 }
 
-.ephew-button-small {
+.small-button {
     border: 0;
     border-radius: 5px 5px 20px 20px;
     cursor: pointer;

@@ -7,7 +7,11 @@ if (isset($_GET['p'])) {
     require_once(__DIR__ . '/pages/md.php');
     die;
 }
-
+if (isset($_GET['c'])) {
+    $filtercat = $_GET['c'];
+    require_once(__DIR__ . '/pages/blog.php');
+    die;
+}
 switch ($_SERVER['REQUEST_URI']) {
     case '/':
     case '/index.php':
@@ -37,7 +41,15 @@ switch ($_SERVER['REQUEST_URI']) {
         $file = "1";
         require_once(__DIR__ . '/pages/md.php');
         die;
-
+    case '/dc/':
+    case '/dc':
+        require_once(__DIR__ . '/pages/discord.php');
+        die;
+    case '/dc/updates/':
+    case '/dc/updates':
+        $filtercat = 'discord';
+        require_once(__DIR__ . '/pages/blog.php');
+        die;
 }
 // If we're here... we hit a 404 I think!
 $file = '404 trigger';

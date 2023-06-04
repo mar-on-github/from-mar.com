@@ -1,0 +1,14 @@
+[
+    {
+        "to": "/pages/discord.php",
+        "name": "Home"
+    },
+    {
+        "to": "javascript:void()",
+        "name": "Help"
+    },
+    {
+        "to": "/",
+        "name": "More from Mar"
+    }
+]
