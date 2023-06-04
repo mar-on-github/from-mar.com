@@ -8,7 +8,7 @@
         "name": "<span class='emoji-block'>&#128206;</span> Links by me"
     },
     {
-        "to": "/pages/blog.php",
+        "to": "/blog/",
         "name": "<img src=\"/assets/img/sbm_512×512.png\" widht=\"25px\" height=\"25px\" class='emoji-block'> Mar's blog! 🤍"
     }
 ]

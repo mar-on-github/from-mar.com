@@ -4,10 +4,12 @@
   include_once(__DIR__ . "/../init.php");
   use Symfony\Component\Yaml\Yaml;
   $Parsedown = new Parsedown();
-  if (!empty($_GET['id'])) {
-      $file = $_GET['id'];
-  } else {
-      $file = "index";
+  if (!isset($file)) {
+    if (!empty($_GET['id'])) {
+        $file = $_GET['id'];
+    } else {
+        $file = "index";
+    }
   }
 
   $MarkDownFileMetaData = Yaml::parseFile(__DIR__ . '/md/meta.yaml');
@@ -72,7 +74,7 @@ print(ReturnUniversalHeader($FileMetaData['title'],$blogmode));
                 print $PageContent;
                 if (!empty($_GET['id'])) {
                   if ($blogmode) {
-                    echo '<hr><p style="position: sticky;right: 10px;width: 30%;margin-left: 60%;"><a href="/pages/blog.php">Go back home</a></p>';
+                    echo '<hr><p style="position: sticky;right: 10px;width: 30%;margin-left: 60%;"><a href="/blog/">Go back home</a></p>';
                   } else {
             echo '<hr><p style="position: sticky;right: 10px;width: 30%;margin-left: 60%;"><a href="/">Go back home</a></p>';
 

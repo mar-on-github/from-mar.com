@@ -1,29 +1,4 @@
 <?php
-// Send users where they need to be
-switch($_SERVER['REQUEST_URI']) {
-    case '/index.php':
-        header("Location: /");
-        die;
-        break;
-    case '/pages/md.php?id=3':
-    case '/blog/':
-    case '/blog':
-        require_once(__DIR__ . '/pages/blog.php');
-        die;
-        break;
-    case '/blog/link-in-bio/':
-    case '/blog/link-in-bio':
-        header("Location: /pages/md.php?id=2");
-        die;
-        break;
-    case '/aboutme':
-    case '/aboutme/':
-    case '/about-me':
-    case '/about-me/':
-        header("Location: /pages/md.php?id=1");
-        die;
-        break;
-}
 function ReturnUniversalHeader(STRING $PageName, bool $blogstyles = false) {
 if ($blogstyles) {
   $StylesheetRefer = '<link media="(prefers-color-scheme: light)" rel="stylesheet" href="/assets/css/blog-light.css" content-type="text/css" charset="utf-8" /><link media="(prefers-color-scheme: dark)" rel="stylesheet" href="/assets/css/blog-dark.css" content-type="text/css" charset="utf-8" />

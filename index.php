@@ -1,37 +1,41 @@
-<!DOCTYPE html>
-<html lang="en">
 <?php
-include_once(__DIR__ . "/./init.php");
-print(ReturnUniversalHeader("Home"));
-?>
-  <body class="body">
-  <button class="openbtn" onclick="openNav()">☰</button>
-    <div class="sidebar" id="mySidebar"><a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
-      <?php print(ReturnMenuLinksFromJSON("side"))?>
-    </div>
-    <div class="content" align="center">
 
-      <h1>Good <span id="wishes">day</span>!</h1>
-      <p>I didn't know what to put on this page, so pick a link from the sidebar or bottom bar menus.</p>
-    </div>
-    <div class="bottombar" id="mybottombar">
-      <?php print(ReturnMenuLinksFromJSON("bottom"))?>
-    </div>
-  <script type="text/javascript">
-    var today = new Date()
-    var curHr = today.getHours()
-    var wishes = null;
+// Send users where they need to be
 
-    if (curHr < 12) {
-      var wishes = "Morning";
-    } else if (curHr < 18) {
-      var wishes = "Afternoon";
-    } else {
-      var wishes = "Evening";
-    }
+if (isset($_GET['p'])) {
+    $file = $_GET['p'];
+    require_once(__DIR__ . '/pages/md.php');
+    die;
+}
 
-    document.getElementById("wishes").innerHTML = wishes;
-  </script>
-  <script src="/assets/scripts/responsivemenus.js"></script>
-  </body>
-</html>
+switch ($_SERVER['REQUEST_URI']) {
+    case '/':
+    case '/index.php':
+    case '/home/':
+    case '/home':
+    case '/index':
+    case '/index/':
+        require_once(__DIR__ . '/pages/home.php');
+        die;
+    case '/pages/md.php?id=3':
+    case '/blog/':
+    case '/blog':
+        require_once(__DIR__ . '/pages/blog.php');
+        die;
+    case '/blog/link-in-bio/':
+    case '/blog/link-in-bio':
+        $file = "2";
+        require_once(__DIR__ . '/pages/md.php');
+        // header("Location: /pages/md.php?id=2");
+        die;
+    case '/about':
+    case '/about/':
+    case '/aboutme':
+    case '/aboutme/':
+    case '/about-me':
+    case '/about-me/':
+        $file = "1";
+        require_once(__DIR__ . '/pages/md.php');
+        die;
+
+}
