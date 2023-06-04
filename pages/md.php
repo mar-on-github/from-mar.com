@@ -9,11 +9,7 @@
   } else {
       $file = "index";
   }
-  if (file_exists(__DIR__ . "/md/" . $file . ".md")) {
-      $PageContent = $Parsedown->text(file_get_contents(__DIR__."/md/". $file .".md"));
-  } else {
-      $PageContent = "Could not find that...";
-  }
+
   $MarkDownFileMetaData = Yaml::parseFile(__DIR__ . '/md/meta.yaml');
     $FileMetaData['title'] = $MarkDownFileMetaData[$file]["title"];
     $FileMetaData['short'] = $MarkDownFileMetaData[$file]["short"];
@@ -24,10 +20,18 @@
     if ($FileMetaData['type'] !== 'page') {
       $FileMetaData['category'] = $MarkDownFileMetaData[$file]["category"];
     }
+if (isset($MarkDownFileMetaData[$file]["content"])) {
+    $PageContent = $Parsedown->text($MarkDownFileMetaData[$file]["content"]);
+    } else {
+    if (file_exists(__DIR__ . "/md/" . $file . ".md")) {
+        $PageContent = $Parsedown->text(file_get_contents(__DIR__."/md/". $file .".md"));
+    } else {
+        $PageContent = "Could not find that...";
+    }
+}
 
-
-
-  print(ReturnUniversalHeader($FileMetaData['title']));
+$blog = ($FileMetaData['type'] == "post");
+  print(ReturnUniversalHeader($FileMetaData['title'],$blog));
   
 ?>
   <body class="body" >
