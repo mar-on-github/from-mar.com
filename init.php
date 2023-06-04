@@ -1,14 +1,14 @@
 <?php
 // Send users where they need to be
 switch($_SERVER['REQUEST_URI']) {
-    case '/':
-        header("Location: /index.php");
+    case '/index.php':
+        header("Location: /");
         die;
         break;
     case '/pages/md.php?id=3':
     case '/blog/':
     case '/blog':
-        header("Location: /pages/blog.php");
+        require_once(__DIR__ . '/pages/blog.php');
         die;
         break;
     case '/blog/link-in-bio/':
