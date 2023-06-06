@@ -10,6 +10,7 @@ function ReturnUniversalHeader(string $PageName, $specialstyles = false){
   <link rel="icon" type="image/png" href="/assets/img/sbm_512×512.png">';
       break;
     case false:
+    case 'base':
     default:
       $StylesheetRefer = '<link rel="stylesheet" href="/assets/css/main.css" content-type="text/css" charset="utf-8" /><link rel="icon" type="image/png" href="/assets/img/marsitelogo.png"><link rel="icon" type="image/x-icon" href="/assets/img/marsitelogo.ico">';
       break;

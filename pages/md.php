@@ -39,7 +39,7 @@ if ((isset($MarkDownFileMetaData[$file]['content'])) and (!empty($MarkDownFileMe
     $PageContent = $Parsedown->text("Could not find that...\n\rMaybe retry typing the correct adress? Or just use a link!\n\r\n\r\n\rHere, take [this link home](/)!");
     }
 }
-
+$viewmode = 'base';
 if ((isset($MarkDownFileMetaData[$file]['modeoverride'])) and (!empty($MarkDownFileMetaData[$file]['modeoverride']))) {
   $viewmode = $MarkDownFileMetaData[$file]['modeoverride'];
 } elseif ($FileMetaData['type'] == "post") {
@@ -120,5 +120,11 @@ print(ReturnUniversalHeader($FileMetaData['title'],$viewmode));
   setTimeout(ParseTimestamps, 25);
   </script>
   <script src="/assets/scripts/responsivemenus.js"></script>
+  <?php 
+  if ($viewmode == 'base') {
+    print('<script src="/assets/scripts/oneko.js"></script>');
+  }
+  ?>
+  </script>
   </body>
 </html>

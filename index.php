@@ -13,6 +13,12 @@ if (isset($_GET['c'])) {
     die;
 }
 switch ($_SERVER['REQUEST_URI']) {
+    case '/oneko.gif':
+    case '/onekogif':
+        header("Location: /assets/img/kitton.gif");
+        // header("Content-type: image/gif");
+        // file_get_contents(__DIR__ . "/assets/img/kitton.gif");
+        die;
     case '/':
     case '/index.php':
     case '/home/':
