@@ -56,8 +56,10 @@ print(ReturnUniversalHeader($FileMetaData['title'],$viewmode));
   <body class="body" >
   <button class="openbtn" onclick="openNav()">☰</button>
     <div class="sidebar" id="mySidebar"><a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
-    <?php if ($viewmode == 'blog') {print ('<img src="/assets/img/sbm_2019style_1080×1080.png" id="sbmheaderlogo">');} ?>
       <?php print(ReturnMenuLinksFromJSON("side",$navbartypes))?>
+      <?php if ($viewmode == 'blog') {
+        print('<img src="/assets/img/sbm_2019style_1080×1080.png" id="sbmheaderlogo">');
+      } ?>
 </div>
 <div class="pageinfosidebar" onclick="HidePageInfo()" onmouseover="setTimeout(() => {HidePageInfo();}, '500');">
       <p class="pageinfo-title"><?php print($FileMetaData['title']); ?></p>

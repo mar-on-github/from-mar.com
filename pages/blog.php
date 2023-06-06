@@ -22,8 +22,8 @@ $uniheadertype = "blog";
   <body class="body" >
   <button class="openbtn" onclick="openNav()">☰</button>
     <div class="sidebar" id="mySidebar"><a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
-      <img src="/assets/img/sbm_2019style_1080×1080.png" id="sbmheaderlogo">
-      <?php print(ReturnMenuLinksFromJSON("side",$navbartypes))?>
+    <?php print(ReturnMenuLinksFromJSON("side",$navbartypes))?>
+    <img src="/assets/img/sbm_2019style_1080×1080.png" id="sbmheaderlogo">
 </div>
     <script>
       function HidePageInfo() {
