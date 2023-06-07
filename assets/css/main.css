@@ -56,6 +56,16 @@
     text-align: center
 }
 
+.imgmote {
+    background-color: #4f0952;
+    border-radius: 3px;
+    font-size: 5px;
+    height: 16px;
+    margin: .9px;
+    width: 16px;
+    padding: 2px;
+}
+
 .emoji-block {
     background-color: #05bddd;
     border-radius: 20%;
@@ -279,6 +289,17 @@ code {
     max-width: 300px;
     margin-left: 60%;
 }
+.badgearea {
+    background-color: #eec232;
+    padding: 10px;
+    min-height: fit-content;
+}
+.badgearea .badge {
+    max-width: 90px;
+}
+.clickable-badge {
+        cursor: pointer;
+    }
 div.content {
     border-radius: 5px;
     min-height: fit-content;

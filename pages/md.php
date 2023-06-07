@@ -59,6 +59,8 @@ print(ReturnUniversalHeader($FileMetaData['title'],$viewmode));
       <?php print(ReturnMenuLinksFromJSON("side",$navbartypes))?>
       <?php if ($viewmode == 'blog') {
         print('<img src="/assets/img/sbm_2019style_1080×1080.png" id="sbmheaderlogo">');
+      } else if ($viewmode == 'base') {
+        include(__DIR__. "/../assets/scripts/badgearea.php");
       } ?>
 </div>
 <div class="pageinfosidebar" onclick="HidePageInfo()" onmouseover="setTimeout(() => {HidePageInfo();}, '500');">

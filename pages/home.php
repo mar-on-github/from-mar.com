@@ -7,7 +7,9 @@ print(ReturnUniversalHeader("Home","base"));
   <body class="body">
   <button class="openbtn" onclick="openNav()">☰</button>
     <div class="sidebar" id="mySidebar"><a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
-      <?php print(ReturnMenuLinksFromJSON("side"))?>
+      <?php print(ReturnMenuLinksFromJSON("side"));
+      include(__DIR__. "/../assets/scripts/badgearea.php");
+      ?>
     </div>
     <div class="content" id="pagecontent" align="center">
 

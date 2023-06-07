@@ -1,4 +1,5 @@
 <?php
+$GLOBALS['rootdir'] = __DIR__ . "/";
 function ReturnUniversalHeader(string $PageName, $specialstyles = false){
   // echo $specialstyles;
   switch ($specialstyles) {
@@ -7,7 +8,8 @@ function ReturnUniversalHeader(string $PageName, $specialstyles = false){
       break;
     case 'blog':
       $StylesheetRefer = '<link media="(prefers-color-scheme: light)" rel="stylesheet" href="/assets/css/blog-light.css" content-type="text/css" charset="utf-8" /><link media="(prefers-color-scheme: dark)" rel="stylesheet" href="/assets/css/blog-dark.css" content-type="text/css" charset="utf-8" />
-  <link rel="icon" type="image/png" href="/assets/img/sbm_512×512.png">';
+  <link rel="icon" type="image/png" href="/assets/img/sbm_512×512.png">
+  <script data-name="BMC-Widget" data-cfasync="false" src="https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js" data-id="JustMarOK" data-description="Support me on Buy me a coffee!" data-message="" data-color="#BD5FFF" data-position="left" data-x_margin="18" data-y_margin="18"></script>';
       break;
     case 'base':
     default:
@@ -25,11 +27,11 @@ function ReturnUniversalHeader(string $PageName, $specialstyles = false){
     <!-- ad blocker detection -->
     " . file_get_contents(__DIR__ . "/assets/scripts/abdtct.html") . "
     <!-- End of ad blocker detection -->
-    <!-- Global site tag (gtag.js) - Google Analytics --> 
-    <script async src=\"https://www.googletagmanager.com/gtag/js?id=G-8RFJ2KWF0Y\"></script> <script> window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'G-8RFJ2KWF0Y'); </script>
+    <!-- Global site tag (gtag.js) - Google Analytics (commented to disable) --> 
+    <!-- <script async src=\"https://www.googletagmanager.com/gtag/js?id=G-8RFJ2KWF0Y\"></script> <script> window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'G-8RFJ2KWF0Y'); </script>
 
     <script async src=\"https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5016013452104530\"
-     crossorigin=\"anonymous\"></script>
+     crossorigin=\"anonymous\"></script> -->
     <script type=\"text/javascript\">
       var id_user = 722415;
       var domains_exclude = ['from-mar.com', 'www.buymeacoffee.com', 'localhost'];
@@ -47,8 +49,12 @@ function bmenulink($gotohref, $linktitle)
     return "<li style=\"\"><a href=\"" . $gotohref . "\" ><code>" . $linktitle . "</code></a></li>\n";
   }
 }
-function badge($href = "javacript:void()", $src, $alt) {
-  echo "<a href=\"" . $href . "\" class=\"active\"><img src='" . $linktitle . "' alt='" . $alt . "'></a>\n";
+function badge($href = "", $src, $title, $alt) {
+  if (!empty($href)) {
+  echo "<img src='" . $src . "' alt='" . $alt . "' title=\"[Clickable] " . $title . "\" onclick=\"window.open('" . $href . "');\" class=\"badge clickable-badge\">\n";
+  } else {
+  echo "<img src='" . $src . "' alt='" . $alt . "' title=\"" . $title . "\" class=\"badge\">\n";
+  }
 }
 function menulink($gotohref, $linktitle){
   if ($_SERVER['REQUEST_URI'] === $gotohref) {
@@ -76,5 +82,17 @@ function ReturnMenuLinksFromJSON($where, $type = 1){
     }
   }
   return $MenuLinksOut;
+}
+function imgmote($name) {
+  if (file_exists($GLOBALS['rootdir'] . "assets/img/imgmote/" . $name . ".gif")) {
+    $src = '/assets/img/imgmote/' . $name . '.gif';
+  } else if (file_exists($GLOBALS['rootdir'] . "assets/img/imgmote/" . $name . ".webp")) {
+    $src = '/assets/img/imgmote/' . $name . '.webp';
+  } else if (file_exists($GLOBALS['rootdir'] . "assets/img/imgmote/" . $name . ".png")) {
+    $src = '/assets/img/imgmote/' . $name . '.png';
+  } else if (file_exists($GLOBALS['rootdir'] . "assets/img/imgmote/" . $name . ".svg")) {
+    $src = '/assets/img/imgmote/' . $name . '.svg';
+  }
+  echo '<img src="'. $src .'" max-widht="5px" max-height="5px" class="imgmote" alt="imgmote named ' . $name .'">';
 }
 require_once __DIR__ . '/vendor/autoload.php';
