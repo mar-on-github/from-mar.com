@@ -1,5 +1,15 @@
 <?php
 
+if (isset($_GET['filter'])) {
+    setcookie('accessibilityfilter', $_GET['filter'], time() + (86400 * 30), "/");
+    echo "ok";
+    die;
+}
+if ($_SERVER['REQUEST_URI'] == "/accessibilityfilter") {
+    echo $_COOKIE['accessibilityfilter'];
+    die;
+}
+
 // Send users where they need to be
 
 if (isset($_GET['p'])) {

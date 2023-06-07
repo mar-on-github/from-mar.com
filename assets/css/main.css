@@ -1,5 +1,5 @@
 @import "https://fonts.googleapis.com/css2?family=Ubuntu&display=swap";
-
+@import "/assets/css/global.css";
 @import "https://fonts.googleapis.com/css2?family=Noto+Color+Emoji&display=swap";
 
 @import "https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap";
@@ -269,7 +269,6 @@ body {
     margin: 0;
     overflow:hidden;
     padding: 15px;
-    resize: both
 }
 
 code {
