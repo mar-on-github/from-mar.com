@@ -16,6 +16,7 @@
     badge("", "/assets/img/badges/feminism.gif", "intersectional feminism!", "feminism"),
     badge("https://php.net/","/assets/img/badges/php_copy1.gif", "This website runs on PHP8", "PHP powered"),
     badge("https://ubuntu.com/", "/assets/img/badges/ubuntubutton.png","Ubuntu is by far the most intuitive Linux distro, go try it!","Ubuntu"),
+    badge("", "/assets/img/badges/antinft.gif","NFTs are thrash, and a perfect way to spend money on destroying the world.","anti-nft's"),
     );
 
     shuffle($badges);
