@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
+<!-- I hate this, but for now it's gotta do. - Mar -->
+
+<url>
+  <loc>https://from-mar.com/</loc>
+  <lastmod>2023-06-07T23:04:02+00:00</lastmod>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>https://from-mar.com/pages/md.php?id=1</loc>
+  <lastmod>2023-06-07T23:04:02+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://from-mar.com/pages/md.php?id=2</loc>
+  <lastmod>2023-06-07T23:04:02+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://from-mar.com/blog/</loc>
+  <lastmod>2023-06-07T23:04:02+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://from-mar.com/?p=meta-abt</loc>
+  <lastmod>2023-06-07T23:04:02+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://from-mar.com/discord/</loc>
+  <lastmod>2023-06-07T23:04:02+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://from-mar.com/blog?p=posts/kitton</loc>
+  <lastmod>2023-06-07T23:04:02+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://from-mar.com/blog?p=posts/wordpress-2023-05-30</loc>
+  <lastmod>2023-06-07T23:04:02+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://from-mar.com/discord/index.php/docs/server-rules/</loc>
+  <lastmod>2023-06-07T23:04:02+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://from-mar.com/discord/index.php/blog/</loc>
+  <lastmod>2023-06-07T23:04:02+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://from-mar.com/discord/index.php/contact/</loc>
+  <lastmod>2023-06-07T23:04:02+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+
+
+</urlset>
