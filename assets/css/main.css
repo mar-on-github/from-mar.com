@@ -1064,7 +1064,8 @@ ul.timeline {
 }
 
 .sidebar {
-    background-color: #f1f1f1;
+    background-color: #e10404;
+    background-image: linear-gradient(#EEDEAB, #EEDEAB, #e4cd7e9f);
     box-shadow: 4px 3px 8px 1px #05bddd
 }
 
