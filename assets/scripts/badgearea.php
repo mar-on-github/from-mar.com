@@ -21,9 +21,9 @@
     shuffle($badges);
     $maxbadges = 15;
     foreach ($badges as $badge) {
+        $count = $count + 1;
         if ($count > $maxbadges) break;
         echo $badge;
-        $count = $count + 1;
 }
 ?>
 </div>
