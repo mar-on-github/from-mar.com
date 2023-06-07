@@ -51,9 +51,9 @@ function bmenulink($gotohref, $linktitle)
 }
 function badge($href = "", $src, $title, $alt) {
   if (!empty($href)) {
-  echo "<img src='" . $src . "' alt='" . $alt . "' title=\"[Clickable] " . $title . "\" onclick=\"window.open('" . $href . "');\" class=\"badge clickable-badge\">\n";
+  return "<img src='" . $src . "' alt='" . $alt . "' title=\"[Clickable] " . $title . "\" onclick=\"window.open('" . $href . "');\" class=\"badge clickable-badge\">\n";
   } else {
-  echo "<img src='" . $src . "' alt='" . $alt . "' title=\"" . $title . "\" class=\"badge\">\n";
+  return "<img src='" . $src . "' alt='" . $alt . "' title=\"" . $title . "\" class=\"badge\">\n";
   }
 }
 function menulink($gotohref, $linktitle){
