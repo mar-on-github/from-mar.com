@@ -49,8 +49,13 @@ $navbartypes = "1";
 if ($viewmode == "discord") {
   $navbartypes = "discord";
 }
+$metatags = '
+    <meta name="description" content="'. $FileMetaData['short'] .'">
+    
 
-print(ReturnUniversalHeader($FileMetaData['title'],$viewmode));
+
+';
+print(ReturnUniversalHeader($FileMetaData['title'],$viewmode,$metatags));
   
 ?>
   <body class="body" >
