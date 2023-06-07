@@ -303,7 +303,7 @@ code {
 div.content {
     border-radius: 5px;
     min-height: fit-content;
-    max-height: 400px;
+    max-height: 80%;
     /* height: 600px; */
     /* height: 350px; */
     margin-left: 305px;
