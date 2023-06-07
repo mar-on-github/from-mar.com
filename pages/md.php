@@ -83,16 +83,21 @@ print(ReturnUniversalHeader($FileMetaData['title'],$viewmode));
         setTimeout(() => {(document.getElementsByClassName('pageinfosidebar')[0]).style.display = "none";}, '1700');
       }
     </script>
-    <div class="content" align="center">
+    <div class="content" id="pagecontent" align="center">
         <?php
-                print "<h1>" . ($Parsedown->text(($FileMetaData['title']))) . "</h2>";
+        $titledisplay = true;
+        if ((isset($MarkDownFileMetaData[$file]['title-display']))) {
+          $titledisplay = $MarkDownFileMetaData[$file]['title-display'];
+        }
+        if ($titledisplay) {print "<h1>" . ($Parsedown->text(($FileMetaData['title']))) . "</h2>";}
                 print $PageContent;
                 if (!empty($file)) {
                   if ($viewmode == 'blog') {
                     echo '<hr><p style="position: sticky;right: 10px;width: 30%;margin-left: 60%;"><a href="/blog/">Go back home</a></p>';
                   } else {
             echo '<hr><p style="position: sticky;right: 10px;width: 30%;margin-left: 60%;"><a href="/">Go back home</a></p>';
-
+            echo($GLOBALS['bottomlink_morelinks']);
+            
           }
                 }
             ?>

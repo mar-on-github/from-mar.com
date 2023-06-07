@@ -1,18 +1,22 @@
 <?php
 function ReturnUniversalHeader(string $PageName, $specialstyles = false){
+  // echo $specialstyles;
   switch ($specialstyles) {
     case 'discord':
       $StylesheetRefer = '<link rel="stylesheet" href="/assets/css/discord.css" content-type="text/css" charset="utf-8" /><link rel="icon" type="image/png" href="/assets/img/blublogo.png">';
       break;
     case 'blog':
-    case true:
       $StylesheetRefer = '<link media="(prefers-color-scheme: light)" rel="stylesheet" href="/assets/css/blog-light.css" content-type="text/css" charset="utf-8" /><link media="(prefers-color-scheme: dark)" rel="stylesheet" href="/assets/css/blog-dark.css" content-type="text/css" charset="utf-8" />
   <link rel="icon" type="image/png" href="/assets/img/sbm_512×512.png">';
       break;
-    case false:
     case 'base':
     default:
       $StylesheetRefer = '<link rel="stylesheet" href="/assets/css/main.css" content-type="text/css" charset="utf-8" /><link rel="icon" type="image/png" href="/assets/img/marsitelogo.png"><link rel="icon" type="image/x-icon" href="/assets/img/marsitelogo.ico">';
+      $GLOBALS['bottomlink_morelinks'] = (
+ '<div style="bottom: 0; position: absolute; display: contents; font-size: x-small; z-index: 1000;" id="bottomlink_morelinks"><hr><p><b>More:</b>
+  <li>' . menulink("/?p=meta-abt","About this site") . '</li></p></div>'
+  
+);
       break;
   }
     $UniversalHeader = ("<head>
@@ -38,11 +42,12 @@ function ReturnUniversalHeader(string $PageName, $specialstyles = false){
   </head>");
   return ($UniversalHeader);
 }
+
 function menulink($gotohref, $linktitle){
   if ($_SERVER['REQUEST_URI'] === $gotohref) {
-    echo "<a href=\"" . $gotohref . "\" class=\"active\">" . $linktitle . "</a>\n";
+    return "<a href=\"" . $gotohref . "\" class=\"active\">" . $linktitle . "</a>\n";
   } else {
-    echo "<a href=\"" . $gotohref . "\" >" . $linktitle . "</a>\n";
+    return "<a href=\"" . $gotohref . "\" >" . $linktitle . "</a>\n";
   }
 }
 function ReturnMenuLinksFromJSON($where, $type = 1){

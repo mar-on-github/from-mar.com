@@ -11,7 +11,7 @@ print(ReturnUniversalHeader("Blub!!", 'discord'));
     <p style="background-color: #738bd7; max-width: 300px; display: block; margin: 0px; text-align: center;"><img onclick="window.location.href='https://discord.gg/hHuKYXnGMU';" src="https://discord.com/api/guilds/853925881411141652/widget.png?style=banner2" alt="BLUB!!" width="300px"><small align="center">Discord Community</small></p>
         <?php print(ReturnMenuLinksFromJSON("side","discord")) ?>
     </div>
-    <div class="content" align="center">
+    <div class="content" id="pagecontent" align="center">
 
         <h1>About</h1>
         <p>A community server and aspiring safe space, where everyone who respects others is welcomed!</p>
