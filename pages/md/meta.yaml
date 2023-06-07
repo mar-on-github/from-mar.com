@@ -9,11 +9,13 @@
     The kitten will only follow you on pages of the type 'base', so not on blog pages or pages that are set to be a different type.
     
     I think it's cute.
+
+    Edit: The filters were also broken for a rlly long time! They work now without screwing up the page, and remember your setting for 30 days across pages! UwU
   type: post
   category: Meta
   date:
     posted: 1686134666
-    edited: 1686134666
+    edited: 1686139710
 'posts/wordpress-2023-05-30':
   title: No more Wordpress
   short: This site no longer runs on Wordpress, this is how and why I did it.
