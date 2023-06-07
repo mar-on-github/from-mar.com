@@ -95,10 +95,8 @@ print(ReturnUniversalHeader($FileMetaData['title'],$viewmode));
                   if ($viewmode == 'blog') {
                     echo '<hr><p style="position: sticky;right: 10px;width: 30%;margin-left: 60%;"><a href="/blog/">Go back home</a></p>';
                   } else {
-            echo '<hr><p style="position: sticky;right: 10px;width: 30%;margin-left: 60%;"><a href="/">Go back home</a></p>';
-            echo($GLOBALS['bottomlink_morelinks']);
-            
-          }
+                    echo($GLOBALS['bottomlink_morelinks_start'] . bmenulink("/","Go back home") . $GLOBALS['bottomlink_morelinks_end']);
+              }
                 }
             ?>
 

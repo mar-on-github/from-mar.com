@@ -13,7 +13,7 @@ print(ReturnUniversalHeader("Home","base"));
 
       <h1>Good <span id="wishes">day</span>!</h1>
       <p>I didn't know what to put on this page, so pick a link from the sidebar or bottom bar menus.</p>
-    <?php print($GLOBALS['bottomlink_morelinks']);?>
+    <?php print($GLOBALS['bottomlink_morelinks_start'] . $GLOBALS['bottomlink_morelinks_end']);?>
     </div>
     <div class="bottombar" id="mybottombar">
       <?php print(ReturnMenuLinksFromJSON("bottom"))?>

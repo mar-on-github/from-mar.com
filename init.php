@@ -12,11 +12,8 @@ function ReturnUniversalHeader(string $PageName, $specialstyles = false){
     case 'base':
     default:
       $StylesheetRefer = '<link rel="stylesheet" href="/assets/css/main.css" content-type="text/css" charset="utf-8" /><link rel="icon" type="image/png" href="/assets/img/marsitelogo.png"><link rel="icon" type="image/x-icon" href="/assets/img/marsitelogo.ico">';
-      $GLOBALS['bottomlink_morelinks'] = (
- '<div style="bottom: 0; position: absolute; display: contents; font-size: x-small; z-index: 1000;" id="bottomlink_morelinks"><hr><p><b>More:</b>
-  <li>' . menulink("/?p=meta-abt","About this site") . '</li></p></div>'
-  
-);
+      $GLOBALS['bottomlink_morelinks_start'] = ('<div style="bottom: 0; position: absolute; display: contents; font-size: x-small; right: 10px;width: 30%;margin-left: 60%;" id="bottomlink_morelinks"><hr><p style="position: sticky;right: 10px;width: 30%;margin-left: 60%;"><b>More:</b></p><ul style="position: sticky;right: 10px;width: 30%;margin-left: 60%;">' . bmenulink("/?p=meta-abt","About this site"));
+      $GLOBALS['bottomlink_morelinks_end'] = '</ul></div>';
       break;
   }
     $UniversalHeader = ("<head>
@@ -42,7 +39,14 @@ function ReturnUniversalHeader(string $PageName, $specialstyles = false){
   </head>");
   return ($UniversalHeader);
 }
-
+function bmenulink($gotohref, $linktitle)
+{
+  if ($_SERVER['REQUEST_URI'] === $gotohref) {
+    return "<li style=\"display: none;\"><a href=\"" . $gotohref . "\">" . $linktitle . "</a></li>\n";
+  } else {
+    return "<li style=\"\"><a href=\"" . $gotohref . "\" >" . $linktitle . "</a></li>\n";
+  }
+}
 function menulink($gotohref, $linktitle){
   if ($_SERVER['REQUEST_URI'] === $gotohref) {
     return "<a href=\"" . $gotohref . "\" class=\"active\">" . $linktitle . "</a>\n";
