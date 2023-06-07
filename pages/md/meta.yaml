@@ -1,6 +1,19 @@
 # For now, new posts should be added above older ones, as the order of this file will set the order of the timeline.
 # posts
-
+'posts/kitton':
+  title: Kitten!
+  short: My site now has a cat following your mouse around!
+  filename: kitton
+  content: |
+    My site now has a cat following your mouse around. 
+    The kitten will only follow you on pages of the type 'base', so not on blog pages or pages that are set to be a different type.
+    
+    I think it's cute.
+  type: post
+  category: Meta
+  date:
+    posted: 1686134666
+    edited: 1686134666
 'posts/wordpress-2023-05-30':
   title: No more Wordpress
   short: This site no longer runs on Wordpress, this is how and why I did it.
