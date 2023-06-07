@@ -229,6 +229,7 @@
     height: auto;
     margin: auto;
     overflow: auto;
+    opacity: 80%;
     padding: 0;
     width: 310px;
     position: fixed;
@@ -266,7 +267,7 @@ body {
     font-family: 'Ubuntu', sans-serif;
     font-size: 14px;
     margin: 0;
-    overflow: auto;
+    overflow:hidden;
     padding: 15px;
     resize: both
 }
