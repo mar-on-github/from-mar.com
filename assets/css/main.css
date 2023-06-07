@@ -268,8 +268,16 @@ code {
     color: #6a524c;
     font-family: 'Ubuntu Mono', monospace
 }
-#bottomlink_morelinks .active {
-    display: hidden;
+#bottomlink_morelinks span {
+    display: block;
+    background-color: #6dd06d;
+    border: solid 1px white;
+    position: sticky;
+    right: 10px;
+    min-width: 117px;
+    width: 30%;
+    max-width: 300px;
+    margin-left: 60%;
 }
 div.content {
     border-radius: 5px;

@@ -12,8 +12,8 @@ function ReturnUniversalHeader(string $PageName, $specialstyles = false){
     case 'base':
     default:
       $StylesheetRefer = '<link rel="stylesheet" href="/assets/css/main.css" content-type="text/css" charset="utf-8" /><link rel="icon" type="image/png" href="/assets/img/marsitelogo.png"><link rel="icon" type="image/x-icon" href="/assets/img/marsitelogo.ico">';
-      $GLOBALS['bottomlink_morelinks_start'] = ('<div style="bottom: 0; position: absolute; display: contents; font-size: x-small; right: 10px;width: 30%;margin-left: 60%;" id="bottomlink_morelinks"><hr><p style="position: sticky;right: 10px;width: 30%;margin-left: 60%;"><b>More:</b></p><ul style="position: sticky;right: 10px;width: 30%;margin-left: 60%;">' . bmenulink("/?p=meta-abt","About this site"));
-      $GLOBALS['bottomlink_morelinks_end'] = '</ul></div>';
+      $GLOBALS['bottomlink_morelinks_start'] = ('<div style="bottom: 0; position: absolute; display: contents; font-size: x-small; right: 10px;width: 30%;margin-left: 60%;" id="bottomlink_morelinks"><hr><span><p style=""><b>Linkies:</b></p><ul style="">' . bmenulink("/?p=meta-abt","About this site"));
+      $GLOBALS['bottomlink_morelinks_end'] = '</ul></span></div>';
       break;
   }
     $UniversalHeader = ("<head>
@@ -42,10 +42,13 @@ function ReturnUniversalHeader(string $PageName, $specialstyles = false){
 function bmenulink($gotohref, $linktitle)
 {
   if ($_SERVER['REQUEST_URI'] === $gotohref) {
-    return "<li style=\"display: none;\"><a href=\"" . $gotohref . "\">" . $linktitle . "</a></li>\n";
+    return "<li style=\"display: none;\"><a href=\"" . $gotohref . "\"><code>" . $linktitle . "</code></a></li>\n";
   } else {
-    return "<li style=\"\"><a href=\"" . $gotohref . "\" >" . $linktitle . "</a></li>\n";
+    return "<li style=\"\"><a href=\"" . $gotohref . "\" ><code>" . $linktitle . "</code></a></li>\n";
   }
+}
+function badge($href = "javacript:void()", $src, $alt) {
+  echo "<a href=\"" . $href . "\" class=\"active\"><img src='" . $linktitle . "' alt='" . $alt . "'></a>\n";
 }
 function menulink($gotohref, $linktitle){
   if ($_SERVER['REQUEST_URI'] === $gotohref) {
