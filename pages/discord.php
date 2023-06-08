@@ -20,21 +20,6 @@ print(ReturnUniversalHeader("Blub!!", 'discord'));
     <div class="bottombar" id="mybottombar">
         <?php print(ReturnMenuLinksFromJSON("bottom","discord")) ?>
     </div>
-    <script type="text/javascript">
-        var today = new Date()
-        var curHr = today.getHours()
-        var wishes = null;
-
-        if (curHr < 12) {
-            var wishes = "Morning";
-        } else if (curHr < 18) {
-            var wishes = "Afternoon";
-        } else {
-            var wishes = "Evening";
-        }
-
-        document.getElementById("wishes").innerHTML = wishes;
-    </script>
     <script src="/assets/scripts/responsivemenus.js"></script>
 </body>
 

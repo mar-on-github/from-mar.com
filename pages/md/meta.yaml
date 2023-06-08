@@ -71,3 +71,11 @@
   date:
     posted: 1676247185
     edited: 1685887840
+'support':
+  title: Support me
+  short: Like what I do? Want to support me? You'll find some links on this page!
+  modeoverride: base
+  type: page
+  date:
+    posted: 1686237433
+    edited: 1686237433

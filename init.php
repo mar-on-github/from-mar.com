@@ -15,7 +15,7 @@ function ReturnUniversalHeader(string $PageName, string $specialstyles = "base",
     default:
       $StylesheetRefer = '<link rel="stylesheet" href="/assets/css/main.css" content-type="text/css" charset="utf-8" /><link rel="icon" type="image/png" href="/assets/img/marsitelogo.png"><link rel="icon" type="image/x-icon" href="/assets/img/marsitelogo.ico">';
       $GLOBALS['bottomlink_morelinks_start'] = ('<div style="bottom: 0; position: absolute; display: contents; font-size: x-small; right: 10px;width: 30%;margin-left: 60%;" id="bottomlink_morelinks"><span><p style=""><b>Linkies:</b></p><ul style="">' . bmenulink("/?p=meta-abt","About this site"));
-      $GLOBALS['bottomlink_morelinks_end'] = '<li id="donateextralink"><a href="/?p=support"><code>If you like my stuff, support me</code></a></li></ul></span></div>';
+      $GLOBALS['bottomlink_morelinks_end'] = '<li id="donateextralink"><a href="/?p=support"><code>If you like my stuff, support me (or disable adblock)</code></a></li></ul></span></div>';
       break;
   }
   $keywords_txt = __DIR__ . "/assets/other/keywords.txt";
