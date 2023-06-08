@@ -1,5 +1,5 @@
 <div class="badgearea">
-    <p>Badgies<?php imgmote("love3");?><small style="font-size: 8px">(they r random)</small></p>
+    <p>Badgies<?php imgmote("love3");?><small style="font-size: 8px">(in random order, not all at once!)</small></p>
 <?php
     $badges = array(
     badge("https://yesterweb.org/no-to-web3/", "https://yesterweb.org/no-to-web3/img/roly-saynotoweb3.gif", "Crypto's ewie.", "badge saying 'Keep the web free, say no to web3'"),
