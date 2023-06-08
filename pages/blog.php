@@ -42,6 +42,7 @@ $uniheadertype = "blog";
   <tr id="post-listpreview-h">
     <th id="h-post-date">Posted on</th>
     <th id="h-post-title">Title</th>
+    <th id="h-post-category">Category</th>
   </tr>
         <?php
         // print(var_dump($MarkDownFileMetaData));
@@ -50,7 +51,7 @@ $uniheadertype = "blog";
                     if (($data['type'] == "post")) {
                         if (isset($filtercat) and ($data['category'] !== $filtercat)) {break;}
                         $resultscount= $resultscount + 1;
-                        echo "<tr><td><span class=\"unparsedtimestamp post-date\">". $data['date']['posted'] . "</span></td><td><a href=\"/blog?p=posts/" . $data['filename'] . "\"><span class=\"post-title\">" . $data['title'] . "</span></a></td></tr><tr><td></td><td class=\"post-desc\">". $data['short'] . "</td></tr>";
+                        echo "<tr><td><span class=\"unparsedtimestamp post-date\">". $data['date']['posted'] . "</span></td><td><a href=\"/blog?p=posts/" . $data['filename'] . "\"><span class=\"post-title\">" . $data['title'] . "</span></a></td><td><a href=\"/?c=". $data['category'] . "\">". $data['category'] . "</a></td></tr><tr><td></td><td class=\"post-desc\"><p>". $data['short'] . "</p></td></tr>";
                     }
                 }
             ?>

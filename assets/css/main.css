@@ -302,6 +302,11 @@ code {
 .badgearea .badge {
     max-width: 90px;
 }
+.badge {
+    /* SQUEEZE */
+    margin: 0px;
+    padding: 0px;
+}
 .clickable-badge {
         cursor: pointer;
     }
@@ -339,12 +344,8 @@ div.logincontent {
     padding: 1px 16px
 }
 
-div.postview-article:not(.postedbyuserheader) {
-    border: 5px solid;
-    border-width: thick;
-    min-height: 500px;
-    min-width: 300px;
-    text-align: center
+.post-desc {
+    width: 100%;
 }
 
 div.timeline {
