@@ -1,5 +1,14 @@
-<div class="badgearea">
-    <p>Badgies<?php imgmote("love3");?><small style="font-size: 8px">(in random order, not all at once!)</small></p>
+<script>
+    // bruh CSS could've done this but the transition didnt work, now neither of them do. But hey it works well enough ig.
+    function bigbadgies(){
+        (document.getElementsByClassName('badgearea')[0]).style.height = "fit-content";
+    }
+    function smollbadgies(){
+        (document.getElementsByClassName('badgearea')[0]).style.height = "10vh";
+    }
+</script>
+<div class="badgearea" onmouseover="bigbadgies()" onmouseleave="smollbadgies()" style="height: 10vh">
+    <p>Badgies<?php imgmote("love3");?><small style="font-size: 8px">(in random order!)</small></p>
 <?php
     $badges = array(
     badge("https://yesterweb.org/no-to-web3/", "https://yesterweb.org/no-to-web3/img/roly-saynotoweb3.gif", "Crypto's ewie.", "badge saying 'Keep the web free, say no to web3'"),
@@ -22,7 +31,7 @@
     );
 
     shuffle($badges);
-    $maxbadges = 9;
+    $maxbadges = 20;
     $count = 0;
     foreach ($badges as $badge) {
         $count = $count + 1;
