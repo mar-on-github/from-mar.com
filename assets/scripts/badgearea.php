@@ -15,7 +15,10 @@
     badge("", "/assets/img/badges/feminism.gif", "intersectional feminism!", "feminism"),
     badge("https://php.net/","/assets/img/badges/php_copy1.gif", "This website runs on PHP8", "PHP powered"),
     badge("https://ubuntu.com/download/desktop/", "/assets/img/badges/ubuntubutton.png","Ubuntu is by far the most intuitive Linux distro, go try it!","Ubuntu"),
-    badge("", "/assets/img/badges/antinft.gif","NFTs are thrash, and a perfect way to spend money on destroying the world.","anti-nft's"),
+    badge("", "/assets/img/badges/antinft.gif", "NFTs are thrash, and a perfect way to spend money on destroying the world.", "anti-nft's"),
+    badge("", "/assets/img/badges/nerd.gif", "nerd", "nerd"),
+    badge("", "/assets/img/badges/beingaprincessisafulltimejob.gif","Being a princess is a full time job <3","Being a princess is a full time job"),
+    badge("https://blinkies.cafe", "https://blinkies.cafe/b/display/blinkiesCafe-badge.gif", "blinkies.cafe | make your own blinkies!", "blinkies.cafe"),
     );
 
     shuffle($badges);
