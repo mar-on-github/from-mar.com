@@ -1051,6 +1051,8 @@ h1.login-title {
 }
 .post-listpreview .post-desc {
     font-size: 13px;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
     border-bottom: solid 2px #0000002a;
+    width: 100%;
+    display: block;
 }
