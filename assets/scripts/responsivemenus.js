@@ -93,3 +93,12 @@ function ToggleFilters() {
 document.body.style.filter = "none";
 document.getElementById("filtertoggle").innerHTML = "Contrast/Greyscale";
 document.getElementById("filtertoggle").style.padding = "10px";
+if (adsblocked) {
+    // if (true) {
+    console.log("Adblock is detected. Maybe we should ask the user to donate once more, instead.");
+    document.getElementById('bmcdisabled').innerHTML = bmcwidget;
+} else {
+    console.log("Ads are not blocked.");
+    document.getElementById('donateextralink').style.display = "none";
+    document.getElementById('donateextrasidebarlink').style.display = "none";
+}

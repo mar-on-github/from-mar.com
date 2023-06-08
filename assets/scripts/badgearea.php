@@ -28,3 +28,4 @@
 }
 ?>
 </div>
+<a href="/?p=support" id="donateextrasidebarlink"><span class="emoji-block">💸</span> Support me</a>

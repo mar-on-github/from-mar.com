@@ -1074,10 +1074,10 @@ ul.timeline {
     box-shadow: 4px 3px 8px 1px #05bddd
 }
 
-.sidebar a {
+/* .sidebar a {
     background-color: #EEDEAB;
     color: #000
-}
+} */
 
 .sidebar a.active {
     background-color: #aaaa04;
