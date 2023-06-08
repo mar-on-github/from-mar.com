@@ -88,7 +88,7 @@
     nekoEl.style.backgroundImage = "url('/assets/img/kitton.png')";
     nekoEl.style.imageRendering = "pixelated";
     nekoEl.style.left = `${nekoPosX - 16}px`;
-    nekoEl.style.top = `${nekoPosY - 16}px`;
+    nekoEl.style.bottom = `${nekoPosY - 16}px`;
     nekoEl.style.zIndex = "999";
 
     document.body.appendChild(nekoEl);
