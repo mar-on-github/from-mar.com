@@ -59,10 +59,14 @@ switch ($_SERVER['REQUEST_URI']) {
         die;
     case '/dc/':
     case '/dc':
+    case '/discord/':
+    case '/discord':
         require_once(__DIR__ . '/pages/discord.php');
         die;
     case '/dc/updates/':
     case '/dc/updates':
+    case '/discord/updates/':
+    case '/discord/updates':
         $filtercat = 'discord';
         require_once(__DIR__ . '/pages/blog.php');
         die;
