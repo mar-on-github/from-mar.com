@@ -71,9 +71,11 @@
     border-radius: 20%;
     font-family: 'Noto Color Emoji', sans-serif;
     font-size: 20px;
-    height: 25px;
+    height: 23px;
+    ;padding: 1px;
     margin: .9px;
-    width: 25px
+    width: 23px
+    ;display: inline-block;
 }
 
 .huge-button {
@@ -213,7 +215,7 @@
     font-style: italic;
     color: #3f5b48;
     text-align: center;
-    line-height: 80px;
+    /* line-height: 80px; */
     font-size: 20px;
 }
 
@@ -275,7 +277,7 @@ code {
     background-color: #b885f2aa;
     border: 2px dotted;
     border-color: #E6A595;
-    color: #bd2f0c;
+    color: #1c1c1c;
     font-family: 'Ubuntu Mono', monospace
 }
 #bottomlink_morelinks span {
@@ -297,7 +299,7 @@ code {
     background-color: #7b89d8;
     padding: 5px;
     min-height: fit-content;box-shadow: 0px 10px 8px -4px #3338b7,
-            0px -10px 8px -4px #3338b7; margin-top: 10px; margin-left: 0px; margin-right: 0px; margin-bottom: 10px;
+            0px -10px 8px -4px #3338b7; margin-top: 14px; margin-left: 0px; margin-right: 0px; margin-bottom: 14px;
 }
 .badgearea .badge {
     max-width: 90px;
@@ -316,7 +318,8 @@ div.content {
     max-height: 80%;
     /* height: 600px; */
     /* height: 350px; */
-    margin-left: 305px;
+    margin-left: 400px;
+    margin-right: 80px;
     margin-bottom: 100px;
     overflow: auto;
     padding: 30px;

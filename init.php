@@ -29,7 +29,7 @@ function ReturnUniversalHeader(string $PageName, string $specialstyles = "base",
       $keywords = $keywords. ', ' . $keyword;
     }
   }
-  if ($_SERVER['REMOTE_ADDR'] !== '127.0.0.1') {$baseurl = "\n<base href=\"https://site.from-mar.com\">\n";}
+  if ($_SERVER['REMOTE_ADDR'] !== '127.0.0.1') {$baseurl = "\n<base href=\"https://site.from-mar.com\">\n";} else { $baseurl = "";}
     $UniversalHeader = ("<head>
     <title>Mar's site - $PageName</title>
     <meta charset=\"UTF-8\">

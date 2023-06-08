@@ -1,5 +1,16 @@
 # For now, new posts should be added above older ones, as the order of this file will set the order of the timeline.
 # posts
+'posts/LDo/230608':
+  title: Logger-Diary News now served on Mar's website!
+  short: Logger-Diary Online News is now served from `site.from-mar.com`.
+  type: post
+  title-display: true
+  filename: LDo/230608
+  category: Logger-Diary Online
+  modeoverride: base
+  date:
+    posted: 1686248156
+    edited: 1686248156
 'posts/kitton':
   title: Kitten!
   short: My site now has a cat following your mouse around!
@@ -25,6 +36,28 @@
   date:
     posted: 1685451731
     edited: 1685451731
+'posts/LDo/moved-to-logger-diary.online':
+  title: "We moved to a new adress - `https://logger-diary.online`"
+  short: We moved to our own adress!
+  type: post
+  title-display: false
+  filename: LDo/moved-to-logger-diary.online
+  category: Logger-Diary Online
+  modeoverride: base
+  date:
+    posted: 1674730800
+    edited: 1674730800
+'posts/LDo/md':
+  title: Markdown support!
+  short: Logger-Diary Online now has markdown support!
+  type: post
+  title-display: true
+  filename: LDo/md
+  category: Logger-Diary Online
+  modeoverride: base
+  date:
+    posted: 1674471600
+    edited: 1674730800
 #pages
 '1':
   title: About me

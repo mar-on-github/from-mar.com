@@ -77,7 +77,7 @@ print(ReturnUniversalHeader($FileMetaData['title'],$viewmode,$metatags));
           print ('<li>Edited: <span class="unparsedtimestamp">' . $FileMetaData['edited'] . "</span></li>");
           } 
         if (isset($FileMetaData['category'])) {
-          print ('<li>Category: ' . $FileMetaData['category'] . "</li>");
+          print ('<li>Category: <a href="/?c='. $FileMetaData['category'] . '">'. $FileMetaData['category'] . '</a></li>');
         }
         ?>
       </ul>

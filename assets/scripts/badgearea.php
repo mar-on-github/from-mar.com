@@ -1,7 +1,6 @@
 <div class="badgearea">
-    <p>Badgies
+    <p>Badgies<?php imgmote("love3");?><small style="font-size: 8px">(they r random)</small></p>
 <?php
-    imgmote("love3");echo "</p>";
     $badges = array(
     badge("https://yesterweb.org/no-to-web3/", "https://yesterweb.org/no-to-web3/img/roly-saynotoweb3.gif", "Crypto's ewie.", "badge saying 'Keep the web free, say no to web3'"),
     badge("https://minecraft.net/", "/assets/img/badges/minecraft.gif", "block game good", "minecraft"),
@@ -15,12 +14,13 @@
     badge("", "/assets/img/badges/linux80x15.png", "team linux heheh", "Run linux"),
     badge("", "/assets/img/badges/feminism.gif", "intersectional feminism!", "feminism"),
     badge("https://php.net/","/assets/img/badges/php_copy1.gif", "This website runs on PHP8", "PHP powered"),
-    badge("https://ubuntu.com/", "/assets/img/badges/ubuntubutton.png","Ubuntu is by far the most intuitive Linux distro, go try it!","Ubuntu"),
+    badge("https://ubuntu.com/download/desktop/", "/assets/img/badges/ubuntubutton.png","Ubuntu is by far the most intuitive Linux distro, go try it!","Ubuntu"),
     badge("", "/assets/img/badges/antinft.gif","NFTs are thrash, and a perfect way to spend money on destroying the world.","anti-nft's"),
     );
 
     shuffle($badges);
-    $maxbadges = 15;
+    $maxbadges = 9;
+    $count = 0;
     foreach ($badges as $badge) {
         $count = $count + 1;
         if ($count > $maxbadges) break;
