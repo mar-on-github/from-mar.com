@@ -318,12 +318,18 @@ div.content {
     max-height: 80%;
     /* height: 600px; */
     /* height: 350px; */
-    margin-left: 400px;
-    margin-right: 80px;
+    margin-left: 300px;
     margin-bottom: 100px;
     overflow: auto;
     padding: 30px;
     z-index: 20
+}
+ @media screen and (orientation:landscape) {
+    div.content {
+        margin-left: 400px;
+        margin-right: 80px;
+    }
+    
 }
 
 div.ephew-formlabels {
