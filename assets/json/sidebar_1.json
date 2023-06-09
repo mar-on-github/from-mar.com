@@ -9,6 +9,6 @@
     },
     {
         "to": "/blog/",
-        "name": "<img src=\"/assets/img/sbm_512×512.png\" widht=\"25px\" height=\"25px\" class='emoji-block'> Mar's blog! 🤍"
+        "name": "<img src='/assets/img/sbm_512×512.png' class='emoji-block'> Mar's blog! 🤍"
     }
 ]

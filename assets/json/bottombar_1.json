@@ -1,7 +1,7 @@
 [
     {
         "to": "/",
-        "name": "<span class='emoji-block'><img src=\"/assets/img/marsitelogo.png\" widht=\"25px\" height=\"25px\" class='emoji-block'></span> Home"
+        "name": "<span class='emoji-block'><img src='/assets/img/marsitelogo.png' class='emoji-block'></span> Home"
     },
     {
         "to": "/pages/contact",
