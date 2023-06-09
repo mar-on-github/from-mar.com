@@ -1,4 +1,4 @@
-<div class="badgearea" onmouseover="bigbadgies()" onmouseleave="smollbadgies()" style="height: 10vh">
+<div class="badgearea" onmouseover="bigbadgies()" onmouseleave="smollbadgies()" style="height: 20vh">
     <p>Badgies<?php imgmote("love3");?><small style="font-size: 8px">(in random order!)</small></p>
 <?php
     $badges = array(
@@ -40,7 +40,7 @@
     }
     function smollbadgies(){
         if (el.style.minHeight !== "fit-content") {
-            el.style.height = "10vh";
+            el.style.height = "20vh";
         }
     }
 </script>
