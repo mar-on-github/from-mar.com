@@ -1,12 +1,3 @@
-<script>
-    // bruh CSS could've done this but the transition didnt work, now neither of them do. But hey it works well enough ig.
-    function bigbadgies(){
-        (document.getElementsByClassName('badgearea')[0]).style.height = "fit-content";
-    }
-    function smollbadgies(){
-        (document.getElementsByClassName('badgearea')[0]).style.height = "10vh";
-    }
-</script>
 <div class="badgearea" onmouseover="bigbadgies()" onmouseleave="smollbadgies()" style="height: 10vh">
     <p>Badgies<?php imgmote("love3");?><small style="font-size: 8px">(in random order!)</small></p>
 <?php
@@ -41,3 +32,15 @@
 ?>
 </div>
 <a href="/?p=support" id="donateextrasidebarlink"><span class="emoji-block">💸</span> Support me</a>
+<script>
+    // bruh CSS could've done this but the transition didnt work, now neither of them do. But hey it works well enough ig.
+    el = (document.getElementsByClassName('badgearea')[0])
+    function bigbadgies(){
+        el.style.height = "fit-content";
+    }
+    function smollbadgies(){
+        if (el.style.minHeight !== "fit-content") {
+            el.style.height = "10vh";
+        }
+    }
+</script>

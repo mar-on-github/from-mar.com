@@ -50,9 +50,6 @@
     text-decoration: none
 }
 
-.card-text {
-    size: 8px
-}
 
 .centered {
     text-align: center
@@ -91,7 +88,7 @@
     margin: 10px;
     outline: 0;
     padding: 17px;
-    text-align: -webkit-center;
+    text-align: center;
     width: 90%
 }
 
@@ -104,7 +101,7 @@
     margin: 10px;
     outline: 0;
     padding: 17px;
-    text-align: -webkit-center;
+    text-align: center;
     width: 60%
 }
 
@@ -124,7 +121,7 @@
     margin: 10px;
     outline: 0;
     padding: 17px;
-    text-align: -webkit-center;
+    text-align: center;
     width: 80%
 }
 
@@ -137,7 +134,7 @@
     min-width: 80%;
     outline: 0;
     padding: 17px;
-    text-align: -webkit-center
+    text-align: center
 }
 
 .link {
@@ -568,9 +565,6 @@ ul.timeline {
     text-decoration: none
 }
 
-.card-text {
-    size: 8px
-}
 
 .centered {
     text-align: center
@@ -585,7 +579,7 @@ ul.timeline {
     margin: 10px;
     outline: 0;
     padding: 17px;
-    text-align: -webkit-center;
+    text-align: center;
     width: 90%
 }
 
@@ -598,7 +592,7 @@ ul.timeline {
     margin: 10px;
     outline: 0;
     padding: 17px;
-    text-align: -webkit-center;
+    text-align: center;
     width: 60%
 }
 
@@ -618,7 +612,7 @@ ul.timeline {
     margin: 10px;
     outline: 0;
     padding: 17px;
-    text-align: -webkit-center;
+    text-align: center;
     width: 80%
 }
 
@@ -631,7 +625,7 @@ ul.timeline {
     min-width: 80%;
     outline: 0;
     padding: 17px;
-    text-align: -webkit-center
+    text-align: center
 }
 
 .link {

@@ -7,9 +7,17 @@ function unrollbottombar() {
     }
     console.log("fn unrollbottombar() triggered")
 }
-
+function permabigbadgies() {
+    el = (document.getElementsByClassName('badgearea')[0])
+    if (typeof (el) != 'undefined' && (el) != null) {
+        el.style.minHeight = "fit-content";
+        bigbadgies();
+        return 1;
+    } else return 0;
+}
 function openNav() {
-    document.getElementById("mySidebar").style.width = "250px";
+    document.getElementById("mySidebar").style.width = "70vw";
+    setTimeout(permabigbadgies, 2500);
     // (document.getElementsByClassName("content")[0]).style.marginLeft = "250px";
 }
 
