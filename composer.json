@@ -3,7 +3,7 @@
     "description": "Mar's site",
     "type": "project",
     "require": {
-        "erusev/parsedown": "^1.7",
+        "erusev/parsedown": "^1.7.4",
         "symfony/yaml": "^6.2"
     },
     "license": "Free to use, not copy",
