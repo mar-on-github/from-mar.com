@@ -4,12 +4,16 @@ function ReturnUniversalHeader(string $PageName, string $specialstyles = "base",
   // echo $specialstyles;
   switch ($specialstyles) {
     case 'discord':
-      $StylesheetRefer = '<link rel="stylesheet" href="/assets/css/discord.css" content-type="text/css" charset="utf-8" /><link rel="icon" type="image/png" href="/assets/img/blublogo.png">';
+      $StylesheetRefer = '<link rel="stylesheet" href="/assets/css/discord.css" content-type="text/css" charset="utf-8"><link rel="icon" type="image/png" href="/assets/img/blublogo.png">';
       break;
     case 'blog':
-      $StylesheetRefer = '<link media="(prefers-color-scheme: light)" rel="stylesheet" href="/assets/css/blog-light.css" content-type="text/css" charset="utf-8" /><link media="(prefers-color-scheme: dark)" rel="stylesheet" href="/assets/css/blog-dark.css" content-type="text/css" charset="utf-8" />
+      $StylesheetRefer = <<<END
+      <!--<link media="(prefers-color-scheme: light)" rel="stylesheet" href="/assets/css/blog-light.css" content-type="text/css" charset="utf-8" />
+      <link media="(prefers-color-scheme: dark)" rel="stylesheet" href="/assets/css/blog-dark.css" content-type="text/css" charset="utf-8" />-->
+      <link rel="stylesheet" href="/assets/css/blog.css" content-type="text/css" charset="utf-8">
       <link rel="icon" type="image/png" href="/assets/img/sbm_512×512.png">
-    <script data-name="BMC-Widget" data-cfasync="false" src="https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js" data-id="JustMarOK" data-description="Support me on Buy me a coffee!" data-message="" data-color="#BD5FFF" data-position="left" data-x_margin="18" data-y_margin="18"></script>';
+      <script data-name="BMC-Widget" data-cfasync="false" src="https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js" data-id="JustMarOK" data-description="Support me on Buy me a coffee!" data-message="" data-color="#BD5FFF" data-position="left" data-x_margin="18" data-y_margin="18"></script>
+    END;
       break;
     case 'base':
     default:
