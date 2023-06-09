@@ -29,31 +29,40 @@ function ReturnUniversalHeader(string $PageName, string $specialstyles = "base",
       $keywords = $keywords. ', ' . $keyword;
     }
   }
+  // $keywords = "\$keywords";
   if ($_SERVER['REMOTE_ADDR'] !== '127.0.0.1') {$baseurl = "\n<base href=\"https://site.from-mar.com\">\n";} else { $baseurl = "";}
-    $UniversalHeader = ("<head>
-    <title>Mar's site - $PageName</title>
-    <meta charset=\"UTF-8\">
-    <meta http-equiv=\"Content-Type\" content=\"text/html;charset=UTF-8\">
-    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">" . $extratags . $StylesheetRefer . "\n\r
-    <meta name=\"robots\" content=\"index, follow\">
-    <meta name=\"keywords\" content=\"" . $keywords . "\">". $baseurl . "
-    <!-- START -->
-    <!-- Global site tag (gtag.js) - Google Analytics (commented to disable) --> 
-    <script async src=\"https://www.googletagmanager.com/gtag/js?id=G-8RFJ2KWF0Y\"></script> <script> window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'G-8RFJ2KWF0Y'); </script>
+  $abdtct = file_get_contents(__DIR__ . "/assets/scripts/abdtct.html");
+    return  <<<EOD
+    <head>
+        <title>Mar's site - {$PageName}</title>
+        <meta charset="UTF-8">
+        <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        {$extratags}
+        {$StylesheetRefer}
+        <meta name="robots" content="index, follow">
+        <meta name="keywords" content="{$keywords}">{$baseurl}
+        <!-- START -->
+        <!-- Global site tag (gtag.js) - Google Analytics (commented to disable) -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-8RFJ2KWF0Y"></script>
+        <script> window.dataLayer = window.dataLayer || []; function gtag() { dataLayer.push(arguments); } gtag('js', new Date()); gtag('config', 'G-8RFJ2KWF0Y'); </script>
 
-    <script async src=\"https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5016013452104530\"
-     crossorigin=\"anonymous\"></script>
-    <script type=\"text/javascript\">
-      var id_user = 722415;
-      var domains_exclude = ['from-mar.com', 'www.buymeacoffee.com', 'localhost'];
-    </script>
-    <script type=\"text/javascript\" src=\"https://adfoc.us/js/fullpage/script.js\"></script>
-    <!-- ad blocker detection -->
-    " . file_get_contents(__DIR__ . "/assets/scripts/abdtct.html") . "
-    <!-- End of ad blocker detection -->
-    <!-- END -->
-  </head>");
-  return ($UniversalHeader);
+        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5016013452104530"
+            crossorigin="anonymous"></script>
+        <script type="text/javascript">
+        var id_user = 722415;
+            var domains_exclude = ['from-mar.com', 'www.buymeacoffee.com', 'localhost'];
+        </script>
+        <script type="text/javascript" src="https://adfoc.us/js/fullpage/script.js"></script>
+        <!-- ad blocker detection -->
+        <span id="bmcdisabled"></span>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/blockadblock/3.2.1/blockadblock.js"></script>
+        <script src="/assets/scripts/abdtct.js"></script>
+        <!-- End of ad blocker detection -->
+        <!-- END -->
+    </head>
+
+EOD;
 }
 function bmenulink($gotohref, $linktitle)
 {
