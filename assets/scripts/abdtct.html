@@ -1,26 +1,3 @@
 <span id="bmcdisabled"></span>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/blockadblock/3.2.1/blockadblock.js"></script>
-  
-<script>
-  var adsblocked = Boolean;
-if (typeof blockAdBlock === "undefined") { adsblocked = true; }
- 
-else {
-  blockAdBlock.onDetected(() => adsblocked = true);
-  blockAdBlock.onNotDetected(() => adsblocked = false);
-}
-  window.addEventListener("load", () => {
-    let test = new Request(
-      // "https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js",
-      // "https://static.ads-twitter.com/uwt.js",
-      "https://adfoc.us/js/fullpage/script.js",
-      { method: "HEAD", mode: "no-cors" }
-    );
-    fetch(test)
-      .then(res => adsblocked = false)
-      .catch(err => adsblocked = true);
-  });
-  let bmcwidget = "\<script data-name='BMC-Widget' data-cfasync='false' src='https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js' data-id='JustMarOK' data-description='Support me on Buy me a coffee!' data-message='' data-color='#FF813F' data-position='Right' data-x_margin='18' data-y_margin='18'\>\</script\>"
-  if (adsblocked) {console.log("adsblocked: true");} else {console.log("adsblocked: false")};
-  
-  </script>
+<script src="/assets/scripts/abdtct.js"></script>
