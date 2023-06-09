@@ -96,7 +96,7 @@ print(ReturnUniversalHeader($FileMetaData['title'],$viewmode,$metatags));
         if ((isset($MarkDownFileMetaData[$file]['title-display']))) {
           $titledisplay = $MarkDownFileMetaData[$file]['title-display'];
         }
-        if ($titledisplay) {print "<h1>" . ($Parsedown->text(($FileMetaData['title']))) . "</h2>";}
+        if ($titledisplay) {print "<h1>" . ($Parsedown->line(($FileMetaData['title']))) . "</h1>";}
                 print $PageContent;
                 if (!empty($file)) {
                   if ($viewmode == 'blog') {
