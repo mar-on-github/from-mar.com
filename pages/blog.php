@@ -50,6 +50,7 @@ $uniheadertype = "blog";
 
                     if (($data['type'] == "post")) {
                         $skipt = false;
+                        $totalcount= $totalcount + 1;
                         if (isset($filtercat) and ($data['category'] !== $filtercat)) {$skipt = true;}
                         if (!($skipt)) {
                         $resultscount= $resultscount + 1;
@@ -70,10 +71,12 @@ $uniheadertype = "blog";
           </style>
           ");
         } else {
+          $totalcountdisplay = "<a href='/blog/'>{$totalcount}</a>";
+          if (!isset($filtercat)) {$totalcountdisplay = $totalcount;}
           if ($resultscount == 1) {
-            echo ("<small>Showing 1 post.</small>");
+            echo ("<small>Showing 1 post out of {$totalcountdisplay}</small>");
           } else {
-            echo("<small>Showing " . $resultscount . " posts.</small>");
+            echo("<small>Showing {$resultscount} out of {$totalcountdisplay} posts.</small>");
         }
         }?></p>
 </div>
