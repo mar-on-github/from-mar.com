@@ -34,7 +34,7 @@ function ReturnUniversalHeader(string $PageName, string $specialstyles = "base",
     }
   }
   // $keywords = "\$keywords";
-  if ($_SERVER['REMOTE_ADDR'] !== '127.0.0.1') {$baseurl = "\n<base href=\"https://site.from-mar.com\">\n";} else { $baseurl = "";}
+  if ($_SERVER['REMOTE_ADDR'] !== '127.0.0.1') {$baseurl = "\n<base href=\"https://strawmelonjuice.nl\">\n";} else { $baseurl = "";}
   $abdtct = file_get_contents(__DIR__ . "/assets/scripts/abdtct.html");
     return  <<<EOD
     <head>
