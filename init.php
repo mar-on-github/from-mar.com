@@ -42,6 +42,7 @@ function ReturnUniversalHeader(string $PageName, string $specialstyles = "base",
         <meta charset="UTF-8">
         <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="/assets/css/global.css" content-type="text/css" charset="utf-8">
         {$extratags}
         {$StylesheetRefer}
         <meta name="robots" content="index, follow">
