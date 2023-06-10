@@ -2,12 +2,12 @@
 <html lang="en">
 <?php
 include_once(__DIR__ . "/../init.php");
-print(ReturnUniversalHeader("Home","base"));
+echo(ReturnUniversalHeader("Home","base"));
 ?>
   <body class="body">
   <button class="openbtn" onclick="openNav()">☰</button>
     <div class="sidebar" id="mySidebar"><a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
-      <?php print(ReturnMenuLinksFromJSON("side"));
+      <?php echo(ReturnMenuLinksFromJSON("side"));
       include(__DIR__. "/../assets/scripts/badgearea.php");
       ?>
     </div>
@@ -15,10 +15,10 @@ print(ReturnUniversalHeader("Home","base"));
 
       <h1>Good <span id="wishes">day</span>!</h1>
       <p>I didn't know what to put on this page, so pick a link from the sidebar or bottom bar menus.</p>
-    <?php print($GLOBALS['bottomlink_morelinks_start'] . $GLOBALS['bottomlink_morelinks_end']);?>
+    <?php echo($GLOBALS['bottomlink_morelinks_start'] . $GLOBALS['bottomlink_morelinks_end']);?>
     </div>
     <div class="bottombar" id="mybottombar">
-      <?php print(ReturnMenuLinksFromJSON("bottom"))?>
+      <?php echo(ReturnMenuLinksFromJSON("bottom"))?>
     </div>
   <script type="text/javascript">
     var today = new Date()
@@ -36,7 +36,7 @@ print(ReturnUniversalHeader("Home","base"));
     document.getElementById("wishes").innerHTML = wishes;
   </script>
   <script src="/assets/scripts/responsivemenus.js"></script>
-  <!-- <script type="javascript"><?php //print(file_get_contents('http://raw.githubusercontent.com/adryd325/oneko.js/main/oneko.js'). "\n\r");?></script> -->
+  <!-- <script type="javascript"><?php //echo(file_get_contents('http://raw.githubusercontent.com/adryd325/oneko.js/main/oneko.js'). "\n\r");?></script> -->
   <script src="/assets/scripts/oneko.js"></script>
   </body>
 </html>

@@ -55,33 +55,37 @@ $metatags = '
 
 
 ';
-print(ReturnUniversalHeader($FileMetaData['title'],$viewmode,$metatags));
+echo(ReturnUniversalHeader($FileMetaData['title'],$viewmode,$metatags));
   
 ?>
   <body class="body" >
   <button class="openbtn" onclick="openNav()">☰</button>
     <div class="sidebar" id="mySidebar"><a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
-      <?php print(ReturnMenuLinksFromJSON("side",$navbartypes))?>
+      <?php echo(ReturnMenuLinksFromJSON("side",$navbartypes))?>
       <?php if ($viewmode == 'blog') {
-        print('<img src="/assets/img/sbm_2019style_1080×1080.png" id="sbmheaderlogo">');
+        echo('<img src="/assets/img/sbm_2019style_1080×1080.png" id="sbmheaderlogo">');
       } else if ($viewmode == 'base') {
         include(__DIR__. "/../assets/scripts/badgearea.php");
       } ?>
 </div>
 <div class="pageinfosidebar" onclick="HidePageInfo()" onmouseover="setTimeout(() => {HidePageInfo();}, '500');">
-      <p class="pageinfo-title"><?php print($FileMetaData['title']); ?></p>
+      <p class="pageinfo-title"><?php 
+      if ($viewmode == 'base') {
+        echo "<img src='/assets/img/Strawmelonjuice.webp' class='emoji-block'> ";
+      }
+      echo($FileMetaData['title']); ?></p>
       <ul>
-        <li><?php print($FileMetaData['type']); ?></li>
-        <li>Posted: <span class="unparsedtimestamp"><?php print($FileMetaData['posted']); ?></span></li>
+        <li><?php echo($FileMetaData['type']); ?></li>
+        <li>Posted: <span class="unparsedtimestamp"><?php echo($FileMetaData['posted']); ?></span></li>
         <?php if ($FileMetaData['wasedited']) {
-          print ('<li>Edited: <span class="unparsedtimestamp">' . $FileMetaData['edited'] . "</span></li>");
+          echo ('<li>Edited: <span class="unparsedtimestamp">' . $FileMetaData['edited'] . "</span></li>");
           } 
         if (isset($FileMetaData['category'])) {
-          print ('<li>Category: <a href="/?c='. $FileMetaData['category'] . '">'. $FileMetaData['category'] . '</a></li>');
+          echo ('<li>Category: <a href="/?c='. $FileMetaData['category'] . '">'. $FileMetaData['category'] . '</a></li>');
         }
         ?>
       </ul>
-      <p class="pageinfo-shortversion"><?php print($FileMetaData['short']); ?></p>
+      <p class="pageinfo-shortversion"><?php echo($FileMetaData['short']); ?></p>
     </div>
     <script>
       function HidePageInfo() {
@@ -96,8 +100,8 @@ print(ReturnUniversalHeader($FileMetaData['title'],$viewmode,$metatags));
         if ((isset($MarkDownFileMetaData[$file]['title-display']))) {
           $titledisplay = $MarkDownFileMetaData[$file]['title-display'];
         }
-        if ($titledisplay) {print "<h1>" . ($Parsedown->line(($FileMetaData['title']))) . "</h1>";}
-                print $PageContent;
+        if ($titledisplay) {echo "<h1>" . ($Parsedown->line(($FileMetaData['title']))) . "</h1>";}
+                echo $PageContent;
                 if (!empty($file)) {
                   if ($viewmode == 'blog') {
                     echo '<hr><p style="position: sticky;right: 10px;width: 30%;margin-left: 60%;"><a href="/blog/">Go back home</a></p>';
@@ -109,7 +113,7 @@ print(ReturnUniversalHeader($FileMetaData['title'],$viewmode,$metatags));
 
 </div>
     <div class="bottombar" id="mybottombar">
-      <?php print(ReturnMenuLinksFromJSON("bottom",$navbartypes))?>
+      <?php echo(ReturnMenuLinksFromJSON("bottom",$navbartypes))?>
     </div>
     <script lang="javascript">
       function ParseTimestamps() {
@@ -132,7 +136,7 @@ print(ReturnUniversalHeader($FileMetaData['title'],$viewmode,$metatags));
   <script src="/assets/scripts/responsivemenus.js"></script>
   <?php 
   if ($viewmode == 'base') {
-    print('<script src="/assets/scripts/oneko.js"></script>');
+    echo('<script src="/assets/scripts/oneko.js"></script>');
   }
   ?>
   </script>

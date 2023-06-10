@@ -16,13 +16,13 @@ $uniheadertype = "blog";
     $uniheadertype = "discord";
   }
   $MarkDownFileMetaData = Yaml::parseFile(__DIR__ . '/md/meta.yaml');
-  print(ReturnUniversalHeader("Stories By Mar 🤍", $uniheadertype));
+  echo(ReturnUniversalHeader("Stories By Mar 🤍", $uniheadertype));
   
 ?>
   <body class="body" >
   <button class="openbtn" onclick="openNav()">☰</button>
     <div class="sidebar" id="mySidebar"><a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
-    <?php print(ReturnMenuLinksFromJSON("side",$navbartypes))?>
+    <?php echo(ReturnMenuLinksFromJSON("side",$navbartypes))?>
     <img src="/assets/img/sbm_2019style_1080×1080.png" id="sbmheaderlogo">
 </div>
     <script>
@@ -45,7 +45,7 @@ $uniheadertype = "blog";
     <th id="h-post-category">Category</th>
   </tr>
         <?php
-        // print(var_dump($MarkDownFileMetaData));
+        // echo(var_dump($MarkDownFileMetaData));
                 foreach($MarkDownFileMetaData as $data) {
 
                     if (($data['type'] == "post")) {
@@ -78,7 +78,7 @@ $uniheadertype = "blog";
         }?></p>
 </div>
     <div class="bottombar" id="mybottombar">
-      <?php print(ReturnMenuLinksFromJSON("bottom",$navbartypes))?>
+      <?php echo(ReturnMenuLinksFromJSON("bottom",$navbartypes))?>
     </div>
     <script lang="javascript">
       function ParseTimestamps() {
