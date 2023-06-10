@@ -71,9 +71,9 @@ $uniheadertype = "blog";
           ");
         } else {
           if ($resultscount == 1) {
-            echo ("<small>Showing 1 result.</small>");
+            echo ("<small>Showing 1 post.</small>");
           } else {
-            echo("<small>Showing " . $resultscount . " results.</small>");
+            echo("<small>Showing " . $resultscount . " posts.</small>");
         }
         }?></p>
 </div>
