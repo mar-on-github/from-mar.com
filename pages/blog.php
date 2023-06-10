@@ -53,7 +53,7 @@ $uniheadertype = "blog";
                         if (isset($filtercat) and ($data['category'] !== $filtercat)) {$skipt = true;}
                         if (!($skipt)) {
                         $resultscount= $resultscount + 1;
-                        echo "<tr><td><span class=\"unparsedtimestamp post-date\">". $data['date']['posted'] . "</span></td><td><a href=\"/blog?p=posts/" . $data['filename'] . "\"><span class=\"post-title\">" . $Parsedown->line($data['title']) . "</span></a></td><td><a href=\"/?c=". $data['category'] . "\">". $data['category'] . "</a></td></tr><tr><td></td><td class=\"post-desc\"><p>". $data['short'] . "</p></td></tr>";
+                        echo "<tr><td><span class=\"unparsedtimestamp post-date\">". $data['date']['posted'] . "</span></td><td><a href=\"/blog?p=posts/" . $data['filename'] . "\"><span class=\"post-title\">" . $Parsedown->line($data['title']) . "</span></a></td><td><a href=\"/?c=". $data['category'] . "\">". $data['category'] . "</a></td></tr><tr><td></td><td class=\"post-desc\"><p>". $Parsedown->line($data['short']) . "</p></td></tr>";
                         }
                     }
                 }
