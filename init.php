@@ -77,13 +77,6 @@ function bmenulink($gotohref, $linktitle)
     return "<li style=\"\"><a href=\"" . $gotohref . "\" ><code>" . $linktitle . "</code></a></li>\n";
   }
 }
-function badge($href = "", $src, $title, $alt) {
-  if (!empty($href)) {
-  return "<img src='" . $src . "' alt='" . $alt . "' title=\"[Clickable] " . $title . "\" onclick=\"window.open('" . $href . "');\" class=\"badge clickable-badge\">\n";
-  } else {
-  return "<img src='" . $src . "' alt='" . $alt . "' title=\"" . $title . "\" class=\"badge\">\n";
-  }
-}
 function menulink($gotohref, $linktitle){
   if ($_SERVER['REQUEST_URI'] === $gotohref) {
     return "<a href=\"" . $gotohref . "\" class=\"active\">" . $linktitle . "</a>\n";
@@ -119,6 +112,6 @@ function imgmote($name) {
   } else if (file_exists($GLOBALS['rootdir'] . "assets/img/imgmote/" . $name . ".svg")) {
     $src = '/assets/img/imgmote/' . $name . '.svg';
   }
-  echo '<img src="'. $src .'" max-widht="5px" max-height="5px" class="imgmote" alt="imgmote named ' . $name .'">';
+  echo '<img src="'. $src .'" max-widht="5px" max-height="5px" class="imgmote" alt="imgmote named ' . $name .'"  loading=\"lazy\">';
 }
 require_once __DIR__ . '/vendor/autoload.php';
