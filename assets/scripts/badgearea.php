@@ -1,7 +1,17 @@
+<?php
+function badge($href = "", $src, $title, $alt) {
+  if (!empty($href)) {
+  return "<img src='{$src}' alt='{$alt}' title=\"[Clickable] {$title}\" onclick=\"window.open('{$href}');\" class=\"badge clickable-badge\" loading=\"lazy\">\n";
+  } else {
+  return "<img src='{$src}' alt='{$alt}' title=\"{$title}\" class=\"badge\" loading=\"lazy\">\n";
+  }
+}
+?>
+
 <div class="badgearea" onmouseover="bigbadgies()" onmouseleave="smollbadgies()" style="height: 20vh">
     <p>Badgies<?php imgmote("love3");?><small style="font-size: 8px">(in random order!)</small></p>
 <?php
-    $badges = array(
+    $badges = [
     badge("https://yesterweb.org/no-to-web3/", "https://yesterweb.org/no-to-web3/img/roly-saynotoweb3.gif", "Crypto's ewie.", "badge saying \'Keep the web free, say no to web3\'"),
     badge("https://minecraft.net/", "/assets/img/badges/minecraft.gif", "block game good", "minecraft"),
     badge("https://www.mozilla.org/nl/firefox/new/?redirect_source=firefox-com", "/assets/img/badges/getfirefox.gif", "GET FIREFOX!!", "Get Firefox"),
@@ -19,7 +29,7 @@
     badge("", "/assets/img/badges/nerd.gif", "nerd", "nerd"),
     badge("", "/assets/img/badges/beingaprincessisafulltimejob.gif","Being a princess is a full time job <3","Being a princess is a full time job"),
     badge("https://blinkies.cafe", "https://blinkies.cafe/b/display/blinkiesCafe-badge.gif", "blinkies.cafe | make your own blinkies!", "blinkies.cafe"),
-    );
+    ];
 
     shuffle($badges);
     $maxbadges = 20;
