@@ -330,7 +330,7 @@ div.content {
     margin-bottom: 100px;
     overflow: auto;
     padding: 30px;
-    z-index: 20
+    z-index: 20;
 }
 
 @media screen and (orientation:landscape) {
@@ -1133,7 +1133,13 @@ div.bottombar {
 }
 
 div.content {
-    background-image: linear-gradient(#C8ECB5, #eedeab80)
+    /* background-image: linear-gradient(#C8ECB5, #eedeab80) */
+    background:
+            url(/assets/img/strawberrycorners.webp) left -106px top -83px no-repeat,
+            url(/assets/img/strawberrycorners.webp) right -106px top -83px no-repeat,
+            url(/assets/img/strawberrycorners.webp) left -106px bottom -83px no-repeat,
+            url(/assets/img/strawberrycorners.webp) right -106px bottom -83px no-repeat,
+            linear-gradient(#C8ECB5, #eedeab80);
 }
 
 div.link-embed {
