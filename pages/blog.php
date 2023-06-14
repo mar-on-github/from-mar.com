@@ -30,7 +30,7 @@ $uniheadertype = "blog";
         (document.getElementsByClassName('pageinfosidebar')[0]).style.display = "none";
       }
     </script>
-    <div class="content" id="pagecontent" align="center">
+    <div class="content" id="pagecontent" align="center" style="max-height: 70vh">
       <h1>Mar's blog! 🤍</h1>
       <?php if (isset($filtercat)) {
         echo ("<h2>Category: <code>" . $filtercat . "</code></h2>");
