@@ -43,9 +43,14 @@ $uniheadertype = "blog";
       }
     </script>
     <div class="content" id="pagecontent" align="center" style="max-height: 70vh">
+    <?php
+    if ($filtercat != "discord") {
+    echo <<<END
       <a href="/search/"><img class="search-button" src="/assets/img/search.svg" alt="Search" title="Search through posts on Mar's blog"></a>
       <h1>Mar's blog! 🤍</h1>
-      <?php if (isset($filtercat)) {
+      END;
+    }
+      if (isset($filtercat)) {
         echo ("<h2>Category: <code>" . $filtercat . "</code></h2>");
       } else {
         if (isset($searchtrough)) {

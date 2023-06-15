@@ -103,11 +103,17 @@ echo(ReturnUniversalHeader($FileMetaData['title'],$viewmode,$metatags));
         if ($titledisplay) {echo "<h1>" . ($Parsedown->line(($FileMetaData['title']))) . "</h1>";}
                 echo $PageContent;
                 if (!empty($file)) {
-                  if ($viewmode == 'blog') {
+                 switch ($viewmode) {
+                  case 'blog':
                     echo '<hr><p style="position: sticky;right: 10px;width: 30%;margin-left: 60%;"><a href="/blog/">Go back home</a></p>';
-                  } else {
+                    break;
+                  case 'discord':
+                    echo($GLOBALS['bottomlink_morelinks_start'] . bmenulink("/discord/","Go back home") . $GLOBALS['bottomlink_morelinks_end']);
+                    break;
+                  default:
                     echo($GLOBALS['bottomlink_morelinks_start'] . bmenulink("/","Go back home") . $GLOBALS['bottomlink_morelinks_end']);
-              }
+                    break;
+                 }
                 }
             ?>
 
