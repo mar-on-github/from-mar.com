@@ -2,6 +2,7 @@
 <html lang="en">
 <?php
   include_once(__DIR__ . "/../init.php");
+  header('Link: https://' . $_SERVER["HTTP_HOST"] . '/blog/; rel="canonical"');
   use Symfony\Component\Yaml\Yaml;
   $Parsedown = new Parsedown();
   if (!isset($filtercat)) {

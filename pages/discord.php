@@ -3,6 +3,7 @@
 <?php
 include_once(__DIR__ . "/../init.php");
 echo(ReturnUniversalHeader("Blub!!", 'discord'));
+header('Link: https://' . $_SERVER["HTTP_HOST"] . '/discord/; rel="canonical"');
 ?>
 
 <body class="body">
