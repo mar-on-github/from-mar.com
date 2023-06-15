@@ -17,13 +17,14 @@
     width: 45px;
     height: 45px;
     background-color: #f1dfc7cb;
+    cursor: pointer;
 }
 .search-submit-button {
     border-radius: 50px;
     border: solid 2px red;
     width: 25px;
     height: 25px;
-    background-color: #f1dfc7cb;
+    background-color: #f1dfc7cb;cursor: pointer;
 }
 .bottombar .icon {
     display: none
