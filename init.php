@@ -36,7 +36,7 @@ function ReturnUniversalHeader(string $PageName, string $specialstyles = "base",
     }
   }
   if ($extrakeywords != "") {
-    $keywords = $keywords . ', ' . $extrakeywords;
+    $keywords = $extrakeywords . ', ' . $keywords;
   }
   // $keywords = "\$keywords";
   if ($_SERVER['REMOTE_ADDR'] !== '127.0.0.1') {
