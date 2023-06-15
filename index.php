@@ -22,6 +22,11 @@ if (isset($_GET['c'])) {
     require_once(__DIR__ . '/pages/blog.php');
     die;
 }
+if (isset($_GET['s'])) {
+    $searchtrough = $_GET['s'];
+    require_once(__DIR__ . '/pages/blog.php');
+    die;
+}
 switch ($_SERVER['REQUEST_URI']) {
     case '/oneko.gif':
     case '/onekogif':
@@ -41,6 +46,10 @@ switch ($_SERVER['REQUEST_URI']) {
     case '/blog/':
     case '/blog':
         require_once(__DIR__ . '/pages/blog.php');
+        die;
+    case '/search/':
+    case '/search':
+        require_once(__DIR__ . '/pages/search-blog.php');
         die;
     case '/blog/link-in-bio/':
     case '/blog/link-in-bio':

@@ -9,6 +9,11 @@
         $filtercat = $_GET['cat'];
     }
   }
+if (!isset($searchtrough)) {
+  if (!empty($_GET['search'])) {
+    $searchtrough = $_GET['search'];
+  }
+}
 $navbartypes = "1";
 $uniheadertype = "blog";
   if ($filtercat == "discord") {
@@ -31,12 +36,16 @@ $uniheadertype = "blog";
       }
     </script>
     <div class="content" id="pagecontent" align="center" style="max-height: 70vh">
+      <a href="/search/"><img class="search-button" src="/assets/img/search.svg" alt="Search" title="Search through posts on Mar's blog"></a>
       <h1>Mar's blog! 🤍</h1>
       <?php if (isset($filtercat)) {
         echo ("<h2>Category: <code>" . $filtercat . "</code></h2>");
       } else {
+        if (isset($searchtrough)) {
+          echo ("<h2>Search results: <code>" . $searchtrough . "</code></h2>");
+        } else {
         echo("");
-      }
+      }}
       ?>
         <table class="post-listpreview">
   <tr id="post-listpreview-h">
@@ -47,11 +56,22 @@ $uniheadertype = "blog";
         <?php
         // echo(var_dump($MarkDownFileMetaData));
                 foreach($MarkDownFileMetaData as $data) {
-
                     if (($data['type'] == "post")) {
                         $skipt = false;
                         $totalcount= $totalcount + 1;
                         if (isset($filtercat) and ($data['category'] !== $filtercat)) {$skipt = true;}
+                        if (isset($searchtrough)
+                            and
+                                  (!
+                                    (str_contains(strtolower($data['category']), strtolower($searchtrough))
+                                    or str_contains(strtolower($data['title']), strtolower($searchtrough))
+                                    or str_contains(strtolower($data['tags']), strtolower($searchtrough))
+                                    or str_contains(strtolower($data['short']), strtolower($searchtrough))
+                                    )
+                                  )
+                                ) {
+                      $skipt = true;
+                    }
                         if (!($skipt)) {
                         $resultscount= $resultscount + 1;
                         echo "<tr><td><span class=\"unparsedtimestamp post-date\">". $data['date']['posted'] . "</span></td><td><a href=\"/blog?p=posts/" . $data['filename'] . "\"><span class=\"post-title\">" . $Parsedown->line($data['title']) . "</span></a></td><td><a href=\"/?c=". $data['category'] . "\">". $data['category'] . "</a></td></tr><tr><td></td><td class=\"post-desc\"><p>". $Parsedown->line($data['short']) . "</p></td></tr>";
