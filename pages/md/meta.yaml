@@ -36,6 +36,7 @@
   date:
     posted: 1685451731
     edited: 1685451731
+  tags: blog, webdev, php, tech, CMS, GitHub, themes
 'posts/LDo/moved-to-logger-diary.online':
   title: "We moved to a new adress - `https://logger-diary.online`"
   short: We moved to our own adress!
@@ -47,6 +48,7 @@
   date:
     posted: 1674730800
     edited: 1674730800
+  tags: diary-app, domain name, moving
 'posts/LDo/md':
   title: Markdown support!
   short: Logger-Diary Online now has markdown support!
@@ -58,6 +60,7 @@
   date:
     posted: 1674471600
     edited: 1674730800
+  tags: diary-app, markdown, daring fireball, updates, site, parsedown
 'posts/stories/leafornia-2':
   title: Leafornia’s travels - chapter two
   short: Today went bad. I underestimated how hard it is for me to live here. Physically, I am weaker than my lost demon. However, I don’t know if this world didn’t mess him up mentally. I also need to take in consideration that my normal me is weak in this world, and that my powers are way too strong for this world. I may no longer use my powers if unnecessarily. Regards from earth.
@@ -79,7 +82,7 @@
   date:
     posted: 1633519196
     edited: 1633519196
-  tags: hell, devil, girl, fiction, 2021
+  tags: hell, devil, girl, fiction, 2021, satans daughter
 #pages
 '1':
   title: About me
@@ -89,6 +92,7 @@
   date:
     posted: 1683723800
     edited: 1683723800
+  tags: autobiographical, quotes
 'meta-abt':
   title: About this site
   short: About this site
@@ -97,6 +101,7 @@
   date:
     posted: 1686090592
     edited: 1686118780
+  tags: meta, credits
 '2':
   title: My links
   short: Mar's links
@@ -104,20 +109,7 @@
   date:
     posted: 1683723800
     edited: 1683723800
-'tests/mdinyaml':
-  title: No more .md files
-  short: YAML stores these b*tches too now.
-  content: |
-    ### Heading
-
-    * Bullet
-    * Points
-  category: Meta
-  type: page
-  modeoverride: blog
-  date:
-    posted: 1685887840
-    edited: 2685887840
+  tags: linktree, social media, links
 'discord/docs/rules':
   title: Server rules
   short: Rules for the 'BLUB!!' discord server.
@@ -126,6 +118,7 @@
   date:
     posted: 1676247185
     edited: 1685887840
+  tags: discord, moderator, moderation, discord server, rules
 'support':
   title: Support me
   short: Like what I do? Want to support me? You'll find some links on this page!
@@ -134,3 +127,4 @@
   date:
     posted: 1686237433
     edited: 1686237433
+  tags: donation, support, paypal, buymeacoffee, open-source

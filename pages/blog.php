@@ -23,7 +23,8 @@ if (!isset($filtercat)) {
   if (!$getsareset) {header('Link: https://' . $_SERVER["HTTP_HOST"] . '/blog/; rel="canonical"');}
 $navbartypes = "1";
 $uniheadertype = "blog";
-  if ($filtercat == "discord") {
+
+  if (isset($filtercat) and $filtercat == "discord") {
     $navbartypes = "discord";
     $uniheadertype = "discord";
   }

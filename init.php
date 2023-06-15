@@ -1,6 +1,7 @@
 <?php
 $GLOBALS['rootdir'] = __DIR__ . "/";
-function ReturnUniversalHeader(string $PageName, string $specialstyles = "base", string $extratags = ""){
+function ReturnUniversalHeader(string $PageName, string $specialstyles = "base", string $extratags = "", string $extrakeywords = "")
+{
   // echo $specialstyles;
   switch ($specialstyles) {
     case 'discord':
@@ -19,7 +20,7 @@ function ReturnUniversalHeader(string $PageName, string $specialstyles = "base",
     default:
       $StylesheetRefer = '<link rel="stylesheet" href="/assets/css/main.css" content-type="text/css" charset="utf-8" /><link rel="icon" type="image/png" href="/assets/img/Strawmelonjuice.png">
       <link rel="icon" type="image/webp" href="/assets/img/Strawmelonjuice.webp">';
-      $GLOBALS['bottomlink_morelinks_start'] = ('<div style="bottom: 0; position: absolute; display: contents; font-size: x-small; right: 10px;width: 30%;margin-left: 60%;" id="bottomlink_morelinks"><span><p style=""><b>Linkies:</b></p><ul style="">' . bmenulink("/?p=meta-abt","About this site"));
+      $GLOBALS['bottomlink_morelinks_start'] = ('<div style="bottom: 0; position: absolute; display: contents; font-size: x-small; right: 10px;width: 30%;margin-left: 60%;" id="bottomlink_morelinks"><span><p style=""><b>Linkies:</b></p><ul style="">' . bmenulink("/?p=meta-abt", "About this site"));
       $GLOBALS['bottomlink_morelinks_end'] = '<li id="donateextralink"><a href="/?p=support"><code>If you like my stuff, support me (or disable adblock)</code></a></li></ul></span></div>';
       break;
   }
@@ -31,12 +32,19 @@ function ReturnUniversalHeader(string $PageName, string $specialstyles = "base",
     if (!isset($keywords)) {
       $keywords = $keyword;
     } else {
-      $keywords = $keywords. ', ' . $keyword;
+      $keywords = $keywords . ', ' . $keyword;
     }
   }
+  if ($extrakeywords != "") {
+    $keywords = $keywords . ', ' . $extrakeywords;
+  }
   // $keywords = "\$keywords";
-  if ($_SERVER['REMOTE_ADDR'] !== '127.0.0.1') {$baseurl = "\n<base href=\"https://strawmelonjuice.nl\">\n";} else { $baseurl = "";}
-    return  <<<EOD
+  if ($_SERVER['REMOTE_ADDR'] !== '127.0.0.1') {
+    $baseurl = "\n<base href=\"https://strawmelonjuice.nl\">\n";
+  } else {
+    $baseurl = "";
+  }
+  return <<<EOD
     <head>
         <title>Mar's site - {$PageName}</title>
         <meta charset="UTF-8">
@@ -76,14 +84,16 @@ function bmenulink($gotohref, $linktitle)
     return "<li style=\"\"><a href=\"" . $gotohref . "\" ><code>" . $linktitle . "</code></a></li>\n";
   }
 }
-function menulink($gotohref, $linktitle){
+function menulink($gotohref, $linktitle)
+{
   if ($_SERVER['REQUEST_URI'] === $gotohref) {
     return "<a href=\"" . $gotohref . "\" class=\"active\">" . $linktitle . "</a>\n";
   } else {
     return "<a href=\"" . $gotohref . "\" >" . $linktitle . "</a>\n";
   }
 }
-function ReturnMenuLinksFromJSON($where, $type = 1){
+function ReturnMenuLinksFromJSON($where, $type = 1)
+{
   if ($where == "bottom") {
     $MenuLink_Array = json_decode(file_get_contents(__DIR__ . '/assets/json/bottombar_' . $type . '.json'), true);
     $MenuLinksOut = "";
@@ -101,7 +111,8 @@ function ReturnMenuLinksFromJSON($where, $type = 1){
   }
   return $MenuLinksOut;
 }
-function imgmote($name) {
+function imgmote($name)
+{
   if (file_exists($GLOBALS['rootdir'] . "assets/img/imgmote/" . $name . ".gif")) {
     $src = '/assets/img/imgmote/' . $name . '.gif';
   } else if (file_exists($GLOBALS['rootdir'] . "assets/img/imgmote/" . $name . ".webp")) {
@@ -111,6 +122,6 @@ function imgmote($name) {
   } else if (file_exists($GLOBALS['rootdir'] . "assets/img/imgmote/" . $name . ".svg")) {
     $src = '/assets/img/imgmote/' . $name . '.svg';
   }
-  echo '<img src="'. $src .'" max-widht="5px" max-height="5px" class="imgmote" alt="imgmote named ' . $name .'"  loading=\"lazy\">';
+  echo '<img src="' . $src . '" max-widht="5px" max-height="5px" class="imgmote" alt="imgmote named ' . $name . '"  loading=\"lazy\">';
 }
 require_once __DIR__ . '/vendor/autoload.php';
