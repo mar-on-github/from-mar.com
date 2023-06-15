@@ -193,6 +193,7 @@ code {
 div.content {
     border-radius: 0px;
     height: 600px;
+    max-height: 70vh;
     /* height: 350px; */
     margin-left: 305px;
     /* margin-bottom: 300px; */
