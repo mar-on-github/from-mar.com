@@ -11,7 +11,7 @@
         $file = "index";
     }
   }
-
+  header('Link: https://' . $_SERVER["HTTP_HOST"] . '/?p=' . $file . '; rel="canonical"');
   $MarkDownFileMetaData = Yaml::parseFile(__DIR__ . '/md/meta.yaml');
     $FileMetaData['title'] = $MarkDownFileMetaData[$file]["title"];
     $FileMetaData['short'] = $MarkDownFileMetaData[$file]["short"];
