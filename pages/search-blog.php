@@ -9,7 +9,7 @@ echo (ReturnUniversalHeader("Search - Stories By Mar 🤍", "blog"));
 <body class="body">
     <button class="openbtn" onclick="openNav()">☰</button>
     <div class="sidebar" id="mySidebar"><a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
-        <?php echo (ReturnMenuLinksFromJSON("side", $navbartypes)) ?>
+        <?php echo (ReturnMenuLinksFromJSON("side", 1)) ?>
         <img src="/assets/img/sbm_2019style_1080×1080.png" id="sbmheaderlogo">
     </div>
     <div class="content" id="pagecontent" align="center" style="max-height: 70vh">
@@ -22,7 +22,7 @@ echo (ReturnUniversalHeader("Search - Stories By Mar 🤍", "blog"));
             </FORM>
     </div>
     <div class="bottombar" id="mybottombar">
-        <?php echo (ReturnMenuLinksFromJSON("bottom", $navbartypes)) ?>
+        <?php echo (ReturnMenuLinksFromJSON("bottom", 1)) ?>
     </div>
     <script src="/assets/scripts/responsivemenus.js"></script>
 </body>
