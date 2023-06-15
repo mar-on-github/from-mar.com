@@ -2,19 +2,23 @@
 <html lang="en">
 <?php
   include_once(__DIR__ . "/../init.php");
-  header('Link: https://' . $_SERVER["HTTP_HOST"] . '/blog/; rel="canonical"');
   use Symfony\Component\Yaml\Yaml;
   $Parsedown = new Parsedown();
-  if (!isset($filtercat)) {
+$getsareset = false;
+if (!isset($filtercat)) {
     if (!empty($_GET['cat'])) {
-        $filtercat = $_GET['cat'];
+      $filtercat = $_GET['cat'];
+      $getsareset = true;
+      
     }
   }
-if (!isset($searchtrough)) {
-  if (!empty($_GET['search'])) {
-    $searchtrough = $_GET['search'];
+  if (!isset($searchtrough)) {
+    if (!empty($_GET['search'])) {
+      $searchtrough = $_GET['search'];
+      $getsareset = true;
+    }
   }
-}
+  if (!$getsareset) {header('Link: https://' . $_SERVER["HTTP_HOST"] . '/blog/; rel="canonical"');}
 $navbartypes = "1";
 $uniheadertype = "blog";
   if ($filtercat == "discord") {
