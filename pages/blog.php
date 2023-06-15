@@ -8,13 +8,15 @@ $getsareset = false;
 if (!isset($filtercat)) {
     if (!empty($_GET['cat'])) {
       $filtercat = $_GET['cat'];
-      $getsareset = true;
+    header('Link: https://' . $_SERVER["HTTP_HOST"] . '/blog?c=' . $filtercat . '; rel="canonical"');
+    $getsareset = true;
       
     }
   }
   if (!isset($searchtrough)) {
     if (!empty($_GET['search'])) {
       $searchtrough = $_GET['search'];
+      header('Link: https://' . $_SERVER["HTTP_HOST"] . '/search?s=' . $searchtrough . '; rel="canonical"');
       $getsareset = true;
     }
   }
