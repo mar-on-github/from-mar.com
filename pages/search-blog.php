@@ -15,7 +15,7 @@ echo (ReturnUniversalHeader("Search - Stories By Mar 🤍", "blog"));
     <div class="content" id="pagecontent" align="center" style="max-height: 70vh">
         <h1>Mar's blog! 🤍</h1>
         <h2>Search my blog</h2>
-            <FORM METHOD="get" ACTION="/search" TARGET="_blank">
+            <FORM METHOD="get" ACTION="/search">
                 <p>Please enter what are you looking for!</p>
                 <INPUT TYPE="text" NAME="s" SIZE="35"> &nbsp; <button TYPE="submit" VALUE="Search"><img class="search-submit-button" src="/assets/img/search.svg" alt="Search"
                 title="Search through posts on Mar's blog"></button>
