@@ -14,4 +14,4 @@ jobs:
         target-server: ${{ secrets.PROD_SRV_IP }}
         remote-user: ${{ secrets.PROD_SRV_USR }}
         private-ssh-key: ${{ secrets.SSH_KEY }}
-        destination-path: ~/destinationFolder/
+        destination-path: ~/testdestinationFolder/
