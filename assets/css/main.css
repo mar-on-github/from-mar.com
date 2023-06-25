@@ -275,6 +275,17 @@ code {
     font-family: 'Ubuntu Mono', monospace
 }
 
+div.derivi-twivi {
+    background-color: #63cc8176;
+    border: 2px dotted;
+    border-color: #b885f2;
+    color: #1c1c1c;
+    width: fit-content;
+    border-radius: 15px;
+    padding: 10px;
+    align-self: center;
+}
+
 #bottomlink_morelinks span {
     display: block;
     background-color: #6dd06d;
