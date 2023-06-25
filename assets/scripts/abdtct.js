@@ -10,9 +10,8 @@ if (typeof (domain_url) == 'undefined' || (domain_url) != 'adfoc.us') {
 }
 window.addEventListener("load", () => {
     let test = new Request(
-        // "https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js",
-        "https://static.ads-twitter.com/uwt.js",
-        // "https://adfoc.us/js/fullpage/script.js",
+        // "https://static.ads-twitter.com/uwt.js",
+        "https://adfoc.us/js/fullpage/script.js",
         { method: "HEAD", mode: "no-cors" }
     );
     fetch(test)
