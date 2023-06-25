@@ -3,6 +3,8 @@ Welcome to my cosy little strawberbrain site `:3`
 
 
 I'm Mar, strawmelonjuice or however you may know me.
+- 📫 How to reach me: `strawmelonjuice` on Discord or just.mar.ok2813 <at> gmail <dot> com
+- 😄 Pronouns: `She/her` or `they/them`
 
 > **Feel free to use the links on my sidebar or the bar on the bottom of this site to look around (or take a look at me badgies!)**
 
