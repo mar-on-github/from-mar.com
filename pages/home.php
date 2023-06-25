@@ -14,8 +14,10 @@ echo(ReturnUniversalHeader("Home","base"));
     <div class="content" id="pagecontent" align="center">
 
       <h1>Good <span id="wishes">day</span>!</h1>
-      <p>I didn't know what to put on this page, so pick a link from the sidebar or bottom bar menus.</p>
-    <?php echo($GLOBALS['bottomlink_morelinks_start'] . $GLOBALS['bottomlink_morelinks_end']);?>
+      <?php
+      $Parsedown = new Parsedown();
+      echo $Parsedown->text(file_get_contents(__DIR__ . "/md/home.md"));
+      echo($GLOBALS['bottomlink_morelinks_start'] . $GLOBALS['bottomlink_morelinks_end']);?>
     </div>
     <div class="bottombar" id="mybottombar">
       <?php echo(ReturnMenuLinksFromJSON("bottom"))?>
