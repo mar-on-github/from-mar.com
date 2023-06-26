@@ -129,3 +129,12 @@
     posted: 1686237433
     edited: 1686237433
   tags: donation, support, paypal, buymeacoffee, open-source
+'projects':
+  title: Projects
+  short: I am a creativity addict so I jiggle around with code from time to time.
+  modeoverride: base
+  type: page
+  date:
+    posted: 1686237433
+    edited: 1687804698
+  tags: donation, support, paypal, buymeacoffee, open-source, github

@@ -4,11 +4,11 @@
         "name": "<span class='emoji-block'><img src='/assets/img/Strawmelonjuice.webp' class='emoji-block'></span> Home"
     },
     {
-        "to": "/pages/contact",
-        "name": "Contact"
+        "to": "mailto:just.mar.ok2813@gmail.com",
+        "name": "<span class='emoji-block'>📧</span> Email"
     },
     {
-        "to": "https://github.com/strawmelonjuice/",
-        "name": "GitHub"
+        "to": "/blog/",
+        "name": "<img src='/assets/img/sbm_512×512.png' class='emoji-block'> Mar's blog! 🤍"
     }
 ]
