@@ -41,7 +41,7 @@ function badge($href = "", $src, $title, $alt) {
 }
 ?>
 </div>
-<a href="/?p=support" id="donateextrasidebarlink"><span class="emoji-block">💸</span> Support me</a>
+<a href="/?p=support" id="donateextrasidebarlink" class="menulink"><span class="emoji-block">💸</span> Support me</a>
 <script>
     // bruh CSS could've done this but the transition didnt work, now neither of them do. But hey it works well enough ig.
     el = (document.getElementsByClassName('badgearea')[0])

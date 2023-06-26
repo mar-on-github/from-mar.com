@@ -101,19 +101,19 @@ function ToggleFilters() {
 document.body.style.filter = "none";
 document.getElementById("filtertoggle").innerHTML = "Contrast/Greyscale";
 document.getElementById("filtertoggle").style.padding = "10px";
-if (adsblocked) {
-    // if (true) {
-    // console.log("Adblock is detected. Maybe we should ask the user to donate once more, instead.");
-    document.getElementById('bmcdisabled').innerHTML = bmcwidget;
-} else {
-    // console.log("Ads are not blocked.");
-    if (typeof (document.getElementById('donateextralink')) != 'undefined' && (document.getElementById('donateextralink')) != null) {
-        document.getElementById('donateextralink').style.display = "none";
-    }
-    if (typeof (document.getElementById('donateextrasidebarlink')) != 'undefined' && (document.getElementById('donateextrasidebarlink')) != null) {
-        document.getElementById('donateextrasidebarlink').style.display = "none";
-    }
-    if (typeof (document.getElementsByClassName('badgearea')['0']) != 'undefined' && (document.getElementsByClassName('badgearea')['0']) != null) {
-        document.getElementsByClassName('badgearea')['0'].style.marginBottom = "30px"
-    }
-}
+// if (adsblocked) {
+//     // if (true) {
+//     // console.log("Adblock is detected. Maybe we should ask the user to donate once more, instead.");
+//     document.getElementById('bmcdisabled').innerHTML = bmcwidget;
+// } else {
+//     // console.log("Ads are not blocked.");
+//     if (typeof (document.getElementById('donateextralink')) != 'undefined' && (document.getElementById('donateextralink')) != null) {
+//         document.getElementById('donateextralink').style.display = "none";
+//     }
+//     if (typeof (document.getElementById('donateextrasidebarlink')) != 'undefined' && (document.getElementById('donateextrasidebarlink')) != null) {
+//         document.getElementById('donateextrasidebarlink').style.display = "none";
+//     }
+//     if (typeof (document.getElementsByClassName('badgearea')['0']) != 'undefined' && (document.getElementsByClassName('badgearea')['0']) != null) {
+//         document.getElementsByClassName('badgearea')['0'].style.marginBottom = "30px"
+//     }
+// }

@@ -1,5 +1,16 @@
 # For now, new posts should be added above older ones, as the order of this file will set the order of the timeline.
 # posts
+'posts/ads-no-more':
+  title: Going ad-less.
+  short: First Google Adsense, now adfocus too. Going ad-less.
+  type: post
+  title-display: true
+  date:
+    posted: 1687804698
+    edited: 1687814181
+  filename: ads-no-more
+  category: Meta
+  tags: Google Adsense, Google, critique, adfocus, adfoc.us
 'posts/LDo/230608':
   title: Logger-Diary News now served on Mar's website!
   short: Logger-Diary Online News is now served from `strawmelonjuice.nl`.
@@ -62,6 +73,17 @@
     posted: 1674471600
     edited: 1674730800
   tags: diary-app, markdown, daring fireball, updates, site, parsedown
+'posts/farewell-gads':
+  title: Farewell Google Adsense then
+  short: I dropped Google Adsense after they started acting weird. How to continue?
+  type: post
+  title-display: true
+  date:
+    posted: 1661359098
+    edited: 1661359098
+  filename: farewell-gads
+  category: Meta
+  tags: Google Adsense, Google, critique
 'posts/stories/leafornia-2':
   title: Leafornia’s travels - chapter two
   short: Today went bad. I underestimated how hard it is for me to live here. Physically, I am weaker than my lost demon. However, I don’t know if this world didn’t mess him up mentally. I also need to take in consideration that my normal me is weak in this world, and that my powers are way too strong for this world. I may no longer use my powers if unnecessarily. Regards from earth.

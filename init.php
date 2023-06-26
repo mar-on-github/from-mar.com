@@ -13,7 +13,7 @@ function ReturnUniversalHeader(string $PageName, string $specialstyles = "base",
       <link media="(prefers-color-scheme: dark)" rel="stylesheet" href="/assets/css/blog-dark.css" content-type="text/css" charset="utf-8" />-->
       <link rel="stylesheet" href="/assets/css/blog.css" content-type="text/css" charset="utf-8">
       <link rel="icon" type="image/png" href="/assets/img/sbm_512×512.png">
-      <script data-name="BMC-Widget" data-cfasync="false" src="https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js" data-id="JustMarOK" data-description="Support me on Buy me a coffee!" data-message="" data-color="#BD5FFF" data-position="left" data-x_margin="18" data-y_margin="18"></script>
+      <script data-name="BMC-Widget" data-cfasync="false" src="https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js" data-id="JustMarOK" data-description="Support me on Buy me a coffee!" data-message="" data-color="#BD5FFF" data-position="left" data-x_margin="10" data-y_margin="30"></script>
     END;
       break;
     case 'base':
@@ -21,7 +21,7 @@ function ReturnUniversalHeader(string $PageName, string $specialstyles = "base",
       $StylesheetRefer = '<link rel="stylesheet" href="/assets/css/main.css" content-type="text/css" charset="utf-8" /><link rel="icon" type="image/png" href="/assets/img/Strawmelonjuice.png">
       <link rel="icon" type="image/webp" href="/assets/img/Strawmelonjuice.webp">';
       $GLOBALS['bottomlink_morelinks_start'] = ('<div style="bottom: 0; position: absolute; display: contents; font-size: x-small; right: 10px;width: 30%;margin-left: 60%;" id="bottomlink_morelinks"><span><p style=""><b>Linkies:</b></p><ul style="">' . bmenulink("/?p=meta-abt", "About this site"));
-      $GLOBALS['bottomlink_morelinks_end'] = '<li id="donateextralink"><a href="/?p=support"><code>If you like my stuff, support me (or disable adblock)</code></a></li></ul></span></div>';
+      $GLOBALS['bottomlink_morelinks_end'] = '<li id="donateextralink"><a href="/?p=support"><code>If you like my stuff, support me please. <!--(or disable adblock)--></code></a></li></ul></span></div>';
       break;
   }
   $keywords_txt = __DIR__ . "/assets/other/keywords.txt";
@@ -62,11 +62,13 @@ function ReturnUniversalHeader(string $PageName, string $specialstyles = "base",
             var domains_exclude = ['from-mar.com','strawmelonjuice.nl', 'logger-diary.online', 'www.buymeacoffee.com', 'localhost', 'github.com'];
         </script>
         <script type="text/javascript" src="https://adfoc.us/js/fullpage/script.js"></script>
-        <!-- ad blocker detection -->
-        <span id="bmcdisabled"></span>
+        <!-- ad blocker detection: disabled -->
+        <!-- <span id="bmcdisabled"></span>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/blockadblock/3.2.1/blockadblock.js"></script>
-        <script src="/assets/scripts/abdtct.js"></script>
+        <script src="/assets/scripts/abdtct.js"></script> -->
         <!-- End of ad blocker detection -->
+        <!-- instead, hope people donate. I rlly do, can't afford this fucking site without ad revenue nor donations -->
+        <script data-name="BMC-Widget" data-cfasync="false" src="https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js" data-id="JustMarOK" data-description="Support me on Buy me a coffee!" data-message="" data-color="#FF813F" data-position="left" data-x_margin="10" data-y_margin="30"></script>
         <!-- END -->
     </head>
 
