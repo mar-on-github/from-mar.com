@@ -8,6 +8,18 @@
     right: 0px;
     margin: auto;
 }
+a:hover:not(.menulink) {
+    border-radius: 3px;
+    color: #dda0dd;
+    padding: 5px;
+    line-height: 115%;
+    filter: drop-shadow(6px 6px 4px #aad0f2) drop-shadow(-6px -6px 4px #aad0f2);
+}
+
+a:not(:hover):not(.menulink) {
+    color: #194f97;
+}
+
 
 .sidebar {
     border-radius: 30px;
@@ -276,11 +288,12 @@ code {
 }
 
 div.derivi-twivi {
-    background-color: #63cc8176;
+    background-color: #63cc8150;
     border: 2px dotted;
-    border-color: #b885f2;
+    border-color: #b885f28d;
     color: #1c1c1c;
     width: fit-content;
+    max-width: 70%;
     border-radius: 15px;
     padding: 10px;
     align-self: center;
@@ -1111,8 +1124,8 @@ ul.timeline {
 } */
 
 .sidebar a.active {
-    background-color: #aaaa04;
-    color: #ff0
+    background-color: #efc85c;
+    color: rgb(32, 2, 7)
 }
 
 .sidebar a:hover:not(.active) {

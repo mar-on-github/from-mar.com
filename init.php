@@ -83,9 +83,9 @@ function bmenulink($gotohref, $linktitle)
 function menulink($gotohref, $linktitle)
 {
   if ($_SERVER['REQUEST_URI'] === $gotohref) {
-    return "<a href=\"" . $gotohref . "\" class=\"active\">" . $linktitle . "</a>\n";
+    return "<a href=\"" . $gotohref . "\" class=\"menulink active\">" . $linktitle . "</a>\n";
   } else {
-    return "<a href=\"" . $gotohref . "\" >" . $linktitle . "</a>\n";
+    return "<a href=\"" . $gotohref . "\" class=\"menulink\">" . $linktitle . "</a>\n";
   }
 }
 function ReturnMenuLinksFromJSON($where, $type = 1)
