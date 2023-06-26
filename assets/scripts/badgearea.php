@@ -19,7 +19,7 @@ function badge($href = "", $src, $title, $alt) {
     badge("/assets/img/badges/blinkiesCafe-autism.gif","/assets/img/badges/blinkiesCafe-autism.gif", "brain go brrr", "autism"),
     badge("/assets/img/badges/blinkiesCafe-L1.gif", "/assets/img/badges/blinkiesCafe-L1.gif", "AUTISM!", "autism"),
     badge("", "/assets/img/badges/y2k-compliant.gif", "We survived! Or... well this site is from 2023. uhm.", "Y2K-compliant"),
-    badge("", "/assets/img/badges/transles80×31.png", "I\'m trans, and girls", "trans-lesbian flag"),
+    badge("", "/assets/img/badges/transles80×31.png", "I'm trans, and girls", "trans-lesbian flag"),
     badge("https://www.tumblr.com/strawmelonjuice","/assets/img/badges/blinkiesCafe-tumblr-grrll.gif", "Tumblr Tumblr Tumblr", "Tumblr"),
     badge("", "/assets/img/badges/linux80x15.png", "team linux heheh", "Run linux"),
     badge("", "/assets/img/badges/feminism.gif", "intersectional feminism!", "feminism"),
