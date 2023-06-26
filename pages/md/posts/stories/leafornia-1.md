@@ -40,3 +40,5 @@ It was now quiet in hell. The queen had been in a bad mood for the last few days
 Without looking back, she jumped off her throne. Her heels making glass crack sounds when they touched the ground.
 
 Leafornia sighed. She then proceeded to walk through the portal…
+
+[Chapter two](/blog?p=posts/stories/leafornia-2)

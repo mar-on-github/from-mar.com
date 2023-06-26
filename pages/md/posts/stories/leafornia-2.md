@@ -32,3 +32,5 @@ Then she hid away for a bit.
 > I also need to take in consideration that my normal me is weak in this  world, and that my powers are way too strong for this world. I may no  longer use my powers if unnecessarily.
 >
 > Regards from earth.
+
+[First chapter](/blog?p=posts/stories/leafornia-1)
