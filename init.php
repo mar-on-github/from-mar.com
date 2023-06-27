@@ -57,11 +57,11 @@ function ReturnUniversalHeader(string $PageName, string $specialstyles = "base",
         <meta name="keywords" content="{$keywords}">{$baseurl}
         <!-- START -->
         <script> window.dataLayer = window.dataLayer || []; function gtag() { dataLayer.push(arguments); } gtag('js', new Date()); gtag('config', 'G-8RFJ2KWF0Y'); </script>
-        <script type="text/javascript">
+        <!-- <script type="text/javascript">
         var id_user = 722415;
             var domains_exclude = ['from-mar.com','strawmelonjuice.nl', 'logger-diary.online', 'www.buymeacoffee.com', 'localhost', 'github.com'];
-        </script>
-        <script type="text/javascript" src="https://adfoc.us/js/fullpage/script.js"></script>
+        </script> -->
+        <!-- <script type="text/javascript" src="https://adfoc.us/js/fullpage/script.js"></script> -->
         <!-- ad blocker detection: disabled -->
         <!-- <span id="bmcdisabled"></span>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/blockadblock/3.2.1/blockadblock.js"></script>
