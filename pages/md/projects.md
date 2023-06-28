@@ -1,3 +1,4 @@
+Like what I do? [Support me!](/?p=support) ❤️
 
 I am a creativity addict so I jiggle around with code from time to time. These are some projects of mine:
 
@@ -48,3 +49,5 @@ Keeping this code private for now.
 Yeah, this site is a little project of its own (at the time of writing, the one with the most commits lol).
 However, it's not open source. Instead, I'm planning to make a separate project that works <i>kinda</i> like this site, as a CMS for small blogs.
 </div>
+
+Like what I do? [Support me!](/?p=support) ❤️
