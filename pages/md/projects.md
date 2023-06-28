@@ -6,7 +6,7 @@ I am a creativity addict so I jiggle around with code from time to time. These a
 Simple digital diary software
 </div>
 
-- [<img src="https://logger-diary.online/img/logo/logo_512px.png" height="25px" alt="LDo Logo"> Logger-Diary Online](https://logger-diary.online/)
+- [<img src="https://logger-diary.strawmelonjuice.com/img/logo/logo_512px.png" height="25px" alt="LDo Logo"> Logger-Diary Online](https://logger-diary.strawmelonjuice.com/)
 - [<img src="https://raw.githubusercontent.com/strawmelonjuice/logger-diary.legacy/desktop-beta/logger/icons/logo.png" height="25px" alt="LD Logo"> Logger-Diary Legacy](https://github.com/strawmelonjuice/logger-diary.legacy) – discontinued
 - <img src="/assets/img/2015logo.png" height="25px" alt="mylog231 logo"> My Log 231 for FreeDOS – discontinued & way too old but I find it funny to mention
 

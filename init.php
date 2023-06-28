@@ -59,7 +59,7 @@ function ReturnUniversalHeader(string $PageName, string $specialstyles = "base",
         <script> window.dataLayer = window.dataLayer || []; function gtag() { dataLayer.push(arguments); } gtag('js', new Date()); gtag('config', 'G-8RFJ2KWF0Y'); </script>
         <!-- <script type="text/javascript">
         var id_user = 722415;
-            var domains_exclude = ['strawmelonjuice.com','strawmelonjuice.com', 'logger-diary.online', 'www.buymeacoffee.com', 'localhost', 'github.com'];
+            var domains_exclude = ['strawmelonjuice.com','strawmelonjuice.com', 'logger-diary.strawmelonjuice.com', 'www.buymeacoffee.com', 'localhost', 'github.com'];
         </script> -->
         <!-- <script type="text/javascript" src="https://adfoc.us/js/fullpage/script.js"></script> -->
         <!-- ad blocker detection: disabled -->

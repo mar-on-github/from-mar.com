@@ -49,12 +49,12 @@
     posted: 1685451731
     edited: 1685451731
   tags: blog, webdev, php, tech, CMS, GitHub, themes
-'posts/LDo/moved-to-logger-diary.online':
-  title: "We moved to a new adress - `https://logger-diary.online`"
+'posts/LDo/moved-to-logger-diary.strawmelonjuice.com':
+  title: "We moved to a new adress - `https://logger-diary.strawmelonjuice.com`"
   short: We moved to our own adress!
   type: post
   title-display: false
-  filename: LDo/moved-to-logger-diary.online
+  filename: LDo/moved-to-logger-diary.strawmelonjuice.com
   category: Logger-Diary Online
   modeoverride: base
   date:
