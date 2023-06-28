@@ -1,12 +1,12 @@
-Before my migration to this domain (or actually subdomain)  `blog.from-mar.com`, my views per month were about 7, but that had  already earned me some Google Adsense money. Wasn’t much, but it was  something.
+Before my migration to this domain (or actually subdomain)  `blog.strawmelonjuice.com`, my views per month were about 7, but that had  already earned me some Google Adsense money. Wasn’t much, but it was  something.
 
 ## The moving
 
-Ever since moving to here, my stats spiked! But no ads to be seen…  because google at first denied the existence of `blog.from-mar.com`.  They told me that a subdomain wasn’t valid for being revalidated (haha  ironic) its own, so `from-mar.com` had to be submitted, and I did.
+Ever since moving to here, my stats spiked! But no ads to be seen…  because google at first denied the existence of `blog.strawmelonjuice.com`.  They told me that a subdomain wasn’t valid for being revalidated (haha  ironic) its own, so `strawmelonjuice.com` had to be submitted, and I did.
 
-However, `from-mar.com` isn’t a web site, it’s just my domain that I merely have for it’s subdomains.
+However, `strawmelonjuice.com` isn’t a web site, it’s just my domain that I merely have for it’s subdomains.
 
-So yes indeed, Google rejected my revalidation and even worse, after  setting up a redirect from `from-mar.com` to `blog.from-mar.com` they  told me I was linking to content that wasn’t mine. As if I’m stealing my own blog’s content.
+So yes indeed, Google rejected my revalidation and even worse, after  setting up a redirect from `strawmelonjuice.com` to `blog.strawmelonjuice.com` they  told me I was linking to content that wasn’t mine. As if I’m stealing my own blog’s content.
 
 I’ve never been truly done with Google, but now I am. So I completely removed my domains off my Google Adsense account.
 

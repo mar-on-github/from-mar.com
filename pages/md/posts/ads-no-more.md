@@ -2,6 +2,6 @@ Ads. First [google ads, whom I had a lil quarrel with](/blog?p=posts/farewell-ga
 
 > Oh, by the by... Google marked [logger-diary.online](https://logger-diary.online) as passing for ads, *only to revoke that pass in three days after I actually turned on the ads.* 
 
-From now on, strawmelonjuice.nl and my other site adresses no longer allow ads. And I'm not planning on turning that back. It's done.
+From now on, strawmelonjuice.com and my other site adresses no longer allow ads. And I'm not planning on turning that back. It's done.
 
 <u>*Though,*</u> this does mean I'll be at the hands of your donations completely. So, you've heard this before, but [if you like my content, please consider supporting me](/?p=support).

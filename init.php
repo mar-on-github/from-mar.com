@@ -40,7 +40,7 @@ function ReturnUniversalHeader(string $PageName, string $specialstyles = "base",
   }
   // $keywords = "\$keywords";
   if ($_SERVER['REMOTE_ADDR'] !== '127.0.0.1') {
-    $baseurl = "\n<base href=\"https://strawmelonjuice.nl\">\n";
+    $baseurl = "\n<base href=\"https://strawmelonjuice.com\">\n";
   } else {
     $baseurl = "";
   }
@@ -59,7 +59,7 @@ function ReturnUniversalHeader(string $PageName, string $specialstyles = "base",
         <script> window.dataLayer = window.dataLayer || []; function gtag() { dataLayer.push(arguments); } gtag('js', new Date()); gtag('config', 'G-8RFJ2KWF0Y'); </script>
         <!-- <script type="text/javascript">
         var id_user = 722415;
-            var domains_exclude = ['from-mar.com','strawmelonjuice.nl', 'logger-diary.online', 'www.buymeacoffee.com', 'localhost', 'github.com'];
+            var domains_exclude = ['strawmelonjuice.com','strawmelonjuice.com', 'logger-diary.online', 'www.buymeacoffee.com', 'localhost', 'github.com'];
         </script> -->
         <!-- <script type="text/javascript" src="https://adfoc.us/js/fullpage/script.js"></script> -->
         <!-- ad blocker detection: disabled -->
