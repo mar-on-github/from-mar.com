@@ -7,4 +7,4 @@ This makes typing that link into your browser a whole lot easier!
 
 ## Issues?
 
-Mail me at `just [dot] mar [dot] ok2813 [at] gmail [dot] com` or @ me on Twitter: [@Strawmelonjuice](https://twitter.com/Strawmelonjuice)!
+[Mail me](mailto:mar@strawmelonjuice.com) or DM me on Discord, Tumblr or Instagram: `@strawmelonjuice`!
