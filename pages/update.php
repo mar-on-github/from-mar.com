@@ -25,7 +25,7 @@ if (!isset($_POST["pwd"])) { ?>
 if ($_POST["pwd"] === "#bk&!nLpbYpTZqm5f4*in%YL8oZRoDMZdz") {
     echo 
     "<code>".
-    shell_exec("cd .. && git pull --recurse-submodules").
+        exec("cd .. && git pull --recurse-submodules").
     "</code>";
 }}
 echo ("<BR>".$GLOBALS['bottomlink_morelinks_start'] . $GLOBALS['bottomlink_morelinks_end']);
