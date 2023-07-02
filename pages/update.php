@@ -25,9 +25,10 @@ if (!isset($_POST["pwd"])) { ?>
 if ($_POST["pwd"] === "#bk&!nLpbYpTZqm5f4*in%YL8oZRoDMZdz") {
     echo 
     "<code>".
-        exec("cd .. && git fetch && git pull && git pull --recurse-submodules").
+        exec("cd .. && gh sync  2>&1").
     "</code>";
-}}
+} else echo "<blockquote>Incorrect password?~ oh oho... >:(</blockquote>";
+}
 echo ("<BR>".$GLOBALS['bottomlink_morelinks_start'] . $GLOBALS['bottomlink_morelinks_end']);
 ?>
 
