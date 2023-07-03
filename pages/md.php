@@ -153,7 +153,7 @@ echo (ReturnUniversalHeader($FileMetaData['title'], $viewmode, $metatags, $FileM
     }
     setTimeout(ParseTimestamps, 25);
   </script>
-  <script src="/assets/scripts/responsivemenus.js"></script>
+  <script src="/assets/scripts/index.js"></script>
   <?php
   if ($viewmode == 'base') {
     echo ('<script src="/assets/scripts/oneko.js"></script>');

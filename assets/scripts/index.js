@@ -52,7 +52,7 @@ client.get('/accessibilityfilter', function (response) {
     switch (accessibilityfilter) {
         case 'contrast':
             document.body.style.filter = "contrast(1.75)";
-            document.body.style.backgroundColor = "white";
+            document.body.style.backgroundColor = "#a29191";
             document.getElementById("filtertoggle").innerHTML = "Greyscale";
             break;
         case 'grayscale':
@@ -76,7 +76,7 @@ function ToggleFilters() {
     switch (document.body.style.filter) {
         default:
             document.body.style.filter = "contrast(1.75)";
-            document.body.style.backgroundColor = "white";
+            document.body.style.backgroundColor = "#a29191";
             document.getElementById("filtertoggle").innerHTML = "Greyscale";
             xhttpw.open("GET", "/?filter=contrast");
             xhttpw.send();

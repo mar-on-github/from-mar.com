@@ -134,6 +134,6 @@ $uniheadertype = "blog";
   }
   setTimeout(ParseTimestamps, 25);
   </script>
-  <script src="/assets/scripts/responsivemenus.js"></script>
+  <script src="/assets/scripts/index.js"></script>
   </body>
 </html>

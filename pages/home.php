@@ -37,7 +37,7 @@ echo(ReturnUniversalHeader("Home","base"));
 
     document.getElementById("wishes").innerHTML = wishes;
   </script>
-  <script src="/assets/scripts/responsivemenus.js"></script>
+  <script src="/assets/scripts/index.js"></script>
   <!-- <script type="javascript"><?php //echo(file_get_contents('http://raw.githubusercontent.com/adryd325/oneko.js/main/oneko.js'). "\n\r");?></script> -->
   <script src="/assets/scripts/oneko.js"></script>
   </body>

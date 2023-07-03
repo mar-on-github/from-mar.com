@@ -21,7 +21,7 @@ header('Link: https://' . $_SERVER["HTTP_HOST"] . '/discord/; rel="canonical"');
     <div class="bottombar" id="mybottombar">
         <?php echo(ReturnMenuLinksFromJSON("bottom","discord")) ?>
     </div>
-    <script src="/assets/scripts/responsivemenus.js"></script>
+    <script src="/assets/scripts/index.js"></script>
 </body>
 
 </html>

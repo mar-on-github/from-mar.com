@@ -24,7 +24,7 @@ echo (ReturnUniversalHeader("Search - Stories By Mar 🤍", "blog"));
     <div class="bottombar" id="mybottombar">
         <?php echo (ReturnMenuLinksFromJSON("bottom", 1)) ?>
     </div>
-    <script src="/assets/scripts/responsivemenus.js"></script>
+    <script src="/assets/scripts/index.js"></script>
 </body>
 
 </html>
