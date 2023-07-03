@@ -154,6 +154,7 @@ echo (ReturnUniversalHeader($FileMetaData['title'], $viewmode, $metatags, $FileM
     setTimeout(ParseTimestamps, 25);
   </script>
   <script src="/assets/scripts/index.js"></script>
+  <script src="https://cdn.jsdelivr.net/gh/strawmelonjuice/hl-img.js@main/hl-img.min.js"></script>
   <?php
   if ($viewmode == 'base') {
     echo ('<script src="/assets/scripts/oneko.js"></script>');
