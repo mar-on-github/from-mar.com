@@ -55,7 +55,9 @@ function ReturnUniversalHeader(string $PageName, string $specialstyles = "base",
         {$StylesheetRefer}
         <meta name="robots" content="index, follow">
         <meta name="generator" content="from-mar.com.PHP">
-        <meta name="keywords" content="{$keywords}">{$baseurl}
+        <meta property="og:site_name" content="Strawmelonjuice dot com"/>
+        <!-- <meta name="keywords" content="{$keywords}"> -->
+        {$baseurl}
         <!-- START -->
         <script> window.dataLayer = window.dataLayer || []; function gtag() { dataLayer.push(arguments); } gtag('js', new Date()); gtag('config', 'G-8RFJ2KWF0Y'); </script>
         <!-- <script type="text/javascript">

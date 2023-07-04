@@ -10,107 +10,147 @@
 
 <url>
   <loc>https://strawmelonjuice.com/</loc>
-  <lastmod>2023-06-15T15:14:52+00:00</lastmod>
+  <lastmod>2023-07-04T12:16:59+00:00</lastmod>
   <priority>1.00</priority>
 </url>
 <url>
-  <loc>https://strawmelonjuice.com/pages/md.php?id=1</loc>
-  <lastmod>2023-06-15T15:14:52+00:00</lastmod>
+  <loc>https://strawmelonjuice.com/pages/?p=1</loc>
+  <lastmod>2023-07-04T12:16:59+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://strawmelonjuice.com/pages/md.php?id=2</loc>
-  <lastmod>2023-06-15T15:14:52+00:00</lastmod>
+  <loc>https://strawmelonjuice.com/pages/?p=2</loc>
+  <lastmod>2023-07-04T12:16:59+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://strawmelonjuice.com/blog/</loc>
-  <lastmod>2023-06-15T15:14:52+00:00</lastmod>
+  <loc>https://strawmelonjuice.com/?p=projects</loc>
+  <lastmod>2023-07-04T12:16:59+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://strawmelonjuice.com/?p=support</loc>
-  <lastmod>2023-06-15T15:14:52+00:00</lastmod>
+  <lastmod>2023-07-04T12:16:59+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://strawmelonjuice.com/?p=abt-site</loc>
-  <lastmod>2023-06-15T15:14:52+00:00</lastmod>
+  <lastmod>2023-07-04T12:16:59+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://strawmelonjuice.com/blog/</loc>
+  <lastmod>2023-07-04T12:16:59+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://strawmelonjuice.com/discord/</loc>
-  <lastmod>2023-06-15T15:14:52+00:00</lastmod>
+  <lastmod>2023-07-04T12:16:59+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://strawmelonjuice.com/search/</loc>
-  <lastmod>2023-06-15T15:14:52+00:00</lastmod>
+  <lastmod>2023-07-04T12:16:59+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://strawmelonjuice.com/blog?p=posts/art/mousemouse-3.2</loc>
+  <lastmod>2023-07-04T12:16:59+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://strawmelonjuice.com/blog?c=Art</loc>
+  <lastmod>2023-07-04T12:16:59+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://strawmelonjuice.com/blog?p=posts/ads-no-more</loc>
+  <lastmod>2023-07-04T12:16:59+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://strawmelonjuice.com/blog?c=Meta</loc>
+  <lastmod>2023-07-04T12:16:59+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://strawmelonjuice.com/blog?p=posts/LDo/230608</loc>
-  <lastmod>2023-06-15T15:14:52+00:00</lastmod>
+  <lastmod>2023-07-04T12:16:59+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://strawmelonjuice.com/?c=Logger-Diary%20Online</loc>
-  <lastmod>2023-06-15T15:14:52+00:00</lastmod>
+  <loc>https://strawmelonjuice.com/blog?c=Logger-Diary%20Online</loc>
+  <lastmod>2023-07-04T12:16:59+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://strawmelonjuice.com/blog?p=posts/kitton</loc>
-  <lastmod>2023-06-15T15:14:52+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://strawmelonjuice.com/?c=Meta</loc>
-  <lastmod>2023-06-15T15:14:52+00:00</lastmod>
+  <lastmod>2023-07-04T12:16:59+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://strawmelonjuice.com/blog?p=posts/wordpress-2023-05-30</loc>
-  <lastmod>2023-06-15T15:14:52+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://strawmelonjuice.com/blog?p=posts/LDo/moved-to-logger-diary.strawmelonjuice.com</loc>
-  <lastmod>2023-06-15T15:14:52+00:00</lastmod>
+  <lastmod>2023-07-04T12:16:59+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://strawmelonjuice.com/blog?p=posts/LDo/md</loc>
-  <lastmod>2023-06-15T15:14:52+00:00</lastmod>
+  <lastmod>2023-07-04T12:16:59+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://strawmelonjuice.com/blog?p=posts/farewell-gads</loc>
+  <lastmod>2023-07-04T12:16:59+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://strawmelonjuice.com/blog?p=posts/stories/leafornia-2</loc>
-  <lastmod>2023-06-15T15:14:52+00:00</lastmod>
+  <lastmod>2023-07-04T12:16:59+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://strawmelonjuice.com/?c=Story%20ideas:&#60;br&#62;%20Leafornia's%20travels</loc>
-  <lastmod>2023-06-15T15:14:52+00:00</lastmod>
+  <loc>https://strawmelonjuice.com/blog?c=Story%20ideas:&#60;br&#62;%20Leafornia's%20travels</loc>
+  <lastmod>2023-07-04T12:16:59+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://strawmelonjuice.com/blog?p=posts/stories/leafornia-1</loc>
-  <lastmod>2023-06-15T15:14:52+00:00</lastmod>
+  <lastmod>2023-07-04T12:16:59+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://strawmelonjuice.com/?p=discord/docs/rules</loc>
-  <lastmod>2023-06-15T15:14:52+00:00</lastmod>
+  <lastmod>2023-07-04T12:16:59+00:00</lastmod>
   <priority>0.51</priority>
 </url>
 <url>
   <loc>https://strawmelonjuice.com/dc/updates/</loc>
-  <lastmod>2023-06-15T15:14:52+00:00</lastmod>
+  <lastmod>2023-07-04T12:16:59+00:00</lastmod>
   <priority>0.51</priority>
 </url>
 <url>
   <loc>https://strawmelonjuice.com/pages/discord.php</loc>
-  <lastmod>2023-06-15T15:14:52+00:00</lastmod>
+  <lastmod>2023-07-04T12:16:59+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://strawmelonjuice.com/?c=Art</loc>
+  <lastmod>2023-07-04T12:16:59+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://strawmelonjuice.com/?c=Meta</loc>
+  <lastmod>2023-07-04T12:16:59+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://strawmelonjuice.com/?c=Logger-Diary%20Online</loc>
+  <lastmod>2023-07-04T12:16:59+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://strawmelonjuice.com/?c=Story%20ideas:&#60;br&#62;%20Leafornia's%20travels</loc>
+  <lastmod>2023-07-04T12:16:59+00:00</lastmod>
   <priority>0.51</priority>
 </url>
 

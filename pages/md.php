@@ -55,11 +55,12 @@ $navbartypes = "1";
 if ($viewmode == "discord") {
   $navbartypes = "discord";
 }
-if ((isset($MarkDownFileMetaData[$file]['h-image'])) and (!empty($MarkDownFileMetaData[$file]['h-image']))) {
+if ((isset($MarkDownFileMetaData[$file]['og-image'])) and (!empty($MarkDownFileMetaData[$file]['og-image']))) {
   $metatags = <<<END
+      <meta name="og:title" content="{$FileMetaData['title']}">
       <meta name="description" content="{$FileMetaData['short']}">
       <meta name="og:description" content="{$FileMetaData['short']}">
-      <meta name="og:image" content="{$MarkDownFileMetaData[$file]['h-image']}">
+      <meta name="og:image" content="{$MarkDownFileMetaData[$file]['og-image']}">
 END;
 } else {
   $metatags = <<<END

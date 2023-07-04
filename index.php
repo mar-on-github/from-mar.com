@@ -42,7 +42,7 @@ switch ($_SERVER['REQUEST_URI']) {
     case '/index/':
         require_once(__DIR__ . '/pages/home.php');
         die;
-    case '/pages/md.php?id=3':
+    case '/pages/?p=3':
     case '/blog/':
     case '/blog':
         require_once(__DIR__ . '/pages/blog.php');
@@ -55,7 +55,7 @@ switch ($_SERVER['REQUEST_URI']) {
     case '/blog/link-in-bio':
         $file = "2";
         require_once(__DIR__ . '/pages/md.php');
-        // header("Location: /pages/md.php?id=2");
+        // header("Location: /pages/?p=2");
         die;
     case '/about':
     case '/about/':
