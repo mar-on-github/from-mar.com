@@ -51,7 +51,7 @@ client.get('/accessibilityfilter', function (response) {
     console.log("filter:" + accessibilityfilter);
     switch (accessibilityfilter) {
         case 'contrast':
-            document.body.style.filter = "contrast(1.75)";
+            document.body.style.filter = "contrast(1.60)";
             document.body.style.backgroundColor = "#a29191";
             document.body.style.backgroundImage = "none";
             document.getElementById("filtertoggle").innerHTML = "Greyscale";
@@ -78,14 +78,14 @@ function ToggleFilters() {
     const xhttpw = new XMLHttpRequest();
     switch (document.body.style.filter) {
         default:
-            document.body.style.filter = "contrast(1.75)";
+            document.body.style.filter = "contrast(1.60)";
             document.body.style.backgroundColor = "#a29191";
             document.body.style.backgroundImage = "none";
             document.getElementById("filtertoggle").innerHTML = "Greyscale";
             xhttpw.open("GET", "/?filter=contrast");
             xhttpw.send();
             break;
-        case ("contrast(1.75)"):
+        case ("contrast(1.60)"):
             document.body.style.filter = "grayscale(1)";
             document.body.style.backgroundColor = "#FFF0";
             document.body.style.backgroundImage = "none";
