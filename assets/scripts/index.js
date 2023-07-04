@@ -53,15 +53,18 @@ client.get('/accessibilityfilter', function (response) {
         case 'contrast':
             document.body.style.filter = "contrast(1.75)";
             document.body.style.backgroundColor = "#a29191";
+            document.body.style.backgroundImage = "none";
             document.getElementById("filtertoggle").innerHTML = "Greyscale";
             break;
         case 'grayscale':
             document.body.style.filter = "grayscale(1)";
             document.body.style.backgroundColor = "#FFF0";
+            document.body.style.backgroundImage = "none";
             document.getElementById("filtertoggle").innerHTML = "Colorful";
             break;
         default:
             document.body.style.filter = "none";
+            document.body.style.backgroundImage = "";
             document.body.style.backgroundColor = "";
             document.getElementById("filtertoggle").innerHTML = "Contrast";
             break;
@@ -77,6 +80,7 @@ function ToggleFilters() {
         default:
             document.body.style.filter = "contrast(1.75)";
             document.body.style.backgroundColor = "#a29191";
+            document.body.style.backgroundImage = "none";
             document.getElementById("filtertoggle").innerHTML = "Greyscale";
             xhttpw.open("GET", "/?filter=contrast");
             xhttpw.send();
@@ -84,6 +88,7 @@ function ToggleFilters() {
         case ("contrast(1.75)"):
             document.body.style.filter = "grayscale(1)";
             document.body.style.backgroundColor = "#FFF0";
+            document.body.style.backgroundImage = "none";
             document.getElementById("filtertoggle").innerHTML = "Colorful";
             xhttpw.open("GET", "/?filter=grayscale");
             xhttpw.send();
@@ -91,6 +96,7 @@ function ToggleFilters() {
         case ("grayscale(1)"):
             document.body.style.filter = "none";
             document.body.style.backgroundColor = "";
+            document.body.style.backgroundImage = "";
             document.getElementById("filtertoggle").innerHTML = "Contrast";
             xhttpw.open("GET", "/?filter=none");
             xhttpw.send();

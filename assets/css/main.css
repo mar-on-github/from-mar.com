@@ -272,6 +272,7 @@ blockquote {
 
 body {
     background-color: #EEBCBC;
+    background-image: url('/assets/img/bgraster.png');
     font-family: 'Ubuntu', sans-serif;
     font-size: 14px;
     margin: 0;
