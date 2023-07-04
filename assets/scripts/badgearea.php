@@ -1,9 +1,9 @@
 <?php
 function badge($href = "", $src, $title, $alt) {
   if (!empty($href)) {
-  return "<img src='{$src}' alt='{$alt}' title=\"[Clickable] {$title}\" onclick=\"window.open('{$href}');\" class=\"badge clickable-badge\" loading=\"lazy\">\n";
+  return "<img src=\"{$src}\" alt=\"{$alt}\" title=\"[Clickable] {$title}\" onclick=\"window.open('{$href}');\" class=\"badge clickable-badge\" loading=\"lazy\">\n";
   } else {
-  return "<img src='{$src}' alt='{$alt}' title=\"{$title}\" class=\"badge\" loading=\"lazy\">\n";
+  return "<img src=\"{$src}\" alt=\"{$alt}\" title=\"{$title}\" class=\"badge\" loading=\"lazy\">\n";
   }
 }
 ?>
@@ -12,7 +12,7 @@ function badge($href = "", $src, $title, $alt) {
     <p>Badgies<?php imgmote("love3");?><small style="font-size: 8px">(in random order!)</small></p>
 <?php
     $badges = [
-    badge("https://yesterweb.org/no-to-web3/", "https://yesterweb.org/no-to-web3/img/roly-saynotoweb3.gif", "Crypto's ewie.", "badge saying \'Keep the web free, say no to web3\'"),
+    badge("https://yesterweb.org/no-to-web3/", "https://yesterweb.org/no-to-web3/img/roly-saynotoweb3.gif", "Crypto's ewie.", "badge saying 'Keep the web free, say no to web3'"),
     badge("https://minecraft.net/", "/assets/img/badges/minecraft.gif", "block game good", "minecraft"),
     badge("https://www.mozilla.org/nl/firefox/new/?redirect_source=firefox-com", "/assets/img/badges/getfirefox.gif", "GET FIREFOX!!", "Get Firefox"),
     badge("","/assets/img/badges/fucknazis.gif","FUCK NAZIS!","Fuck nazis"),
@@ -25,7 +25,7 @@ function badge($href = "", $src, $title, $alt) {
     badge("", "/assets/img/badges/feminism.gif", "intersectional feminism!", "feminism"),
     badge("https://php.net/","/assets/img/badges/php_copy1.gif", "This website runs on PHP8", "PHP powered"),
     badge("https://ubuntu.com/download/desktop/", "/assets/img/badges/ubuntubutton.png","Ubuntu is by far the most intuitive Linux distro, go try it!","Ubuntu"),
-    badge("", "/assets/img/badges/antinft.gif", "NFTs are thrash, and a perfect way to spend money on destroying the world.", "anti-nft\'s"),
+    badge("", "/assets/img/badges/antinft.gif", "NFTs are thrash, and a perfect way to spend money on destroying the world.", "anti-nft's"),
     badge("", "/assets/img/badges/nerd.gif", "nerd", "nerd"),
     badge("", "/assets/img/badges/beingaprincessisafulltimejob.gif","Being a princess is a full time job <3","Being a princess is a full time job"),
     badge("https://blinkies.cafe", "https://blinkies.cafe/b/display/blinkiesCafe-badge.gif", "blinkies.cafe | make your own blinkies!", "blinkies.cafe"),
