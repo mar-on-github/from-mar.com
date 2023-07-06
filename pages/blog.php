@@ -135,6 +135,6 @@ $uniheadertype = "blog";
   setTimeout(ParseTimestamps, 25);
   </script>
   <script src="/assets/scripts/index.js"></script>
-<script defer src="https://cdn.jsdelivr.net/gh/strawmelonjuice/hl-img.js@1.1.9.2/hl-img.js"></script>
+<script defer src="<?php echo($hlimg_ver); ?>"></script>
   </body>
 </html>

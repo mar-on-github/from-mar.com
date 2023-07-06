@@ -38,7 +38,7 @@ echo(ReturnUniversalHeader("Home","base"));
     document.getElementById("wishes").innerHTML = wishes;
   </script>
   <script src="/assets/scripts/index.js"></script>
-<script defer src="https://cdn.jsdelivr.net/gh/strawmelonjuice/hl-img.js@1.1.9.2/hl-img.js"></script>
+<script defer src="<?php echo($hlimg_ver); ?>"></script>
   <!-- <script type="javascript"><?php //echo(file_get_contents('http://raw.githubusercontent.com/adryd325/oneko.js/main/oneko.js'). "\n\r");?></script> -->
   <script src="/assets/scripts/oneko.js"></script>
   </body>
