@@ -1,10 +1,10 @@
 [
     {
-        "to": "/pages/?p=1",
+        "to": "/?p=1",
         "name": "<span class='emoji-block'>👋</span> About me"
     },
     {
-        "to": "/pages/?p=2",
+        "to": "/?p=2",
         "name": "<span class='emoji-block'>&#128206;</span> Links by me"
     },
     {
