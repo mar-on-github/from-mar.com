@@ -22,7 +22,7 @@ header('Link: https://' . $_SERVER["HTTP_HOST"] . '/discord/; rel="canonical"');
         <?php echo(ReturnMenuLinksFromJSON("bottom","discord")) ?>
     </div>
     <script src="/assets/scripts/index.js"></script>
-<script src="https://cdn.jsdelivr.net/gh/strawmelonjuice/hl-img.js@latest/hl-img.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/gh/strawmelonjuice/hl-img.js@1.1.9.2/hl-img.js"></script>
 </body>
 
 </html>
