@@ -19,6 +19,11 @@ $FileMetaData['short'] = $MarkDownFileMetaData[$file]["short"];
 $FileMetaData['type'] = $MarkDownFileMetaData[$file]["type"];
 $FileMetaData['posted'] = $MarkDownFileMetaData[$file]["date"]["posted"];
 $FileMetaData['edited'] = $MarkDownFileMetaData[$file]["date"]["edited"];
+if ($MarkDownFileMetaData[$file]["author"] != null) {
+  $FileMetaData['author'] = $MarkDownFileMetaData[$file]["author"];
+} else {
+  $FileMetaData['author'] = "Mar (@strawmelonjuice)";
+}
 if ($MarkDownFileMetaData[$file]["tags"] != null) {
 $FileMetaData['tags'] = $MarkDownFileMetaData[$file]["tags"];
 } else {
@@ -61,11 +66,16 @@ if ((isset($MarkDownFileMetaData[$file]['og-image'])) and (!empty($MarkDownFileM
       <meta name="description" content="{$FileMetaData['short']}">
       <meta name="og:description" content="{$FileMetaData['short']}">
       <meta name="og:image" content="{$MarkDownFileMetaData[$file]['og-image']}">
+      <meta name="author" content="{$FileMetaData['author']}">
+      <meta name="og:author" content="{$FileMetaData['author']}">
 END;
 } else {
   $metatags = <<<END
-    <meta name="description" content="{$FileMetaData['short']}">
-    <meta name="og:description" content="{$FileMetaData['short']}">
+      <meta name="og:title" content="{$FileMetaData['title']}">
+      <meta name="description" content="{$FileMetaData['short']}">
+      <meta name="og:description" content="{$FileMetaData['short']}">
+      <meta name="author" content="{$FileMetaData['author']}">
+      <meta name="og:author" content="{$FileMetaData['author']}">
 END;
 }
 echo (ReturnUniversalHeader($FileMetaData['title'], $viewmode, $metatags, $FileMetaData['tags']));
@@ -91,8 +101,8 @@ echo (ReturnUniversalHeader($FileMetaData['title'], $viewmode, $metatags, $FileM
       echo ($FileMetaData['title']); ?>
     </p>
     <ul>
-      <li>
-        <?php echo ($FileMetaData['type']); ?>
+      <li>Author: 
+        <?php echo ($FileMetaData['author']); ?>
       </li>
       <li>Posted: <span class="unparsedtimestamp">
           <?php echo ($FileMetaData['posted']); ?>
