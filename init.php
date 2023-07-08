@@ -125,5 +125,5 @@ function imgmote($name)
   }
   echo '<img src="' . $src . '" max-widht="5px" max-height="5px" class="imgmote" alt="imgmote named ' . $name . '"  loading=\"lazy\">';
 }
-$hlimg_ver = "https://cdn.jsdelivr.net/gh/strawmelonjuice/hl-img.js@1.1.10.0/hl-img.min.js";
+$hlimg_ver = "https://cdn.jsdelivr.net/gh/strawmelonjuice/hl-img.js@1.1.10.1/hl-img.min.js";
 require_once __DIR__ . '/vendor/autoload.php';
