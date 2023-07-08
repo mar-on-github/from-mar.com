@@ -207,7 +207,7 @@ code {
     font-family: 'Ubuntu Mono', monospace
 }
 
-div.content {
+main.content {
     border-radius: 0px;
     height: 600px;
     /* height: 350px; */
@@ -388,7 +388,7 @@ ul.timeline {
         transition: .3s
     }
 
-    div.content {
+    main.content {
         margin-left: 0;
         position: relative
     }
@@ -785,7 +785,7 @@ ul.timeline {
         transition: .3s
     }
 
-    div.content {
+    main.content {
         margin-left: 0;
         position: relative
     }
@@ -852,7 +852,7 @@ ul.timeline {
         padding: 16px;
     }
 
-    div.content {
+    main.content {
         margin-left: 0;
         position: relative;
 

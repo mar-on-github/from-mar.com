@@ -345,7 +345,7 @@ div.derivi-twivi {
     cursor: pointer;
 }
 
-div.content {
+main.content {
     border-radius: 5px;
     min-height: fit-content;
     max-height: 80%;
@@ -359,7 +359,7 @@ div.content {
 }
 
 @media screen and (orientation:landscape) {
-    div.content {
+    main.content {
         margin-left: 400px;
         margin-right: 80px;
     }
@@ -532,7 +532,7 @@ ul.timeline {
         transition: .3s
     }
 
-    div.content {
+    main.content {
         margin-left: 0;
         position: relative
     }
@@ -927,7 +927,7 @@ ul.timeline {
         transition: .3s
     }
 
-    div.content {
+    main.content {
         margin-left: 0;
         position: relative
     }
@@ -994,7 +994,7 @@ ul.timeline {
         padding: 16px;
     }
 
-    div.content {
+    main.content {
         margin-left: 0;
         position: relative;
 
@@ -1157,7 +1157,7 @@ div.bottombar {
     background-image: linear-gradient(to right, #a9c3bc, #EEDEAB)
 }
 
-div.content {
+main.content {
     /* background-image: linear-gradient(#C8ECB5, #eedeab80) */
     background:
             url(/assets/img/strawberrycorners.webp) left -106px top -83px no-repeat,

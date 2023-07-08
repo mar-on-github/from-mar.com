@@ -11,14 +11,14 @@ echo(ReturnUniversalHeader("Home","base"));
       include(__DIR__. "/../assets/scripts/badgearea.php");
       ?>
     </div>
-    <div class="content" id="pagecontent" align="center">
+    <main class="content" id="pagecontent" align="center">
 
       <h1>Good <span id="wishes">day</span>!</h1>
       <?php
       $Parsedown = new Parsedown();
       echo $Parsedown->text(file_get_contents(__DIR__ . "/md/home.md"));
       echo($GLOBALS['bottomlink_morelinks_start'] . $GLOBALS['bottomlink_morelinks_end']);?>
-    </div>
+    </main>
     <div class="bottombar" id="mybottombar">
       <?php echo(ReturnMenuLinksFromJSON("bottom"))?>
     </div>

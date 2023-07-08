@@ -34,10 +34,10 @@ if ($FileMetaData['type'] !== 'page') {
   $FileMetaData['category'] = $MarkDownFileMetaData[$file]["category"];
 }
 if ((isset($MarkDownFileMetaData[$file]['content'])) and (!empty($MarkDownFileMetaData[$file]['content']))) {
-  $PageContent = $Parsedown->text($MarkDownFileMetaData[$file]["content"]);
+  $ContentOnPage = $Parsedown->text($MarkDownFileMetaData[$file]["content"]);
 } else {
   if (file_exists(__DIR__ . "/md/" . $file . ".md")) {
-    $PageContent = $Parsedown->text(file_get_contents(__DIR__ . "/md/" . $file . ".md"));
+    $ContentOnPage = $Parsedown->text(file_get_contents(__DIR__ . "/md/" . $file . ".md"));
   } else {
     $FileMetaData = array(
       "title" => "four-oh-four 😮 `404`",
@@ -47,7 +47,7 @@ if ((isset($MarkDownFileMetaData[$file]['content'])) and (!empty($MarkDownFileMe
       "wasedited" => false,
     );
     header("HTTP/1.0 404 Not Found");
-    $PageContent = $Parsedown->text("Could not find that...\n\rMaybe retry typing the correct adress? Or just use a link!\n\r\n\r\n\rHere, take [this link home](/)!");
+    $ContentOnPage = $Parsedown->text("Could not find that...\n\rMaybe retry typing the correct adress? Or just use a link!\n\r\n\r\n\rHere, take [this link home](/)!");
   }
 }
 $viewmode = 'base';
@@ -126,7 +126,7 @@ echo (ReturnUniversalHeader($FileMetaData['title'], $viewmode, $metatags, $FileM
       setTimeout(() => { (document.getElementsByClassName('pageinfosidebar')[0]).style.display = "none"; }, '1700');
     }
   </script>
-  <div class="content" id="pagecontent" align="center">
+  <main class="content" id="pagecontent" align="center">
     <?php
     $titledisplay = true;
     if ((isset($MarkDownFileMetaData[$file]['title-display']))) {
@@ -135,7 +135,7 @@ echo (ReturnUniversalHeader($FileMetaData['title'], $viewmode, $metatags, $FileM
     if ($titledisplay) {
       echo "<h1>" . ($Parsedown->line(($FileMetaData['title']))) . "</h1>";
     }
-    echo $PageContent;
+    echo $ContentOnPage;
     if (!empty($file)) {
       switch ($viewmode) {
         case 'blog':
@@ -151,7 +151,7 @@ echo (ReturnUniversalHeader($FileMetaData['title'], $viewmode, $metatags, $FileM
     }
     ?>
 
-  </div>
+  </main>
   <div class="bottombar" id="mybottombar">
     <?php echo (ReturnMenuLinksFromJSON("bottom", $navbartypes)) ?>
   </div>

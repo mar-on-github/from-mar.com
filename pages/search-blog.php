@@ -12,7 +12,7 @@ echo (ReturnUniversalHeader("Search - Stories By Mar 🤍", "blog"));
         <?php echo (ReturnMenuLinksFromJSON("side", 1)) ?>
         <img src="/assets/img/sbm_2019style_1080×1080.png" id="sbmheaderlogo">
     </div>
-    <div class="content" id="pagecontent" align="center" style="max-height: 70vh">
+    <main class="content" id="pagecontent" align="center" style="max-height: 70vh">
         <h1>Mar's blog! 🤍</h1>
         <h2>Search my blog</h2>
             <FORM METHOD="get" ACTION="/search">
@@ -20,7 +20,7 @@ echo (ReturnUniversalHeader("Search - Stories By Mar 🤍", "blog"));
                 <INPUT TYPE="text" NAME="s" SIZE="35" required> &nbsp; <button TYPE="submit" VALUE="Search" style="background-color: #ffffff00; border: none;"><img class="search-submit-button" src="/assets/img/search.svg" alt="Search"
                 title="Search through posts on Mar's blog"></button>
             </FORM>
-    </div>
+    </main>
     <div class="bottombar" id="mybottombar">
         <?php echo (ReturnMenuLinksFromJSON("bottom", 1)) ?>
     </div>
