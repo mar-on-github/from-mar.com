@@ -11,7 +11,7 @@ echo(ReturnUniversalHeader("Home","base"));
       include(__DIR__. "/../assets/scripts/badgearea.php");
       ?>
     </div>
-    <main class="content" id="pagecontent" align="center">
+    <main class="content" id="pagecontent" >
 
       <h1>Good <span id="wishes">day</span>!</h1>
       <?php

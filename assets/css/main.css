@@ -297,6 +297,7 @@ div.derivi-twivi {
     max-width: 70%;
     border-radius: 15px;
     padding: 10px;
+    display: inline-block;
     align-self: center;
 }
 

@@ -21,8 +21,12 @@ $FileMetaData['posted'] = $MarkDownFileMetaData[$file]["date"]["posted"];
 $FileMetaData['edited'] = $MarkDownFileMetaData[$file]["date"]["edited"];
 if ($MarkDownFileMetaData[$file]["author"] != null) {
   $FileMetaData['author'] = $MarkDownFileMetaData[$file]["author"];
+  if ($MarkDownFileMetaData[$file]["authorthumbnail"] != null) {
+    $FileMetaData['authorthumbnail'] = '<hl-img src="'. $MarkDownFileMetaData[$file]["authorthumbnail"] .'" style="height: 18px" alt="small Mar self-portrait"><img img src="'. $MarkDownFileMetaData[$file]["authorthumbnail"] .'" height="18px" alt="small Mar self-portrait"></hl-img>';
+  }
 } else {
   $FileMetaData['author'] = "Mar (@strawmelonjuice)";
+  $FileMetaData['authorthumbnail'] = '<hl-img src="https://avatars.githubusercontent.com/u/101558380?s=400&u=aa8f776b3e11f02130575d1b46851cca05a0c981&v=4" style="height: 18px" alt="small Mar self-portrait"><img img src="https://avatars.githubusercontent.com/u/101558380?s=400&u=aa8f776b3e11f02130575d1b46851cca05a0c981&v=4" height="18px" alt="small Mar self-portrait"></hl-img>';
 }
 if ($MarkDownFileMetaData[$file]["tags"] != null) {
 $FileMetaData['tags'] = $MarkDownFileMetaData[$file]["tags"];
@@ -92,7 +96,7 @@ echo (ReturnUniversalHeader($FileMetaData['title'], $viewmode, $metatags, $FileM
       include(__DIR__ . "/../assets/scripts/badgearea.php");
     } ?>
   </div>
-  <div class="pageinfosidebar" onclick="HidePageInfo()" onmouseover="setTimeout(() => {HidePageInfo();}, '500');">
+  <div class="pageinfosidebar">
     <p class="pageinfo-title">
       <?php
       if ($viewmode == 'base') {
@@ -102,7 +106,7 @@ echo (ReturnUniversalHeader($FileMetaData['title'], $viewmode, $metatags, $FileM
     </p>
     <ul>
       <li>Author: 
-        <?php echo ($FileMetaData['author']); ?>
+        <?php echo ($FileMetaData['authorthumbnail'] .$FileMetaData['author']); ?>
       </li>
       <li>Posted: <span class="unparsedtimestamp">
           <?php echo ($FileMetaData['posted']); ?>
@@ -120,13 +124,24 @@ echo (ReturnUniversalHeader($FileMetaData['title'], $viewmode, $metatags, $FileM
     </p>
   </div>
   <script>
+    function makehideable() {
+      (document.getElementsByClassName('pageinfosidebar')[0]).setAttribute("onmouseover", "setTimeout(() => {HidePageInfo();}, '1000');");
+      (document.getElementsByClassName('pageinfosidebar')[0]).setAttribute("onclick", "HidePageInfo();");
+    }
+    function showpageinfo() {
+      (document.getElementsByClassName('pageinfosidebar')[0]).style.opacity = "0%";
+      (document.getElementsByClassName('pageinfosidebar')[0]).style.transition = "all 3s ease-out";
+      setTimeout(() => { (document.getElementsByClassName('pageinfosidebar')[0]).style.opacity = "100%"; }, '3000');
+      setTimeout(makehideable(), '4000');
+    }
+    showpageinfo();
     function HidePageInfo() {
       (document.getElementsByClassName('pageinfosidebar')[0]).style.transition = "all 1.5s ease-out";
       (document.getElementsByClassName('pageinfosidebar')[0]).style.opacity = "0%";
       setTimeout(() => { (document.getElementsByClassName('pageinfosidebar')[0]).style.display = "none"; }, '1700');
     }
   </script>
-  <main class="content" id="pagecontent" align="center">
+  <main class="content" id="pagecontent" style="justify-content: center">
     <?php
     $titledisplay = true;
     if ((isset($MarkDownFileMetaData[$file]['title-display']))) {

@@ -43,7 +43,7 @@ $uniheadertype = "blog";
         (document.getElementsByClassName('pageinfosidebar')[0]).style.display = "none";
       }
     </script>
-    <main class="content" id="pagecontent" align="center" style="max-height: 70vh">
+    <main class="content" id="pagecontent"  style="max-height: 70vh">
     <?php
     if ($filtercat != "discord") {
     echo <<<END
