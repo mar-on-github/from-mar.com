@@ -70,3 +70,6 @@ blockquote {
 main {
     text-align: center;
 }
+@media (orientation: landscape) {.notdisplayedinportrait {
+    display: none;
+}}

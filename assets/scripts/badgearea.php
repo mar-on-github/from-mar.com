@@ -30,6 +30,7 @@ function badge($href = "", $src, $title, $alt) {
     badge("", "/assets/img/badges/beingaprincessisafulltimejob.gif","Being a princess is a full time job <3","Being a princess is a full time job"),
     badge("https://blinkies.cafe", "https://blinkies.cafe/b/display/blinkiesCafe-badge.gif", "blinkies.cafe | make your own blinkies!", "blinkies.cafe"),
     badge("/assets/img/badges/blinkiesCafe-xD.gif", "/assets/img/badges/blinkiesCafe-xD.gif", "This page works better on a computer than on a smartphone :3", "This site works better on a computer than on a smartphone :3"),
+    // "<hl-img src=\"/assets/img/badges/blinkiesCafe-xD.gif\" alt=\"This site works better on a computer than on a smartphone :3\" title=\"[Clickable] This page works better on a computer than on a smartphone :3\" onclick=\"window.open('/assets/img/badges/blinkiesCafe-xD.gif');\" class=\"badge clickable-badge\" loading=\"lazy\"></hl-img>",
     ];
 
     shuffle($badges);

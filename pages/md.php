@@ -22,11 +22,11 @@ $FileMetaData['edited'] = $MarkDownFileMetaData[$file]["date"]["edited"];
 if ($MarkDownFileMetaData[$file]["author"] != null) {
   $FileMetaData['author'] = $MarkDownFileMetaData[$file]["author"];
   if ($MarkDownFileMetaData[$file]["authorthumbnail"] != null) {
-    $FileMetaData['authorthumbnail'] = '<hl-img src="'. $MarkDownFileMetaData[$file]["authorthumbnail"] .'" style="height: 18px" alt="small Mar self-portrait"><img img src="'. $MarkDownFileMetaData[$file]["authorthumbnail"] .'" height="18px" alt="small Mar self-portrait"></hl-img>';
+    $FileMetaData['authorthumbnail'] = '<hl-img src="'. $MarkDownFileMetaData[$file]["authorthumbnail"] .'" style="height: 18px" alt="Author thumbnail" id="authorthumbnail"><img img src="'. $MarkDownFileMetaData[$file]["authorthumbnail"] .'" height="18px" alt="Author thumbnail"></hl-img>';
   }
 } else {
   $FileMetaData['author'] = "Mar (@strawmelonjuice)";
-  $FileMetaData['authorthumbnail'] = '<hl-img src="https://avatars.githubusercontent.com/u/101558380?s=400&u=aa8f776b3e11f02130575d1b46851cca05a0c981&v=4" style="height: 18px" alt="small Mar self-portrait"><img img src="https://avatars.githubusercontent.com/u/101558380?s=400&u=aa8f776b3e11f02130575d1b46851cca05a0c981&v=4" height="18px" alt="small Mar self-portrait"></hl-img>';
+  $FileMetaData['authorthumbnail'] = '<hl-img src="https://avatars.githubusercontent.com/u/101558380?s=400&u=aa8f776b3e11f02130575d1b46851cca05a0c981&v=4" style="height: 18px" alt="Author thumbnail" id="authorthumbnail"><img img src="https://avatars.githubusercontent.com/u/101558380?s=400&u=aa8f776b3e11f02130575d1b46851cca05a0c981&v=4" height="18px" alt="Author thumbnail"></hl-img>';
 }
 if ($MarkDownFileMetaData[$file]["tags"] != null) {
 $FileMetaData['tags'] = $MarkDownFileMetaData[$file]["tags"];
@@ -96,7 +96,7 @@ echo (ReturnUniversalHeader($FileMetaData['title'], $viewmode, $metatags, $FileM
       include(__DIR__ . "/../assets/scripts/badgearea.php");
     } ?>
   </div>
-  <div class="pageinfosidebar">
+  <div class="pageinfosidebar" style="opacity: 15%">
     <p class="pageinfo-title">
       <?php
       if ($viewmode == 'base') {
@@ -123,24 +123,7 @@ echo (ReturnUniversalHeader($FileMetaData['title'], $viewmode, $metatags, $FileM
       <?php echo ($FileMetaData['short']); ?>
     </p>
   </div>
-  <script>
-    function makehideable() {
-      (document.getElementsByClassName('pageinfosidebar')[0]).setAttribute("onmouseover", "setTimeout(() => {HidePageInfo();}, '1000');");
-      (document.getElementsByClassName('pageinfosidebar')[0]).setAttribute("onclick", "HidePageInfo();");
-    }
-    function showpageinfo() {
-      (document.getElementsByClassName('pageinfosidebar')[0]).style.opacity = "0%";
-      (document.getElementsByClassName('pageinfosidebar')[0]).style.transition = "all 3s ease-out";
-      setTimeout(() => { (document.getElementsByClassName('pageinfosidebar')[0]).style.opacity = "100%"; }, '3000');
-      setTimeout(makehideable(), '4000');
-    }
-    showpageinfo();
-    function HidePageInfo() {
-      (document.getElementsByClassName('pageinfosidebar')[0]).style.transition = "all 1.5s ease-out";
-      (document.getElementsByClassName('pageinfosidebar')[0]).style.opacity = "0%";
-      setTimeout(() => { (document.getElementsByClassName('pageinfosidebar')[0]).style.display = "none"; }, '1700');
-    }
-  </script>
+  <script src="/assets/scripts/pageinfo.js"></script>
   <main class="content" id="pagecontent" style="justify-content: center">
     <?php
     $titledisplay = true;
@@ -170,7 +153,7 @@ echo (ReturnUniversalHeader($FileMetaData['title'], $viewmode, $metatags, $FileM
   <div class="bottombar" id="mybottombar">
     <?php echo (ReturnMenuLinksFromJSON("bottom", $navbartypes)) ?>
   </div>
-  <script lang="javascript">
+  <script type="text/javascript">
     function ParseTimestamps() {
       var elements = document.getElementsByClassName('unparsedtimestamp');
       for (var i = 0, length = elements.length; i < length; i++) {
@@ -189,13 +172,12 @@ echo (ReturnUniversalHeader($FileMetaData['title'], $viewmode, $metatags, $FileM
     setTimeout(ParseTimestamps, 25);
   </script>
   <script src="/assets/scripts/index.js"></script>
-  <script defer src="<?php echo($hlimg_ver); ?>"></script>
+  <?php echo($hlimg_script); ?>
   <?php
   if ($viewmode == 'base') {
     echo ('<script src="/assets/scripts/oneko.js"></script>');
   }
   ?>
-  </script>
 </body>
 
 </html>

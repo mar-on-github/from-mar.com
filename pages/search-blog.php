@@ -25,7 +25,7 @@ echo (ReturnUniversalHeader("Search - Stories By Mar 🤍", "blog"));
         <?php echo (ReturnMenuLinksFromJSON("bottom", 1)) ?>
     </div>
     <script src="/assets/scripts/index.js"></script>
-<script defer src="<?php echo($hlimg_ver); ?>"></script>
+<?php echo($hlimg_script); ?>
 </body>
 
 </html>
