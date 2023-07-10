@@ -132,6 +132,6 @@ const hlimg_options = {
   styling_imageshow_zIndex: 9000,
 }
 </script>
-<script defer src="https://cdn.jsdelivr.net/gh/strawmelonjuice/hl-img.js@1.1.10.2/hl-img.js"></script>
+<script defer src="https://cdn.jsdelivr.net/gh/strawmelonjuice/hl-img.js@1.1.10.3/hl-img.js"></script>
 END;
 require_once __DIR__ . '/vendor/autoload.php';
