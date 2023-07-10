@@ -73,7 +73,7 @@ function ReturnUniversalHeader(string $PageName, string $specialstyles = "base",
         <!-- instead, hope people donate. I rlly do, can't afford this fucking site without ad revenue nor donations -->
         <script data-name="BMC-Widget" data-cfasync="false" src="https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js" data-id="JustMarOK" data-description="Support me on Buy me a coffee!" data-message="" data-color="#FF813F" data-position="left" data-x_margin="10" data-y_margin="30"></script>
         <!-- END -->
-        <script src="https://cdn.jsdelivr.net/gh/jquery/jquery@3/dist/jquery.min.js"></script>
+        <script src="/node_modules/jquery/dist/jquery.min.js"></script>
         <link rel="stylesheet" href="/assets/css/jquery.mCustomScrollbar.css">
         <script src="/assets/scripts/jquery.mCustomScrollbar.concat.min.js"></script>
         <script>
@@ -138,6 +138,6 @@ const hlimg_options = {
   styling_imageshow_zIndex: 9000,
 }
 </script>
-<script defer src="https://cdn.jsdelivr.net/gh/strawmelonjuice/hl-img.js@1.1.10.3/hl-img.js"></script>
+<script defer src="/node_modules/hl-img/hl-img.js"></script>
 END;
 require_once __DIR__ . '/vendor/autoload.php';

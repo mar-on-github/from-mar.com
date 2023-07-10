@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "hl-img": "^1.10.3",
+    "jquery": "^3.7.0"
+  }
+}
