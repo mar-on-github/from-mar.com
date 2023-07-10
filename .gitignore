@@ -107,3 +107,6 @@ dist
 
 # TernJS port file
 .tern-port
+
+# Dev and prod use different names
+package-lock.json
