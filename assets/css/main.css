@@ -453,7 +453,7 @@ ul.timeline {
     padding: 1px 16px
 }
 
-@media screen and (max-width: 600px) {
+@media (orientation: portrait), (max-width: 800px) {
     #main {
         padding: 16px;
         transition: margin-left .5s
@@ -849,7 +849,7 @@ ul.timeline {
     padding: 1px 16px
 }
 
-@media screen and (max-width: 600px) {
+@media (orientation: portrait), (max-width: 800px) {
     #main {
         padding: 16px;
         transition: margin-left .5s
@@ -921,7 +921,7 @@ ul.timeline {
     }
 }
 
-@media screen and (max-width: 600px) {
+@media (orientation: portrait), (max-width: 800px) {
     .bottombar a:not(.icon, .themeswitcher) {
         display: none;
     }
