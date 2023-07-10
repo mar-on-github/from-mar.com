@@ -193,7 +193,7 @@ ENDOFSTYLE;
     setTimeout(ParseTimestamps, 25);
   </script>
   <script src="/assets/scripts/index.js"></script>
-  <?php echo ($scrollbarscript); ?>
+  <script src="/assets/scripts/scrollbars.js"></script>
   <?php echo ($hlimg_script); ?>
   <?php
   if ($viewmode == 'base') {

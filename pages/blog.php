@@ -47,7 +47,7 @@ echo (ReturnUniversalHeader("Stories By Mar 🤍", $uniheadertype));
       (document.getElementsByClassName('pageinfosidebar')[0]).style.display = "none";
     }
   </script>
-  <main class="content mCustomScrollbar" id="blogscroll-pagecontent">
+  <main class="content" id="blogscroll-pagecontent">
     <?php
     if ($filtercat != "discord") {
       echo <<<END
@@ -161,7 +161,7 @@ echo (ReturnUniversalHeader("Stories By Mar 🤍", $uniheadertype));
     setTimeout(ParseTimestamps, 25);
   </script>
   <script src="/assets/scripts/index.js"></script>
-  <?php echo ($scrollbarscript); ?>
+  <script src="/assets/scripts/scrollbars.js"></script>
 <?php echo ($hlimg_script); ?>
 </body>
 

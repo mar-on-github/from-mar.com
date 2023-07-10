@@ -37,7 +37,7 @@ echo (ReturnUniversalHeader("Search - Stories By Mar 🤍", "blog"));
         <?php echo (ReturnMenuLinksFromJSON("bottom", 1)) ?>
     </div>
     <script src="/assets/scripts/index.js"></script>
-    <?php echo ($scrollbarscript); ?>
+    <script src="/assets/scripts/scrollbars.js"></script>
 <?php echo ($hlimg_script); ?>
 </body>
 

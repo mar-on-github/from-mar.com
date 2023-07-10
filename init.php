@@ -76,6 +76,9 @@ function ReturnUniversalHeader(string $PageName, string $specialstyles = "base",
         <script src="https://cdn.jsdelivr.net/gh/jquery/jquery@3/dist/jquery.min.js"></script>
         <link rel="stylesheet" href="/assets/css/jquery.mCustomScrollbar.css">
         <script src="/assets/scripts/jquery.mCustomScrollbar.concat.min.js"></script>
+        <script>
+          const viewmode = '{$specialstyles}';
+        </script>
   </head>
 
 EOD;
@@ -128,22 +131,7 @@ function imgmote($name)
   }
   echo '<img src="' . $src . '" max-widht="5px" max-height="5px" class="imgmote" alt="imgmote named ' . $name . '"  loading=\"lazy\">';
 }
-$scrollbarscript = <<<STOP
-<script>
-    (function($){
-        $(window).on("load",function(){
-            $("main.content").mCustomScrollbar({
-              theme:"rounded-dots-dark",
-              // theme:"dark",
-              alwaysShowScrollbar: 0,
-              scrollbarPosition: "outside",
-              mouseWheel:{ enable: true,
-                scrollAmount: 300, },
-            });
-        });
-    })(jQuery);
-</script>
-STOP;
+
 $hlimg_script = <<<END
 <script type="text/javascript">
 const hlimg_options = {
