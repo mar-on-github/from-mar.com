@@ -73,7 +73,10 @@ function ReturnUniversalHeader(string $PageName, string $specialstyles = "base",
         <!-- instead, hope people donate. I rlly do, can't afford this fucking site without ad revenue nor donations -->
         <script data-name="BMC-Widget" data-cfasync="false" src="https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js" data-id="JustMarOK" data-description="Support me on Buy me a coffee!" data-message="" data-color="#FF813F" data-position="left" data-x_margin="10" data-y_margin="30"></script>
         <!-- END -->
-    </head>
+        <script src="https://cdn.jsdelivr.net/gh/jquery/jquery@3/dist/jquery.min.js"></script>
+        <link rel="stylesheet" href="/assets/css/jquery.mCustomScrollbar.css">
+        <script src="/assets/scripts/jquery.mCustomScrollbar.concat.min.js"></script>
+  </head>
 
 EOD;
 }
@@ -125,7 +128,22 @@ function imgmote($name)
   }
   echo '<img src="' . $src . '" max-widht="5px" max-height="5px" class="imgmote" alt="imgmote named ' . $name . '"  loading=\"lazy\">';
 }
-
+$scrollbarscript = <<<STOP
+<script>
+    (function($){
+        $(window).on("load",function(){
+            $("main.content").mCustomScrollbar({
+              theme:"rounded-dots-dark",
+              // theme:"dark",
+              alwaysShowScrollbar: 0,
+              scrollbarPosition: "outside",
+              mouseWheel:{ enable: true,
+                scrollAmount: 300, },
+            });
+        });
+    })(jQuery);
+</script>
+STOP;
 $hlimg_script = <<<END
 <script type="text/javascript">
 const hlimg_options = {

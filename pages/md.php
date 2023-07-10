@@ -87,6 +87,27 @@ echo (ReturnUniversalHeader($FileMetaData['title'], $viewmode, $metatags, $FileM
 ?>
 
 <body class="body">
+  <?php
+  if ($FileMetaData['type'] == "post") {
+  echo <<<ENDOFSTYLE
+  <img class="search-button" onclick="window.open('/search/', '_self')" src="/assets/img/svg/search.svg" alt="Search" title="Search through posts on Mar's blog">
+  <style>
+  .search-button {
+    border-radius: 50px;
+    border: solid 2px red;
+    position: fixed;
+    right: 45px;
+    top: 45px;
+    width: 45px;
+    height: 45px;
+    background-color: #f1dfc7cb;
+    cursor: pointer;
+    padding: 7.5px;
+  }
+  </style>
+ENDOFSTYLE;
+  }
+  ?>
   <button class="openbtn" onclick="openNav()">☰</button>
   <div class="sidebar" id="mySidebar"><a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
     <?php echo (ReturnMenuLinksFromJSON("side", $navbartypes)) ?>
@@ -172,7 +193,8 @@ echo (ReturnUniversalHeader($FileMetaData['title'], $viewmode, $metatags, $FileM
     setTimeout(ParseTimestamps, 25);
   </script>
   <script src="/assets/scripts/index.js"></script>
-  <?php echo($hlimg_script); ?>
+  <?php echo ($scrollbarscript); ?>
+  <?php echo ($hlimg_script); ?>
   <?php
   if ($viewmode == 'base') {
     echo ('<script src="/assets/scripts/oneko.js"></script>');

@@ -18,7 +18,7 @@
   type: post
   og-image: /assets/img/media/art/MM2.webp
   title-display: true
-  modeoverride: base
+  # modeoverride: base
   date:
     posted: 1688332202
     edited: 1688332202

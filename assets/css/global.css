@@ -73,3 +73,11 @@ main {
 @media (orientation: landscape) {.notdisplayedinportrait {
     display: none;
 }}
+main.content {
+    min-height: fit-content;
+    max-height: 80%;
+    margin-bottom: 100px;
+    overflow: auto;
+    padding: 30px;
+    z-index: 20;
+}
