@@ -22,7 +22,7 @@
       (document.getElementsByClassName('pageinfosidebar')[0]).style.transition = "all 1.5s ease-out";
       if (permanent) {
       (document.getElementsByClassName('pageinfosidebar')[0]).style.opacity = "0%";
-      setTimeout(() => { (document.getElementsByClassName('pageinfosidebar')[0]).style.display = ""; }, '1700');
+      setTimeout(() => { (document.getElementsByClassName('pageinfosidebar')[0]).style.display = "none"; }, '1700');
       } else {
         (document.getElementsByClassName('pageinfosidebar')[0]).style.opacity = "10%";
         (document.getElementsByClassName('pageinfosidebar')[0]).setAttribute("onmouseout", "showpageinfo();");
