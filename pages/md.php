@@ -103,6 +103,8 @@ echo (ReturnUniversalHeader($FileMetaData['title'], $viewmode, $metatags, $FileM
     background-color: #f1dfc7cb;
     cursor: pointer;
     padding: 7.5px;
+    z-index: 900;
+    opacity: 70%;
   }
   </style>
 ENDOFSTYLE;

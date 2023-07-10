@@ -53,7 +53,7 @@ echo (ReturnUniversalHeader("Stories By Mar 🤍", $uniheadertype));
       echo <<<END
       <a href="/search/"><img class="search-button" src="/assets/img/svg/search.svg" alt="Search" title="Search through posts on Mar's blog"></a>
       <style>
-      .search-button {
+        .search-button {
         border-radius: 50px;
         border: solid 2px red;
         position: fixed;
@@ -64,6 +64,8 @@ echo (ReturnUniversalHeader("Stories By Mar 🤍", $uniheadertype));
         background-color: #f1dfc7cb;
         cursor: pointer;
         padding: 7.5px;
+        z-index: 900;
+        opacity: 70%;
       }
       </style>
       <h1>Mar's blog! 🤍</h1>
