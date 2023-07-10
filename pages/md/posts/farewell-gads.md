@@ -14,7 +14,7 @@ I’ve never been truly done with Google, but now I am. So I completely removed 
 
 Well, I cannot afford this blog and its domains and server without  getting anything back from it. So there has to be a solution here.
 
-First of all, I doubt you have never seen my [BuyMeACoffee](http://web.archive.org/web/20221207162011/https://www.buymeacoffee.com/JustMarOK) links on here, if you like my content, please help me out!
+First of all, I doubt you have never seen my [BuyMeACoffee](https://www.buymeacoffee.com/JustMarOK) links on here, if you like my content, please help me out!
 
 I might have to ask you to do that more often. I could, if that doesn’t work also try to go back to another ad placer.
 
