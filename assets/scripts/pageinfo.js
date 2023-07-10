@@ -22,6 +22,7 @@
       (document.getElementsByClassName('pageinfosidebar')[0]).style.transition = "all 1.5s ease-out";
       if (permanent) {
       (document.getElementsByClassName('pageinfosidebar')[0]).style.opacity = "0%";
+      (document.getElementsByClassName('pageinfosidebar')[0]).setAttribute("onmouseout", "");
       setTimeout(() => { (document.getElementsByClassName('pageinfosidebar')[0]).style.display = "none"; }, '1700');
       } else {
         (document.getElementsByClassName('pageinfosidebar')[0]).style.opacity = "10%";
@@ -29,7 +30,7 @@
       }
     }
     function ReshowPageInfo() {
-        console.log("Reshow()..")
+        console.log("Reshow()..");
         (document.getElementsByClassName('pageinfosidebar')[0]).style.display = "";
         showpageinfo();
     }
