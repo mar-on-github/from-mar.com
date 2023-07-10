@@ -1,6 +1,10 @@
+<div class="derivi-twivi"><img src="/assets/img/badges/y2k-compliant.gif" alt="Y2K-compliant" class="badge" loading="lazy" widht="10em" title="Internet badge saying 'Ý2K-compliant'."><p style="font-size: 0.4em">We survived! Or... well this site is from 2023. uhm.</p></div>
+
 ## About
 
 This website is written (coded & infodumped on) by Mar, concepts in styling stolen from my earlier Ephew secret lil project.
+
+Testing is mostly done from Firefox and Firefox Dev edition on latest from my Ubuntu 22.04 PC.
 
 ## Credits
 
