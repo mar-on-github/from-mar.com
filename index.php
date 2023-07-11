@@ -15,6 +15,10 @@ if (isset($_GET['kitton'])) {
     die;
 }
 if ($_SERVER['REQUEST_URI'] == "/kittonstatus") {
+    if ($_COOKIE['wantkitton'] == "") {
+        echo true;
+        die;
+    }
     echo $_COOKIE['wantkitton'];
     die;
 }
