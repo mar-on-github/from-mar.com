@@ -13,17 +13,9 @@
     display: none
 }
 
-.bottombar #filtertoggle {
-    border-radius: 0 0 15px 0;
-    display: block;
-    float: left;
-    font-size: 25px;
-    padding: 3px;
-    text-align: center;
-    text-decoration: none
-}
 
-.bottombar a:not(#filtertoggle, .icon) {
+
+.bottombar a:not(.accesstoggle, .icon) {
     display: block;
     float: right;
     font-size: 25px;
@@ -309,7 +301,7 @@ ul.timeline {
         text-decoration: none
     }
 
-    .bottombar a:not(.icon, #filtertoggle) {
+    .bottombar a:not(.icon, .accesstoggle) {
         display: none
     }
 
@@ -321,11 +313,9 @@ ul.timeline {
         z-index: 900
     }
 
-    .bottombar.responsive #filtertoggle {
-        display: none
-    }
+    
 
-    .bottombar.responsive a:not(#filtertoggle) {
+    .bottombar.responsive a:not(.accesstoggle) {
         display: block;
         float: none;
         text-align: right
@@ -382,7 +372,7 @@ ul.timeline {
     display: none
 }
 
-.bottombar #filtertoggle {
+.bottombar .accesstoggle {
     border-radius: 0 0 15px 0;
     display: block;
     float: left;
@@ -392,7 +382,7 @@ ul.timeline {
     text-decoration: none
 }
 
-.bottombar a:not(#filtertoggle, .icon) {
+.bottombar a:not(.accesstoggle, .icon) {
     display: block;
     float: right;
     font-size: 17px;
@@ -697,7 +687,7 @@ ul.timeline {
         text-decoration: none
     }
 
-    .bottombar a:not(.icon, #filtertoggle) {
+    .bottombar a:not(.icon, .accesstoggle) {
         display: none
     }
 
@@ -708,11 +698,9 @@ ul.timeline {
         position: absolute
     }
 
-    .bottombar.responsive #filtertoggle {
-        display: none
-    }
+    
 
-    .bottombar.responsive a:not(#filtertoggle) {
+    .bottombar.responsive a:not(.accesstoggle) {
         display: block;
         float: none;
         text-align: right
@@ -837,7 +825,7 @@ ul.timeline {
     color: #161616
 }
 
-.bottombar a:not(#filtertoggle,:hover) {
+.bottombar a:not(.accesstoggle,:hover) {
     color: whitesmoke
 }
 

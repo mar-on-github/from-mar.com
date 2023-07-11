@@ -36,17 +36,9 @@ a:not(:hover):not(.menulink) {
     display: none
 }
 
-.bottombar #filtertoggle {
-    border-radius: 0 0 15px 0;
-    display: block;
-    float: left;
-    font-size: 25px;
-    padding: 3px;
-    text-align: center;
-    text-decoration: none
-}
 
-.bottombar a:not(#filtertoggle, .icon) {
+
+.bottombar a:not(.accesstoggle, .icon) {
     display: block;
     float: right;
     font-size: 25px;
@@ -317,7 +309,23 @@ div.derivi-twivi {
     border-radius: 30px;
     background-color: #ffffff5f;
 }
-
+#kittontoggle.accesstoggle {
+    border: #290857 solid 2.5px;
+    height: 26px;
+    vertical-align: top;
+    display: flex;
+    border-radius: 0px 55px 200px 159px;
+        -webkit-border-radius: 0px 55px 200px 159px;
+        -moz-border-radius: 0px 55px 200px 159px;
+    padding: 3px;
+    background-color: #5b0d73;
+    color: #78e3c8;
+}
+#kittontoggle.accesstoggle #kittontoggletext {
+    display: inline;
+    font-size: x-small;
+    margin-left: 2px;
+}
 .badgearea {
     background-color: #7b89d8;
     padding: 5px;
@@ -468,7 +476,7 @@ ul.timeline {
         text-decoration: none
     }
 
-    .bottombar a:not(.icon, #filtertoggle) {
+    .bottombar a:not(.icon, .accesstoggle) {
         display: none
     }
 
@@ -482,11 +490,9 @@ ul.timeline {
         color: #05bddd
     }
 
-    .bottombar.responsive #filtertoggle {
-        display: none
-    }
+    
 
-    .bottombar.responsive a:not(#filtertoggle) {
+    .bottombar.responsive a:not(.accesstoggle) {
         display: block;
         float: none;
         text-align: right
@@ -543,7 +549,7 @@ ul.timeline {
     display: none
 }
 
-.bottombar #filtertoggle {
+.bottombar .accesstoggle {
     border-radius: 0 0 15px 0;
     display: block;
     float: left;
@@ -553,7 +559,7 @@ ul.timeline {
     text-decoration: none
 }
 
-.bottombar a:not(#filtertoggle, .icon) {
+.bottombar a:not(.accesstoggle, .icon) {
     display: block;
     float: right;
     font-size: 17px;
@@ -852,7 +858,7 @@ ul.timeline {
         text-decoration: none
     }
 
-    .bottombar a:not(.icon, #filtertoggle) {
+    .bottombar a:not(.icon, .accesstoggle) {
         display: none
     }
 
@@ -864,11 +870,9 @@ ul.timeline {
         background-color: purple;
     }
 
-    .bottombar.responsive #filtertoggle {
-        display: none
-    }
+    
 
-    .bottombar.responsive a:not(#filtertoggle) {
+    .bottombar.responsive a:not(.accesstoggle) {
         display: block;
         float: none;
         text-align: right
@@ -989,7 +993,7 @@ ul.timeline {
 .bottombar .active {
     background-color: #8ed0b8
 }
-.bottombar a:not(#filtertoggle,:hover) {
+.bottombar a:not(.accesstoggle,:hover) {
     color: #a74646;
     transition: all 0.5s ease-out;
 }

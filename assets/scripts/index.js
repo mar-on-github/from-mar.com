@@ -48,7 +48,7 @@ var HttpClient = function () {
 var client = new HttpClient();
 client.get('/accessibilityfilter', function (response) {
     let accessibilityfilter = response;
-    console.log("filter:" + accessibilityfilter);
+    // console.log("filter:" + accessibilityfilter);
     switch (accessibilityfilter) {
         case 'contrast':
             document.body.style.filter = "contrast(1.6)";
@@ -69,7 +69,7 @@ client.get('/accessibilityfilter', function (response) {
             document.getElementById("filtertoggle").innerHTML = "Contrast";
             break;
     }
-    
+
 });
 
 
@@ -101,7 +101,7 @@ function ToggleFilters() {
             xhttpw.open("GET", "/?filter=none");
             xhttpw.send();
             break;
-}
+    }
 }
 
 document.body.style.filter = "none";
@@ -126,9 +126,45 @@ document.getElementById("filtertoggle").style.padding = "10px";
 
 // The battle for buymeacoffee
 setInterval(function () {
-if ((typeof (document.getElementById("bmc-wbtn")) !== 'undefined') && ((document.getElementById("bmc-wbtn")) !== null)) {
-    (document.getElementById("bmc-wbtn")).removeAttribute("style");
-    // (document.getElementById("bmc-wbtn")).style.display = "none";
-} else { 
-    console.log("could not find bmc");
-}}, 3000);
+    if ((typeof (document.getElementById("bmc-wbtn")) !== 'undefined') && ((document.getElementById("bmc-wbtn")) !== null)) {
+        (document.getElementById("bmc-wbtn")).removeAttribute("style");
+        // (document.getElementById("bmc-wbtn")).style.display = "none";
+    } else {
+        console.log("could not find bmc");
+    }
+}, 3000);
+setTimeout(function () {
+if ((typeof (document.getElementById("oneko")) == 'undefined') || ((document.getElementById("oneko")) == null)) {
+    document.getElementById("kittontoggle").remove();
+    console.log("oneko is not here.")
+} else {
+    var client = new HttpClient();
+    client.get('/kittonstatus', function (response) {
+        let wantkitton = response;
+        if (wantkitton == false) {
+            (document.getElementById("oneko")).style.display = "none";
+            (document.getElementById("kittontoggletext")).innerText = "show!";
+        } else {
+            (document.getElementById("kittontoggletext")).innerText = "hide..";
+        }
+    });
+}}, 1500);
+function ToggleKitton() {
+    var kitton = (document.getElementById("oneko"));
+    const xhttpw = new XMLHttpRequest();
+    switch (kitton.style.display) {
+        case 'none':
+            kitton.style.display = "";
+            (document.getElementById("kittontoggletext")).innerText = "hide..";
+            xhttpw.open("GET", "/?kitton=1");
+            xhttpw.send();
+            break;
+
+        default:
+            kitton.style.display = "none";
+            (document.getElementById("kittontoggletext")).innerText = "show!";
+            xhttpw.open("GET", "/?kitton=0");
+            xhttpw.send();
+            break;
+    }
+}

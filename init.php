@@ -118,7 +118,7 @@ function ReturnMenuLinksFromJSON($where, $type = 1){
       
       $MenuLinksOut = $MenuLinksOut . $ml . "\n";
     }
-    $MenuLinksOut = '<a href="javascript:void(0);" class="icon" onclick="unrollbottombar()">&#9776;</a>' . $MenuLinksOut . '<a href="javascript:void(0)" onclick="ToggleFilters()" id="filtertoggle">Filter</a>';
+    $MenuLinksOut = '<a href="javascript:void(0);" class="icon" onclick="unrollbottombar()">&#9776;</a>' . $MenuLinksOut . '<a href="javascript:void(0)" onclick="ToggleFilters()" id="filtertoggle" class="accesstoggle">Filter</a><a href="javascript:void(0)" onclick="ToggleKitton()" id="kittontoggle" class="accesstoggle"><img src="/assets/img/png/kitton_crab.png" > <span id="kittontoggletext">mew</span></a>';
   }
   if ($where == "side") {
     $MenuLinksOut = "";

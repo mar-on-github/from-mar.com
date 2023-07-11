@@ -9,6 +9,15 @@ if ($_SERVER['REQUEST_URI'] == "/accessibilityfilter") {
     echo $_COOKIE['accessibilityfilter'];
     die;
 }
+if (isset($_GET['kitton'])) {
+    setcookie('wantkitton', $_GET['kitton'], time() + (86400 * 30), "/");
+    echo "ok";
+    die;
+}
+if ($_SERVER['REQUEST_URI'] == "/kittonstatus") {
+    echo $_COOKIE['wantkitton'];
+    die;
+}
 
 // Send users where they need to be
 
