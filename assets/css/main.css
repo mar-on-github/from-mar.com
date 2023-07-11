@@ -477,7 +477,9 @@ ul.timeline {
         bottom: 0;
         left: 0;
         position: fixed;
-        z-index: 900
+        z-index: 900;
+        background-color: #7a68bd;
+        color: #05bddd
     }
 
     .bottombar.responsive #filtertoggle {
@@ -490,18 +492,7 @@ ul.timeline {
         text-align: right
     }
 
-    .openbtn {
-        border: none;
-        border-radius: 30px;
-        cursor: pointer;
-        display: block;
-        font-size: 20px;
-        left: 5px;
-        padding: 10px 14px;
-        position: absolute;
-        top: 8px;
-        z-index: 50
-    }
+    
 
     .sidebar .closebtn {
         display: inline;
@@ -704,9 +695,6 @@ ul.timeline {
     width: 100%
 }
 
-.openbtn {
-    display: none
-}
 
 .postedbyuserheader {
     border-bottom: 4px solid grey;
@@ -872,7 +860,8 @@ ul.timeline {
         border-radius: 30px 30px 0 0;
         bottom: 0;
         left: 0;
-        position: absolute
+        position: absolute;
+        background-color: purple;
     }
 
     .bottombar.responsive #filtertoggle {
@@ -883,19 +872,6 @@ ul.timeline {
         display: block;
         float: none;
         text-align: right
-    }
-
-    .openbtn {
-        border: none;
-        border-radius: 30px;
-        cursor: pointer;
-        display: block;
-        font-size: 20px;
-        left: 5px;
-        padding: 10px 14px;
-        position: absolute;
-        top: 8px;
-        z-index: 50
     }
 
     .sidebar .closebtn {
@@ -964,18 +940,7 @@ ul.timeline {
         display: inline;
     }
 
-    .openbtn {
-        display: block;
-        font-size: 20px;
-        cursor: pointer;
-        padding: 10px 14px;
-        border: none;
-        z-index: 50;
-        position: absolute;
-        top: 8px;
-        left: 5px;
-        border-radius: 30px;
-    }
+
 
     #main {
         transition: margin-left .5s;
@@ -1035,7 +1000,8 @@ ul.timeline {
 
 
 
-.ephew-buttons {
+
+.bottombar.responsive.icon a:hover {
     background-color: #a9c3bc;
     color: #5c5c8a
 }

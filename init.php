@@ -13,7 +13,6 @@ function ReturnUniversalHeader(string $PageName, string $specialstyles = "base",
       <link media="(prefers-color-scheme: dark)" rel="stylesheet" href="/assets/css/blog-dark.css" content-type="text/css" charset="utf-8" />-->
       <link rel="stylesheet" href="/assets/css/blog.css" content-type="text/css" charset="utf-8">
       <link rel="icon" type="image/png" href="/assets/img/sbm_512×512.png">
-      <script data-name="BMC-Widget" data-cfasync="false" src="https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js" data-id="JustMarOK" data-description="Support me on Buy me a coffee!" data-message="" data-color="#BD5FFF" data-position="left" data-x_margin="10" data-y_margin="30"></script>
     END;
       break;
     case 'base':
@@ -99,21 +98,52 @@ function menulink($gotohref, $linktitle)
     return "<a href=\"" . $gotohref . "\" class=\"menulink\">" . $linktitle . "</a>\n";
   }
 }
-function ReturnMenuLinksFromJSON($where, $type = 1)
-{
+function ReturnMenuLinksFromJSON($where, $type = 1){
+  $mobileuserslovesidebar = false;
   if ($where == "bottom") {
     $MenuLink_Array = json_decode(file_get_contents(__DIR__ . '/assets/json/bottombar_' . $type . '.json'), true);
     $MenuLinksOut = "";
-    foreach ($MenuLink_Array as $MenuLink) {
-      $MenuLinksOut = $MenuLinksOut . menulink($MenuLink['to'], $MenuLink['name']) . "\n";
+    foreach ($MenuLink_Array as $MenuLink) { {
+        if ($_SERVER['REQUEST_URI'] === $MenuLink['to']) {
+          if ($mobileuserslovesidebar) {
+            $ml = "<a href=\"" . $MenuLink['to'] . "\" class=\"menulink active not-on-mobile\">" . $MenuLink['name'] . "</a>";
+          } else {
+            $ml = "<a href=\"" . $MenuLink['to'] . "\" class=\"menulink active\">" . $MenuLink['name'] . "</a>";
+          }
+        } else {
+          $ml = "<a href=\"" . $MenuLink['to'] . "\" class=\"menulink\">" . $MenuLink['name'] . "</a>";
+        }
+      }
+      // $MenuLinksOut = $MenuLinksOut . menulink($MenuLink['to'], $MenuLink['name']) . "\n";
+      
+      $MenuLinksOut = $MenuLinksOut . $ml . "\n";
     }
     $MenuLinksOut = '<a href="javascript:void(0);" class="icon" onclick="unrollbottombar()">&#9776;</a>' . $MenuLinksOut . '<a href="javascript:void(0)" onclick="ToggleFilters()" id="filtertoggle">Filter</a>';
   }
   if ($where == "side") {
-    $MenuLink_Array = json_decode(file_get_contents(__DIR__ . '/assets/json/sidebar_' . $type . '.json'), true);
     $MenuLinksOut = "";
+    if ($mobileuserslovesidebar) {
+      // For mobile users, we also add the bottom bar links in here.
+      $MenuLink_Array = json_decode(file_get_contents(__DIR__ . '/assets/json/bottombar_' . $type . '.json'), true);
+      foreach ($MenuLink_Array as $MenuLink) {
+        if ($_SERVER['REQUEST_URI'] === $MenuLink['to']) {
+          $ml = "<a href=\"" . $MenuLink['to'] . "\" class=\"menulink active only-on-mobile\">" . $MenuLink['name'] . "</a>";
+        } else {
+          $ml = "<a href=\"" . $MenuLink['to'] . "\" class=\"menulink only-on-mobile\">" . $MenuLink['name'] . "</a>";
+        }
+        $MenuLinksOut = $MenuLinksOut . $ml . "\n";
+    }
+  }
+    // Now we do the actual side menu
+    $MenuLink_Array = json_decode(file_get_contents(__DIR__ . '/assets/json/sidebar_' . $type . '.json'), true);
+    $belongshere = true;
     foreach ($MenuLink_Array as $MenuLink) {
-      $MenuLinksOut = $MenuLinksOut . menulink($MenuLink['to'], $MenuLink['name']) . "\n";
+        if ($_SERVER['REQUEST_URI'] === $MenuLink['to']) {
+          $ml = "<a href=\"" . $MenuLink['to'] . "\" class=\"menulink active\">" . $MenuLink['name'] . "</a>";
+        } else {
+          $ml = "<a href=\"" . $MenuLink['to'] . "\" class=\"menulink\">" . $MenuLink['name'] . "</a>";
+        }
+      $MenuLinksOut = $MenuLinksOut . $ml . "\n";
     }
   }
   return $MenuLinksOut;
@@ -140,4 +170,4 @@ const hlimg_options = {
 </script>
 <script defer src="/node_modules/hl-img/hl-img.js"></script>
 END;
-require_once __DIR__ . '/vendor/autoload.php';
+require_once (__DIR__ . '/vendor/autoload.php');

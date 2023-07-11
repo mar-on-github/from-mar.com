@@ -1,14 +1,14 @@
 [
     {
-        "to": "/",
-        "name": "<span class='emoji-block'><img src='/assets/img/Strawmelonjuice.webp' class='emoji-block'></span> Home"
+        "to": "/?p=1",
+        "name": "<span class='emoji-block'>👋</span> About me"
+    },
+    {
+        "to": "/?p=2",
+        "name": "<span class='emoji-block'>&#128206;</span> Links by me"
     },
     {
         "to": "mailto:mar@strawmelonjuice.com",
-        "name": "<span class='emoji-block'>📧</span> Email"
-    },
-    {
-        "to": "/blog/",
-        "name": "<img src='/assets/img/sbm_512×512.png' class='emoji-block'> Mar's blog! 🤍"
+        "name": "<span class='emoji-block'>📧</span> Email me"
     }
 ]

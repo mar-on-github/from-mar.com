@@ -70,9 +70,71 @@ blockquote {
 main {
     text-align: center;
 }
-@media (orientation: landscape) {.notdisplayedinportrait {
-    display: none;
-}}
+@media (orientation: landscape) and (min-width: 800px) {
+.only-on-mobile {
+    display: none !important;
+}
+#bmc-wbtn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 64px;
+    height: 64px;
+    background: #63938d;
+    color: white;
+    border-radius: 32px;
+    position: fixed;
+    left: 10px;
+    bottom: 30px;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 4px 8px;
+    z-index: 9999;
+    cursor: pointer;
+    font-weight: 600;
+    transition: all 0.25s ease 0s;
+    transform: scale(1);
+}
+}
+@media (orientation: portrait), (max-width: 800px) {
+    .openbtn {
+        display: block !important;
+        font-size: 20px;
+        cursor: pointer;
+        padding: 10px 14px;
+        border: none;
+        z-index: 50;
+        position: absolute;
+        top: 8px;
+        left: 5px;
+        border-radius: 32px;
+        width: 55px;
+        height: 55px;
+    }
+    .not-on-mobile {
+    display: none !important;
+    }
+    .only-on-mobile {
+        display: inherit !important;
+    }
+    #bmc-wbtn {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 55px;
+        height: 55px;
+        background: #63938d;
+        color: white;
+        border-radius: 32px;
+        position: fixed;
+        right: 10px;
+        bottom: 30px;
+        box-shadow: rgba(0, 0, 0, 0.15) 0px 4px 8px;
+        z-index: 111;
+        cursor: pointer;
+        font-weight: 600;
+        transition: all 0.25s ease 0s;
+        transform: scale(1);
+    }
+}
 main.content {
     min-height: fit-content;
     max-height: 80%;
@@ -80,4 +142,7 @@ main.content {
     overflow: auto;
     padding: 30px;
     z-index: 20;
+}
+.bottombar.responsive {
+    z-index: 400;
 }

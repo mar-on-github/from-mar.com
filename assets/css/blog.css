@@ -339,18 +339,7 @@ ul.timeline {
         text-align: right
     }
 
-    .openbtn {
-        border: none;
-        border-radius: 30px;
-        cursor: pointer;
-        display: block;
-        font-size: 20px;
-        left: 5px;
-        padding: 10px 14px;
-        position: absolute;
-        top: 8px;
-        z-index: 50
-    }
+    
 
     .sidebar .closebtn {
         display: inline;
@@ -556,10 +545,6 @@ ul.timeline {
     width: 100%
 }
 
-.openbtn {
-    display: none
-}
-
 .postedbyuserheader {
     border-bottom: 4px solid grey;
     border-left: 6px solid #d58524;
@@ -736,18 +721,7 @@ ul.timeline {
         text-align: right
     }
 
-    .openbtn {
-        border: none;
-        border-radius: 30px;
-        cursor: pointer;
-        display: block;
-        font-size: 20px;
-        left: 5px;
-        padding: 10px 14px;
-        position: absolute;
-        top: 8px;
-        z-index: 50
-    }
+    
 
     .sidebar .closebtn {
         display: inline;
@@ -815,18 +789,7 @@ ul.timeline {
         display: inline;
     }
 
-    .openbtn {
-        display: block;
-        font-size: 20px;
-        cursor: pointer;
-        padding: 10px 14px;
-        border: none;
-        z-index: 50;
-        position: absolute;
-        top: 8px;
-        left: 5px;
-        border-radius: 30px;
-    }
+
 
     #main {
         transition: margin-left .5s;

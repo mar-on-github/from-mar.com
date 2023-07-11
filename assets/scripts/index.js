@@ -123,3 +123,12 @@ document.getElementById("filtertoggle").style.padding = "10px";
 //         document.getElementsByClassName('badgearea')['0'].style.marginBottom = "30px"
 //     }
 // }
+
+// The battle for buymeacoffee
+setInterval(function () {
+if ((typeof (document.getElementById("bmc-wbtn")) !== 'undefined') && ((document.getElementById("bmc-wbtn")) !== null)) {
+    (document.getElementById("bmc-wbtn")).removeAttribute("style");
+    // (document.getElementById("bmc-wbtn")).style.display = "none";
+} else { 
+    console.log("could not find bmc");
+}}, 3000);
