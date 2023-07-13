@@ -153,7 +153,7 @@ main.content {
 }
 
 blockquote {
-    color: var(--color-slot-05);
+    color: var(--color-slot-03);
     margin-bottom: 20px;
     padding: 0 0 0 20px;
     border-left: var(--main-value-01);
@@ -174,8 +174,8 @@ body {
 pre,
 code {
     text-align: start;
-    color: var(--color-slot-03);
-    background-color: var(--color-slot-04);
+    color: black;
+    background-color: #f6fac2;
     font-family: 'Ubuntu Mono', monospace;
     border-radius: 2px;
     -moz-border-radius: 2px;
