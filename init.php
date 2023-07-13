@@ -178,6 +178,7 @@ $hlimg_script = <<<END
 <script type="text/javascript">
 const hlimg_options = {
   styling_imageshow_zIndex: 9000,
+  styling_hlimg_maxwidth: "70%",
 }
 </script>
 <!--<script defer src="/node_modules/hl-img/hl-img.js"></script>-->
