@@ -18,11 +18,24 @@ function permabigbadgies() {
 function openNav() {
     document.getElementById("mySidebar").style.width = "70vw";
     setTimeout(permabigbadgies, 2500);
+    elem = getElementsByClassName("search-button")[0];
+    if (typeof (elem) != 'undefined' && (elem) != null) {
+        elem.classList.add("not-on-mobile");
+        return 1;
+    }
     // (document.getElementsByClassName("content")[0]).style.marginLeft = "250px";
 }
 
 function closeNav() {
-    document.getElementById("mySidebar").style.width = "0";
+    document.getElementById("mySidebar").style.width = "";
+    elem = document.getElementsByClassName("search-button")[0];
+    if (typeof (elem) != 'undefined' && (elem) != null) {
+        elem.classList.remove("not-on-mobile");
+    }
+    elem = document.getElementsByClassName("pageinfosidebar")[0];
+    if (typeof (elem) != 'undefined' && (elem) != null) {
+        elem.style.width = "70vw";
+    }
     // (document.getElementsByClassName("content")[0]).style.marginLeft = "0";
 }
 
@@ -52,13 +65,13 @@ client.get('/accessibilityfilter', function (response) {
     switch (accessibilityfilter) {
         case 'contrast':
             document.body.style.filter = "contrast(1.6)";
-            document.body.style.backgroundColor = "#a29191";
+            document.body.style.backgroundColor = (getComputedStyle(document.body).getPropertyValue('--filter-contrast-backgroundcolor'));
             document.body.style.backgroundImage = "none";
             document.getElementById("filtertoggle").innerHTML = "Greyscale";
             break;
         case 'grayscale':
             document.body.style.filter = "grayscale(1)";
-            document.body.style.backgroundColor = "#FFF0";
+            document.body.style.backgroundColor = (getComputedStyle(document.body).getPropertyValue('--filter-grayscale-backgroundcolor'));
             document.body.style.backgroundImage = "none";
             document.getElementById("filtertoggle").innerHTML = "Colorful";
             break;
@@ -79,7 +92,7 @@ function ToggleFilters() {
     switch (document.body.style.filter) {
         default:
             document.body.style.filter = "contrast(1.6)";
-            document.body.style.backgroundColor = "#a29191";
+            document.body.style.backgroundColor = (getComputedStyle(document.body).getPropertyValue('--filter-contrast-backgroundcolor'));
             document.body.style.backgroundImage = "none";
             document.getElementById("filtertoggle").innerHTML = "Greyscale";
             xhttpw.open("GET", "/?filter=contrast");
@@ -87,7 +100,7 @@ function ToggleFilters() {
             break;
         case ("contrast(1.6)"):
             document.body.style.filter = "grayscale(1)";
-            document.body.style.backgroundColor = "#FFF0";
+            document.body.style.backgroundColor = (getComputedStyle(document.body).getPropertyValue('--filter-grayscale-backgroundcolor'));
             document.body.style.backgroundImage = "none";
             document.getElementById("filtertoggle").innerHTML = "Colorful";
             xhttpw.open("GET", "/?filter=grayscale");

@@ -1,0 +1,78 @@
+
+:root {
+    --color-slot-1: #dda0dd;
+    --color-slot-2: #aad0f2;
+    --color-slot-3: #194f97;
+    --color-slot-4: #4f0952;
+    --color-slot-5: #05bddd;
+    --color-slot-6: #a8a8a838;
+    --color-slot-7: #00000033;
+    --color-slot-8: #999;
+    --color-slot-9: #3f5b48;
+    --color-slot-10: #6dc3d2;
+    --color-slot-11: #85a0f2af;
+    --color-slot-12: #E6A595;
+    --color-slot-13: #251e1c;
+    --color-slot-14: #EEBCBC;
+    --color-slot-15: #b885f2aa;
+    --color-slot-16: #1c1c1c;
+    --color-slot-17: #63cc8150;
+    --color-slot-18: #b885f28d;
+    --color-slot-19: #6dd06d;
+    --color-slot-20: #ffffff;
+    --color-slot-21: #5b0d73;
+    --color-slot-22: #78e3c8;
+    --color-slot-23: #7b89d8;
+    --color-slot-24: #3338b7;
+    --color-slot-25: #5f9ea048;
+    --color-slot-26: #7a68bd;
+    --color-slot-27: #290857;
+    --color-slot-28: grey;
+    --color-slot-29: #800080;
+    --color-slot-30: white;
+    --color-slot-31: #a74646;
+    --color-slot-32: #8ed0b8;
+    --color-slot-33: #a9c3bc;
+    --color-slot-34: #5c5c8a;
+    --color-slot-35: #00dfa7a1;
+    --color-slot-36: #1e1eb9;
+    --color-slot-37: #515174;
+    --color-slot-38: #f5f5dc;
+    --color-slot-39: #ddd99a;
+    --color-slot-40: #4d4b52;
+    --color-slot-41: #666666;
+    --color-slot-42: #cccccc;
+    --color-slot-43: #6e8095;
+    --color-slot-44: #b086ff;
+    --color-slot-45: #EEDEAB;
+    --color-slot-46: #161616;
+    --color-slot-47: #faebd7;
+    --color-slot-48: #bbdcbb;
+    --color-slot-49: #e10404;
+    --color-slot-50: #efc85c;
+    --color-slot-51: #200207;
+    --color-slot-52: #f47a7a;
+    --color-slot-53: #aa9fd7;
+    --color-slot-54: #171616;
+    --color-slot-55: #fefefe;
+    --color-slot-56: #c2c2c2af;
+    --color-slot-57: #ffd54d;
+    --color-slot-58: #191515;
+    --color-slot-59: #ff4da372;
+    --main-color-60: #C8ECB5;
+    --main-color-61: #eedeab80;
+    --main-color-62: #fff9ee;
+    --main-color-63: #008060;
+    --main-color-64: #2a2a2a;
+}
+body {
+    background-image: url('/assets/img/bgraster.png');
+}
+main.content {
+    background:
+        url(/assets/img/strawberrycorners.webp) left -106px top -83px no-repeat,
+        url(/assets/img/strawberrycorners.webp) right -106px top -83px no-repeat,
+        url(/assets/img/strawberrycorners.webp) left -106px bottom -83px no-repeat,
+        url(/assets/img/strawberrycorners.webp) right -106px bottom -83px no-repeat,
+        linear-gradient(#C8ECB5, #eedeab80);
+}

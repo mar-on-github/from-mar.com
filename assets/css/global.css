@@ -4,7 +4,10 @@
 
 @import "https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap";
 
-
+:root {
+    --filter-contrast-backgroundcolor: #a29191;
+    --filter-grayscale-backgroundcolor: #FFF0;
+}
 
 body {
     position: fixed;
@@ -37,7 +40,6 @@ body {
 }
 
 .pageinfosidebar {
-    border-radius: 30px;
     height: auto;
     margin: auto;
     overflow: auto;
@@ -62,14 +64,6 @@ body {
     display: block;
     padding: 16px;
     text-decoration: none
-}
-
-blockquote {
-    background-color: #85A1F2;
-    border: 2px outset;
-    border-color: #E6A595;
-    color: #896860;
-    font-style: italic
 }
 
 main {

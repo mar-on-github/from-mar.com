@@ -1,0 +1,78 @@
+:root {
+    --color-slot-01: grey;
+    --color-slot-02: #f2f2f2;
+    --color-slot-03: #222222;
+    --color-slot-04: #f6fac2;
+    --color-slot-05: #666;
+    --color-slot-06: #ffffff;
+    --color-slot-07: #4f0952;
+    --color-slot-08: #303030;
+    --color-slot-09: green;
+    --color-slot-10: #3391ff;
+    --color-slot-11: lime;
+    --color-slot-12: #000;
+    --color-slot-13: #8000806c;
+    --color-slot-14: rgba(178, 233, 76, 0.700);
+    --color-slot-15: ;
+    --color-slot-16: ;
+    --color-slot-17: ;
+    --color-slot-18: ;
+    --color-slot-19: ;
+    --color-slot-20: ;
+    --color-slot-21: ;
+    --color-slot-22: ;
+    --color-slot-23: ;
+    --color-slot-24: ;
+    --color-slot-25: ;
+    --color-slot-26: ;
+    --color-slot-27: ;
+    --color-slot-28: ;
+    --color-slot-29: ;
+    --color-slot-30: ;
+    --color-slot-31: ;
+    --color-slot-32: ;
+    --color-slot-33: ;
+    --color-slot-34: ;
+    --color-slot-35: ;
+    --color-slot-36: ;
+    --color-slot-37: ;
+    --color-slot-38: ;
+    --color-slot-39: ;
+    --color-slot-40: ;
+    --color-slot-41: ;
+    --color-slot-42: ;
+    --color-slot-43: ;
+    --color-slot-44: ;
+    --color-slot-45: ;
+    --color-slot-46: ;
+    --color-slot-47: ;
+    --color-slot-48: ;
+    --color-slot-49: ;
+    --color-slot-50: ;
+    --color-slot-51: ;
+    --color-slot-52: ;
+    --color-slot-53: ;
+    --color-slot-54: ;
+    --color-slot-55: ;
+    --color-slot-56: ;
+    --color-slot-57: ;
+    --color-slot-58: ;
+    --color-slot-59: ;
+    --main-color-60: ;
+    --main-color-61: ;
+    --main-color-62: ;
+    --main-color-63: ;
+    --main-color-64: ;
+    /*  */
+    --main-value-01: 3px solid #bbb;
+    /*  */
+    --filter-contrast-backgroundcolor: #ffffff;
+    --filter-grayscale-backgroundcolor: #ffffff;
+}
+
+body {
+    background-color: var(--color-slot-01);
+}
+.svgrecolor {
+    filter: brightness(0) saturate(100%);
+}

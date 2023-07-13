@@ -7,8 +7,8 @@ I am a creativity addict so I jiggle around with code from time to time. These a
 Simple digital diary software
 </div>
 
-- <img src="https://logger-diary.strawmelonjuice.com/img/logo/logo_512px.png" height="20px" alt="LDo Logo"> [Logger-Diary Online](https://logger-diary.strawmelonjuice.com/) <a href="https://github.com/strawmelonjuice/logger-diary.online" target="_blank"><img src="/assets/img/svg/github-mark.svg" height="20px" alt="GitHub"></a>
-- <img src="https://raw.githubusercontent.com/strawmelonjuice/logger-diary.legacy/desktop-beta/logger/icons/logo.png" height="20px" alt="LD Logo"> Logger-Diary Legacy – discontinued <a href="https://github.com/strawmelonjuice/logger-diary.legacy" target="_blank"><img src="/assets/img/svg/github-mark.svg" height="20px" alt="GitHub"></a>
+- <img src="https://logger-diary.strawmelonjuice.com/img/logo/logo_512px.png" height="20px" alt="LDo Logo"> [Logger-Diary Online](https://logger-diary.strawmelonjuice.com/) <a href="https://github.com/strawmelonjuice/logger-diary.online" target="_blank"><img src="/assets/img/svg/github-mark.svg" height="20px" class="svgrecolor" alt="GitHub"></a>
+- <img src="https://raw.githubusercontent.com/strawmelonjuice/logger-diary.legacy/desktop-beta/logger/icons/logo.png" height="20px" alt="LD Logo"> Logger-Diary Legacy – discontinued <a href="https://github.com/strawmelonjuice/logger-diary.legacy" target="_blank"><img src="/assets/img/svg/github-mark.svg" height="20px" class="svgrecolor" alt="GitHub"></a>
 - <img src="/assets/img/2015logo.png" height="20px" alt="mylog231 logo"> My Log 231 for FreeDOS – discontinued & way too old but I find it funny to mention
 
 ## Project FNew
@@ -16,13 +16,13 @@ Simple digital diary software
 A social media site that doesn't have a name yet... or a figured out concept
 </div>
 Not yet open source nor publicized
-## WWW-bot <a href="https://github.com/strawmelonjuice/wwwbot-discord" target="_blank"><img src="/assets/img/svg/github-mark.svg" height="20px" alt="GitHub"></a>
+## WWW-bot <a href="https://github.com/strawmelonjuice/wwwbot-discord" target="_blank"><img src="/assets/img/svg/github-mark.svg" height="20px" class="svgrecolor" alt="GitHub"></a>
 <div class="derivi-twivi">
     A discord bot to moderate and automate my cute lil discord server <code>that barely has any members :c</code>
 </div>
 
 
-## Henri The Datapack <a href="https://github.com/strawmelonjuice/Henri_The_Datapack" target="_blank"><img src="/assets/img/svg/github-mark.svg" height="20px" alt="GitHub"></a>
+## Henri The Datapack <a href="https://github.com/strawmelonjuice/Henri_The_Datapack" target="_blank"><img src="/assets/img/svg/github-mark.svg" height="20px" class="svgrecolor" alt="GitHub"></a>
 
 <div class="derivi-twivi">
 'A minecraft datapack revolving around a shady guy named Henri', pretty cringe maybe idk
@@ -43,7 +43,7 @@ With somehow a pretty good result. Mostly.
 Keeping this code private for now.
 
 
-## HL-IMG.js <a href="https://github.com/strawmelonjuice/hl-img.js/" target="_blank"><img src="/assets/img/svg/github-mark.svg" height="20px" alt="GitHub"></a><a href="https://www.jsdelivr.com/package/gh/strawmelonjuice/hl-img.js/" target="_blank"><img src="https://www.jsdelivr.com/assets/5c45c9be8960b51a5e8ad5bc3ad6492bfbcb0dcf/img/icons/jsdelivr_icon.svg" height="20px" alt="JSdelivr"></a>
+## HL-IMG.js <a href="https://github.com/strawmelonjuice/hl-img.js/" target="_blank"><img src="/assets/img/svg/github-mark.svg" height="20px" class="svgrecolor" alt="GitHub"></a><a href="https://cdn.jsdelivr.net/npm/hl-img/" target="_blank"><img src="https://www.jsdelivr.com/assets/5c45c9be8960b51a5e8ad5bc3ad6492bfbcb0dcf/img/icons/jsdelivr_icon.svg" height="20px" alt="JSdelivr"></a><a href="https://www.npmjs.com/package/hl-img" target="_blank"><img src="https://docs.npmjs.com/icons/icon-512x512.png" height="20px" alt="NPM"></a>
 
 <div class="derivi-twivi">
 I actually created this project just to make <a href="/blog?p=posts/art/mousemouse-3.2">a post on here</a> prettier! It allows you to create highlightable images, for coding comfort in a custom element type. I work at this project mostly at night, which, well, explains.

@@ -15,12 +15,24 @@ function ReturnUniversalHeader(string $PageName, string $specialstyles = "base",
       <link rel="icon" type="image/png" href="/assets/img/sbm_512×512.png">
     END;
       break;
+    case 'project':
+      $StylesheetRefer = <<<END
+            <link media="(prefers-color-scheme: light)" rel="stylesheet" href="/assets/css/projects-colors-light.css" content-type="text/css" charset="utf-8" />
+            <link media="(prefers-color-scheme: dark)" rel="stylesheet" href="/assets/css/projects-colors-dark.css" content-type="text/css" charset="utf-8" />
+            <link rel="stylesheet" href="/assets/css/projects.css" content-type="text/css" charset="utf-8" />
+            <link rel="icon" type="image/png" href="/assets/img/Strawmelonjuice.png">
+            <link rel="icon" type="image/webp" href="/assets/img/Strawmelonjuice.webp">
+      END;
+      break;
     case 'base':
     default:
-      $StylesheetRefer = '<link rel="stylesheet" href="/assets/css/main.css" content-type="text/css" charset="utf-8" /><link rel="icon" type="image/png" href="/assets/img/Strawmelonjuice.png">
-      <link rel="icon" type="image/webp" href="/assets/img/Strawmelonjuice.webp">';
-      $GLOBALS['bottomlink_morelinks_start'] = ('<div style="bottom: 0; position: absolute; display: contents; font-size: x-small; right: 10px;width: 30%;margin-left: 60%;" id="bottomlink_morelinks"><span><p style=""><b>Linkies:</b></p><ul style="">' . bmenulink("/?p=abt-site", "About this site"));
-      $GLOBALS['bottomlink_morelinks_end'] = '<li id="donateextralink"><a href="/?p=support"><code>If you like my stuff, support me please. <!--(or disable adblock)--></code></a></li></ul></span></div>';
+      $StylesheetRefer = <<<END
+            <link media="(prefers-color-scheme: light)" rel="stylesheet" href="/assets/css/main-colors-light.css" content-type="text/css" charset="utf-8" />
+            <link media="(prefers-color-scheme: dark)" rel="stylesheet" href="/assets/css/main-colors-dark.css" content-type="text/css" charset="utf-8" />
+            <link rel="stylesheet" href="/assets/css/main.css" content-type="text/css" charset="utf-8" />
+            <link rel="icon" type="image/png" href="/assets/img/Strawmelonjuice.png">
+            <link rel="icon" type="image/webp" href="/assets/img/Strawmelonjuice.webp">
+      END;
       break;
   }
   $keywords_txt = __DIR__ . "/assets/other/keywords.txt";
@@ -168,6 +180,7 @@ const hlimg_options = {
   styling_imageshow_zIndex: 9000,
 }
 </script>
-<script defer src="/node_modules/hl-img/hl-img.js"></script>
+<!--<script defer src="/node_modules/hl-img/hl-img.js"></script>-->
+<script defer src="https://cdn.jsdelivr.net/npm/hl-img@1/hl-img.min.js"></script>
 END;
 require_once (__DIR__ . '/vendor/autoload.php');

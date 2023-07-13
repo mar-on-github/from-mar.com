@@ -7,7 +7,7 @@
   title-display: true
   filename: LDo/230704
   category: Logger-Diary Online
-  modeoverride: base
+  modeoverride: project
   og-image: https://logger-diary.strawmelonjuice.com/img/logo/logo_512px.png
   date:
     posted: 1688485329
@@ -18,7 +18,6 @@
   type: post
   og-image: /assets/img/media/art/MM2.webp
   title-display: true
-  # modeoverride: base
   date:
     posted: 1688332202
     edited: 1688332202
@@ -44,7 +43,7 @@
   filename: LDo/230608
   category: Logger-Diary Online
   og-image: https://logger-diary.strawmelonjuice.com/img/logo/logo_512px.png
-  modeoverride: base
+  modeoverride: project
   date:
     posted: 1686248156
     edited: 1686248156
@@ -83,7 +82,7 @@
   title-display: false
   filename: LDo/moved-to-logger-diary.online
   category: Logger-Diary Online
-  modeoverride: base
+  modeoverride: project
   date:
     posted: 1674730800
     edited: 1674730800
@@ -96,7 +95,7 @@
   title-display: true
   filename: LDo/md
   category: Logger-Diary Online
-  modeoverride: base
+  modeoverride: project
   date:
     posted: 1674471600
     edited: 1674730800
@@ -182,9 +181,18 @@
 'projects':
   title: Projects
   short: I am a creativity addict so I jiggle around with code from time to time.
-  modeoverride: base
+  modeoverride: project
   type: page
   date:
     posted: 1686237433
     edited: 1687804698
   tags: donation, support, paypal, buymeacoffee, open-source, github
+'projects/hl-img':
+  title: HL-img.js > Home
+  short: Page (and theme) under construction!
+  modeoverride: project
+  type: page
+  date:
+    posted: 1689201880
+    edited: 1689201880
+  tags: donation, support, paypal, buymeacoffee, open-source, javascript
