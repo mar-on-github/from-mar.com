@@ -25,7 +25,7 @@ A social media site that doesn't have a name yet... or a figured out concept
 ## WWW-bot <a href="https://github.com/strawmelonjuice/wwwbot-discord" target="_blank"><img src="/assets/img/svg/github-mark.svg" height="20px" class="svgrecolor" alt="GitHub"></a>
 
 <blockquote>
-A discord bot to moderate and automate my cute lil discord server <code>that</code> <code><s>barely has any members :c</code></s> <code><i>is deleted now!</code> <span class="emoji-block">😈</span>
+A discord bot to moderate and automate my cute lil discord server <code>that</code> <code><s>barely has any members :c</code></s> <code><i>is deleted now!</i></code> <span class="emoji-block">😈</span>
 </blockquote>
 
 

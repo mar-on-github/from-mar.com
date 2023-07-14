@@ -86,6 +86,8 @@ main {
     list-style-image: url('/assets/img/imgmote/exclamationmark.gif');
     margin: auto;
     margin-bottom: 20px;
+    border-radius: 15px;
+    padding: 2px;
 }
 .notion:hover:after {
     content: ' \0021';
