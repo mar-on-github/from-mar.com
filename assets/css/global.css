@@ -79,19 +79,22 @@ main {
     text-align: center;
     text-decoration: none
 }
+
 .notion {
-    position: absolute;
-    left: 5em;
+    margin-left: 5em;
+    text-align: left;
+    width: fit-content;
     display: list-item;
     list-style-image: url('/assets/img/imgmote/exclamationmark.gif');
-    margin: auto;
     margin-bottom: 20px;
     border-radius: 15px;
-    padding: 2px;
+    padding: 5px;
 }
+
 .notion:hover:after {
     content: ' \0021';
 }
+
 @media (orientation: landscape) and (min-width: 800px) {
     .bottombar.responsive .accesstoggle {
         display: none
@@ -122,7 +125,8 @@ main {
     }
 }
 
-@media (orientation: portrait), (max-width: 800px) {
+@media (orientation: portrait),
+(max-width: 800px) {
     .openbtn {
         display: block !important;
         font-size: 20px;
