@@ -18,7 +18,7 @@ function permabigbadgies() {
 function openNav() {
     document.getElementById("mySidebar").style.width = "70vw";
     setTimeout(permabigbadgies, 2500);
-    elem = getElementsByClassName("search-button")[0];
+    elem = document.getElementsByClassName("search-button")[0];
     if (typeof (elem) != 'undefined' && (elem) != null) {
         elem.classList.add("not-on-mobile");
         return 1;
