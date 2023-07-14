@@ -79,19 +79,6 @@ switch ($_SERVER['REQUEST_URI']) {
         $file = "1";
         require_once(__DIR__ . '/pages/md.php');
         die;
-    case '/dc/':
-    case '/dc':
-    case '/discord/':
-    case '/discord':
-        require_once(__DIR__ . '/pages/discord.php');
-        die;
-    case '/dc/updates/':
-    case '/dc/updates':
-    case '/discord/updates/':
-    case '/discord/updates':
-        $filtercat = 'discord';
-        require_once(__DIR__ . '/pages/blog.php');
-        die;
 }
 // If we're here... we hit a 404 I think!
 $file = '404 trigger';

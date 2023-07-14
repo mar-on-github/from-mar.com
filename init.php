@@ -4,9 +4,6 @@ function ReturnUniversalHeader(string $PageName, string $specialstyles = "base",
 {
   // echo $specialstyles;
   switch ($specialstyles) {
-    case 'discord':
-      $StylesheetRefer = '<link rel="stylesheet" href="/assets/css/discord.css" content-type="text/css" charset="utf-8"><link rel="icon" type="image/png" href="/assets/img/blublogo.png">';
-      break;
     case 'blog':
       $StylesheetRefer = <<<END
       <!--<link media="(prefers-color-scheme: light)" rel="stylesheet" href="/assets/css/blog-light.css" content-type="text/css" charset="utf-8" />

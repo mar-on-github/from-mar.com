@@ -85,9 +85,12 @@ main.content {
     padding: 2px;
     display: inline-block;
 }
-
+.notion {
+    background-color: var(--color-slot-12);
+    color: var(--color-slot-06);
+}
 .emoji-block {
-    background-color: var(--color-slot-04);
+    background-color: #54c054;
     border-radius: 20%;
     font-family: 'Noto Color Emoji', sans-serif;
     font-size: 20px;

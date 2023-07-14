@@ -79,7 +79,17 @@ main {
     text-align: center;
     text-decoration: none
 }
-
+.notion {
+    position: absolute;
+    left: 5em;
+    display: list-item;
+    list-style-image: url('/assets/img/imgmote/exclamationmark.gif');
+    margin: auto;
+    margin-bottom: 20px;
+}
+.notion:hover:after {
+    content: ' \0021';
+}
 @media (orientation: landscape) and (min-width: 800px) {
     .bottombar.responsive .accesstoggle {
         display: none

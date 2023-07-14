@@ -244,6 +244,10 @@ h1 {
     text-align: center
 }
 
+h2:before {
+    content: ' \00A7';
+}
+
 h2 {
     font-size: 21px;
     font-weight: 275;
