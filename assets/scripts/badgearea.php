@@ -9,7 +9,7 @@ function badge($href = "", $src, $title, $alt) {
 ?>
 
 <div class="badgearea" onmouseover="bigbadgies()" onmouseleave="smollbadgies()" style="height: 20vh">
-    <p>Badgies<?php imgmote("love3");?><small style="font-size: 8px">(in random order!)</small></p>
+    <p>Badgies<imgmote>love3</imgmote></p><small style="font-size: 8px">(in random order!)</small></p>
 <?php
     $badges = [
     badge("https://yesterweb.org/no-to-web3/", "https://yesterweb.org/no-to-web3/img/roly-saynotoweb3.gif", "Crypto's ewie.", "badge saying 'Keep the web free, say no to web3'"),

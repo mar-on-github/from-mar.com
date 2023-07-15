@@ -157,7 +157,7 @@ function ReturnMenuLinksFromJSON($where, $type = 1){
   }
   return $MenuLinksOut;
 }
-function imgmote($name)
+function imgmote(string $name, bool $return = false)
 {
   if (file_exists($GLOBALS['rootdir'] . "assets/img/imgmote/" . $name . ".gif")) {
     $src = '/assets/img/imgmote/' . $name . '.gif';
@@ -167,9 +167,11 @@ function imgmote($name)
     $src = '/assets/img/imgmote/' . $name . '.png';
   } else if (file_exists($GLOBALS['rootdir'] . "assets/img/imgmote/" . $name . ".svg")) {
     $src = '/assets/img/imgmote/' . $name . '.svg';
+  } else {
+    die(":" . $name . ":");
   }
-  echo '<img src="' . $src . '" max-widht="5px" max-height="5px" class="imgmote" alt="imgmote named ' . $name . '"  loading=\"lazy\">';
-}
+    die('<img src="' . $src . '" max-widht="5px" max-height="5px" class="imgmote" alt="imgmote named ' . $name . '"  loading=\"lazy\">');
+  }
 
 $hlimg_script = <<<END
 <script type="text/javascript">

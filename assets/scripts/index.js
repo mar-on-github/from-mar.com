@@ -57,6 +57,33 @@ var HttpClient = function () {
     }
 }
 
+var client = new HttpClient();
+client.get('/sociallinks', function (response) {
+    sociallinkelements = document.getElementsByClassName("sociallinks");
+    for (var i = sociallinkelements.length - 1; i >= 0; i--) {
+        sociallinkelementnew = document.createElement("div");
+        sociallinkelementnew.setAttribute("style", "text-align: center; align-content: center; margin-left: auto; margin-right: auto;");
+        sociallinkelementnew.innerHTML = response;
+        sociallinkelements.item(i).parentNode.replaceChild(sociallinkelementnew, sociallinkelements.item(i));
+    }
+})
+
+function LoadImgMote(currimgmote) {
+    var client = new HttpClient();
+    let name = (currimgmote.innerHTML).replace(":", ".");
+    client.get('/?getimgmote=' + name, function (response) {
+        var fragment = document.createElement("div");
+        fragment.innerHTML = response;
+        newimgmote = fragment.firstChild;
+        currimgmote.parentNode.replaceChild(newimgmote, currimgmote);
+    });
+}
+
+imgmotes = document.getElementsByTagName("imgmote");
+for (var i = imgmotes.length - 1; i >= 0; i--) {
+    LoadImgMote(imgmotes.item(i));
+    
+}
 
 var client = new HttpClient();
 client.get('/accessibilityfilter', function (response) {

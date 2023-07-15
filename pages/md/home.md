@@ -1,4 +1,6 @@
-Welcome to my cosy little strawberbrain site `:3`
+<span class="sociallinks">no scriptos?</span>
+
+Welcome to my cosy little strawberbrain site <imgmote>:3</imgmote>
 
 
 
@@ -6,6 +8,6 @@ I'm Mar, <hl-img src="https://avatars.githubusercontent.com/u/101558380?s=400&u=
 - 📫 How to reach me: `strawmelonjuice` on Discord or [mar@strawmelonjuice.com](mailto:mar@strawmelonjuice.com)
 - 😄 Pronouns: `She/her`
 
-> **Feel free to use the links on my sidebar or the bar on the bottom of this site to look around (or take a look at me badgies!)**
 
-[Also, see some of my projects](/?p=projects)
+
+<a href="/links"><button>My important links<imgmote>:3</imgmote></button></a>

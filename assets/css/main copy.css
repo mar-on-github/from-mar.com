@@ -444,63 +444,21 @@ ul.timeline {
     text-align: center
 }
 
-.huge-button {
-    border: 0;
-    border-radius: 20px 20px 5px 5px;
+button {
+    border: currentColor 5px groove;
+    border-radius: 10px 10px 10px 10px;
     cursor: pointer;
     font-size: 16px;
-    height: 50px;
-    margin: 10px;
-    outline: 0;
-    padding: 17px;
-    text-align: center;
-    width: 90%
-}
-
-.small-button {
-    border: 0;
-    border-radius: 5px 5px 20px 20px;
-    cursor: pointer;
-    font-size: 16px;
+    line-height: 22px;
+    line-break: strict;
     height: 35px;
-    margin: 10px;
-    outline: 0;
-    padding: 17px;
+    margin: auto;
+    vertical-align: middle;
     text-align: center;
-    width: 60%
+    width: 60%;
+    background-color: var(--color-slot-2);
 }
 
-.ephew-form {
-    border-radius: 70px;
-    margin: 50px auto;
-    padding: 30px 25px;
-    text-align: center;
-    width: 300px
-}
-
-.ephew-inputtablebox {
-    border: 5px solid;
-    border-radius: 10px 10px 20px 20px;
-    cursor: pointer;
-    height: auto;
-    margin: 10px;
-    outline: 0;
-    padding: 17px;
-    text-align: center;
-    width: 80%
-}
-
-.ephew-textinputtablebox {
-    border: 5px solid;
-    border-radius: 10px 10px 20px 20px;
-    cursor: pointer;
-    height: auto;
-    margin: 10px;
-    min-width: 80%;
-    outline: 0;
-    padding: 17px;
-    text-align: center
-}
 
 .link {
     font-size: 15px;

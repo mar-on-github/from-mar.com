@@ -8,6 +8,7 @@
     right: 0px;
     margin: auto;
 }
+
 a:hover:not(.menulink) {
     border-radius: 3px;
     color: #dda0dd;
@@ -54,7 +55,7 @@ a:not(:hover):not(.menulink) {
 }
 
 .imgmote {
-    background-color: #4f0952;
+    background-color: #7c567c;
     border-radius: 3px;
     font-size: 5px;
     height: 12px;
@@ -62,6 +63,17 @@ a:not(:hover):not(.menulink) {
     width: 12px;
     padding: 2px;
     display: inline-block;
+}
+
+imgmote {
+    background-color: #7c567c;
+    border-radius: 3px;
+    height: 12px;
+    margin: .9px;
+    width: 12px;
+    padding: 2px;
+    display: inline-block;
+    color: #ffc0ed;
 }
 
 .emoji-block {
@@ -309,23 +321,26 @@ div.derivi-twivi {
     border-radius: 30px;
     background-color: #ffffff5f;
 }
+
 #kittontoggle.accesstoggle {
     border: #290857 solid 2.5px;
     height: 26px;
     vertical-align: top;
     display: flex;
     border-radius: 0px 55px 200px 159px;
-        -webkit-border-radius: 0px 55px 200px 159px;
-        -moz-border-radius: 0px 55px 200px 159px;
+    -webkit-border-radius: 0px 55px 200px 159px;
+    -moz-border-radius: 0px 55px 200px 159px;
     padding: 3px;
     background-color: #5b0d73;
     color: #78e3c8;
 }
+
 #kittontoggle.accesstoggle #kittontoggletext {
     display: inline;
     font-size: x-small;
     margin-left: 2px;
 }
+
 .badgearea {
     background-color: #7b89d8;
     padding: 5px;
@@ -335,7 +350,7 @@ div.derivi-twivi {
     margin-left: 0px;
     margin-right: 0px;
     margin-bottom: 14px;
-    overflow:hidden;
+    overflow: hidden;
     transition: ease all 20s;
     display: block;
 }
@@ -461,7 +476,8 @@ ul.timeline {
     padding: 1px 16px
 }
 
-@media (orientation: portrait), (max-width: 800px) {
+@media (orientation: portrait),
+(max-width: 800px) {
     #main {
         padding: 16px;
         transition: margin-left .5s
@@ -490,7 +506,7 @@ ul.timeline {
         color: #05bddd
     }
 
-    
+
 
     .bottombar.responsive a:not(.accesstoggle) {
         display: block;
@@ -498,7 +514,7 @@ ul.timeline {
         text-align: right
     }
 
-    
+
 
     .sidebar .closebtn {
         display: inline;
@@ -573,30 +589,19 @@ ul.timeline {
     text-align: center
 }
 
-.huge-button {
-    border: 0;
-    border-radius: 20px 20px 5px 5px;
+button {
+    border: currentColor 5px groove;
+    border-radius: 10px 10px 10px 10px;
     cursor: pointer;
     font-size: 16px;
-    height: 50px;
-    margin: 10px;
-    outline: 0;
-    padding: 17px;
-    text-align: center;
-    width: 90%
-}
-
-.small-button {
-    border: 0;
-    border-radius: 5px 5px 20px 20px;
-    cursor: pointer;
-    font-size: 16px;
+    line-height: 22px;
+    line-break: strict;
     height: 35px;
-    margin: 10px;
-    outline: 0;
-    padding: 17px;
+    margin: auto;
+    vertical-align: middle;
     text-align: center;
-    width: 60%
+    width: 60%;
+    background-color: var(--color-slot-2);
 }
 
 .ephew-form {
@@ -843,7 +848,8 @@ ul.timeline {
     padding: 1px 16px
 }
 
-@media (orientation: portrait), (max-width: 800px) {
+@media (orientation: portrait),
+(max-width: 800px) {
     #main {
         padding: 16px;
         transition: margin-left .5s
@@ -870,7 +876,7 @@ ul.timeline {
         background-color: purple;
     }
 
-    
+
 
     .bottombar.responsive a:not(.accesstoggle) {
         display: block;
@@ -901,7 +907,8 @@ ul.timeline {
     }
 }
 
-@media (orientation: portrait), (max-width: 800px) {
+@media (orientation: portrait),
+(max-width: 800px) {
     .bottombar a:not(.icon, .themeswitcher) {
         display: none;
     }
@@ -993,10 +1000,12 @@ ul.timeline {
 .bottombar .active {
     background-color: #8ed0b8
 }
-.bottombar a:not(.accesstoggle,:hover) {
+
+.bottombar a:not(.accesstoggle, :hover) {
     color: #a74646;
     transition: all 0.5s ease-out;
 }
+
 .bottombar a:hover {
     background-color: rgb(122, 104, 189);
     color: #05bddd
@@ -1118,11 +1127,11 @@ div.bottombar {
 main.content {
     /* background-image: linear-gradient(#C8ECB5, #eedeab80) */
     background:
-            url(/assets/img/strawberrycorners.webp) left -106px top -83px no-repeat,
-            url(/assets/img/strawberrycorners.webp) right -106px top -83px no-repeat,
-            url(/assets/img/strawberrycorners.webp) left -106px bottom -83px no-repeat,
-            url(/assets/img/strawberrycorners.webp) right -106px bottom -83px no-repeat,
-            linear-gradient(#C8ECB5, #eedeab80);
+        url(/assets/img/strawberrycorners.webp) left -106px top -83px no-repeat,
+        url(/assets/img/strawberrycorners.webp) right -106px top -83px no-repeat,
+        url(/assets/img/strawberrycorners.webp) left -106px bottom -83px no-repeat,
+        url(/assets/img/strawberrycorners.webp) right -106px bottom -83px no-repeat,
+        linear-gradient(#C8ECB5, #eedeab80);
 }
 
 div.link-embed {
