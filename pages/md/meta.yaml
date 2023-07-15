@@ -155,6 +155,7 @@
 'links':
   title: My important links
   short: Mar's links
+  morelinks-display: false
   type: page
   date:
     posted: 1683723800

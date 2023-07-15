@@ -153,11 +153,15 @@ ENDOFSTYLE;
     if ((isset($MarkDownFileMetaData[$file]['title-display']))) {
       $titledisplay = $MarkDownFileMetaData[$file]['title-display'];
     }
+    $morelinks_display = true;
+    if ((isset($MarkDownFileMetaData[$file]['morelinks-display']))) {
+      $morelinks_display = $MarkDownFileMetaData[$file]['morelinks-display'];
+    }
     if ($titledisplay) {
       echo "<h1>" . ($Parsedown->line(($FileMetaData['title']))) . "</h1>";
     }
     echo $ContentOnPage;
-    if (!empty($file)) {
+    if ((!empty($file)) && $morelinks_display) {
       switch ($viewmode) {
         case 'blog':
           echo '<hr><p style="position: sticky;right: 10px;width: 30%;margin-left: 60%;"><a href="/blog/">Go back home</a></p>';
