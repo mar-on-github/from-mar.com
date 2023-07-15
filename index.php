@@ -32,9 +32,9 @@ if (isset($_GET['getimgmote'])) {
   } else if (file_exists($GLOBALS['rootdir'] . "assets/img/imgmote/" . $_GET['getimgmote'] . ".svg")) {
     $src = '/assets/img/imgmote/' . $_GET['getimgmote'] . '.svg';
   } else {
-    die("<span></span>");
+    die("/404");
   }
-    die('<img src="' . $src . '" max-widht="5px" max-height="5px" class="imgmote" alt="imgmote named ' . $_GET['getimgmote'] . '"  loading=\"lazy\">');
+    die($src);
   }
 if ($_SERVER['REQUEST_URI'] == "/accessibilityfilter") {
     echo $_COOKIE['accessibilityfilter'];

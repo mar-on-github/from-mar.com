@@ -72,9 +72,13 @@ function LoadImgMote(currimgmote) {
     var client = new HttpClient();
     let name = (currimgmote.innerHTML).replace(":", ".");
     client.get('/?getimgmote=' + name, function (response) {
-        var fragment = document.createElement("div");
-        fragment.innerHTML = response;
-        newimgmote = fragment.firstChild;
+        var newimgmote = document.createElement("img");
+        newimgmote.setAttribute("style", "max-width: 16px; max-height: 16px");
+        newimgmote.setAttribute("loading", "lazy");
+        newimgmote.setAttribute("alt", ":" + name + ":-imgmote.");
+        newimgmote.classList.add("imgmote");
+
+        newimgmote.src = response;
         currimgmote.parentNode.replaceChild(newimgmote, currimgmote);
     });
 }
@@ -82,7 +86,7 @@ function LoadImgMote(currimgmote) {
 imgmotes = document.getElementsByTagName("imgmote");
 for (var i = imgmotes.length - 1; i >= 0; i--) {
     LoadImgMote(imgmotes.item(i));
-    
+
 }
 
 var client = new HttpClient();
