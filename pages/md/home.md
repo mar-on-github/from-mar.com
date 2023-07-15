@@ -10,4 +10,4 @@ I'm Mar, <hl-img src="https://avatars.githubusercontent.com/u/101558380?s=400&u=
 
 
 
-<a href="/links"><button>My important links<imgmote>:3</imgmote></button></a>
+<a href="/links"><button>My important links<imgmote>blurpleheart</imgmote></button></a>
