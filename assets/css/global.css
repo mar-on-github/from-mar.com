@@ -177,7 +177,6 @@ main.content {
     margin-bottom: 100px;
     overflow: auto;
     padding: 30px;
-    z-index: 20;
 }
 
 .bottombar.responsive {
