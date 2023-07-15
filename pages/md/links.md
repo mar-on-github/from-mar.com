@@ -7,10 +7,10 @@
         <li><a href="/about">
             <button>More about me</button>
         </a></li>
-        <li><a href="/blog/>
+        <li><a href="/blog/">
             <button>My blog</button>
         </a></li>
-        <li><a href="/?p=projects>
+        <li><a href="/?p=projects">
             <button>My projects page</button>
         </a></li>
         <li><a href="/?p=support">
