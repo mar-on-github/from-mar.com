@@ -59,11 +59,12 @@
     --color-slot-57: #ffd54d;
     --color-slot-58: #191515;
     --color-slot-59: #ff4da372;
-    --main-color-60: #C8ECB5;
-    --main-color-61: #eedeab80;
-    --main-color-62: #fff9ee;
-    --main-color-63: #008060;
-    --main-color-64: #2a2a2a;
+    --color-slot-60: #C8ECB5;
+    --color-slot-61: #eedeab80;
+    --color-slot-62: #fff9ee;
+    --color-slot-63: #008060;
+    --color-slot-64: #2a2a2a;
+    --color-slot-65: rgba(245, 245, 245, 0.285);
 }
 body {
     background-image: url('/assets/img/bgraster.png');
