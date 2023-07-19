@@ -99,7 +99,9 @@ main {
     .bottombar.responsive .accesstoggle {
         display: none
     }
-
+    :root {
+        --screen-type-orientation: landscape;
+    }
     .only-on-mobile {
         display: none !important;
     }
@@ -146,6 +148,9 @@ main {
         display: none !important;
     }
 
+    :root {
+        --screen-type-orientation: mobile;
+    }
     .only-on-mobile {
         display: inherit !important;
     }

@@ -1,6 +1,6 @@
 - [More Amigo&Ferry posts](/search?s=OCid:AF)
 
-<hl-img src="/assets/img/media/art/AF/hi.png" alt="Amigo & Ferry" style="max-width: 550px; height: 300px"></hl-img>
+<div style="height: 300px"><hl-img src="/assets/img/media/art/AF/hi.png" alt="Amigo & Ferry"></hl-img></div>
 
 > Created to be Pico's friends for the Blub discord server, these characters pretty soon became their own story (and from fans, got even more love than Pico!)
 

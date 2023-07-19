@@ -119,7 +119,9 @@ ENDOFSTYLE;
       include(__DIR__ . "/../assets/scripts/badgearea.php");
     } ?>
   </div>
-  <div class="pageinfosidebar" style="opacity: 15%">
+  <span class="pageinfosidebar" id="pageinfosidebartoggle" style="transition: all 1s ease-out 0s; width: 0px; font-size: 3em; bottom: 215px; display: none; text-align: right; padding: 0px;" onclick="pageinfosidebar_rollout()">➧</span>
+  <div class="pageinfosidebar" id="pageinfosidebar" style="opacity: 15%;transition: all 2s ease-out 0s;">
+  <span class="not-on-mobile" style="position:absolute;right:0;top:0px;font-size: 3em">⇙</span>
     <p class="pageinfo-title">
       <?php
       if ($viewmode == 'base') {
@@ -128,8 +130,8 @@ ENDOFSTYLE;
       echo ($FileMetaData['title']); ?>
     </p>
     <ul>
-      <li>Author: 
-        <?php echo ($FileMetaData['authorthumbnail'] .$FileMetaData['author']); ?>
+      <li>Author: <img id="dummyauthorthumbnail" class="hl-img">
+        <?php echo ($FileMetaData['author']); ?>
       </li>
       <li>Posted: <span class="unparsedtimestamp">
           <?php echo ($FileMetaData['posted']); ?>
@@ -205,6 +207,11 @@ ENDOFSTYLE;
   if ($viewmode == 'base') {
     echo ('<script src="/assets/scripts/oneko.js"></script>');
   }
+  echo <<<END
+  <div style="position:fixed; right: -100px; top: -100px">
+  {$FileMetaData['authorthumbnail']}
+  </div>
+  END;
   ?>
 </body>
 

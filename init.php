@@ -69,7 +69,7 @@ function ReturnUniversalHeader(string $PageName, string $specialstyles = "base",
         <!-- Removed ads, instead, hope people donate. I rlly do, can't afford this fucking site without ad revenue nor donations -->
         <script data-name="BMC-Widget" data-cfasync="false" src="https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js" data-id="JustMarOK" data-description="Support me on Buy me a coffee!" data-message="" data-color="#FF813F" data-position="left" data-x_margin="10" data-y_margin="30"></script>
         <!-- END -->
-        <script src="/node_modules/jquery/dist/jquery.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.0/dist/jquery.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
         <link rel="stylesheet" href="/assets/css/jquery.mCustomScrollbar.css">
         <script src="/assets/scripts/jquery.mCustomScrollbar.concat.min.js"></script>
         <script>
@@ -163,28 +163,24 @@ function imgmote(string $name, bool $return = false)
 
 $hlimg_script = <<<END
 <script type="text/javascript">
-switch (viewmode) {
-    case 'projects':
-        const hlimg_options = {
+console.log('View mode of this page is: "' + viewmode + '"');
+if (viewmode === "base") {
+  const hlimg_options = {
           styling_imageshow_zIndex: 900,
           styling_hlimg_maxwidth: "70%",
-        }
-        break;
-    case 'blog':
-        const hlimg_options = {
+}}
+if (viewmode === "blog") {
+  const hlimg_options = {
           styling_imageshow_zIndex: 900,
           styling_hlimg_maxwidth: "70%",
-        }
-        break;
-    default:
-        const hlimg_options = {
+}}
+if (viewmode === "project") {
+  const hlimg_options = {
           styling_imageshow_zIndex: 900,
           styling_hlimg_maxwidth: "70%",
-        }
-        break;
-}
+}}
 </script>
 <!--<script defer src="/node_modules/hl-img/hl-img.js"></script>-->
-<script defer src="https://cdn.jsdelivr.net/npm/hl-img@1.10.9/hl-img.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/hl-img@1.10.10/hl-img.min.js"></script>
 END;
 require_once (__DIR__ . '/vendor/autoload.php');
