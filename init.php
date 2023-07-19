@@ -187,6 +187,6 @@ switch (viewmode) {
 }
 </script>
 <!--<script defer src="/node_modules/hl-img/hl-img.js"></script>-->
-<script defer src="https://cdn.jsdelivr.net/npm/hl-img@1/hl-img.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/hl-img@1.10.8/hl-img.min.js"></script>
 END;
 require_once (__DIR__ . '/vendor/autoload.php');
