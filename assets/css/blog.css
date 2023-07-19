@@ -192,6 +192,9 @@ main.content {
 #blogscroll-pagecontent {
     overflow-x:hidden;
 }
+#blogscroll-pagecontent tbody {
+    width: 100%;
+}
 div.ephew-formlabels {
     background-color: #5f9ea048;
     border: 2px solid;
