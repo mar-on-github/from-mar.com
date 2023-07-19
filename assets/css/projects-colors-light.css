@@ -13,6 +13,7 @@
     --color-slot-12: #000;
     --color-slot-13: #8000806c;
     --color-slot-14: rgba(178, 233, 76, 0.700);
+    --color-slot-15: var(var(--color-slot-03))
     /*  */
     --main-value-01: 3px solid #bbb;
     /*  */

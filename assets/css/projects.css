@@ -156,7 +156,7 @@ main.content {
 }
 
 blockquote {
-    color: var(--color-slot-03);
+    color: var(--color-slot-15);
     margin-bottom: 20px;
     padding: 0 0 0 20px;
     border-left: var(--main-value-01);
