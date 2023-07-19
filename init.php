@@ -165,9 +165,25 @@ function imgmote(string $name, bool $return = false)
 
 $hlimg_script = <<<END
 <script type="text/javascript">
-const hlimg_options = {
-  styling_imageshow_zIndex: 900,
-  styling_hlimg_maxwidth: "70%",
+switch (viewmode) {
+    case 'projects':
+        const hlimg_options = {
+          styling_imageshow_zIndex: 900,
+          styling_hlimg_maxwidth: "70%",
+        }
+        break;
+    case 'blog':
+        const hlimg_options = {
+          styling_imageshow_zIndex: 900,
+          styling_hlimg_maxwidth: "70%",
+        }
+        break;
+    default:
+        const hlimg_options = {
+          styling_imageshow_zIndex: 900,
+          styling_hlimg_maxwidth: "70%",
+        }
+        break;
 }
 </script>
 <!--<script defer src="/node_modules/hl-img/hl-img.js"></script>-->

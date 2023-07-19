@@ -1,5 +1,5 @@
 switch (viewmode) {
-    case 'discord':
+    case 'projects':
         (function($){
         $(window).on("load",function(){
             $("main.content").mCustomScrollbar({
