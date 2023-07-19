@@ -11,13 +11,13 @@ if ($_SERVER['REQUEST_URI'] == "/sociallinks") {
                 <img src="https://assets-global.website-files.com/6257adef93867e50d84d30e2/636e0a69f118df70ad7828d4_icon_clyde_blurple_RGB.svg" width="35px" height="35px" alt="Discord" title="Discord (not the mlp kind, the chat app kind)">
             </a>
             <a href="https://github.com/strawmelonjuice/">
-                <img src="/assets/img/svg/github-mark.svg" height="35px" alt="GitHub" title="Gitty Hub">
+                <img src="/assets/img/svg/github-mark.svg" height="35px" alt="GitHub" title="Gitty Hub" class="svgrecolor">
             </a>
             <a href="https://tumblr.com/strawmelonjuice/">
                 <img src="https://assets.tumblr.com/pop/manifest/favicon-cfddd25f.svg" height="35px" alt="Tumblr" title="Tumblr (dash edition)">
             </a>     
             <a href="https://www.last.fm/user/strawmelonjuice">
-                <img src="https://www.last.fm/static/images/lastfm_avatar_applemusic.b06eb8ad89be.png" height="35px" alt="Last.FM" title="LastFM: moosik list">
+                <img src="/assets/img/png/lastfm_35px.png" height="35px" alt="Last.FM" title="LastFM: moosik list">
             </a>
     end;
     die;

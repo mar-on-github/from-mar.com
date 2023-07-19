@@ -24,8 +24,6 @@ function ReturnUniversalHeader(string $PageName, string $specialstyles = "base",
     case 'base':
     default:
       $StylesheetRefer = <<<END
-            <link media="(prefers-color-scheme: light)" rel="stylesheet" href="/assets/css/main-colors-light.css" content-type="text/css" charset="utf-8" />
-            <link media="(prefers-color-scheme: dark)" rel="stylesheet" href="/assets/css/main-colors-dark.css" content-type="text/css" charset="utf-8" />
             <link rel="stylesheet" href="/assets/css/main.css" content-type="text/css" charset="utf-8" />
             <link rel="icon" type="image/png" href="/assets/img/Strawmelonjuice.png">
             <link rel="icon" type="image/webp" href="/assets/img/Strawmelonjuice.webp">

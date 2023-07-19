@@ -1,3 +1,184 @@
+@media (prefers-color-scheme: light) {
+    .svgrecolor {
+            filter: brightness(0) saturate(100%);
+        }
+    :root {
+        --color-slot-1: #dda0dd;
+        --color-slot-2: #aad0f2;
+        --color-slot-3: #194f97;
+        --color-slot-4: #4f0952;
+        --color-slot-5: #05bddd;
+        --color-slot-6: #a8a8a838;
+        --color-slot-7: #00000033;
+        --color-slot-8: #999;
+        --color-slot-9: #3f5b48;
+        --color-slot-10: #6dc3d2;
+        --color-slot-11: #85a0f2af;
+        --color-slot-12: #E6A595;
+        --color-slot-13: #251e1c;
+        --color-slot-14: #EEBCBC;
+        --color-slot-15: #b885f2aa;
+        --color-slot-16: #1c1c1c;
+        --color-slot-17: #63cc8150;
+        --color-slot-18: #b885f28d;
+        --color-slot-19: #6dd06d;
+        --color-slot-20: #ffffff;
+        --color-slot-21: #5b0d73;
+        --color-slot-22: #78e3c8;
+        --color-slot-23: #4150aa;
+        --color-slot-24: #3338b7;
+        --color-slot-25: #5f9ea048;
+        --color-slot-26: #7a68bd;
+        --color-slot-27: #290857;
+        --color-slot-28: grey;
+        --color-slot-29: #800080;
+        --color-slot-30: black;
+        --color-slot-31: #a74646;
+        --color-slot-32: #8ed0b8;
+        --color-slot-33: #a9c3bc;
+        --color-slot-34: #5c5c8a;
+        --color-slot-35: #00dfa7a1;
+        --color-slot-36: #1e1eb9;
+        --color-slot-37: #515174;
+        --color-slot-38: #f5f5dc;
+        --color-slot-39: #ddd99a;
+        --color-slot-40: #4d4b52;
+        --color-slot-41: #666666;
+        --color-slot-42: #cccccc;
+        --color-slot-43: #6e8095;
+        --color-slot-44: #b086ff;
+        --color-slot-45: #EEDEAB;
+        --color-slot-46: #161616;
+        --color-slot-47: #faebd7;
+        --color-slot-48: #bbdcbb;
+        --color-slot-49: #e10404;
+        --color-slot-50: #efc85c;
+        --color-slot-51: #200207;
+        --color-slot-52: #f47a7a;
+        --color-slot-53: #aa9fd7;
+        --color-slot-54: #171616;
+        --color-slot-55: #fefefe;
+        --color-slot-56: #c2c2c2af;
+        --color-slot-57: #ffd54d;
+        --color-slot-58: #191515;
+        --color-slot-59: #ff4da372;
+        --color-slot-60: #C8ECB5;
+        --color-slot-61: #eedeab80;
+        --color-slot-62: #fff9ee;
+        --color-slot-63: #008060;
+        --color-slot-64: #2a2a2a;
+        --color-slot-65: rgba(245, 245, 245, 0.285);
+        --color-slot-66: #ffc0ed;
+        /*  */
+        --value-slot-01: solid 1px #ffffff;
+    }
+
+    body {
+        background-image: url('/assets/img/bgraster.png');
+    }
+
+    main.content {
+        background:
+            url(/assets/img/strawberrycorners.png) left -106px top -83px no-repeat,
+            url(/assets/img/strawberrycorners.png) right -106px top -83px no-repeat,
+            url(/assets/img/strawberrycorners.png) left -106px bottom -83px no-repeat,
+            url(/assets/img/strawberrycorners.png) right -106px bottom -83px no-repeat,
+            linear-gradient(#C8ECB5, #eedeab80);
+    }
+}
+@media (prefers-color-scheme: dark) {
+    .svgrecolor {
+            filter: brightness(0) saturate(100%)invert(100%) sepia(7%) saturate(248%) hue-rotate(335deg) brightness(117%) contrast(90%);
+        }
+    :root {
+        --filter-contrast-backgroundcolor: #161616;
+        --filter-grayscale-backgroundcolor: #afafaf6c;
+    }
+    :root {
+        --color-slot-1: #dda0dd;
+        --color-slot-2: #aad0f2;
+        --color-slot-3: #194f97;
+        --color-slot-4: #9b4382;
+        --color-slot-5: #59a8b3;
+        --color-slot-6: #a8a8a838;
+        --color-slot-7: #00000033;
+        --color-slot-8: #999;
+        --color-slot-9: #3f5b48;
+        --color-slot-10: #6dc3d2;
+        --color-slot-11: #85a0f2af;
+        --color-slot-12: #E6A595;
+        --color-slot-13: #251e1c;
+        --color-slot-14: #0a1c92;
+        --color-slot-15: #b885f2aa;
+        --color-slot-16: #1c1c1c;
+        --color-slot-17: #63cc8150;
+        --color-slot-18: #b885f28d;
+        --color-slot-19: #6dd06d;
+        --color-slot-20: #000000;
+        --color-slot-21: #5b0d73;
+        --color-slot-22: #78e3c8;
+        --color-slot-23: #a7afdf;
+        --color-slot-24: #3338b7;
+        --color-slot-25: #5f9ea048;
+        --color-slot-26: #7a68bd;
+        --color-slot-27: #290857;
+        --color-slot-28: grey;
+        --color-slot-29: #800080;
+        --color-slot-30: white;
+        --color-slot-31: #9c9de7;
+        --color-slot-32: #8ed0b8;
+        --color-slot-33: #1f5a4a;
+        --color-slot-34: #5c5c8a;
+        --color-slot-35: #00dfa7a1;
+        --color-slot-36: #1e1eb9;
+        --color-slot-37: #515174;
+        --color-slot-38: #f5f5dc;
+        --color-slot-39: #ddd99a;
+        --color-slot-40: #4d4b52;
+        --color-slot-41: #666666;
+        --color-slot-42: #cccccc;
+        --color-slot-43: #6e8095;
+        --color-slot-44: #b086ff;
+        --color-slot-45: #852668;
+        --color-slot-46: #161616;
+        --color-slot-47: #faebd7;
+        --color-slot-48: #bbdcbb;
+        --color-slot-49: #e10404;
+        --color-slot-50: #ffacac;
+        --color-slot-51: #200207;
+        --color-slot-52: #f47a7a;
+        --color-slot-53: #aa9fd7;
+        --color-slot-54: #171616;
+        --color-slot-55: #fefefe;
+        --color-slot-56: #c2c2c2af;
+        --color-slot-57: #ffd54d;
+        --color-slot-58: #191515;
+        --color-slot-59: #ff4da372;
+        --color-slot-60: #C8ECB5;
+        --color-slot-61: #eedeab80;
+        --color-slot-62: #fff9ee;
+        --color-slot-63: #008060;
+        --color-slot-64: #c2c1c1;
+        --color-slot-65: rgba(245, 245, 245, 0.285);
+        --color-slot-66: #ffc0ed;
+        /*  */
+        --value-slot-01: solid 1px #ffffff;
+    }
+
+    body {
+        background-image: url('/assets/img/bgraster_dark.png');
+        /* filter: brightness(0.7); */
+    }
+
+    main.content {
+        background:
+            url(/assets/img/strawberrycorners-moons.png) left -106px top -83px no-repeat,
+            url(/assets/img/strawberrycorners-moons.png) right -106px top -83px no-repeat,
+            url(/assets/img/strawberrycorners-moons.png) left -106px bottom -83px no-repeat,
+            url(/assets/img/strawberrycorners-moons.png) right -106px bottom -83px no-repeat,
+            linear-gradient(#13354480, #3B1344);
+    }
+}
 .bottombar {
     border-radius: 30px 0 0 0;
     bottom: 0px;
@@ -11,14 +192,14 @@
 
 a:hover:not(.menulink) {
     border-radius: 3px;
-    color: #dda0dd;
+    color: var(--color-slot-1);
     padding: 5px;
     line-height: 115%;
-    filter: drop-shadow(6px 6px 4px #aad0f2) drop-shadow(-6px -6px 4px #aad0f2);
+    filter: drop-shadow(6px 6px 4px var(--color-slot-2)) drop-shadow(-6px -6px 4px var(--color-slot-2));
 }
 
 a:not(:hover):not(.menulink) {
-    color: #194f97;
+    color: var(--color-slot-3);
 }
 
 
@@ -49,17 +230,13 @@ a:not(:hover):not(.menulink) {
     text-decoration: none
 }
 
-/* main p, main h1, main h2, main h3 {
-    background-color: var(--color-slot-65);
-    border-radius: 15px;
-} */
 
 .centered {
     text-align: center
 }
 
 .imgmote {
-    background-color: #7c567c;
+    background-color: var(--color-slot-4);
     border-radius: 3px;
     font-size: 5px;
     height: 12px;
@@ -68,20 +245,18 @@ a:not(:hover):not(.menulink) {
     padding: 2px;
     display: inline-block;
 }
-
 imgmote {
-    background-color: #7c567c;
+    background-color: var(--color-slot-4);
     border-radius: 3px;
     height: 12px;
     margin: .9px;
     width: 12px;
     padding: 2px;
     display: inline-block;
-    color: #ffc0ed;
+    color: var(--color-slot-66);
 }
-
 .emoji-block {
-    background-color: #05bddd;
+    background-color: var(--color-slot-5);
     border-radius: 20%;
     font-family: 'Noto Color Emoji', sans-serif;
     font-size: 20px;
@@ -92,134 +267,6 @@ imgmote {
     display: inline-block;
 }
 
-.huge-button {
-    border: 0;
-    border-radius: 20px 20px 5px 5px;
-    cursor: pointer;
-    font-size: 16px;
-    height: 50px;
-    margin: 10px;
-    outline: 0;
-    padding: 17px;
-    text-align: center;
-    width: 90%
-}
-
-.small-button {
-    border: 0;
-    border-radius: 5px 5px 20px 20px;
-    cursor: pointer;
-    font-size: 16px;
-    height: 35px;
-    margin: 10px;
-    outline: 0;
-    padding: 17px;
-    text-align: center;
-    width: 60%
-}
-
-.ephew-form {
-    border-radius: 70px;
-    margin: 50px auto;
-    padding: 30px 25px;
-    text-align: center;
-    width: 300px
-}
-
-.ephew-inputtablebox {
-    border: 5px solid;
-    border-radius: 10px 10px 20px 20px;
-    cursor: pointer;
-    height: auto;
-    margin: 10px;
-    outline: 0;
-    padding: 17px;
-    text-align: center;
-    width: 80%
-}
-
-.ephew-textinputtablebox {
-    border: 5px solid;
-    border-radius: 10px 10px 20px 20px;
-    cursor: pointer;
-    height: auto;
-    margin: 10px;
-    min-width: 80%;
-    outline: 0;
-    padding: 17px;
-    text-align: center
-}
-
-.link {
-    font-size: 15px;
-    margin-bottom: 0;
-    text-align: center
-}
-
-.link-embed {
-    border-radius: 10px 10px 40px 40px;
-    margin: 20px;
-    padding: 15px;
-    text-align: center
-}
-
-.login-input {
-    font-size: 15px;
-    height: 25px;
-    margin-bottom: 25px;
-    padding: 10px;
-    width: calc(100% - 23px)
-}
-
-.login-input:focus {
-    outline: none
-}
-
-.media-upload-center {
-    background: #a8a8a838;
-    border-radius: 20px;
-    box-shadow: 8px 10px 15px 0 rgba(0, 0, 0, 0.2);
-    display: inline-flex;
-    height: 240px;
-    position: inherit;
-    text-align: center;
-    width: 255px
-}
-
-.media-upload-dropzone {
-    border: 1px dashed #999;
-    border-radius: 3px;
-    height: 80px;
-    text-align: center;
-    width: 100px
-}
-
-.media-upload-frame {
-    position: inherit;
-    text-align: center
-}
-
-.media-upload-icon {
-    margin: 25px 2px 2px
-}
-
-.media-upload-input {
-    height: 100%;
-    left: 0;
-    opacity: 0;
-    position: relative;
-    top: -62px;
-    width: 100%
-}
-
-.media-upload-title {
-    border-bottom: 1px solid #999;
-    font-size: 15px;
-    height: 50px;
-    text-align: center;
-    width: 100%
-}
-
 .openbtn {
     display: none
 }
@@ -227,7 +274,7 @@ imgmote {
 .pageinfo-title {
     font-weight: bold;
     font-style: italic;
-    color: #3f5b48;
+    color: var(--color-slot-9);
     text-align: center;
     /* line-height: 80px; */
     font-size: 20px;
@@ -235,7 +282,7 @@ imgmote {
 
 .pageinfo-shortversion {
     font-style: italic;
-    color: #3f5b48;
+    color: var(--color-slot-9);
     text-align: center;
     font-size: 15px;
 }
@@ -252,8 +299,7 @@ imgmote {
     bottom: 90px;
     left: 30px;
     z-index: 90;
-    background-color: #6dc3d2;
-
+    background-color: var(--color-slot-10);
 }
 
 .sidebar .closebtn {
@@ -271,36 +317,36 @@ imgmote {
 }
 
 blockquote {
-    background-color: #85a0f2af;
+    background-color: var(--color-slot-11);
     border: 2px outset;
-    border-color: #E6A595;
-    color: #251e1c;
+    border-color: var(--color-slot-12);
+    color: var(--color-slot-13);
     font-style: italic
 }
 
 body {
-    background-color: #EEBCBC;
-    background-image: url('/assets/img/bgraster.png');
+    background-color: var(--color-slot-14);
     font-family: 'Ubuntu', sans-serif;
     font-size: 14px;
     margin: 0;
     overflow: hidden;
     padding: 15px;
+    color: var(--color-slot-30)
 }
 
 code {
-    background-color: #b885f2aa;
+    background-color: var(--color-slot-15);
     border: 2px dotted;
-    border-color: #E6A595;
-    color: #1c1c1c;
+    border-color: var(--color-slot-12);
+    color: var(--color-slot-16);
     font-family: 'Ubuntu Mono', monospace
 }
 
 div.derivi-twivi {
-    background-color: #63cc8150;
+    background-color: var(--color-slot-17);
     border: 2px dotted;
-    border-color: #b885f28d;
-    color: #1c1c1c;
+    border-color: var(--color-slot-18);
+    color: var(--color-slot-16);
     width: fit-content;
     max-width: 70%;
     border-radius: 15px;
@@ -311,8 +357,8 @@ div.derivi-twivi {
 
 #bottomlink_morelinks span {
     display: block;
-    background-color: #6dd06d;
-    border: solid 1px white;
+    background-color: var(--color-slot-19);
+    border: var(--value-slot-01);
     position: sticky;
     right: 10px;
     min-width: 117px;
@@ -327,7 +373,7 @@ div.derivi-twivi {
 }
 
 #kittontoggle.accesstoggle {
-    border: #290857 solid 2.5px;
+    border: var(--color-slot-27) solid 2.5px;
     height: 26px;
     vertical-align: top;
     display: flex;
@@ -335,8 +381,8 @@ div.derivi-twivi {
     -webkit-border-radius: 0px 55px 200px 159px;
     -moz-border-radius: 0px 55px 200px 159px;
     padding: 3px;
-    background-color: #5b0d73;
-    color: #78e3c8;
+    background-color: var(--color-slot-21);
+    color: var(--color-slot-22);
 }
 
 #kittontoggle.accesstoggle #kittontoggletext {
@@ -346,10 +392,11 @@ div.derivi-twivi {
 }
 
 .badgearea {
-    background-color: #7b89d8;
+    color: var(--color-slot-20);
+    background-color: var(--color-slot-23);
     padding: 5px;
-    box-shadow: 0px 10px 8px -4px #3338b7,
-        0px -10px 8px -4px #3338b7;
+    box-shadow: 0px 10px 8px -4px var(--color-slot-24),
+        0px -10px 8px -4px var(--color-slot-24);
     margin-top: 14px;
     margin-left: 0px;
     margin-right: 0px;
@@ -387,14 +434,14 @@ div.derivi-twivi {
 }
 
 div.ephew-formlabels {
-    background-color: #5f9ea048;
+    background-color: var(--color-slot-25);
     border: 2px solid;
     border-radius: 5px;
     margin: 14px
 }
 
 div.link-embed {
-    background-color: #5f9ea048;
+    background-color: var(--color-slot-25);
     border: 2px solid;
     border-radius: 5px;
     margin: 14px
@@ -495,15 +542,17 @@ ul.timeline {
     .bottombar a:not(.icon, .accesstoggle) {
         display: none
     }
-
+    .bottombar.responsive #kittontoggle {
+        display: none;
+    }
     .bottombar.responsive .icon {
         border-radius: 30px 30px 0 0;
         bottom: 0;
         left: 0;
         position: fixed;
         z-index: 900;
-        background-color: #7a68bd;
-        color: #05bddd
+        background-color: var(--color-slot-26);
+        color: var(--color-slot-5)
     }
 
 
@@ -604,37 +653,6 @@ button {
     background-color: var(--color-slot-2);
 }
 
-.ephew-form {
-    border-radius: 70px;
-    margin: 50px auto;
-    padding: 30px 25px;
-    text-align: center;
-    width: 300px
-}
-
-.ephew-inputtablebox {
-    border: 5px solid;
-    border-radius: 10px 10px 20px 20px;
-    cursor: pointer;
-    height: auto;
-    margin: 10px;
-    outline: 0;
-    padding: 17px;
-    text-align: center;
-    width: 80%
-}
-
-.ephew-textinputtablebox {
-    border: 5px solid;
-    border-radius: 10px 10px 20px 20px;
-    cursor: pointer;
-    height: auto;
-    margin: 10px;
-    min-width: 80%;
-    outline: 0;
-    padding: 17px;
-    text-align: center
-}
 
 .link {
     font-size: 15px;
@@ -662,9 +680,9 @@ button {
 }
 
 .media-upload-center {
-    background: #a8a8a838;
+    background: var(--color-slot-6);
     border-radius: 20px;
-    box-shadow: 8px 10px 15px 0 rgba(0, 0, 0, 0.2);
+    box-shadow: 8px 10px 15px 0 var(--color-slot-7);
     display: inline-flex;
     height: 240px;
     position: inherit;
@@ -673,7 +691,7 @@ button {
 }
 
 .media-upload-dropzone {
-    border: 1px dashed #999;
+    border: 1px dashed var(--color-slot-8);
     border-radius: 3px;
     height: 80px;
     text-align: center;
@@ -699,34 +717,11 @@ button {
 }
 
 .media-upload-title {
-    border-bottom: 1px solid #999;
+    border-bottom: 1px solid var(--color-slot-8);
     font-size: 15px;
     height: 50px;
     text-align: center;
     width: 100%
-}
-
-
-.postedbyuserheader {
-    border-bottom: 4px solid grey;
-    border-left: 6px solid #d58524;
-    display: flex;
-    font-size: larger;
-    font-style: oblique;
-    padding: 10px;
-    text-align: start
-}
-
-.postedbyuserheader a {
-    text-decoration-style: double
-}
-
-.postedbyuserheader img {
-    border: 2px solid #d585247b;
-    border-radius: 50px;
-    height: 30px;
-    image-rendering: auto;
-    width: 30px
 }
 
 .postview:not(.postview-article) {
@@ -748,14 +743,14 @@ button {
 }
 
 div.ephew-formlabels {
-    background-color: #5f9ea048;
+    background-color: var(--color-slot-25);
     border: 2px solid;
     border-radius: 5px;
     margin: 14px
 }
 
 div.link-embed {
-    background-color: #5f9ea048;
+    background-color: var(--color-slot-25);
     border: 2px solid;
     border-radius: 5px;
     margin: 14px
@@ -791,6 +786,13 @@ form.big-ephew-form {
     min-width: 300px;
     padding: 30px 25px
 }
+
+h1 {
+    font-size: 25px;
+    font-weight: 300;
+    margin: 0 auto 25px;
+}
+
 h2 {
     font-size: 21px;
     font-weight: 275;
@@ -862,7 +864,7 @@ ul.timeline {
         bottom: 0;
         left: 0;
         position: absolute;
-        background-color: purple;
+        background-color: var(--color-slot-29);
     }
 
 
@@ -982,164 +984,160 @@ ul.timeline {
     }
 }
 
-.big-ephew-form {
-    background-color: #fff
-}
 
 .bottombar .active {
-    background-color: #8ed0b8
+    background-color: var(--color-slot-32)
 }
 
 .bottombar a:not(.accesstoggle, :hover) {
-    color: #a74646;
+    color: var(--color-slot-31);
     transition: all 0.5s ease-out;
 }
 
 .bottombar a:hover {
-    background-color: rgb(122, 104, 189);
-    color: #05bddd
+    background-color: var(--color-slot-26);
+    color: var(--color-slot-5)
 }
 
 
 
 
 .bottombar.responsive.icon a:hover {
-    background-color: #a9c3bc;
-    color: #5c5c8a
+    background-color: var(--color-slot-33);
+    color: var(--color-slot-34)
 }
 
 .ephew-buttons:focus {
-    background-color: #00dfa7a1;
-    color: #1e1eb9
+    background-color: var(--color-slot-35);
+    color: var(--color-slot-36)
 }
 
 .ephew-buttons:hover {
-    background-color: #a9c3bc;
-    color: #515174
+    background-color: var(--color-slot-33);
+    color: var(--color-slot-37)
 }
 
 .ephew-form {
-    background-color: #fff
+    background-color: var(--color-slot-30)
 }
 
 .ephew-inputtablebox {
-    background-color: #f5f5dc;
-    border-color: #a9c3bc;
-    color: #5c5c8a
+    background-color: var(--color-slot-38);
+    border-color: var(--color-slot-33);
+    color: var(--color-slot-34)
 }
 
 .ephew-textinputtablebox {
-    background-color: #ddd99a;
-    border-color: #a9c3bc;
-    box-shadow: inset 0 0 10px 10px #f5f5dc;
-    color: #4d4b52
+    background-color: var(--color-slot-39);
+    border-color: var(--color-slot-33);
+    box-shadow: inset 0 0 10px 10px var(--color-slot-38);
+    color: var(--color-slot-40)
 }
 
 .link {
-    color: #666
+    color: var(--color-slot-41)
 }
 
 .link a {
-    color: #666
+    color: var(--color-slot-41)
 }
 
 .login-input {
-    border: 1px solid #ccc
+    border: 1px solid var(--color-slot-42)
 }
 
 .login-input:focus {
-    border-color: #6e8095
+    border-color: var(--color-slot-43)
 }
 
 .loginsidebar {
-    background-color: #b086ff
+    background-color: var(--color-slot-44)
 }
 
 .openbtn {
-    background-color: #EEDEAB;
-    box-shadow: 4px 3px 8px 1px #05bddd;
-    color: #161616
+    background-color: var(--color-slot-45);
+    box-shadow: 4px 3px 8px 1px var(--color-slot-5);
+    color: var(--color-slot-46)
 }
 
 .postedbyuserheader {
-    color: #faebd7
+    color: var(--color-slot-47)
 }
 
 .postedbyuserheader a {
-    color: #bbdcbb
+    color: var(--color-slot-48)
 }
 
 .sidebar {
-    background-color: #e10404;
-    background-image: linear-gradient(#EEDEAB, #EEDEAB, #e4cd7e9f);
-    box-shadow: 4px 3px 8px 1px #05bddd
+    background-color: var(--color-slot-49);
+    background-image: linear-gradient(var(--color-slot-45), var(--color-slot-45), #e4cd7e9f);
+    box-shadow: 4px 3px 8px 1px var(--color-slot-5)
 }
 
 /* .sidebar a {
-    background-color: #EEDEAB;
+    background-color: var(--color-slot-45);
     color: #000
 } */
 
 .sidebar a.active {
-    background-color: #efc85c;
-    color: rgb(32, 2, 7)
+    background-color: var(--color-slot-50);
+    color: var(--color-slot-51)
 }
 
 .sidebar a:hover:not(.active) {
-    background-color: #f47a7a;
-    color: #aa9fd7
+    background-color: var(--color-slot-52);
+    color: var(--color-slot-53)
 }
 
 #filtertoggle {
-    background-color: #171616;
-    color: #fefefe
+    background-color: var(--color-slot-54);
+    color: var(--color-slot-55)
 }
 
 #filtertoggle:hover {
-    background-color: #bbdcbb
+    background-color: var(--color-slot-48)
 }
 
 .timeline li {
-    background-color: #c2c2c2af;
-    border-color: #ffd54d;
-    color: #191515
+    background-color: var(--color-slot-56);
+    border-color: var(--color-slot-57);
+    color: var(--color-slot-58)
 }
 
 .timeline li.article {
-    background-color: #ff4da372
+    background-color: var(--color-slot-59)
 }
 
 div.bottombar {
-    background-image: linear-gradient(to right, #a9c3bc, #EEDEAB)
+    background-image: linear-gradient(to right, var(--color-slot-33), var(--color-slot-45))
 }
 
-main.content {
-    /* background-image: linear-gradient(#C8ECB5, #eedeab80) */
+/* main.content {
     background:
-        url(/assets/img/strawberrycorners.webp) left -106px top -83px no-repeat,
-        url(/assets/img/strawberrycorners.webp) right -106px top -83px no-repeat,
-        url(/assets/img/strawberrycorners.webp) left -106px bottom -83px no-repeat,
-        url(/assets/img/strawberrycorners.webp) right -106px bottom -83px no-repeat,
-        linear-gradient(#C8ECB5, #eedeab80);
-}
+            url(/assets/img/strawberrycorners.png) left -106px top -83px no-repeat,
+            url(/assets/img/strawberrycorners.png) right -106px top -83px no-repeat,
+            url(/assets/img/strawberrycorners.png) left -106px bottom -83px no-repeat,
+            url(/assets/img/strawberrycorners.png) right -106px bottom -83px no-repeat,
+            linear-gradient(#C8ECB5, #eedeab80);
+} */
 
 div.link-embed {
-    background-color: #fff9ee
+    background-color: var(--color-slot-62)
 }
 
 div.logincontent {
-    background-image: linear-gradient(#C8ECB5, #eedeab80)
+    background-image: linear-gradient(var(--color-slot-60), var(--color-slot-61))
 }
 
 div.timeline {
-    background-color: #fff;
-    border-color: #008060
+    background-color: var(--color-slot-30);
+    border-color: var(--color-slot-63)
 }
 
 h1 {
-    color: #2a2a2a
+    color: var(--color-slot-64)
 }
 
 h1.login-title {
-    color: #666
+    color: var(--color-slot-41)
 }
