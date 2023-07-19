@@ -1,5 +1,29 @@
 # For now, new posts should be added above older ones, as the order of this file will set the order of the timeline.
 # posts
+'posts/art/doh-noot_smile':
+  title: 'Doh-Noot - #1: Smiling'
+  short: 'Just don''t let Doh-Noot walk into the donut shop, okay?'
+  type: post
+  og-image: /assets/img/media/art/MM2-textured.png
+  title-display: true
+  date:
+    posted: 1689726261
+    edited: 1689726261
+  filename: art/doh-noot_smile
+  category: Art
+  tags: art, tumblr, mouse, mousemouse, mousemaus, Clip Studio Paint, OCs, OC
+'posts/art/mousemouse-3.2-textured':
+  title: MouseMouse retextured
+  short: The 4K mousemouse I posted earlier in a new papertextured mix!
+  type: post
+  og-image: /assets/img/media/art/MM2-textured.png
+  title-display: true
+  date:
+    posted: 1689715712
+    edited: 1689715712
+  filename: art/mousemouse-3.2-textured
+  category: Art
+  tags: art, tumblr, mouse, mousemouse, mousemaus, Clip Studio Paint, OCs, OC
 'posts/LDo/230704':
   title: Logger-Diary Online is coming back to Mar's home domain.
   short: Logger-Diary Online is coming back to `logger-diary.strawmelonjuice.com` for financial reasons.
@@ -23,7 +47,7 @@
     edited: 1688332202
   filename: art/mousemouse-3.2
   category: Art
-  tags: art, tumblr, mouse, mousemouse, mousemaus
+  tags: art, tumblr, mouse, mousemouse, mousemaus, Clip Studio Paint, OCs, OC
 'posts/ads-no-more':
   title: Going ad-less.
   short: First Google Adsense, now adfocus too. Going ad-less.
@@ -35,6 +59,18 @@
   filename: ads-no-more
   category: Meta
   tags: Google Adsense, Google, critique, adfocus, adfoc.us
+'posts/art/bb_hi':
+  title: "Bella bee: Hi!"
+  short: A first try that went exceptionally well!
+  type: post
+  og-image: /assets/img/media/art/BB/Bella Bee hi marked.png
+  title-display: true
+  date:
+    posted: 1687541312
+    edited: 1687541312
+  filename: art/bb_hi
+  category: Art
+  tags: art, tumblr, bee, Clip Studio Paint, OCs, OC
 'posts/LDo/230608':
   title: Logger-Diary News now served on Mar's website!
   short: Logger-Diary Online News is now served from `strawmelonjuice.com`.
@@ -111,6 +147,18 @@
   filename: farewell-gads
   category: Meta
   tags: Google Adsense, Google, critique
+'posts/art/af-hi':
+  title: "Amigo & Ferry: Hi"
+  short: Two shy best friends!
+  type: post
+  og-image: /assets/img/media/art/AF/hi.png
+  title-display: true
+  date:
+    posted: 1668724112
+    edited: 1668724112
+  filename: art/af-hi
+  category: Art
+  tags: art, discord, slug, cactus, friends, Clip Studio Paint, OCs, OC
 'posts/stories/leafornia-2':
   title: Leafornia’s travels - chapter two
   short: Today went bad. I underestimated how hard it is for me to live here. Physically, I am weaker than my lost demon. However, I don’t know if this world didn’t mess him up mentally. I also need to take in consideration that my normal me is weak in this world, and that my powers are way too strong for this world. I may no longer use my powers if unnecessarily. Regards from earth.
