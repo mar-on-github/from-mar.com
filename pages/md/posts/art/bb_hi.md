@@ -1,6 +1,6 @@
 - [More Bella Bee posts](/search?s=OCid:BB)
 
-<hl-img preview="/assets/img/media/art/BB/Bella Bee hi marked.png" alt="Bella Bee!" highlight="/assets/img/media/art/BB/Bella Bee hi marked nontransparent.png" style="max-width: 550px"></hl-img>
+<hl-img preview="/assets/img/media/art/BB/Bella Bee hi marked.png" alt="Bella Bee!" highlight="/assets/img/media/art/BB/Bella Bee hi marked nontransparent.png" style="height: 300px"></hl-img>
 
 Bella Bee is a first try, after I saw a nature documentary zoom in on bees and I was like "Omg gotta make one". Yeah. Pretty darn proud.
 

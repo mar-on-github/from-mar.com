@@ -1,6 +1,6 @@
 - [More Doh-Noot posts](/search?s=OCid:DN)
 
-<hl-img preview="/assets/img/media/art/dn/dn_smile_tr.png" alt="MouseMouse!" highlight="/assets/img/media/art/dn/dn_smile.png" style="max-width: 550px"></hl-img>
+<hl-img preview="/assets/img/media/art/dn/dn_smile_tr.png" alt="MouseMouse!" highlight="/assets/img/media/art/dn/dn_smile.png" style="max-width: 550px;height: 300px"></hl-img>
 
 This one is the first imgmote I drew especially for on here. And look at it! <imgmote>dn_smile</imgmote> makes ME smile!
 
