@@ -1,3 +1,5 @@
+- [More MouseMouse posts](/search?s=OCid:MM)
+
 <hl-img preview="/assets/img/media/art/MM2_Textured.png" alt="MouseMouse!" highlight="/assets/img/media/art/MM2_Textured.jpg" style="max-width: 550px"></hl-img>
 
 And _this_ is the [mousemouse I posted earlier](/blog?p=posts/art/mousemouse-3.2) in a new papertextured mix!
