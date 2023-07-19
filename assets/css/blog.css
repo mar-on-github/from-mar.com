@@ -192,7 +192,7 @@ main.content {
 #blogscroll-pagecontent {
     overflow-x:hidden;
 }
-#blogscroll-pagecontent tbody {
+#blogscroll-pagecontent table {
     width: 100%;
 }
 div.ephew-formlabels {
