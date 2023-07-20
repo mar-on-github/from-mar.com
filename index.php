@@ -114,6 +114,10 @@ if (isset($_GET['s'])) {
     die;
 }
 
+if (str_starts_with($_SERVER['REQUEST_URI'], "/atom") or str_starts_with($_SERVER['REQUEST_URI'], "/feed") or str_starts_with($_SERVER['REQUEST_URI'], "/blog/atom") or str_starts_with($_SERVER['REQUEST_URI'], "/blog.xml") or str_starts_with($_SERVER['REQUEST_URI'], "/blog/atom.xml")) {
+    require_once(__DIR__ . "/pages/blog/atom.php");
+    die;
+}
 
 // If we're here... we hit a 404 I think!
 $file = '404 trigger';

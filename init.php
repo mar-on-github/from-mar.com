@@ -56,7 +56,7 @@ function ReturnUniversalHeader(string $PageName, string $specialstyles = "base",
         {$extratags}
         {$StylesheetRefer}
         <meta name="robots" content="index, follow">
-        <meta name="generator" content="from-mar.com.PHP">
+        <meta name="generator" content="strawmelonjuice.PHP">
         <meta property="og:site_name" content="Strawmelonjuice dot com"/>
         <!-- <meta name="keywords" content="{$keywords}"> -->
         {$baseurl}

@@ -72,12 +72,12 @@ echo (ReturnUniversalHeader("Stories By Mar 🤍", $uniheadertype));
       END;
     }
     if (isset($filtercat)) {
-      echo ("<h2>Category: <code>" . $filtercat . "</code></h2>");
+      echo ("<h2>Category: <code>" . $filtercat . "</code>&nbsp;&nbsp;&nbsp;&nbsp;<a href='/feed?cat=" . urlencode($filtercat) . "'><img style=\"max-width: 16px; max-height: 16px\" alt=\"Feed icon\" title=\"Atom feed for this page\" src=\"/assets/img/imgmote/feed.png\"></a></h2>");
     } else {
       if (isset($searchtrough)) {
-        echo ("<h2>Search results: <code>" . $searchtrough . "</code></h2>");
+        echo ("<h2>Search results: <code>" . $searchtrough . "</code>&nbsp;&nbsp;&nbsp;&nbsp;<a href='/feed?search=" . urlencode($searchtrough) . "'><img style=\"max-width: 16px; max-height: 16px\" alt=\"Feed icon\" title=\"Atom feed for this page\" src=\"/assets/img/imgmote/feed.png\"></a></h2>");
       } else {
-        echo ("");
+        echo ("<p><a href='/feed'><img style=\"max-width: 16px; max-height: 16px\" alt=\"Feed icon\" title=\"Atom feed for this page\" src=\"/assets/img/imgmote/feed.png\"></a></p>");
       }
     }
     ?>
