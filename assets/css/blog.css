@@ -12,10 +12,9 @@
 .bottombar .icon {
     display: none
 }
-@import "https://fonts.googleapis.com/css2?family=Ubuntu&display=swap";
 
 body {
-    font-family: 'Ubuntu', sans-serif;
+    font-family: Verdana,Geneva,sans-serif; 
 }
 
 .bottombar a:not(.accesstoggle, .icon) {
@@ -169,7 +168,6 @@ blockquote {
 
 body {
     background-color: #a7cec5;
-    font-family: 'Ubuntu', sans-serif;
     font-size: 14px;
     margin: 0;
     overflow: auto;

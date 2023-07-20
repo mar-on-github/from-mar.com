@@ -12,6 +12,7 @@ Testing is mostly done from Firefox and Firefox Dev edition on latest from my Ub
 - Fonts:
     - Ubuntu font (my favourite font btw!) <https://design.ubuntu.com/font> by [Dalton Maag](https://fonts.google.com/?query=Dalton+Maag)
     - TapefontAlt from [onlinewebfonts.com](https://www.onlinewebfonts.com/download/e4a616ec566614dd7e09383029250aeb) for the main text on my 'personal' theme
+    - Verdana (Microsoft i guess?) for my blog pages.
 - [erusev/parsedown](https://parsedown.org/)
 - [malihu/malihu-custom-scrollbar-plugin](https://github.com/malihu/malihu-custom-scrollbar-plugin)
 - idk? who else
