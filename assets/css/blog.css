@@ -165,7 +165,9 @@ blockquote {
     color: #ffffff;
     font-style: italic
 }
-
+blockquote a {
+    color: #9dd133;
+}
 body {
     background-color: #a7cec5;
     font-size: 14px;
