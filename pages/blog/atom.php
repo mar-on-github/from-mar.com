@@ -44,7 +44,6 @@ $MarkDownFileMetaData = Yaml::parseFile($GLOBALS['rootdir'] . "/pages/md/meta.ya
       foreach ($MarkDownFileMetaData as $data) {
         if (($data['type'] == "post")) {
           $skipt = false;
-          $totalcount = $totalcount + 1;
           if (isset($filtercat) and ($data['category'] !== $filtercat)) {
             $skipt = true;
           }
@@ -62,7 +61,6 @@ $MarkDownFileMetaData = Yaml::parseFile($GLOBALS['rootdir'] . "/pages/md/meta.ya
             $skipt = true;
           }
           if (!($skipt)) {
-            $resultscount = $resultscount + 1;
             $link="/blog?p=posts/" . $data['filename'];
             $pubDate = date('m/d/Y H:i:s', $data['date']['posted']);
             if ($data["author"] != null) {
@@ -73,12 +71,15 @@ $MarkDownFileMetaData = Yaml::parseFile($GLOBALS['rootdir'] . "/pages/md/meta.ya
             $title=htmlspecialchars($data['title']);
             $descr=htmlspecialchars($data['short']);
             $cate= htmlspecialchars($data['category']);
-            $ContentOnPage = "unavailable.";
             if ((isset($data['content'])) and (!empty($data['content']))) {
               $ContentOnPage = $Parsedown->text($data["content"]);
             } else {
-              if (file_exists($GLOBALS['rootdir'] . "/pages/md/" . $file . ".md")) {
-                $ContentOnPage = $Parsedown->text(file_get_contents($GLOBALS['rootdir'] . "/pages/md/" . $file . ".md"));
+              // echo $GLOBALS['rootdir'] . "pages/md/posts/" . $data['filename'] . ".md";
+              if (file_exists($GLOBALS['rootdir'] . "pages/md/posts/" . $data['filename'] . ".md")) {
+                // echo 'file exists.';
+                $ContentOnPage = $Parsedown->text(file_get_contents($GLOBALS['rootdir'] . "pages/md/posts/" . $data['filename'] . ".md"));
+              } else {
+                $ContentOnPage = "<p>unavailable.</p>";
               }
             }
             echo <<<OK
