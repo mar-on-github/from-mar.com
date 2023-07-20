@@ -73,6 +73,14 @@ $MarkDownFileMetaData = Yaml::parseFile($GLOBALS['rootdir'] . "/pages/md/meta.ya
             $title=htmlspecialchars($data['title']);
             $descr=htmlspecialchars($data['short']);
             $cate= htmlspecialchars($data['category']);
+            $ContentOnPage = "unavailable.";
+            if ((isset($data['content'])) and (!empty($data['content']))) {
+              $ContentOnPage = $Parsedown->text($data["content"]);
+            } else {
+              if (file_exists($GLOBALS['rootdir'] . "/pages/md/" . $file . ".md")) {
+                $ContentOnPage = $Parsedown->text(file_get_contents($GLOBALS['rootdir'] . "/pages/md/" . $file . ".md"));
+              }
+            }
             echo <<<OK
               <item>
                 <title>{$title}</title>
@@ -83,6 +91,9 @@ $MarkDownFileMetaData = Yaml::parseFile($GLOBALS['rootdir'] . "/pages/md/meta.ya
                 <guid>{$link}</guid>
                 <summary>{$descr}</summary>
                 <category>{$cate}</category>
+                <content type="html"><![CDATA[
+                  {$ContentOnPage}
+                ]]></content>
               </item>
 
             OK;
