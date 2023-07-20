@@ -6,16 +6,12 @@ function ReturnUniversalHeader(string $PageName, string $specialstyles = "base",
   switch ($specialstyles) {
     case 'blog':
       $StylesheetRefer = <<<END
-      <!--<link media="(prefers-color-scheme: light)" rel="stylesheet" href="/assets/css/blog-light.css" content-type="text/css" charset="utf-8" />
-      <link media="(prefers-color-scheme: dark)" rel="stylesheet" href="/assets/css/blog-dark.css" content-type="text/css" charset="utf-8" />-->
       <link rel="stylesheet" href="/assets/css/blog.css" content-type="text/css" charset="utf-8">
       <link rel="icon" type="image/png" href="/assets/img/sbm_512×512.png">
     END;
       break;
     case 'project':
       $StylesheetRefer = <<<END
-            <link media="(prefers-color-scheme: light)" rel="stylesheet" href="/assets/css/projects-colors-light.css" content-type="text/css" charset="utf-8" />
-            <link media="(prefers-color-scheme: dark)" rel="stylesheet" href="/assets/css/projects-colors-dark.css" content-type="text/css" charset="utf-8" />
             <link rel="stylesheet" href="/assets/css/projects.css" content-type="text/css" charset="utf-8" />
             <link rel="icon" type="image/png" href="/assets/img/Strawmelonjuice.png">
             <link rel="icon" type="image/webp" href="/assets/img/Strawmelonjuice.webp">
