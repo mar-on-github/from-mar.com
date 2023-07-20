@@ -1,6 +1,6 @@
 <span class="sociallinks">no scriptos?</span>
 
-Welcome to my cosy little strawberbrain site <imgmote>:3</imgmote>
+Welcome to my cosy little strawberbrain [site]() <imgmote>:3</imgmote>
 
 
 

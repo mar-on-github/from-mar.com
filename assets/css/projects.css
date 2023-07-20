@@ -163,6 +163,13 @@ main.content {
     display: inline-block;
 }
 
+
+@import "https://fonts.googleapis.com/css2?family=Ubuntu&display=swap";
+
+body {
+    font-family: 'Ubuntu', sans-serif;
+}
+
 .openbtn {
     display: none
 }

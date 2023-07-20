@@ -217,8 +217,16 @@ a:not(:hover):not(.menulink) {
 .bottombar .icon {
     display: none
 }
-
-
+@font-face {
+    font-family: "TapefontAlt";
+    src:url("/assets/fonts/tapefontalt/TapefontAlt.woff2")format("woff2"),
+        url("/assets/fonts/tapefontalt/TapefontAlt.woff")format("woff"),
+        url("/assets/fonts/tapefontalt/TapefontAlt.ttf")format("truetype"),
+        url("assets/fonts/tapefontalt/TapefontAlt.svg")format("svg");
+}
+body {
+    font-family: "TapefontAlt";
+}
 
 .bottombar a:not(.accesstoggle, .icon) {
     display: block;
@@ -326,7 +334,6 @@ blockquote {
 
 body {
     background-color: var(--color-slot-14);
-    font-family: 'Ubuntu', sans-serif;
     font-size: 14px;
     margin: 0;
     overflow: hidden;
