@@ -8,7 +8,9 @@
     --filter-contrast-backgroundcolor: #a29191;
     --filter-grayscale-backgroundcolor: #FFF0;
 }
-
+.closebtn {
+        font-family: 'Noto Color Emoji', sans-serif;
+}
 body {
     position: fixed;
     top: 0;
