@@ -69,6 +69,7 @@
         --color-slot-64: #2a2a2a;
         --color-slot-65: rgba(245, 245, 245, 0.285);
         --color-slot-66: #ffc0ed;
+        --color-slot-67: unset
         /*  */
         --value-slot-01: solid 1px #ffffff;
     }
@@ -97,7 +98,7 @@
     :root {
         --color-slot-1: #dda0dd;
         --color-slot-2: #aad0f2;
-        --color-slot-3: #194f97;
+        --color-slot-3: #a2bfe5;
         --color-slot-4: #9b4382;
         --color-slot-5: #59a8b3;
         --color-slot-6: #a8a8a838;
@@ -147,7 +148,7 @@
         --color-slot-50: #ffacac;
         --color-slot-51: #200207;
         --color-slot-52: #f47a7a;
-        --color-slot-53: #aa9fd7;
+        --color-slot-53: #ffffff;
         --color-slot-54: #171616;
         --color-slot-55: #fefefe;
         --color-slot-56: #c2c2c2af;
@@ -161,6 +162,7 @@
         --color-slot-64: #c2c1c1;
         --color-slot-65: rgba(245, 245, 245, 0.285);
         --color-slot-66: #ffc0ed;
+        --color-slot-67: #d4d3d4;
         /*  */
         --value-slot-01: solid 1px #ffffff;
     }
@@ -1081,10 +1083,10 @@ ul.timeline {
     box-shadow: 4px 3px 8px 1px var(--color-slot-5)
 }
 
-/* .sidebar a {
-    background-color: var(--color-slot-45);
-    color: #000
-} */
+.sidebar a {
+    /* background-color: var(--color-slot-45); */
+    color: var(--color-slot-67)
+}
 
 .sidebar a.active {
     background-color: var(--color-slot-50);
