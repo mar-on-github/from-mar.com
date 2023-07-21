@@ -68,6 +68,7 @@ body {
 main {
     text-align: center;
 }
+
 #daylighttoggle.accesstoggle {
     border: currentColor 1px solid;
     border-radius: 5px;
@@ -188,6 +189,9 @@ imgmote {
         display: inherit !important;
     }
 
+    #daylighttoggle.accesstoggle {
+        float: right;
+    }
     #bmc-wbtn {
         display: flex;
         align-items: center;
