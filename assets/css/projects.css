@@ -1,63 +1,48 @@
-@media (prefers-color-scheme: light) {
-    :root {
-            --color-slot-01: #b38888;
-            --color-slot-02: #e7c0c0;
-            --color-slot-03: #222222;
-            --color-slot-04: #d3d69f;
-            --color-slot-05: #666;
-            --color-slot-06: #f0d1d1;
-            --color-slot-07: #4f0952;
-            --color-slot-08: #303030;
-            --color-slot-09: #800046;
-            --color-slot-10: #3391ff;
-            --color-slot-11: #88274c;
-            --color-slot-12: #130101;
-            --color-slot-13: #8000806c;
-            --color-slot-14: #b2e94cb3;
-            --color-slot-15: var(--color-slot-03);
-            /*  */
-            --main-value-01: 3px solid #bbb;
-            /*  */
-            --filter-contrast-backgroundcolor: #ffffff;
-            --filter-grayscale-backgroundcolor: #ffffff;
-        }
-    
-        body {
-            background-color: var(--color-slot-01);
-        }
-    
-        .svgrecolor {
-            filter: brightness(0) saturate(100%);
-        }
+body.light-theme {
+    --color-slot-01: #b38888;
+    --color-slot-02: #e7c0c0;
+    --color-slot-03: #222222;
+    --color-slot-04: #d3d69f;
+    --color-slot-05: #666;
+    --color-slot-06: #f0d1d1;
+    --color-slot-07: #4f0952;
+    --color-slot-08: #303030;
+    --color-slot-09: #800046;
+    --color-slot-10: #3391ff;
+    --color-slot-11: #88274c;
+    --color-slot-12: #130101;
+    --color-slot-13: #8000806c;
+    --color-slot-14: #b2e94cb3;
+    --color-slot-15: var(--color-slot-03);
+    --color-slot-16: var(--color-slot-06);
+    /*  */
+    --main-value-01: 3px solid #bbb;
+    /*  */
+    --filter-contrast-backgroundcolor: #ffffff;
+    --filter-grayscale-backgroundcolor: #ffffff;
 }
-@media (prefers-color-scheme: dark) {
-    :root {
-            --color-slot-01: #b38888;
-            --color-slot-02: #3b2235;
-            --color-slot-03: #484848;
-            --color-slot-04: #f6fac2;
-            --color-slot-05: #525151;
-            --color-slot-06: #1f0b1a;
-            --color-slot-07: #4f0952;
-            --color-slot-08: #303030;
-            --color-slot-09: #800046;
-            --color-slot-10: #3391ff;
-            --color-slot-11: #88274c;
-            --color-slot-12: #fccbcb;
-            --color-slot-13: #8000806c;
-            --color-slot-14: #b2e94cb3;
-            --color-slot-15: #9d9d9d;
-    
-            /*  */
-            --main-value-01: 3px solid #bbb;
-            /*  */
-            --filter-contrast-backgroundcolor: #000000;
-            --filter-grayscale-backgroundcolor: #000000;
-        }
-    
-        .svgrecolor {
-            filter: brightness(0) saturate(100%)invert(100%) sepia(7%) saturate(248%) hue-rotate(335deg) brightness(117%) contrast(90%);
-        }
+body.dark-theme {
+    --color-slot-01: #b38888;
+    --color-slot-02: #3b2235;
+    --color-slot-03: #484848;
+    --color-slot-04: #f6fac2;
+    --color-slot-05: #525151;
+    --color-slot-06: #1f0b1a;
+    --color-slot-07: #4f0952;
+    --color-slot-08: #303030;
+    --color-slot-09: #800046;
+    --color-slot-10: #3391ff;
+    --color-slot-11: #88274c;
+    --color-slot-12: #fccbcb;
+    --color-slot-13: #8000806c;
+    --color-slot-14: #b2e94cb3;
+    --color-slot-15: #9d9d9d;
+    --color-slot-16: #52344a;
+    /*  */
+    --main-value-01: 3px solid #bbb;
+    /*  */
+    --filter-contrast-backgroundcolor: #000000;
+    --filter-grayscale-backgroundcolor: #000000;    
 }
 
 .bottombar {
@@ -70,7 +55,9 @@
     right: 0px;
     margin: auto;
 }
-
+body {
+    background-color: var(--color-slot-01);
+}
 .sidebar {
     border-top-right-radius: 8px;
     border-bottom-right-radius: 8px;
@@ -139,13 +126,6 @@ main.content {
 
 .imgmote {
     background-color: var(--color-slot-07);
-    border-radius: 3px;
-    font-size: 5px;
-    height: 12px;
-    margin: .9px;
-    width: 12px;
-    padding: 2px;
-    display: inline-block;
 }
 .notion {
     background-color: var(--color-slot-12);
@@ -204,7 +184,7 @@ body {
     z-index: 90;
     opacity: 80%;
     background-color: var(--color-slot-05);
-    color: var(--color-slot-06);
+    color: var(--color-slot-16);
     border-top: 4px groove var(--color-slot-03);
     border-right: 4px groove var(--color-slot-03);
     border-bottom: 4px groove var(--color-slot-03);

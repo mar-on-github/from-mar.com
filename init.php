@@ -15,6 +15,7 @@ function ReturnUniversalHeader(string $PageName, string $specialstyles = "base",
             <link rel="stylesheet" href="/assets/css/projects.css" content-type="text/css" charset="utf-8" />
             <link rel="icon" type="image/png" href="/assets/img/Strawmelonjuice.png">
             <link rel="icon" type="image/webp" href="/assets/img/Strawmelonjuice.webp">
+            <link rel="icon" type="image/x-icon" href="/favicon.ico">
       END;
       break;
     case 'base':
@@ -23,6 +24,8 @@ function ReturnUniversalHeader(string $PageName, string $specialstyles = "base",
             <link rel="stylesheet" href="/assets/css/main.css" content-type="text/css" charset="utf-8" />
             <link rel="icon" type="image/png" href="/assets/img/Strawmelonjuice.png">
             <link rel="icon" type="image/webp" href="/assets/img/Strawmelonjuice.webp">
+            <link rel="icon" type="image/x-icon" href="/favicon.ico">
+
       END;
       break;
   }
@@ -45,6 +48,21 @@ function ReturnUniversalHeader(string $PageName, string $specialstyles = "base",
     $baseurl = "\n<base href=\"https://strawmelonjuice.com\">\n";
   } else {
     $baseurl = "";
+  }
+  if ($_COOKIE['wantkitton'] == "") {
+    $wantkitton = true;
+  } else {
+    $wantkitton = $_COOKIE['wantkitton'];
+  }
+  if ($_COOKIE['accessibilityfilter'] == "") {
+    $accessibilityfilter = 'none';
+  } else {
+    $accessibilityfilter = $_COOKIE['accessibilityfilter'];
+  }
+  if ($_COOKIE['LoadForceColorScheme'] == "") {
+    $LoadForceColorScheme = '0';
+  } else {
+    $LoadForceColorScheme = $_COOKIE['LoadForceColorScheme'];
   }
   return <<<EOD
     <head>
@@ -70,6 +88,9 @@ function ReturnUniversalHeader(string $PageName, string $specialstyles = "base",
         <script src="/assets/scripts/jquery.mCustomScrollbar.concat.min.js"></script>
         <script>
           const viewmode = '{$specialstyles}';
+          const accessibilityfilter = '{$accessibilityfilter}';
+          const wantkitton = {$wantkitton};
+          const LoadForceColorScheme = {$LoadForceColorScheme};
         </script>
   </head>
 
@@ -111,7 +132,11 @@ function ReturnMenuLinksFromJSON($where, $type = 1){
       
       $MenuLinksOut = $MenuLinksOut . $ml . "\n";
     }
-    $MenuLinksOut = '<a href="javascript:void(0);" class="icon" onclick="unrollbottombar()">&#9776;</a>' . $MenuLinksOut . '<a href="javascript:void(0)" onclick="ToggleFilters()" id="filtertoggle" class="accesstoggle">Filter</a><a href="javascript:void(0)" onclick="ToggleKitton()" id="kittontoggle" class="accesstoggle"><img src="/assets/img/png/kitton_crab.png" > <span id="kittontoggletext">mew</span></a>';
+    $MenuLinksOut = '<a href="javascript:void(0);" class="icon" onclick="unrollbottombar()">&#9776;</a>' 
+    . $MenuLinksOut . 
+    '<a href="javascript:void(0)" onclick="ToggleFilters()" id="filtertoggle" class="accesstoggle">Filter</a>
+    <a href="javascript:void(0)" id="daylighttoggle" class="accesstoggle"><img style="max-height: 100%" id="daylighttoggleimg"></a>
+    <a href="javascript:void(0)" onclick="ToggleKitton()" id="kittontoggle" class="accesstoggle"><img src="/assets/img/png/kitton_crab.png" > <span id="kittontoggletext">mew</span></a>';
   }
   if ($where == "side") {
     $MenuLinksOut = "";

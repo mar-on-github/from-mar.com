@@ -1,8 +1,4 @@
-@media (prefers-color-scheme: light) {
-    .svgrecolor {
-            filter: brightness(0) saturate(100%);
-        }
-    :root {
+body.light-theme {
         --color-slot-1: #dda0dd;
         --color-slot-2: #aad0f2;
         --color-slot-3: #194f97;
@@ -72,114 +68,103 @@
         --color-slot-67: unset
         /*  */
         --value-slot-01: solid 1px #ffffff;
-    }
-
-    body {
-        background-image: url('/assets/img/bgraster.png');
-    }
-
-    main.content {
-        background:
-            url(/assets/img/strawberrycorners.png) left -106px top -83px no-repeat,
-            url(/assets/img/strawberrycorners.png) right -106px top -83px no-repeat,
-            url(/assets/img/strawberrycorners.png) left -106px bottom -83px no-repeat,
-            url(/assets/img/strawberrycorners.png) right -106px bottom -83px no-repeat,
-            linear-gradient(#C8ECB5, #eedeab80);
-    }
-}
-@media (prefers-color-scheme: dark) {
-    .svgrecolor {
-            filter: brightness(0) saturate(100%)invert(100%) sepia(7%) saturate(248%) hue-rotate(335deg) brightness(117%) contrast(90%);
-        }
-    :root {
-        --filter-contrast-backgroundcolor: #161616;
-        --filter-grayscale-backgroundcolor: #afafaf6c;
-    }
-    :root {
-        --color-slot-1: #dda0dd;
-        --color-slot-2: #aad0f2;
-        --color-slot-3: #a2bfe5;
-        --color-slot-4: #9b4382;
-        --color-slot-5: #59a8b3;
-        --color-slot-6: #a8a8a838;
-        --color-slot-7: #00000033;
-        --color-slot-8: #999;
-        --color-slot-9: #3f5b48;
-        --color-slot-10: #6dc3d2;
-        --color-slot-11: #85a0f2af;
-        --color-slot-12: #E6A595;
-        --color-slot-13: #251e1c;
-        --color-slot-14: #0a1c92;
-        --color-slot-15: #b885f2aa;
-        --color-slot-16: #1c1c1c;
-        --color-slot-17: #63cc8150;
-        --color-slot-18: #b885f28d;
-        --color-slot-19: #6dd06d;
-        --color-slot-20: #000000;
-        --color-slot-21: #5b0d73;
-        --color-slot-22: #78e3c8;
-        --color-slot-23: #a7afdf;
-        --color-slot-24: #3338b7;
-        --color-slot-25: #5f9ea048;
-        --color-slot-26: #7a68bd;
-        --color-slot-27: #290857;
-        --color-slot-28: grey;
-        --color-slot-29: #800080;
-        --color-slot-30: white;
-        --color-slot-31: #9c9de7;
-        --color-slot-32: #8ed0b8;
-        --color-slot-33: #1f5a4a;
-        --color-slot-34: #5c5c8a;
-        --color-slot-35: #00dfa7a1;
-        --color-slot-36: #1e1eb9;
-        --color-slot-37: #515174;
-        --color-slot-38: #f5f5dc;
-        --color-slot-39: #ddd99a;
-        --color-slot-40: #4d4b52;
-        --color-slot-41: #666666;
-        --color-slot-42: #cccccc;
-        --color-slot-43: #6e8095;
-        --color-slot-44: #b086ff;
-        --color-slot-45: #852668;
-        --color-slot-46: #161616;
-        --color-slot-47: #faebd7;
-        --color-slot-48: #bbdcbb;
-        --color-slot-49: #e10404;
-        --color-slot-50: #ffacac;
-        --color-slot-51: #200207;
-        --color-slot-52: #f47a7a;
-        --color-slot-53: #ffffff;
-        --color-slot-54: #171616;
-        --color-slot-55: #fefefe;
-        --color-slot-56: #c2c2c2af;
-        --color-slot-57: #ffd54d;
-        --color-slot-58: #191515;
-        --color-slot-59: #ff4da372;
-        --color-slot-60: #C8ECB5;
-        --color-slot-61: #eedeab80;
-        --color-slot-62: #fff9ee;
-        --color-slot-63: #008060;
-        --color-slot-64: #c2c1c1;
-        --color-slot-65: rgba(245, 245, 245, 0.285);
-        --color-slot-66: #ffc0ed;
-        --color-slot-67: #d4d3d4;
+        --value-slot-02: url(/assets/img/strawberrycorners.png) left -106px top -83px no-repeat,
+        url(/assets/img/strawberrycorners.png) right -106px top -83px no-repeat,
+        url(/assets/img/strawberrycorners.png) left -106px bottom -83px no-repeat,
+        url(/assets/img/strawberrycorners.png) right -106px bottom -83px no-repeat,
+        linear-gradient(#C8ECB5, #eedeab80);
+        --value-slot-3: brightness(0) saturate(100%);
         /*  */
-        --value-slot-01: solid 1px #ffffff;
-    }
-
-    body {
-        background-image: url('/assets/img/bgraster_dark.png');
-        /* filter: brightness(0.7); */
-    }
-
-    main.content {
-        background:
-            url(/assets/img/strawberrycorners-moons.png) left -106px top -83px no-repeat,
-            url(/assets/img/strawberrycorners-moons.png) right -106px top -83px no-repeat,
-            url(/assets/img/strawberrycorners-moons.png) left -106px bottom -83px no-repeat,
-            url(/assets/img/strawberrycorners-moons.png) right -106px bottom -83px no-repeat,
-            linear-gradient(#13354480, #3B1344);
-    }
+        background-image: url('/assets/img/bgraster.png');
+}
+body.dark-theme {
+    --filter-contrast-backgroundcolor: #161616;
+    --filter-grayscale-backgroundcolor: #afafaf6c;
+    --color-slot-1: #dda0dd;
+    --color-slot-2: #aad0f2;
+    --color-slot-3: #a2bfe5;
+    --color-slot-4: #9b4382;
+    --color-slot-5: #59a8b3;
+    --color-slot-6: #a8a8a838;
+    --color-slot-7: #00000033;
+    --color-slot-8: #999;
+    --color-slot-9: #3f5b48;
+    --color-slot-10: #6dc3d2;
+    --color-slot-11: #85a0f2af;
+    --color-slot-12: #E6A595;
+    --color-slot-13: #251e1c;
+    --color-slot-14: #0a1c92;
+    --color-slot-15: #b885f2aa;
+    --color-slot-16: #1c1c1c;
+    --color-slot-17: #63cc8150;
+    --color-slot-18: #b885f28d;
+    --color-slot-19: #6dd06d;
+    --color-slot-20: #000000;
+    --color-slot-21: #5b0d73;
+    --color-slot-22: #78e3c8;
+    --color-slot-23: #a7afdf;
+    --color-slot-24: #3338b7;
+    --color-slot-25: #5f9ea048;
+    --color-slot-26: #7a68bd;
+    --color-slot-27: #290857;
+    --color-slot-28: grey;
+    --color-slot-29: #800080;
+    --color-slot-30: white;
+    --color-slot-31: #9c9de7;
+    --color-slot-32: #8ed0b8;
+    --color-slot-33: #1f5a4a;
+    --color-slot-34: #5c5c8a;
+    --color-slot-35: #00dfa7a1;
+    --color-slot-36: #1e1eb9;
+    --color-slot-37: #515174;
+    --color-slot-38: #f5f5dc;
+    --color-slot-39: #ddd99a;
+    --color-slot-40: #4d4b52;
+    --color-slot-41: #666666;
+    --color-slot-42: #cccccc;
+    --color-slot-43: #6e8095;
+    --color-slot-44: #b086ff;
+    --color-slot-45: #852668;
+    --color-slot-46: #161616;
+    --color-slot-47: #faebd7;
+    --color-slot-48: #bbdcbb;
+    --color-slot-49: #e10404;
+    --color-slot-50: #ffacac;
+    --color-slot-51: #200207;
+    --color-slot-52: #f47a7a;
+    --color-slot-53: #ffffff;
+    --color-slot-54: #171616;
+    --color-slot-55: #fefefe;
+    --color-slot-56: #c2c2c2af;
+    --color-slot-57: #ffd54d;
+    --color-slot-58: #191515;
+    --color-slot-59: #ff4da372;
+    --color-slot-60: #C8ECB5;
+    --color-slot-61: #eedeab80;
+    --color-slot-62: #fff9ee;
+    --color-slot-63: #008060;
+    --color-slot-64: #c2c1c1;
+    --color-slot-65: rgba(245, 245, 245, 0.285);
+    --color-slot-66: #ffc0ed;
+    --color-slot-67: #d4d3d4;
+    /*  */
+    --value-slot-01: solid 1px #ffffff;
+    --value-slot-02: url(/assets/img/strawberrycorners-moons.png) left -106px top -83px no-repeat,
+    url(/assets/img/strawberrycorners-moons.png) right -106px top -83px no-repeat,
+    url(/assets/img/strawberrycorners-moons.png) left -106px bottom -83px no-repeat,
+    url(/assets/img/strawberrycorners-moons.png) right -106px bottom -83px no-repeat,
+    linear-gradient(#13354480, #3B1344);
+    --value-slot-03: brightness(0) saturate(100%)invert(100%) sepia(7%) saturate(248%) hue-rotate(335deg) brightness(117%) contrast(90%);
+    /*  */
+    background-image: url('/assets/img/bgraster_dark.png');
+    /* filter: brightness(0.7); */
+}
+.svgrecolor {
+    filter: var(--value-slot-03);
+}
+main.content {
+    background: var(--value-slot-02);
+        
 }
 .bottombar {
     border-radius: 30px 0 0 0;
@@ -247,22 +232,9 @@ body {
 
 .imgmote {
     background-color: var(--color-slot-4);
-    border-radius: 3px;
-    font-size: 5px;
-    height: 12px;
-    margin: .9px;
-    width: 12px;
-    padding: 2px;
-    display: inline-block;
 }
 imgmote {
     background-color: var(--color-slot-4);
-    border-radius: 3px;
-    height: 12px;
-    margin: .9px;
-    width: 12px;
-    padding: 2px;
-    display: inline-block;
     color: var(--color-slot-66);
 }
 .emoji-block {

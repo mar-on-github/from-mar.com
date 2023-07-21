@@ -68,6 +68,20 @@ body {
 main {
     text-align: center;
 }
+#daylighttoggle.accesstoggle {
+    border: currentColor 1px solid;
+    border-radius: 5px;
+    background-color: currentColor;
+    width: 30px;
+    height: 30px;
+}
+#daylighttoggle.accesstoggle img {
+    height: 26px;
+    width: 26px;
+    display: block;
+    border-radius: 25px;
+    padding: 2px;
+}
 
 .bottombar .accesstoggle {
     border-radius: 0 0 15px 0;
@@ -78,7 +92,27 @@ main {
     text-align: center;
     text-decoration: none
 }
+.imgmote {
+    background-color: var(--color-slot-4);
+    border-radius: 3px;
+    font-size: 5px;
+    height: 8em;
+    margin: .9px;
+    width: 8em;
+    padding: 2px;
+    display: inline-block;
+}
 
+imgmote {
+    background-color: var(--color-slot-4);
+    border-radius: 3px;
+    height: 12px;
+    margin: .9px;
+    width: 12px;
+    padding: 2px;
+    display: inline-block;
+    color: var(--color-slot-66);
+}
 .notion {
     margin-left: 5em;
     text-align: left;

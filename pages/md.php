@@ -119,9 +119,9 @@ ENDOFSTYLE;
       include(__DIR__ . "/../assets/scripts/badgearea.php");
     } ?>
   </div>
-  <span class="pageinfosidebar" id="pageinfosidebartoggle" style="transition: all 1s ease-out 0s; width: 0px; font-size: 3em; bottom: 215px; display: none; text-align: right; padding: 0px;" onclick="pageinfosidebar_rollout()">➧</span>
+  <span class="pageinfosidebar" id="pageinfosidebartoggle" style="transition: all 1s ease-out 0s; width: 0px; font-size: 3em; bottom: 215px; display: none; text-align: right; padding: 0px; cursor: pointer;" onclick="pageinfosidebar_rollout()">➧</span>
   <div class="pageinfosidebar" id="pageinfosidebar" style="opacity: 15%;transition: all 2s ease-out 0s;">
-  <span class="not-on-mobile" style="position:absolute;right:0;top:0px;font-size: 3em">⇙</span>
+  <span class="not-on-mobile" style="position:absolute;right:0;top:0px;font-size: 3em; cursor: pointer; ">⇙</span>
     <p class="pageinfo-title">
       <?php
       if ($viewmode == 'base') {
@@ -200,7 +200,7 @@ ENDOFSTYLE;
     }
     setTimeout(ParseTimestamps, 25);
   </script>
-  <script src="/assets/scripts/index.js"></script>
+  <script src="/assets/scripts/site.js"></script>
   <script src="/assets/scripts/scrollbars.js"></script>
   <?php echo ($hlimg_script); ?>
   <?php

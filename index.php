@@ -5,6 +5,11 @@ if (isset($_GET['filter'])) {
     echo "ok";
     die;
 }
+if (isset($_GET['ForceColorScheme'])) {
+    setcookie('LoadForceColorScheme', $_GET['ForceColorScheme'], time() + (86400 * 30), "/");
+    echo "ok";
+    die;
+}
 if ($_SERVER['REQUEST_URI'] == "/sociallinks") {
     echo <<<end
             <a href="https://discord.com/users/718850508135333919" style="display: inline">
@@ -36,21 +41,9 @@ if (isset($_GET['getimgmote'])) {
   }
     die($src);
   }
-if ($_SERVER['REQUEST_URI'] == "/accessibilityfilter") {
-    echo $_COOKIE['accessibilityfilter'];
-    die;
-}
 if (isset($_GET['kitton'])) {
     setcookie('wantkitton', $_GET['kitton'], time() + (86400 * 30), "/");
     echo "ok";
-    die;
-}
-if ($_SERVER['REQUEST_URI'] == "/kittonstatus") {
-    if ($_COOKIE['wantkitton'] == "") {
-        echo true;
-        die;
-    }
-    echo $_COOKIE['wantkitton'];
     die;
 }
 

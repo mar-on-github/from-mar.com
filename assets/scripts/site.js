@@ -1,3 +1,75 @@
+function colorSchemeChange(x) {
+    if (document.body.classList.contains("colorSchemeOverridden")) {return}
+    if (x.matches) {
+        document.body.classList.add("dark-theme");
+        document.body.classList.remove("light-theme");
+        document.body.dataset.colorscheme = 0;
+    } else {
+        document.body.classList.add("light-theme");
+        document.body.classList.remove("dark-theme");
+        document.body.dataset.colorscheme = 0;
+    }
+}
+
+
+var x = window.matchMedia("(prefers-color-scheme: dark)")
+document.body.classList.add("dark-theme");
+document.body.classList.add("light-theme");
+colorSchemeChange(x);
+
+x.addListener(colorSchemeChange);
+
+function SendToServer(name, value) {
+    let xhttpw = new XMLHttpRequest();
+    xhttpw.open("GET", "/?"+ name + "=" + value);
+    xhttpw.send();
+}
+
+function colorSchemeOverride(to = 1|2|0) {
+    switch (to) {
+        case 1:
+            document.body.classList.add("dark-theme");
+            document.body.classList.add("colorSchemeOverridden");
+            document.body.classList.remove("light-theme");
+            document.body.dataset.colorscheme = 1;
+            SendToServer('ForceColorScheme',1);
+            break;
+        case 2:
+            document.body.classList.add("light-theme");
+            document.body.classList.add("colorSchemeOverridden");
+            document.body.classList.remove("dark-theme");
+            document.body.dataset.colorscheme = 2;
+            SendToServer('ForceColorScheme', 2);
+            break;
+        case 0:
+            document.body.classList.remove("colorSchemeOverridden");
+            colorSchemeChange(x)
+            document.body.dataset.colorscheme = 0;
+            SendToServer('ForceColorScheme', 0);
+            break;
+    }
+    UpdateColorSchemeToggle()
+}
+colorSchemeOverride(LoadForceColorScheme);
+function UpdateColorSchemeToggle() {
+    if (document.body.classList.contains("colorSchemeOverridden")) {
+            document.getElementById("daylighttoggleimg").src = "/assets/img/png/strawberry-sun-moon.png";
+            document.getElementById("daylighttoggleimg").alt = "Auto light/dark";
+            document.getElementById("daylighttoggleimg").setAttribute("onclick", "colorSchemeOverride(0)");
+    } else {
+            if (x.matches) {
+                document.getElementById("daylighttoggleimg").src = "/assets/img/png/strawberry-sun.png";
+                document.getElementById("daylighttoggleimg").alt = "Light mode";
+                document.getElementById("daylighttoggleimg").setAttribute("onclick", "colorSchemeOverride(2)");
+            } else {
+                document.getElementById("daylighttoggleimg").src = "/assets/img/png/strawberry-moon.png";
+                document.getElementById("daylighttoggleimg").alt = "Dark mode";
+                document.getElementById("daylighttoggleimg").setAttribute("onclick", "colorSchemeOverride(1)");
+            }
+    }
+}
+setInterval(function () {UpdateColorSchemeToggle()}, 1000);
+
 function unrollbottombar() {
     var x = document.getElementById("mybottombar");
     if (x.className === "bottombar") {
@@ -31,10 +103,6 @@ function closeNav() {
     elem = document.getElementsByClassName("search-button")[0];
     if (typeof (elem) != 'undefined' && (elem) != null) {
         elem.classList.remove("not-on-mobile");
-    }
-    elem = document.getElementsByClassName("pageinfosidebar")[0];
-    if (typeof (elem) != 'undefined' && (elem) != null) {
-        elem.style.width = "70vw";
     }
     // (document.getElementsByClassName("content")[0]).style.marginLeft = "0";
 }
@@ -89,32 +157,33 @@ for (var i = imgmotes.length - 1; i >= 0; i--) {
 
 }
 
-var client = new HttpClient();
-client.get('/accessibilityfilter', function (response) {
-    let accessibilityfilter = response;
-    // console.log("filter:" + accessibilityfilter);
-    switch (accessibilityfilter) {
-        case 'contrast':
-            document.body.style.filter = "contrast(1.6)";
-            document.body.style.backgroundColor = (getComputedStyle(document.body).getPropertyValue('--filter-contrast-backgroundcolor'));
-            document.body.style.backgroundImage = "none";
-            document.getElementById("filtertoggle").innerHTML = "Greyscale";
-            break;
-        case 'grayscale':
-            document.body.style.filter = "grayscale(1)";
-            document.body.style.backgroundColor = (getComputedStyle(document.body).getPropertyValue('--filter-grayscale-backgroundcolor'));
-            document.body.style.backgroundImage = "none";
-            document.getElementById("filtertoggle").innerHTML = "Colorful";
-            break;
-        default:
-            document.body.style.filter = "none";
-            document.body.style.backgroundImage = "";
-            document.body.style.backgroundColor = "";
-            document.getElementById("filtertoggle").innerHTML = "Contrast";
-            break;
-    }
+document.body.style.filter = "none";
+document.getElementById("filtertoggle").innerHTML = "Contrast/Greyscale";
+document.getElementById("filtertoggle").style.padding = "10px";
 
-});
+console.log(accessibilityfilter);
+switch (accessibilityfilter) {
+    case 'contrast':
+        document.body.style.filter = "contrast(1.6)";
+        document.body.style.backgroundColor = (getComputedStyle(document.body).getPropertyValue('--filter-contrast-backgroundcolor'));
+        document.body.style.backgroundImage = "none";
+        document.getElementById("filtertoggle").innerText = "Greyscale";
+        break;
+    case 'grayscale':
+        document.body.style.filter = "grayscale(1)";
+        document.body.style.backgroundColor = (getComputedStyle(document.body).getPropertyValue('--filter-grayscale-backgroundcolor'));
+        document.body.style.backgroundImage = "none";
+        document.getElementById("filtertoggle").innerText = "Colorful";
+        break;
+    case "none":
+    default:
+        document.body.style.filter = "none";
+        document.body.style.backgroundImage = "";
+        document.body.style.backgroundColor = "";
+        document.getElementById("filtertoggle").innerText = "Contrast";
+        break;
+}
+
 
 
 function ToggleFilters() {
@@ -148,27 +217,6 @@ function ToggleFilters() {
     }
 }
 
-document.body.style.filter = "none";
-document.getElementById("filtertoggle").innerHTML = "Contrast/Greyscale";
-document.getElementById("filtertoggle").style.padding = "10px";
-// if (adsblocked) {
-//     // if (true) {
-//     // console.log("Adblock is detected. Maybe we should ask the user to donate once more, instead.");
-//     document.getElementById('bmcdisabled').innerHTML = bmcwidget;
-// } else {
-//     // console.log("Ads are not blocked.");
-//     if (typeof (document.getElementById('donateextralink')) != 'undefined' && (document.getElementById('donateextralink')) != null) {
-//         document.getElementById('donateextralink').style.display = "none";
-//     }
-//     if (typeof (document.getElementById('donateextrasidebarlink')) != 'undefined' && (document.getElementById('donateextrasidebarlink')) != null) {
-//         document.getElementById('donateextrasidebarlink').style.display = "none";
-//     }
-//     if (typeof (document.getElementsByClassName('badgearea')['0']) != 'undefined' && (document.getElementsByClassName('badgearea')['0']) != null) {
-//         document.getElementsByClassName('badgearea')['0'].style.marginBottom = "30px"
-//     }
-// }
-
-// The battle for buymeacoffee
 setInterval(function () {
     if ((typeof (document.getElementById("bmc-wbtn")) !== 'undefined') && ((document.getElementById("bmc-wbtn")) !== null)) {
         (document.getElementById("bmc-wbtn")).removeAttribute("style");
@@ -182,16 +230,12 @@ if ((typeof (document.getElementById("oneko")) == 'undefined') || ((document.get
     document.getElementById("kittontoggle").remove();
     console.log("oneko is not here.")
 } else {
-    var client = new HttpClient();
-    client.get('/kittonstatus', function (response) {
-        let wantkitton = response;
         if (wantkitton == false) {
             (document.getElementById("oneko")).style.display = "none";
             (document.getElementById("kittontoggletext")).innerText = "show!";
         } else {
             (document.getElementById("kittontoggletext")).innerText = "hide..";
-        }
-    });
+        };
 }}, 1500);
 function ToggleKitton() {
     var kitton = (document.getElementById("oneko"));
