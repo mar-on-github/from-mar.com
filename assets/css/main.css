@@ -630,7 +630,7 @@ button {
     margin: auto;
     vertical-align: middle;
     text-align: center;
-    width: 60%;
+    width: 100%;
     background-color: var(--color-slot-2);
 }
 
