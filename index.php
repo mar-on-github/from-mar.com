@@ -28,13 +28,13 @@ if ($_SERVER['REQUEST_URI'] == "/sociallinks") {
     die;
 }
 if (isset($_GET['getimgmote'])) {
-    if (file_exists($GLOBALS['rootdir'] . "assets/img/imgmote/" . $_GET['getimgmote'] . ".gif")) {
+    if (file_exists(__DIR__ . "/assets/img/imgmote/" . $_GET['getimgmote'] . ".gif")) {
     $src = '/assets/img/imgmote/' . $_GET['getimgmote'] . '.gif';
-  } else if (file_exists($GLOBALS['rootdir'] . "assets/img/imgmote/" . $_GET['getimgmote'] . ".webp")) {
+  } else if (file_exists(__DIR__ . "/assets/img/imgmote/" . $_GET['getimgmote'] . ".webp")) {
     $src = '/assets/img/imgmote/' . $_GET['getimgmote'] . '.webp';
-  } else if (file_exists($GLOBALS['rootdir'] . "assets/img/imgmote/" . $_GET['getimgmote'] . ".png")) {
+  } else if (file_exists(__DIR__ . "/assets/img/imgmote/" . $_GET['getimgmote'] . ".png")) {
     $src = '/assets/img/imgmote/' . $_GET['getimgmote'] . '.png';
-  } else if (file_exists($GLOBALS['rootdir'] . "assets/img/imgmote/" . $_GET['getimgmote'] . ".svg")) {
+  } else if (file_exists(__DIR__ . "/assets/img/imgmote/" . $_GET['getimgmote'] . ".svg")) {
     $src = '/assets/img/imgmote/' . $_GET['getimgmote'] . '.svg';
   } else {
     die("/404");

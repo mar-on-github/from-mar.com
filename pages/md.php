@@ -200,7 +200,7 @@ ENDOFSTYLE;
     }
     setTimeout(ParseTimestamps, 25);
   </script>
-  <script src="/assets/scripts/site.js"></script>
+  <script src="/assets/scripts/site.min.js"></script>
   <script src="/assets/scripts/scrollbars.js"></script>
   <?php echo ($hlimg_script); ?>
   <?php
