@@ -17,6 +17,7 @@ body.light-theme {
     --color-slot-16: var(--color-slot-06);
     /*  */
     --main-value-01: 3px solid #bbb;
+    --value-slot-3: brightness(0) saturate(100%);
     /*  */
     --filter-contrast-backgroundcolor: #ffffff;
     --filter-grayscale-backgroundcolor: #ffffff;
@@ -40,11 +41,14 @@ body.dark-theme {
     --color-slot-16: #52344a;
     /*  */
     --main-value-01: 3px solid #bbb;
+    --value-slot-03: brightness(0) saturate(100%)invert(100%) sepia(7%) saturate(248%) hue-rotate(335deg) brightness(117%) contrast(90%);
     /*  */
     --filter-contrast-backgroundcolor: #000000;
     --filter-grayscale-backgroundcolor: #000000;    
 }
-
+.svgrecolor {
+    filter: var(--value-slot-03);
+}
 .bottombar {
     border-radius: 20px 0 0 0;
     bottom: 0px;

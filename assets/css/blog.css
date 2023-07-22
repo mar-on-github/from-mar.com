@@ -1,5 +1,24 @@
-@import url(/assets/css/blog-light.css);
-@import url(/assets/css/blog-dark.css);
+body.light-theme {
+    --color-slot-01: #a7cec5;
+    --color-slot-02: #000000;
+    --color-slot-03: #2f2fe4;
+    --color-slot-04: #6dc3d2;
+    --color-slot-05: #2a2a2a;
+    /*  */
+    --value-slot-1: brightness(0) saturate(100%);
+}
+body.dark-theme {
+    --color-slot-01: #292c2c;
+    --color-slot-02: #ffffff;
+    --color-slot-03: #1ec1d6;
+    --color-slot-04: #56828a;
+    --color-slot-05: #b9b9b9;
+    /*  */
+    --value-slot-01: brightness(0) saturate(100%)invert(100%) sepia(7%) saturate(248%) hue-rotate(335deg) brightness(117%) contrast(90%);
+}
+.svgrecolor {
+    filter: var(--value-slot-01);
+}
 .bottombar {
     border-radius: 30px 0 0 0;
     bottom: 0px;
