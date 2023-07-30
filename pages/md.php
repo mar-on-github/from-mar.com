@@ -179,7 +179,11 @@ ENDOFSTYLE;
           echo '<p style="position: sticky;right: 10px;width: 30%;margin-left: 60%;"><a href="/blog/">Go back home</a></p>';
           break;
         case 'project':
+          if ($FileMetaData['type'] == "post") {
           echo '<p style="position: sticky;right: 10px;width: 30%;margin-left: 60%;"><a href="/?c=' . $FileMetaData['category'] . '">Back to ' . $FileMetaData['category'] . '</a></li></p>';
+          } else {
+            echo '<p style="position: sticky;right: 10px;width: 30%;margin-left: 60%;"><a href="/?p=projects">Back to projects list</a></li></p>';
+          }
           break;
         default:
           echo ($GLOBALS['bottomlink_morelinks_start'] . bmenulink("/", "Go back home") . $GLOBALS['bottomlink_morelinks_end']);
