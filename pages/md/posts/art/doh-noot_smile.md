@@ -1,4 +1,4 @@
-- [More Doh-Noot posts](/search?s=OCid:DN)
+- More Doh-Noot posts: <code class="taggo">OCid:DN</code>
 
 <div style="height: 300px"><hl-img preview="/assets/img/media/art/dn/dn_smile_tr.png" alt="MouseMouse!" highlight="/assets/img/media/art/dn/dn_smile.png"></hl-img></div>
 

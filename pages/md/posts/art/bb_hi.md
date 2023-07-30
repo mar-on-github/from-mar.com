@@ -1,4 +1,4 @@
-- [More Bella Bee posts](/search?s=OCid:BB)
+- More Bella Bee posts <code class="taggo">OCid:BB</code>
 
 <div style="height: 300px"><hl-img preview="/assets/img/media/art/BB/Bella Bee hi marked.png" alt="Bella Bee!" highlight="/assets/img/media/art/BB/Bella Bee hi marked nontransparent.png"></hl-img></div>
 

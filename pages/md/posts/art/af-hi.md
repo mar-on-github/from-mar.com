@@ -1,4 +1,4 @@
-- [More Amigo&Ferry posts](/search?s=OCid:AF)
+- More Amigo & Ferry posts: <code class="taggo">OCid:AF</code>
 
 <div style="height: 300px"><hl-img src="/assets/img/media/art/AF/hi.png" alt="Amigo & Ferry"></hl-img></div>
 

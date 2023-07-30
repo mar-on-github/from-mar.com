@@ -1,4 +1,4 @@
-- [More MouseMouse posts](/search?s=OCid:MM)
+- More MouseMouse posts: <code class="taggo">OCid:MM</code>
 
 <!-- <hl-img preview="/assets/img/media/art/MM2.png" alt="MouseMouse!" highlight="/assets/img/media/art/MM2.webp" style="width: 80%; max-height: 400px"></hl-img> -->
 <hl-img preview="/assets/img/media/art/MM2.png" alt="MouseMouse!" highlight="/assets/img/media/art/MM2.webp" style="max-width: 550px"></hl-img>
