@@ -161,7 +161,8 @@ ENDOFSTYLE;
       echo "<h1>" . ($Parsedown->line(($FileMetaData['title']))) . "</h1>";
     }
     echo $ContentOnPage;
-    if (isset($FileMetaData['tagList'])) {
+    echo "<hr>";
+    if (isset($FileMetaData['tagList']) and ($FileMetaData['type'] == "post")) {
       
       foreach ($FileMetaData['tagList'] as $tagged) {
         if (!isset($taglistformatted)) {
@@ -170,7 +171,7 @@ ENDOFSTYLE;
           $taglistformatted = $taglistformatted . ', <code class="taggo">' . $tagged . '</code>';
         }
       }
-      echo '<hr><div id="taglist"><h3>Taggo\'s under this post</h3>' . $taglistformatted .'.</div>';
+      echo '<div id="taglist"><h3>Taggo\'s under this post</h3>' . $taglistformatted .'.</div>';
     }
     if ((!empty($file)) && $morelinks_display) {
       switch ($viewmode) {
