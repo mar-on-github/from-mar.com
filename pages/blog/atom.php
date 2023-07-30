@@ -53,7 +53,7 @@ $MarkDownFileMetaData = Yaml::parseFile($GLOBALS['rootdir'] . "/pages/md/meta.ya
             (!
               (str_contains(strtolower($data['category']), strtolower($searchtrough))
                 or str_contains(strtolower($data['title']), strtolower($searchtrough))
-                or str_contains(strtolower($data['tags']), strtolower($searchtrough))
+                or str_contains(strtolower(', ' . $data['tags']), strtolower($searchtrough))
                 or str_contains(strtolower($data['short']), strtolower($searchtrough))
               )
             )

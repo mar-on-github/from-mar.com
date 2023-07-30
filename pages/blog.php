@@ -27,12 +27,17 @@ if (!$getsareset) {
 $navbartypes = "1";
 $uniheadertype = "blog";
 
-if (isset($filtercat) and $filtercat == "discord") {
-  $navbartypes = "discord";
-  $uniheadertype = "discord";
-}
 $MarkDownFileMetaData = Yaml::parseFile(__DIR__ . '/md/meta.yaml');
 echo (ReturnUniversalHeader("Stories By Mar 🤍", $uniheadertype));
+if (isset($searchtrough)) {
+  if (str_starts_with($searchtrough, ", ")) {
+    $tagthrough = substr_replace($searchtrough, "", 0, 2);
+    $searchtag = 1;
+  } else {
+    $tagthrough = $searchtrough;
+    $searchtag = 0;
+  }
+}
 
 ?>
 
@@ -75,7 +80,11 @@ echo (ReturnUniversalHeader("Stories By Mar 🤍", $uniheadertype));
       echo ("<h2>Category: <code>" . $filtercat . "</code>&nbsp;&nbsp;&nbsp;&nbsp;<a href='/feed?cat=" . urlencode($filtercat) . "'><img style=\"max-width: 16px; max-height: 16px\" alt=\"Feed icon\" title=\"Atom feed for this page\" src=\"/assets/img/imgmote/feed.png\"></a></h2>");
     } else {
       if (isset($searchtrough)) {
-        echo ("<h2>Search results: <code>" . $searchtrough . "</code>&nbsp;&nbsp;&nbsp;&nbsp;<a href='/feed?search=" . urlencode($searchtrough) . "'><img style=\"max-width: 16px; max-height: 16px\" alt=\"Feed icon\" title=\"Atom feed for this page\" src=\"/assets/img/imgmote/feed.png\"></a></h2>");
+        if ($searchtag) {
+          echo ("<h2>Posts tagged with <code class='taggo'>" . $tagthrough . "</code>&nbsp;&nbsp;&nbsp;&nbsp;<a href='/feed?search=" . urlencode($searchtrough) . "'><img style=\"max-width: 16px; max-height: 16px\" alt=\"Feed icon\" title=\"Atom feed for this page\" src=\"/assets/img/imgmote/feed.png\"></a></h2>");
+        } else {
+          echo ("<h2>Search results for: <code>" . $searchtrough . "</code>&nbsp;&nbsp;&nbsp;&nbsp;<a href='/feed?search=" . urlencode($searchtrough) . "'><img style=\"max-width: 16px; max-height: 16px\" alt=\"Feed icon\" title=\"Atom feed for this page\" src=\"/assets/img/imgmote/feed.png\"></a></h2>");
+        }
       } else {
         echo ("<p><a href='/feed'><img style=\"max-width: 16px; max-height: 16px\" alt=\"Feed icon\" title=\"Atom feed for this page\" src=\"/assets/img/imgmote/feed.png\"></a></p>");
       }
@@ -102,7 +111,7 @@ echo (ReturnUniversalHeader("Stories By Mar 🤍", $uniheadertype));
             (!
               (str_contains(strtolower($data['category']), strtolower($searchtrough))
                 or str_contains(strtolower($data['title']), strtolower($searchtrough))
-                or str_contains(strtolower($data['tags']), strtolower($searchtrough))
+                or str_contains(strtolower(', ' . $data['tags']), strtolower($searchtrough))
                 or str_contains(strtolower($data['short']), strtolower($searchtrough))
               )
             )

@@ -29,7 +29,8 @@ if ($MarkDownFileMetaData[$file]["author"] != null) {
   $FileMetaData['authorthumbnail'] = '<hl-img src="https://avatars.githubusercontent.com/u/101558380?s=400&u=aa8f776b3e11f02130575d1b46851cca05a0c981&v=4" style="height: 18px" alt="Author thumbnail" id="authorthumbnail"><img img src="https://avatars.githubusercontent.com/u/101558380?s=400&u=aa8f776b3e11f02130575d1b46851cca05a0c981&v=4" height="18px" alt="Author thumbnail"></hl-img>';
 }
 if ($MarkDownFileMetaData[$file]["tags"] != null) {
-$FileMetaData['tags'] = $MarkDownFileMetaData[$file]["tags"];
+  $FileMetaData['tagList'] = explode(', ', $MarkDownFileMetaData[$file]["tags"]);
+  $FileMetaData['tags'] = $MarkDownFileMetaData[$file]["tags"];
 } else {
   $FileMetaData['tags'] = "";
 }
@@ -61,9 +62,6 @@ if ((isset($MarkDownFileMetaData[$file]['modeoverride'])) and (!empty($MarkDownF
   $viewmode = 'blog';
 }
 $navbartypes = "1";
-if ($viewmode == "discord") {
-  $navbartypes = "discord";
-}
 if ((isset($MarkDownFileMetaData[$file]['og-image'])) and (!empty($MarkDownFileMetaData[$file]['og-image']))) {
   $metatags = <<<END
       <meta name="og:title" content="{$FileMetaData['title']}">
@@ -163,13 +161,24 @@ ENDOFSTYLE;
       echo "<h1>" . ($Parsedown->line(($FileMetaData['title']))) . "</h1>";
     }
     echo $ContentOnPage;
+    if (isset($FileMetaData['tagList'])) {
+      
+      foreach ($FileMetaData['tagList'] as $tagged) {
+        if (!isset($taglistformatted)) {
+          $taglistformatted  = '<code class="taggo">' . $tagged . '</code>';
+        } else {
+          $taglistformatted = $taglistformatted . ', <code class="taggo">' . $tagged . '</code>';
+        }
+      }
+      echo '<hr><div id="taglist"><h3>Taggo\'s under this post</h3>' . $taglistformatted .'.</div>';
+    }
     if ((!empty($file)) && $morelinks_display) {
       switch ($viewmode) {
         case 'blog':
-          echo '<hr><p style="position: sticky;right: 10px;width: 30%;margin-left: 60%;"><a href="/blog/">Go back home</a></p>';
+          echo '<p style="position: sticky;right: 10px;width: 30%;margin-left: 60%;"><a href="/blog/">Go back home</a></p>';
           break;
-        case 'discord':
-          echo ($GLOBALS['bottomlink_morelinks_start'] . bmenulink("/discord/", "Go back home") . $GLOBALS['bottomlink_morelinks_end']);
+        case 'project':
+          echo '<p style="position: sticky;right: 10px;width: 30%;margin-left: 60%;"><a href="/?c=' . $FileMetaData['category'] . '">Back to ' . $FileMetaData['category'] . '</a></li></p>';
           break;
         default:
           echo ($GLOBALS['bottomlink_morelinks_start'] . bmenulink("/", "Go back home") . $GLOBALS['bottomlink_morelinks_end']);

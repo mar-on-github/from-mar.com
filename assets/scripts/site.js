@@ -256,3 +256,10 @@ function ToggleKitton() {
             break;
     }
 }
+taggos = (document.getElementsByClassName('taggo'))
+for (var i = taggos.length - 1; i >= 0; i--) {
+    var newtaggo = document.createElement("a");
+    newtaggo.href = "/search?s=%2C+" + taggos.item(i).innerText;
+    newtaggo.innerHTML = "<code class='taggo'>" + taggos.item(i).innerText + "</code>";
+    taggos.item(i).parentNode.replaceChild(newtaggo, taggos.item(i));
+}

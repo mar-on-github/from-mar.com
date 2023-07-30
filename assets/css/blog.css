@@ -4,6 +4,7 @@ body.light-theme {
     --color-slot-03: #2f2fe4;
     --color-slot-04: #6dc3d2;
     --color-slot-05: #2a2a2a;
+    --color-slot-06: #FFFF99;
     /*  */
     --value-slot-1: brightness(0) saturate(100%);
 }
@@ -13,6 +14,7 @@ body.dark-theme {
     --color-slot-03: #1ec1d6;
     --color-slot-04: #56828a;
     --color-slot-05: #b9b9b9;
+    --color-slot-06: #111164;
     /*  */
     --value-slot-01: brightness(0) saturate(100%)invert(100%) sepia(7%) saturate(248%) hue-rotate(335deg) brightness(117%) contrast(90%);
 }
@@ -1035,4 +1037,14 @@ h1.login-title {
     border-bottom: solid 2px #0000002a;
     width: 100%;
     display: block;
+}
+#taglist {
+    background-color: var(--color-slot-06);
+    border-radius: 20px;
+    border: var(--color-slot-05) dotted 0.5px;
+    width: fit-content;
+    padding: 15px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
 }

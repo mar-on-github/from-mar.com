@@ -226,3 +226,11 @@ main.content {
 .bottombar.responsive {
     z-index: 400;
 }
+
+.taggo:before {
+    content: ' \0023';
+}
+.taggo {
+    font-size: smaller;
+    text-decoration: none !important;
+}
