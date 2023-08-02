@@ -1,25 +1,5 @@
 # For now, new posts should be added above older ones, as the order of this file will set the order of the timeline.
 # posts
-'posts/art/brain-lost-misunderstanding':
-  title: 'A misunderstanding'
-  short: 'Just trying things out lol'
-  type: post
-  og-image: /assets/img/media/art/a-misunderstanding.png
-  title-display: true
-  content: |
-    - More brainfarts that I turned to art: <code class="taggo">brainfart as art</code>
-
-    <div style="height: 300px"><hl-img preview="https://64.media.tumblr.com/c8d4a3e20145e846bf96bc5ca16da14e/bc5fb4c5e676e41b-93/s1280x1920/ead37ff27590d344cf2a48dc1dd812468256e43e.pnj" alt="MouseMouse!" highlight="/assets/img/media/art/a-misunderstanding.png" href="https://www.tumblr.com/strawmelonjuice/722847916036931584/a-misunderstanding?source=share"></hl-img></div>
-
-    A misunderstanding! Will the bunny-thing eat the mole-thing? I think they'll become friends.
-
-    <span class="notion">This art is mine, you may not download and use this without [asking me](mailto:mar@strawmelonjuice.com) and getting my permission!</span>
-  date:
-    posted: 1689354605
-    edited: 1690758605
-  filename: art/brain-lost-misunderstanding
-  category: My art
-  tags: 'art, donut, emoji, drawing, Clip Studio Paint, OC, trying things out, paper textured, brainfart as art'
 'posts/art/doh-noot_smile':
   title: 'Doh-Noot - #1: Smiling'
   short: 'Just don''t let Doh-Noot walk into the donut shop, okay?'
@@ -44,6 +24,26 @@
   filename: art/mousemouse-3.2-textured
   category: My art
   tags: 'art, tumblr, mouse, mousemouse, mousemaus, Clip Studio Paint, OCs, OC, OCid:MM'
+'posts/art/brain-lost-misunderstanding':
+  title: 'A misunderstanding'
+  short: 'Just trying things out lol'
+  type: post
+  og-image: /assets/img/media/art/a-misunderstanding.png
+  title-display: true
+  content: |
+    - More brainfarts that I turned to art: <code class="taggo">brainfart as art</code>
+
+    <div style="height: 300px"><hl-img preview="https://64.media.tumblr.com/c8d4a3e20145e846bf96bc5ca16da14e/bc5fb4c5e676e41b-93/s1280x1920/ead37ff27590d344cf2a48dc1dd812468256e43e.pnj" alt="MouseMouse!" highlight="/assets/img/media/art/a-misunderstanding.png" href="https://www.tumblr.com/strawmelonjuice/722847916036931584/a-misunderstanding?source=share"></hl-img></div>
+
+    A misunderstanding! Will the bunny-thing eat the mole-thing? I think they'll become friends.
+
+    <span class="notion">This art is mine, you may not download and use this without [asking me](mailto:mar@strawmelonjuice.com) and getting my permission!</span>
+  date:
+    posted: 1689354605
+    edited: 1690984579
+  filename: art/brain-lost-misunderstanding
+  category: My art
+  tags: 'art, animals, emoji, drawing, Clip Studio Paint, OC, trying things out, paper textured, brainfart as art'
 'posts/LDo/230704':
   title: Logger-Diary Online is coming back to Mar's home domain.
   short: Logger-Diary Online is coming back to `logger-diary.strawmelonjuice.com` for financial reasons.
