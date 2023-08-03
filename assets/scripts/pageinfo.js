@@ -1,6 +1,10 @@
 const debug_pageinfo = 1;
 function mobilescreen() {
-  if ((typeof (mediamobilescreen()) != "undefined") && (mediamobilescreen() != null)) {
+  if (
+
+    typeof mediamobilescreen === "function"
+
+) {
     return mediamobilescreen();
   }
   var csssays = (getComputedStyle(document.body).getPropertyValue('--screen-type-orientation'));
