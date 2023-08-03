@@ -53,8 +53,8 @@ echo <<<YEO
     <description>Mar's blog</description>
     <image>
       <title>strawmelonjuice dot com</title>
-      <url>/assets/img/Strawmelonjuice.png</url>
-      <link>/assets/img/Strawmelonjuice.png</link>
+      <url>https://strawmelonjuice.com/assets/img/Strawmelonjuice.png</url>
+      <link>https://strawmelonjuice.com/assets/img/Strawmelonjuice.png</link>
     </image>
     <generator>strawmelonjuice.PHP by Mar</generator>
     <copyright>@strawmelonjuice</copyright>
