@@ -120,13 +120,18 @@ $MarkDownFileMetaData = Yaml::parseFile($GLOBALS['rootdir'] . "/pages/md/meta.ya
       
                 <guid>https://strawmelonjuice.com/{$link}</guid>
                 <summary>{$descr}</summary>
+                <description>{$descr}</description>
                 <category>{$cate}</category>
                 <content type="html"><![CDATA[
                   {$ContentOnPage}
                 ]]></content>
+                <ArticleContent type="html"><![CDATA[
+                  {$ContentOnPage}
+                ]]></ArticleContent>
+
               </item>
 
-            OK;
+OK;
           }
         }
       }
