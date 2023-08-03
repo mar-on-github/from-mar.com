@@ -67,7 +67,8 @@ echo <<<YEO
     <!-- Add '?cat=...' for specific categories, or '?search=...' for searches. -->
 
 YEO;
-$atomjs = "\n// site.min.js\n\n\n" . file_get_contents(__DIR__ . "../../../assets/scripts/site.min.js") . "\n//hl-img from jsdelivr\n\n\n" . shell_exec("curl {$footer_script_src}");
+// $atomjs = '<script src="/assets/scripts/basic.js.php"></script>';
+$atomjs = '<script defer src="https://cdn.jsdelivr.net/npm/hl-img@1/hl-img.min.js"></script>';
 $MarkDownFileMetaData = Yaml::parseFile($GLOBALS['rootdir'] . "/pages/md/meta.yaml");
       // echo(var_dump($MarkDownFileMetaData));
 
@@ -112,7 +113,7 @@ $MarkDownFileMetaData = Yaml::parseFile($GLOBALS['rootdir'] . "/pages/md/meta.ya
                 $ContentOnPage = "<p>unavailable.</p>";
               }
             }
-            $ContentOnPage = $ContentOnPage .  "\n\n\n\n<script>{$atomjs}</script>";
+            $ContentOnPage = $ContentOnPage .  "\n\n\n\n{$atomjs}";
             echo <<<OK
               <item>
                 <title>{$title}</title>
