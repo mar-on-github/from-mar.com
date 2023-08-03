@@ -8,6 +8,9 @@ $Parsedown = new Parsedown();
 $getsareset = false;
 $bloglink = "https://{$_SERVER["HTTP_HOST"]}/blog/";
 $blogname = "Stories by Mar 🤍";
+$navbartypes = "1";
+$uniheadertype = "blog";
+$sbmlogo = "/assets/img/sbm_2019style_1080×1080.png";
 if (!isset($filtercat)) {
   if (!empty($_GET['cat'])) {
     $filtercat = $_GET['cat'];
@@ -36,10 +39,15 @@ if (!isset($searchtrough)) {
   if (isset($filtercat)) {
     $bloglink = "https://{$_SERVER["HTTP_HOST"]}/blog?c=" . urlencode($filtercat);
     $blogname = "Stories by Mar 🤍 – $filtercat";
+    if (($filtercat) == "Logger-Diary Online") {
+      $sbmlogo = "https://logger-diary.strawmelonjuice.com/img/logo/logo_512px.png";
+      $bloglink = "https://logger-diary.strawmelonjuice.com/news/";
+      $uniheadertype = "project";
+      $blogname = "Logger-Diary Online news";
+    }
   }
 header("Link: {$bloglink}; rel=\"canonical\"");
-$navbartypes = "1";
-$uniheadertype = "blog";
+
 
 $MarkDownFileMetaData = Yaml::parseFile(__DIR__ . '/md/meta.yaml');
 echo (ReturnUniversalHeader($blogname, $uniheadertype));
@@ -58,8 +66,9 @@ if (isset($searchtrough)) {
 <body class="body">
   <button class="openbtn" onclick="openNav()">☰</button>
   <div class="sidebar" id="mySidebar"><a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
-    <?php echo (ReturnMenuLinksFromJSON("side", $navbartypes)) ?>
-    <img src="/assets/img/sbm_2019style_1080×1080.png" id="sbmheaderlogo">
+    <?php echo (ReturnMenuLinksFromJSON("side", $navbartypes));
+    echo "<img src=\"{$sbmlogo}\" id=\"sbmheaderlogo\">";
+    ?>
   </div>
   <script>
     function HidePageInfo() {

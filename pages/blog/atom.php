@@ -43,6 +43,8 @@ if (!$getsareset) {
     $blogname = "Stories by Mar 🤍 – $filtercat";
     if (($filtercat) == "Logger-Diary Online") {
       $strawmelonjuiceimgurl = "https://logger-diary.strawmelonjuice.com/img/logo/logo_512px.png";
+      $bloglink = "https://logger-diary.strawmelonjuice.com/news/";
+      $blogname = "Logger-Diary Online news";
     }
   }
 }
