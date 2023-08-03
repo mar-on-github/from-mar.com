@@ -5,6 +5,8 @@ body.light-theme {
     --color-slot-04: #6dc3d2;
     --color-slot-05: #2a2a2a;
     --color-slot-06: #FFFF99;
+    --color-slot-07: #6a524c;
+    --color-slot-08: #b885f2aa;
     /*  */
     --value-slot-1: brightness(0) saturate(100%);
 }
@@ -28,6 +30,8 @@ body.dark-theme {
     --color-slot-04: #56828a;
     --color-slot-05: #b9b9b9;
     --color-slot-06: #111164;
+    --color-slot-07: #ecdfdf;
+    --color-slot-08: #b885f2;
     /*  */
     --value-slot-01: brightness(0) saturate(100%)invert(100%) sepia(7%) saturate(248%) hue-rotate(335deg) brightness(117%) contrast(90%);
 }
@@ -224,10 +228,10 @@ body {
 }
 
 code {
-    background-color: #b885f2aa;
+    background-color: var(--color-slot-08);
     border: 2px dotted;
     border-color: #E6A595;
-    color: #6a524c;
+    color: var(--color-slot-07);
     font-family: 'Ubuntu Mono', monospace
 }
 
