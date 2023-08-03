@@ -22,6 +22,7 @@ if (!isset($searchtrough)) {
 }
 $bloglink = "https://{$_SERVER["HTTP_HOST"]}/blog/";
 $blogname = "Stories by Mar 🤍";
+$strawmelonjuiceimgurl = "https://strawmelonjuice.com/assets/img/Strawmelonjuice.png";
 if (!$getsareset) {
   header('Link: https://' . $_SERVER["HTTP_HOST"] . '/blog/atom; rel="canonical"');
 } else {
@@ -40,6 +41,9 @@ if (!$getsareset) {
   if (isset($filtercat)) {
     $bloglink = "https://{$_SERVER["HTTP_HOST"]}/blog?c=" . urlencode($filtercat);
     $blogname = "Stories by Mar 🤍 – $filtercat";
+    if (($filtercat) == "Logger-Diary Online") {
+      $strawmelonjuiceimgurl = "https://logger-diary.strawmelonjuice.com/img/logo/logo_816px.webp";
+    }
   }
 }
 
@@ -53,8 +57,8 @@ echo <<<YEO
     <description>Mar's blog</description>
     <image>
       <title>strawmelonjuice dot com</title>
-      <url>https://strawmelonjuice.com/assets/img/Strawmelonjuice.png</url>
-      <link>https://strawmelonjuice.com/assets/img/Strawmelonjuice.png</link>
+      <url>{$strawmelonjuiceimgurl}</url>
+      <link>{$strawmelonjuiceimgurl}</link>
     </image>
     <generator>strawmelonjuice.PHP by Mar</generator>
     <copyright>@strawmelonjuice</copyright>
