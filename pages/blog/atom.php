@@ -42,7 +42,7 @@ if (!$getsareset) {
     $bloglink = "https://{$_SERVER["HTTP_HOST"]}/blog?c=" . urlencode($filtercat);
     $blogname = "Stories by Mar 🤍 – $filtercat";
     if (($filtercat) == "Logger-Diary Online") {
-      $strawmelonjuiceimgurl = "https://logger-diary.strawmelonjuice.com/img/logo/logo_816px.webp";
+      $strawmelonjuiceimgurl = "https://logger-diary.strawmelonjuice.com/img/logo/logo_512px.png";
     }
   }
 }
