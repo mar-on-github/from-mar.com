@@ -84,7 +84,7 @@ $MarkDownFileMetaData = Yaml::parseFile($GLOBALS['rootdir'] . "/pages/md/meta.ya
             $skipt = true;
           }
           if (!($skipt)) {
-            $link="/blog?p=posts/" . $data['filename'];
+            $link="blog?p=posts/" . $data['filename'];
             $pubDate = date('m/d/Y H:i:s', $data['date']['posted']);
             if ($data["author"] != null) {
               $author = $data["author"];
@@ -108,11 +108,11 @@ $MarkDownFileMetaData = Yaml::parseFile($GLOBALS['rootdir'] . "/pages/md/meta.ya
             echo <<<OK
               <item>
                 <title>{$title}</title>
-                <link>{$link}</link>
+                <link>https://strawmelonjuice.com/{$link}</link>
                 <pubDate>{$pubDate}</pubDate>
                 <author>{$author}</author>
       
-                <guid>{$link}</guid>
+                <guid>https://strawmelonjuice.com/{$link}</guid>
                 <summary>{$descr}</summary>
                 <category>{$cate}</category>
                 <content type="html"><![CDATA[
