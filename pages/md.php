@@ -146,7 +146,7 @@ ENDOFSTYLE;
       <?php echo ($FileMetaData['short']); ?>
     </p>
   </div>
-  <script src="/assets/scripts/pageinfo.js"></script>
+  <script src="/assets/scripts/pageinfo.min.js"></script>
   <main class="content" id="pagecontent" style="justify-content: center">
     <?php
     $titledisplay = true;

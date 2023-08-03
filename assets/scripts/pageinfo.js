@@ -1,14 +1,17 @@
 const debug_pageinfo = 1;
-  function mobilescreen() {
-    var csssays = (getComputedStyle(document.body).getPropertyValue('--screen-type-orientation'));
-    if ((csssays) === ("mobile")) {
-      return 1;
-    }
-    if ((csssays) === ("landscape")) {
-      return 0;
-    }
-    console.error("Could not determine 'mobilescreen()' from css value '" + csssays +"'.");
-  };
+function mobilescreen() {
+  if ((typeof (mediamobilescreen()) != "undefined") && (mediamobilescreen() != null)) {
+    return mediamobilescreen();
+  }
+  var csssays = (getComputedStyle(document.body).getPropertyValue('--screen-type-orientation'));
+  if ((csssays) === ("mobile")) {
+    return 1;
+  }
+  if ((csssays) === ("landscape")) {
+    return 0;
+  }
+  console.error("Could not determine 'mobilescreen()' from css value '" + csssays + "'.");
+};
   if (debug_pageinfo) console.log("Is this a mobile screen? " + mobilescreen());
   function pageinfosidebar_rollup() {
     document.getElementById("pageinfosidebar").style.overflow = "hidden";

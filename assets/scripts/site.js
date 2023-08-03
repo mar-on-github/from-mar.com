@@ -1,3 +1,7 @@
+function mediamobilescreen() {
+    return ((window.matchMedia("(orientation: portrait),(max - width: 800px)")).matches);
+};
+
 function colorSchemeChange(x) {
     if (document.body.classList.contains("colorSchemeOverridden")) {return}
     if (x.matches) {
