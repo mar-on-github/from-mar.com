@@ -181,8 +181,8 @@ function imgmote(string $name, bool $return = false)
   }
     die('<img src="' . $src . '" max-widht="5px" max-height="5px" class="imgmote" alt="imgmote named ' . $name . '"  loading=\"lazy\">');
   }
-
-$hlimg_script = <<<END
+$hlimg_script_src = "https://cdn.jsdelivr.net/npm/hl-img@1.10.10/hl-img.min.js";
+$footer_script = <<<END
 <script type="text/javascript">
 console.log('View mode of this page is: "' + viewmode + '"');
 if (viewmode === "base") {
@@ -202,6 +202,6 @@ if (viewmode === "project") {
 }}
 </script>
 <!--<script defer src="/node_modules/hl-img/hl-img.js"></script>-->
-<script defer src="https://cdn.jsdelivr.net/npm/hl-img@1.10.10/hl-img.min.js"></script>
+<script defer src="{$hlimg_script_src}"></script>
 END;
 require_once (__DIR__ . '/vendor/autoload.php');

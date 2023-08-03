@@ -38,7 +38,7 @@ echo (ReturnUniversalHeader("Stories By Mar 🤍 – Search", "blog"));
     </div>
     <script src="/assets/scripts/site.min.js"></script>
     <script src="/assets/scripts/scrollbars.js"></script>
-<?php echo ($hlimg_script); ?>
+<?php echo ($footer_script); ?>
 </body>
 
 </html>
