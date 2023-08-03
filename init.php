@@ -66,7 +66,7 @@ function ReturnUniversalHeader(string $PageName, string $specialstyles = "base",
   }
   return <<<EOD
     <head>
-        <title>Mar's site - {$PageName}</title>
+        <title>Mar's site – {$PageName}</title>
         <meta charset="UTF-8">
         <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">

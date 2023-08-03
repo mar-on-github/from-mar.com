@@ -80,7 +80,7 @@ END;
       <meta name="og:author" content="{$FileMetaData['author']}">
 END;
 }
-echo (ReturnUniversalHeader($FileMetaData['title'], $viewmode, $metatags, $FileMetaData['tags']));
+echo (ReturnUniversalHeader("Mar's site – {$FileMetaData['title']}", $viewmode, $metatags, $FileMetaData['tags']));
 
 ?>
 

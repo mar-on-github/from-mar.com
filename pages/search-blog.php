@@ -2,7 +2,7 @@
 <html lang="en">
 <?php
 include_once(__DIR__ . "/../init.php");
-echo (ReturnUniversalHeader("Search - Stories By Mar 🤍", "blog"));
+echo (ReturnUniversalHeader("Stories By Mar 🤍 – Search", "blog"));
 
 ?>
 

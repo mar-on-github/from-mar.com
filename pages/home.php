@@ -2,7 +2,7 @@
 <html lang="en">
 <?php
 include_once(__DIR__ . "/../init.php");
-echo(ReturnUniversalHeader("Home","base"));
+echo(ReturnUniversalHeader("Mar's site – Home","base"));
 ?>
   <body class="body">
   <button class="openbtn" onclick="openNav()">☰</button>

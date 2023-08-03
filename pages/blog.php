@@ -6,10 +6,11 @@ use Symfony\Component\Yaml\Yaml;
 
 $Parsedown = new Parsedown();
 $getsareset = false;
+$bloglink = "https://{$_SERVER["HTTP_HOST"]}/blog/";
+$blogname = "Stories by Mar 🤍";
 if (!isset($filtercat)) {
   if (!empty($_GET['cat'])) {
     $filtercat = $_GET['cat'];
-    header('Link: https://' . $_SERVER["HTTP_HOST"] . '/blog?c=' . $filtercat . '; rel="canonical"');
     $getsareset = true;
 
   }
@@ -17,25 +18,38 @@ if (!isset($filtercat)) {
 if (!isset($searchtrough)) {
   if (!empty($_GET['search'])) {
     $searchtrough = $_GET['search'];
-    header('Link: https://' . $_SERVER["HTTP_HOST"] . '/search?s=' . $searchtrough . '; rel="canonical"');
     $getsareset = true;
   }
 }
-if (!$getsareset) {
-  header('Link: https://' . $_SERVER["HTTP_HOST"] . '/blog/; rel="canonical"');
-}
+  if (isset($searchtrough)) {
+    $bloglink = "https://{$_SERVER["HTTP_HOST"]}/blog?s=" . urlencode($searchtrough);
+    if (str_starts_with($searchtrough, ", ")) {
+      $tagthrough = substr_replace($searchtrough, "", 0, 2);
+      $searchtag = true;
+      $blogname = "Stories by Mar 🤍 – #{$tagthrough}";
+    } else {
+      $tagthrough = $searchtrough;
+      $searchtag = false;
+      $blogname = "Search results for \"{$searchtrough}\" – Stories by Mar 🤍";
+    }
+  }
+  if (isset($filtercat)) {
+    $bloglink = "https://{$_SERVER["HTTP_HOST"]}/blog?c=" . urlencode($filtercat);
+    $blogname = "Stories by Mar 🤍 – $filtercat";
+  }
+header("Link: {$bloglink}; rel=\"canonical\"");
 $navbartypes = "1";
 $uniheadertype = "blog";
 
 $MarkDownFileMetaData = Yaml::parseFile(__DIR__ . '/md/meta.yaml');
-echo (ReturnUniversalHeader("Stories By Mar 🤍", $uniheadertype));
+echo (ReturnUniversalHeader($blogname, $uniheadertype));
 if (isset($searchtrough)) {
   if (str_starts_with($searchtrough, ", ")) {
     $tagthrough = substr_replace($searchtrough, "", 0, 2);
-    $searchtag = 1;
+    $searchtag = true;
   } else {
     $tagthrough = $searchtrough;
-    $searchtag = 0;
+    $searchtag = false;
   }
 }
 
@@ -54,7 +68,6 @@ if (isset($searchtrough)) {
   </script>
   <main class="content" id="blogscroll-pagecontent">
     <?php
-    if ($filtercat != "discord") {
       echo <<<END
       <a href="/search/"><img class="search-button" src="/assets/img/svg/search.svg" alt="Search" title="Search through posts on Mar's blog"></a>
       <style>
@@ -75,7 +88,6 @@ if (isset($searchtrough)) {
       </style>
       <h1>Mar's blog! 🤍</h1>
       END;
-    }
     if (isset($filtercat)) {
       echo ("<h2>Category: <code>" . $filtercat . "</code>&nbsp;&nbsp;&nbsp;&nbsp;<a href='/feed?cat=" . urlencode($filtercat) . "'><img style=\"max-width: 16px; max-height: 16px\" alt=\"Feed icon\" title=\"Atom feed for this page\" src=\"/assets/img/imgmote/feed.png\"></a></h2>");
     } else {

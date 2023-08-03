@@ -2,22 +2,6 @@
 require_once(__DIR__ . "/../../init.php");
 header("Content-type: text/xml; charset=utf-8");
 echo '<?xml version="1.0" encoding="utf-8" standalone="yes"?>';
-?>
-
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
-  <channel>
-    <title>Stories by Mar 🤍</title>
-    <link>https://strawmelonjuice.com/blog/</link>
-    <description>Mar's blog</description>
-    <image>
-      <title>strawmelonjuice dot com</title>
-      <url>/assets/img/Strawmelonjuice.png</url>
-      <link>/assets/img/Strawmelonjuice.png</link>
-    </image>
-    <generator>strawmelonjuice.PHP</generator>
-    <copyright>@strawmelonjuice</copyright>
-    <!-- Add '?cat=...' for specific categories, or '?search=...' for searches. -->
-<?php
 use Symfony\Component\Yaml\Yaml;
 $Parsedown = new Parsedown();
 $getsareset = false;
@@ -36,11 +20,50 @@ if (!isset($searchtrough)) {
     $getsareset = true;
   }
 }
+$bloglink = "https://{$_SERVER["HTTP_HOST"]}/blog/";
+$blogname = "Stories by Mar 🤍";
 if (!$getsareset) {
-  header('Link: https://' . $_SERVER["HTTP_HOST"] . '/blog/rss; rel="canonical"');
+  header('Link: https://' . $_SERVER["HTTP_HOST"] . '/blog/atom; rel="canonical"');
+} else {
+  if (isset($searchtrough)) {
+    $bloglink = "https://{$_SERVER["HTTP_HOST"]}/blog?s=" . urlencode($searchtrough);
+    if (str_starts_with($searchtrough, ", ")) {
+      $tagthrough = substr_replace($searchtrough, "", 0, 2);
+      $searchtag = true;
+      $blogname = "Stories by Mar 🤍 – #{$tagthrough}";
+    } else {
+      $tagthrough = $searchtrough;
+      $searchtag = false;
+      $blogname = "Search results for \"{$searchtrough}\" – Stories by Mar 🤍";
+    }
+  }
+  if (isset($filtercat)) {
+    $bloglink = "https://{$_SERVER["HTTP_HOST"]}/blog?c=" . urlencode($filtercat);
+    $blogname = "Stories by Mar 🤍 – $filtercat";
+  }
 }
+
+
+echo <<<YEO
+
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>{$blogname}</title>
+    <link>{$bloglink}</link>
+    <description>Mar's blog</description>
+    <image>
+      <title>strawmelonjuice dot com</title>
+      <url>/assets/img/Strawmelonjuice.png</url>
+      <link>/assets/img/Strawmelonjuice.png</link>
+    </image>
+    <generator>strawmelonjuice.PHP by Mar</generator>
+    <copyright>@strawmelonjuice</copyright>
+    <!-- Add '?cat=...' for specific categories, or '?search=...' for searches. -->
+
+YEO;
 $MarkDownFileMetaData = Yaml::parseFile($GLOBALS['rootdir'] . "/pages/md/meta.yaml");
       // echo(var_dump($MarkDownFileMetaData));
+
       foreach ($MarkDownFileMetaData as $data) {
         if (($data['type'] == "post")) {
           $skipt = false;
