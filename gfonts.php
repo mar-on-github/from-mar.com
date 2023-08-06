@@ -43,6 +43,9 @@ if (!isset($_GET['url'])) {
     die('no file requested.');
 } else {
     SendMime();
+    header('Access-Control-Allow-Origin: *');
+    header('Access-Control-Allow-Methods: GET');
+    header("Access-Control-Allow-Headers: X-Requested-With");
 }
 
 
