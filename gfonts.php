@@ -1,5 +1,5 @@
 <?php
-header('Content-type: text/css');
+
 
 $_ENV['BASE_URL'] = 'https://' . $_SERVER["HTTP_HOST"] . '/gfonts.php';
 // $_ENV['BASE_URL'] = getenv('BASE_URL');
@@ -8,10 +8,44 @@ if (!isset($_ENV['BASE_URL'])) {
     throw new Exception('ENV "BASE_URL" missing.');
 }
 
-
-if (!isset($_GET['url'])) {
-    die('nope...');
+function SendMime() {
+    if (str_contains($_GET['url'],"css")) {
+        header('Content-type: text/css');
+        return;
+    }
+    if (str_contains($_GET['url'], "woff2")) {
+        header('Content-type: font/woff2');
+        return;
+    }
+    if (str_contains($_GET['url'], "woff")) {
+        header('Content-type: font/woff');
+        return;
+    }
+    if (str_contains($_GET['url'], "svg")) {
+        header('Content-type: image/svg+xml');
+        return;
+    }
+    if (str_contains($_GET['url'], "ttf")) {
+        header('Content-type: font/ttf');
+        return;
+    }
+    if (str_contains($_GET['url'], "otf")) {
+        header('Content-type: font/otf');
+        return;
+    }
+    if (str_contains($_GET['url'], "sfnt")) {
+        header('Content-type: font/sfnt');
+        return;
+    }
 }
+if (!isset($_GET['url'])) {
+    header('Content-type: text/plain');
+    die('no file requested.');
+} else {
+    SendMime();
+}
+
+
 
 $url = $_GET['url'];
 
