@@ -107,4 +107,7 @@ dist
 
 # TernJS port file
 .tern-port
-cache
+
+
+# Gfont proxy cache
+gfont_cache

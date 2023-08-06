@@ -1,7 +1,8 @@
 <?php
 header('Content-type: text/css');
 
-$_ENV['BASE_URL'] = getenv('BASE_URL');
+$_ENV['BASE_URL'] = 'https://' . $_SERVER["HTTP_HOST"] . '/gfonts.php';
+// $_ENV['BASE_URL'] = getenv('BASE_URL');
 
 if (!isset($_ENV['BASE_URL'])) {
     throw new Exception('ENV "BASE_URL" missing.');
@@ -14,8 +15,8 @@ if (!isset($_GET['url'])) {
 
 $url = $_GET['url'];
 
-if (!is_dir('./cache')) {
-    mkdir('./cache');
+if (!is_dir('./gfont_cache')) {
+    mkdir('./gfont_cache');
 }
 
 $url = str_replace('http://', 'https://', $url);
@@ -26,12 +27,12 @@ getFile($url);
 function getFile($url)
 {
     $filename = md5($url) . '.cache';
-    if (!file_exists('./cache/' . $filename)) {
-        cacheFile($url, './cache/' . $filename);
+    if (!file_exists('./gfont_cache/' . $filename)) {
+        cacheFile($url, './gfont_cache/' . $filename);
     }
 
 
-    echo file_get_contents('./cache/' . $filename);
+    echo file_get_contents('./gfont_cache/' . $filename);
 }
 
 function cacheFile($url, $filepath)
@@ -40,16 +41,17 @@ function cacheFile($url, $filepath)
     $url = str_replace('http://', 'https://', $url);
     $url = str_replace(' ', '+', $url);
     if (strpos($url, 'fonts.googleapis.com') !== false || strpos($url, 'fonts.gstatic.com') !== false) {
-        $ch = curl_init();
+        $result = shell_exec('curl ' . $url);
+        // $ch = curl_init();
 
-        curl_setopt($ch, CURLOPT_URL, $url);
-        curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
-
-        $result = curl_exec($ch);
-        if (curl_errno($ch)) {
-            echo 'Error:' . curl_error($ch);
-        }
-        curl_close($ch);
+        // curl_setopt($ch, CURLOPT_URL, $url);
+        // curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
+        // 
+        // $result = curl_exec($ch);
+        // if (curl_errno($ch)) {
+        //     echo 'Error:' . curl_error($ch);
+        // }
+        // curl_close($ch);
         $content = str_replace('https://', $_ENV['BASE_URL'] . '/?url=https://', $result);
 
         file_put_contents($filepath, $content);

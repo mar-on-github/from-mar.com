@@ -15,4 +15,4 @@ Testing is mostly done from Firefox and Firefox Dev edition on latest from my Ub
     - Verdana (Microsoft i guess?) for my blog pages.
 - [erusev/parsedown](https://parsedown.org/)
 - [malihu/malihu-custom-scrollbar-plugin](https://github.com/malihu/malihu-custom-scrollbar-plugin)
-- idk? who else
+- [gruessung/php-gfont-proxy](https://github.com/gruessung/php-gfont-proxy)--a modified version-- to serve google fonts privacy-friendly. Under the MIT license as readable in the repo, though I'm not awake enough to know what that requires _me_ to do now.
