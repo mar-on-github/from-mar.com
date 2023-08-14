@@ -13,7 +13,7 @@ if (!isset($file)) {
   }
 }
 header('Link: https://' . $_SERVER["HTTP_HOST"] . '/?p=' . $file . '; rel="canonical"');
-$MarkDownFileMetaData = Yaml::parseFile(__DIR__ . '/md/meta.yaml');
+$MarkDownFileMetaData = Yaml::parseFile(__DIR__ . '/md/pages-meta.yaml');
 $FileMetaData['title'] = $MarkDownFileMetaData[$file]["title"];
 $FileMetaData['short'] = $MarkDownFileMetaData[$file]["short"];
 $FileMetaData['type'] = $MarkDownFileMetaData[$file]["type"];

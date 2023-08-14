@@ -49,7 +49,7 @@ if (!isset($searchtrough)) {
 header("Link: {$bloglink}; rel=\"canonical\"");
 
 
-$MarkDownFileMetaData = Yaml::parseFile(__DIR__ . '/md/meta.yaml');
+$MarkDownFileMetaData = Yaml::parseFile(__DIR__ . '/md/pages-meta.yaml');
 echo (ReturnUniversalHeader($blogname, $uniheadertype));
 if (isset($searchtrough)) {
   if (str_starts_with($searchtrough, ", ")) {

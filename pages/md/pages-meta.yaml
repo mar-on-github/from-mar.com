@@ -1,5 +1,17 @@
 # For now, new posts should be added above older ones, as the order of this file will set the order of the timeline.
 # posts
+'posts/LDo/updates-summary-august23':
+  title: "Logger-Diary Online: Update summary for summer '23!"
+  short: Loads of updates coming to Logger-Diary.Online users in the past two months, most of them small enough to go unnoticed. However, I’ll make a small and comprehensible list so they won’t actually go unnoticed!
+  type: post
+  title-display: true
+  filename: LDo/updates-summary-august23
+  category: Logger-Diary Online
+  modeoverride: project
+  og-image: https://logger-diary.strawmelonjuice.com/img/logo/logo_512px.png
+  date:
+    posted: 1692014952
+    edited: 1692014952
 'posts/art/doh-noot_smile':
   title: 'Doh-Noot - #1: Smiling'
   short: 'Just don''t let Doh-Noot walk into the donut shop, okay?'

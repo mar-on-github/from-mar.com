@@ -69,7 +69,7 @@ echo <<<YEO
 YEO;
 // $atomjs = '<script src="/assets/scripts/basic.js.php"></script>';
 $atomjs = '<script defer src="https://cdn.jsdelivr.net/npm/hl-img@1/hl-img.min.js"></script>';
-$MarkDownFileMetaData = Yaml::parseFile($GLOBALS['rootdir'] . "/pages/md/meta.yaml");
+$MarkDownFileMetaData = Yaml::parseFile($GLOBALS['rootdir'] . "/pages/md/pages-meta.yaml");
       // echo(var_dump($MarkDownFileMetaData));
 
       foreach ($MarkDownFileMetaData as $data) {
