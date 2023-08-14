@@ -56,10 +56,13 @@ if ((isset($MarkDownFileMetaData[$file]['content'])) and (!empty($MarkDownFileMe
   }
 }
 $viewmode = 'base';
+$sitename = "Mar's site";
 if ((isset($MarkDownFileMetaData[$file]['modeoverride'])) and (!empty($MarkDownFileMetaData[$file]['modeoverride']))) {
   $viewmode = $MarkDownFileMetaData[$file]['modeoverride'];
+  $sitename = "Mar";
 } elseif ($FileMetaData['type'] == "post") {
   $viewmode = 'blog';
+  $sitename = "Mar's blog";
 }
 $navbartypes = "1";
 if ((isset($MarkDownFileMetaData[$file]['og-image'])) and (!empty($MarkDownFileMetaData[$file]['og-image']))) {
@@ -80,7 +83,7 @@ END;
       <meta name="og:author" content="{$FileMetaData['author']}">
 END;
 }
-echo (ReturnUniversalHeader("Mar's site – {$FileMetaData['title']}", $viewmode, $metatags, $FileMetaData['tags']));
+echo (ReturnUniversalHeader("{$FileMetaData['title']} – {$sitename}", $viewmode, $metatags, $FileMetaData['tags']));
 
 ?>
 
