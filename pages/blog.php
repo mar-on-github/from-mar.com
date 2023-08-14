@@ -100,7 +100,7 @@ if (isset($searchtrough)) {
     if (isset($filtercat)) {
       echo ("<h2>Category: <code>" . $filtercat . "</code>&nbsp;&nbsp;&nbsp;&nbsp;<a href='/feed?cat=" . urlencode($filtercat) . "'><img style=\"max-width: 16px; max-height: 16px\" alt=\"Feed icon\" title=\"Atom feed for this page\" src=\"/assets/img/imgmote/feed.png\"></a>");
       if ($filtercat == "Logger-Diary Online") {
-        echo "&nbsp;<a href='https://www.tumblr.com/logger-diary-insider/tagged/logger-diary.online'><img style=\"max-width: 16px; max-height: 16px\" alt=\"Tumblr icon\" title='Tumblr for insider information' src='https://assets.tumblr.com/pop/manifest/favicon-cfddd25f.svg'></a>";
+        echo "&nbsp;<a href='https://logger-diary-insider.tumblr.com/tagged/logger-diary.online'><img style=\"max-width: 16px; max-height: 16px\" alt=\"Tumblr icon\" title='Tumblr for insider information' src='https://assets.tumblr.com/pop/manifest/favicon-cfddd25f.svg'></a>";
       }
       echo "</h2>";
     } else {
