@@ -21,7 +21,10 @@ You might’ve seen that most of your entries now have ‘20 seconds ago’ inst
 ### <a name="_heading=h.3efru4xle6hp"></a>#5 – Dismissable focus mode alert
 Ever used focus mode? Yeah, annoying huh? You can now dismiss the focus mode alert and have it kept hidden for about 30 days. It was only ~~5 hours of programming~~ *the addition of ONE button!*
 
-### <a name="_heading=h.tjtcrucbim8s"></a>#6 – B.T.S: Loads of code optimisations and backend updates!
+### <a name="_heading=h.tjsdakakim8s"></a>#6 – Bothered by streaks?
+You can now hide your streak indicator from settings!
+
+### <a name="_heading=h.tjtcrucbim8s"></a>#7 – B.T.S: Loads of code optimisations and backend updates!
 Not only have I physically moved our servers for better connections, I have also updated the code to run more of the critical parts ***on your side***! This might sound weird, but your laptop is far more invested in speedy browsing than our busy servers are; it’s quite happy to help pick up all the slack! Our busy servers meanwhile have new code and new directions.
 
 In short: Your trusted diary app now works even speedier and more secure!
