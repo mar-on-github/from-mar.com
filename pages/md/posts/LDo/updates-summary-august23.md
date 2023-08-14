@@ -1,3 +1,5 @@
+<button><hl-img src="https://avatars.githubusercontent.com/u/101558380?s=400&u=aa8f776b3e11f02130575d1b46851cca05a0c981&v=4" style="height: 18px" alt="small Mar self-portrait"><img img src="https://avatars.githubusercontent.com/u/101558380?s=400&u=aa8f776b3e11f02130575d1b46851cca05a0c981&v=4" height="18px" alt="small Mar self-portrait"></hl-img> Mar</button>
+<hr />
 Loads of updates coming to Logger-Diary.Online users in the past two months, most of them small enough to go unnoticed. However, I’ll make a small and comprehensible list so they won’t actually go unnoticed!
 ### <a name="_heading=h.nqbpel2gmexl"></a>#1 – A new theme picker
 Our new theme picker has a separate page, and instead of picking based on how pretty the theme image looks, you can preview an example home page before definitely landing on your new diary theme!
