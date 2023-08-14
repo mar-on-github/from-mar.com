@@ -12,6 +12,7 @@
   date:
     posted: 1692014952
     edited: 1692014952
+  tags: 'Logger-Diary.Online, Logger-Diary, updates, Logger-Diary updates, Logger-Diary.online updates'
 'posts/art/doh-noot_smile':
   title: 'Doh-Noot - #1: Smiling'
   short: 'Just don''t let Doh-Noot walk into the donut shop, okay?'
@@ -68,6 +69,7 @@
   date:
     posted: 1688485329
     edited: 1688485329
+  tags: 'Logger-Diary.Online, Logger-Diary, updates, Logger-Diary updates, Logger-Diary.online updates'
 'posts/art/mousemouse-3.2':
   title: MouseMouse in hi-res!
   short: MouseMouse redone in a 4k canvas by me!
@@ -115,6 +117,7 @@
   date:
     posted: 1686248156
     edited: 1686248156
+  tags: 'Logger-Diary.Online, Logger-Diary, updates, Logger-Diary updates, Logger-Diary.online updates'
 'posts/kitton':
   title: Kitten!
   short: My site now has a cat following your mouse around!
@@ -154,7 +157,7 @@
   date:
     posted: 1674730800
     edited: 1674730800
-  tags: diary-app, domain name, moving
+  tags: 'Logger-Diary.Online, Logger-Diary, updates, Logger-Diary updates, Logger-Diary.online updates, diary-app, domain name, moving'
 'posts/LDo/md':
   title: Markdown support!
   short: Logger-Diary Online now has markdown support!
@@ -167,7 +170,7 @@
   date:
     posted: 1674471600
     edited: 1674730800
-  tags: diary-app, markdown, daring fireball, updates, site, parsedown
+    tags: 'Logger-Diary.Online, Logger-Diary, updates, Logger-Diary updates, Logger-Diary.online updates, diary-app, markdown, daring fireball, updates, site, parsedown'
 'posts/farewell-gads':
   title: Farewell Google Adsense then
   short: I dropped Google Adsense after they started acting weird. How to continue?
