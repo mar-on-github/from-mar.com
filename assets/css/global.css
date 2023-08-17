@@ -245,9 +245,10 @@ div.sociallinks-icons {
     margin-left: auto;
     margin-right: auto;
 }
-div.sociallinks-icons a, div.sociallinks-icons img {
+div.sociallinks-icons img {
     margin: 0px;
     padding: 0px;
+    cursor: pointer;
 }
 div.sociallinks-icons:hover img:not(:hover) {
     width: 25px;
