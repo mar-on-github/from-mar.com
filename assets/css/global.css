@@ -250,10 +250,12 @@ div.sociallinks-icons img {
     padding: 0px;
     cursor: pointer;
 }
+/* 
+commented to calm this shiii down
 div.sociallinks-icons:hover img:not(:hover) {
     width: 25px;
     height: 25px;
-}
+} */
 div.sociallinks-icons a {
     text-decoration: none;
 }
