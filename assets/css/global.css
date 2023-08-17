@@ -234,3 +234,47 @@ main.content {
     font-size: smaller;
     text-decoration: none !important;
 }
+
+div.sociallinks-icons {
+    background-color: rgba(128, 128, 128, 0.7);
+    border-radius: 25px;
+    height: 35px;
+    line-height: 60px;
+    padding: 0px;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+}
+div.sociallinks-icons a, div.sociallinks-icons img {
+    margin: 0px;
+    padding: 0px;
+}
+div.sociallinks-icons:hover img:not(:hover) {
+    width: 25px;
+    height: 25px;
+}
+div.sociallinks-icons a {
+    text-decoration: none;
+}
+div.sociallinks-icons img:not(:hover) {
+    width: 30px;
+    height: 30px;
+}
+div.sociallinks-icons a {
+    margin: 0px;
+}
+div.sociallinks-icons:first-child a {
+    margin-left: 10px;
+}
+div.sociallinks-icons:last-child a {
+    margin-right: 10px;
+}
+
+div.sociallinks-icons img {
+    margin: 0px;
+    align-self: center;
+}
+div.sociallinks-icons img:hover {
+    width: 35px;
+    height: 35px;
+}

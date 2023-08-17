@@ -22,4 +22,3 @@
         <button>My tumblr web edition (v pretty)</button>
     </a></li>
 </ul>
-<span class="sociallinks"></span>

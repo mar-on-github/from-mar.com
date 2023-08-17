@@ -1,5 +1,5 @@
 function mediamobilescreen() {
-    return ((window.matchMedia("(orientation: portrait),(max - width: 800px)")).matches);
+    return ((window.matchMedia("(orientation: portrait),(max-width: 800px)")).matches);
 };
 
 function colorSchemeChange(x) {
@@ -110,7 +110,13 @@ function closeNav() {
     }
     // (document.getElementsByClassName("content")[0]).style.marginLeft = "0";
 }
+el = (document.getElementsByClassName('badgearea')[0])
+if (window.innerHeight < 350) {
+if (typeof (el) != 'undefined' && (el) != null) {
+    el.style.display = "none";
+}
 
+}
 function TouchContentUnfocusfromMenu() {
     closeNav()
     document.getElementById("mybottombar").className = "bottombar";

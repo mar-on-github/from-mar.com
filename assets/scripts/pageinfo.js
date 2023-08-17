@@ -38,7 +38,7 @@ function mobilescreen() {
 
 
 
-  if (mobilescreen()) {
+  if ((mobilescreen()) || (window.innerHeight < 350)) {
     setTimeout(() => { pageinfosidebar_rollup(); }, '6000');
     document.getElementById("pageinfosidebar").style.opacity = "100%"
   } else {
