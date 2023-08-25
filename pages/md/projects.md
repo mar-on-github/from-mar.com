@@ -7,8 +7,8 @@ I am a creativity addict so I jiggle around with code from time to time. These a
 Simple digital diary software
 </blockquote>
 
-- <img src="https://logger-diary.strawmelonjuice.com/img/logo/logo_512px.png" height="20px" alt="LDo Logo"> [Logger-Diary Online](https://logger-diary.strawmelonjuice.com/) <a href="https://github.com/strawmelonjuice/logger-diary.online" target="_blank"><img src="/assets/img/svg/github-mark.svg" height="20px" class="svgrecolor" alt="GitHub"></a>
-- <img src="https://raw.githubusercontent.com/strawmelonjuice/logger-diary.legacy/desktop-beta/logger/icons/logo.png" height="20px" alt="LD Logo"> Logger-Diary Legacy – discontinued <a href="https://github.com/strawmelonjuice/logger-diary.legacy" target="_blank"><img src="/assets/img/svg/github-mark.svg" height="20px" class="svgrecolor" alt="GitHub"></a>
+- <img src="https://logger-diary.strawmelonjuice.com/img/logo/logo_446x446.png" height="20px" alt="LDo Logo"> [Logger-Diary Online](https://logger-diary.strawmelonjuice.com/) <a href="https://github.com/strawmelonjuice/logger-diary.online" target="_blank"><img src="/assets/img/svg/github-mark.svg" height="20px" class="svgrecolor" alt="GitHub"></a>
+- <img src="https://raw.githubusercontent.com/strawmelonjuice/logger-diary.logos/main/Archived/LDLegacy_rounded_2022-2023/logo.png" height="20px" alt="LD Logo"> Logger-Diary Legacy – discontinued <a href="https://github.com/strawmelonjuice/logger-diary.legacy" target="_blank"><img src="/assets/img/svg/github-mark.svg" height="20px" class="svgrecolor" alt="GitHub"></a>
 - <img src="/assets/img/2015logo.png" height="20px" alt="mylog231 logo"> My Log 231 for FreeDOS – discontinued & way too old but I find it funny to mention
 
 ## Project FNew

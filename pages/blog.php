@@ -40,7 +40,7 @@ if (!isset($searchtrough)) {
     $bloglink = "https://{$_SERVER["HTTP_HOST"]}/blog?c=" . urlencode($filtercat);
     $blogname = "Stories by Mar 🤍 – $filtercat";
     if (($filtercat) == "Logger-Diary Online") {
-      $sbmlogo = "https://logger-diary.strawmelonjuice.com/img/logo/logo_512px.png";
+      $sbmlogo = "https://logger-diary.strawmelonjuice.com/img/logo/logo_446x446.png";
       $bloglink = "https://logger-diary.strawmelonjuice.com/news/";
       $uniheadertype = "project";
       $blogname = "Logger-Diary Online news";

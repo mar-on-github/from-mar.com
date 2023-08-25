@@ -8,7 +8,7 @@
   filename: LDo/updates-summary-august23
   category: Logger-Diary Online
   modeoverride: project
-  og-image: https://logger-diary.strawmelonjuice.com/img/logo/logo_512px.png
+  og-image: https://logger-diary.strawmelonjuice.com/img/logo/logo_446x446.png
   date:
     posted: 1692014952
     edited: 1692014952
@@ -65,7 +65,7 @@
   filename: LDo/230704
   category: Logger-Diary Online
   modeoverride: project
-  og-image: https://logger-diary.strawmelonjuice.com/img/logo/logo_512px.png
+  og-image: https://logger-diary.strawmelonjuice.com/img/logo/logo_446x446.png
   date:
     posted: 1688485329
     edited: 1688485329
@@ -112,7 +112,7 @@
   title-display: true
   filename: LDo/230608
   category: Logger-Diary Online
-  og-image: https://logger-diary.strawmelonjuice.com/img/logo/logo_512px.png
+  og-image: https://logger-diary.strawmelonjuice.com/img/logo/logo_446x446.png
   modeoverride: project
   date:
     posted: 1686248156
@@ -149,7 +149,7 @@
   title: "We moved to a new adress - `https://logger-diary.online`"
   short: We moved to our own adress!
   type: post
-  og-image: https://logger-diary.strawmelonjuice.com/img/logo/logo_512px.png
+  og-image: https://logger-diary.strawmelonjuice.com/img/logo/logo_446x446.png
   title-display: false
   filename: LDo/moved-to-logger-diary.online
   category: Logger-Diary Online
@@ -161,7 +161,7 @@
 'posts/LDo/md':
   title: Markdown support!
   short: Logger-Diary Online now has markdown support!
-  og-image: https://logger-diary.strawmelonjuice.com/img/logo/logo_512px.png
+  og-image: https://logger-diary.strawmelonjuice.com/img/logo/logo_446x446.png
   type: post
   title-display: true
   filename: LDo/md
