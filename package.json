@@ -1,7 +1,7 @@
 {
-    "name": "strawmelonjuice.com",
+  "name": "strawmelonjuice.com",
   "dependencies": {
     "hl-img": "latest",
-    "jquery": "^3.7.0"
+    "jquery": "^3.7.1"
   }
 }

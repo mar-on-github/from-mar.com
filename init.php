@@ -181,7 +181,7 @@ function imgmote(string $name, bool $return = false)
   }
     die('<img src="' . $src . '" max-widht="5px" max-height="5px" class="imgmote" alt="imgmote named ' . $name . '"  loading=\"lazy\">');
   }
-$hlimg_script_src = "https://cdn.jsdelivr.net/npm/hl-img@1.10.10/hl-img.min.js";
+$hlimg_script_src = "https://cdn.jsdelivr.net/npm/hl-img@1.10.11/hl-img.min.js";
 $footer_script = <<<END
 <script type="text/javascript">
 console.log('View mode of this page is: "' + viewmode + '"');

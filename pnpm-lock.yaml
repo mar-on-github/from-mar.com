@@ -1,0 +1,23 @@
+lockfileVersion: '6.0'
+
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
+dependencies:
+  hl-img:
+    specifier: latest
+    version: 1.10.11
+  jquery:
+    specifier: ^3.7.1
+    version: 3.7.1
+
+packages:
+
+  /hl-img@1.10.11:
+    resolution: {integrity: sha512-TVg2JvreRWunXAd0KPFTuBpUooeAHetOOH8/ZbeZN5Bd0NlFS5DfluOyfHsQeA3KZSf27RW6i9s4+UYzj2VYOA==}
+    dev: false
+
+  /jquery@3.7.1:
+    resolution: {integrity: sha512-m4avr8yL8kmFN8psrbFFFmB/If14iN5o9nw/NgnnM+kybDJpRsAynV2BsfpTYrTRysYUdADVD7CkUUizgkpLfg==}
+    dev: false
