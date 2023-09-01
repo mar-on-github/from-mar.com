@@ -29,6 +29,8 @@ A social media site that doesn't have a name yet... or a figured out concept
 
 <blockquote>
 A discord bot to moderate and automate my cute lil discord server <code>that</code> <code><s>barely has any members :c</code></s> <code><i>is deleted now!</i></code> <span class="emoji-block">😈</span>
+
+MIGHT COME BACK AS A CHATBOT!
 </blockquote>
 
 
