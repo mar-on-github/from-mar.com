@@ -7,7 +7,10 @@ I am a creativity addict so I jiggle around with code from time to time. These a
 Simple digital diary software
 </blockquote>
 
-- <img src="https://logger-diary.strawmelonjuice.com/img/logo/logo_446x446.png" height="20px" alt="LDo Logo"> [Logger-Diary Online](https://logger-diary.strawmelonjuice.com/) <a href="https://github.com/strawmelonjuice/logger-diary.online" target="_blank"><img src="/assets/img/svg/github-mark.svg" height="20px" class="svgrecolor" alt="GitHub"></a>
+- <img src="https://raw.githubusercontent.com/strawmelonjuices-logger-diary/logos/main/FullTaupeRebrand2023-/cloud_512x512.png" height="20px" alt="LDc Logo"> Logger-Diary Cloud
+  - <img src="https://raw.githubusercontent.com/strawmelonjuices-logger-diary/logos/main/FullTaupeRebrand2023-/online_512x512.png" height="20px" alt="LDo Logo"> [Logger-Diary Online](https://logger-diary.strawmelonjuice.com/) <a href="https://github.com/strawmelonjuices-logger-diary/online" target="_blank"><img src="/assets/img/svg/github-mark.svg" height="20px" class="svgrecolor" alt="GitHub"></a> — A web front-end for the LDcloud.
+  - <img src="https://raw.githubusercontent.com/strawmelonjuices-logger-diary/logos/main/FullTaupeRebrand2023-/cloud-client_512x512.png" height="20px" alt="LDcc Logo"> [Logger-Diary Client](https://logger-diary.strawmelonjuice.com/) <a href="https://github.com/strawmelonjuices-logger-diary/cloud-client" target="_blank"><img src="/assets/img/svg/github-mark.svg" height="20px" class="svgrecolor" alt="GitHub"></a> — (yet unreleased) A powerful desktop client for the LDcloud.
+  
 - <img src="https://raw.githubusercontent.com/strawmelonjuice/logger-diary.logos/main/Archived/LDLegacy_rounded_2022-2023/logo.png" height="20px" alt="LD Logo"> Logger-Diary Legacy – discontinued <a href="https://github.com/strawmelonjuice/logger-diary.legacy" target="_blank"><img src="/assets/img/svg/github-mark.svg" height="20px" class="svgrecolor" alt="GitHub"></a>
 - <img src="/assets/img/2015logo.png" height="20px" alt="mylog231 logo"> My Log 231 for FreeDOS – discontinued & way too old but I find it funny to mention
 
@@ -57,6 +60,12 @@ With somehow a pretty good result. Mostly.
 I actually created this project just to make <a href="/blog?p=posts/art/mousemouse-3.2">a post on here</a> prettier! It allows you to create highlightable images, for coding comfort in a custom element type. I work at this project mostly at night, which, well, explains.
 </blockquote>
 
+## <span style="background-color: #24273a; color: yellow">Bananen!  🍌</span> <a href="https://github.com/strawmelonjuice/bananen/" target="_blank"><img src="/assets/img/svg/github-mark.svg" height="20px" class="svgrecolor" alt="GitHub"></a>
+
+<p><span class="notion">Work in progress!</span></p>
+<blockquote>
+A CLI tool to maintain and update changelogs.
+</blockquote>
 
 ## This site
 
