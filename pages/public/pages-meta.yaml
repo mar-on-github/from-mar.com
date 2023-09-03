@@ -281,14 +281,14 @@
 -
   id: projects/hl-img
   title: HL-img.js > Home
-  short: highlightable images in js.
+  short: Highlightable images in js.
   modeoverride: project
   type: page
   date:
     posted: 1689201880
     edited: 1689201880
   tags: donation, support, paypal, buymeacoffee, open-source, javascript
-  external-md-url: https://raw.githubusercontent.com/strawmelonjuice/hl-img.js/main/README.md
+  external-content-url: https://raw.githubusercontent.com/strawmelonjuice/hl-img.js/main/README.md
 -
   id: projects/bananen
   title: Bananen! docs > Home
