@@ -67,7 +67,7 @@ if ((isset($InternalMetaData['langtype'])) and (!empty($InternalMetaData['langty
   $langtype = "markdown";
   $content_ext = "md";
 }
-if ($InternalMetaData["author"] != null) {
+if (isset($InternalMetaData["author"]) and $InternalMetaData["author"] != null) {
   $FileMetaData['author'] = $InternalMetaData["author"];
   if ($InternalMetaData["authorthumbnail"] != null) {
     $FileMetaData['authorthumbnail'] = '<hl-img src="'. $InternalMetaData["authorthumbnail"] .'" style="height: 18px" alt="Author thumbnail" id="authorthumbnail"><img img src="'. $InternalMetaData["authorthumbnail"] .'" height="18px" alt="Author thumbnail"></hl-img>';
@@ -76,7 +76,7 @@ if ($InternalMetaData["author"] != null) {
   $FileMetaData['author'] = "Mar (@strawmelonjuice)";
   $FileMetaData['authorthumbnail'] = '<hl-img src="https://avatars.githubusercontent.com/u/101558380?s=400&u=aa8f776b3e11f02130575d1b46851cca05a0c981&v=4" style="height: 18px" alt="Author thumbnail" id="authorthumbnail"><img img src="https://avatars.githubusercontent.com/u/101558380?s=400&u=aa8f776b3e11f02130575d1b46851cca05a0c981&v=4" height="18px" alt="Author thumbnail"></hl-img>';
 }
-if ($InternalMetaData["tags"] != null) {
+if (isset($InternalMetaData["tags"]) and $InternalMetaData["tags"] != null) {
   $FileMetaData['tagList'] = explode(', ', $InternalMetaData["tags"]);
   $FileMetaData['tags'] = $InternalMetaData["tags"];
 } else {
@@ -230,6 +230,9 @@ ENDOFSTYLE;
       echo '<div id="taglist"><h3>Taggo\'s under this post</h3>' . $taglistformatted .'.</div>';
     }
     if ((!empty($reqid)) && $morelinks_display) {
+      if ((isset($InternalMetaData['custom-back-url'])) and (!empty($InternalMetaData['custom-back-url'])) and (isset($InternalMetaData['custom-back-link'])) and (!empty($InternalMetaData['custom-back-link']))) {
+        echo '<p style="position: sticky;right: 10px;width: 30%;margin-left: 60%;"><a href="' . $InternalMetaData['custom-back-url'] . '">' . $InternalMetaData['custom-back-link'] . '</a></li></p>';
+      }
       switch ($viewmode) {
         case 'blog':
           echo '<p style="position: sticky;right: 10px;width: 30%;margin-left: 60%;"><a href="/blog/">Go back home</a></p>';
