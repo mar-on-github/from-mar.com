@@ -16,7 +16,7 @@ echo(ReturnUniversalHeader("Mar's site – Home","base"));
       <h1>Good <span id="wishes">day</span>!</h1>
       <?php
       $Parsedown = new Parsedown();
-      echo $Parsedown->text(file_get_contents(__DIR__ . "/md/home.md"));
+      echo $Parsedown->text(file_get_contents(__DIR__ . "/public/home.md"));
       echo($GLOBALS['bottomlink_morelinks_start'] . $GLOBALS['bottomlink_morelinks_end']);?>
     </main>
     <div class="bottombar" id="mybottombar">

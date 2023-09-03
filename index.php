@@ -65,7 +65,7 @@ switch ($_SERVER['REQUEST_URI']) {
     case '/blog/link-in-bio':
     case '/links':
     case '/links/':
-        $file = "links";
+        $reqid = "links";
         require_once(__DIR__ . '/pages/md.php');
         die;
     case '/about':
@@ -74,12 +74,12 @@ switch ($_SERVER['REQUEST_URI']) {
     case '/aboutme/':
     case '/about-me':
     case '/about-me/':
-        $file = "1";
+        $reqid = "1";
         require_once(__DIR__ . '/pages/md.php');
         die;
 }
 if (isset($_GET['p'])) {
-    $file = $_GET['p'];
+    $reqid = $_GET['p'];
     require_once(__DIR__ . '/pages/md.php');
     die;
 }
@@ -100,6 +100,6 @@ if (str_starts_with($_SERVER['REQUEST_URI'], "/atom") or str_starts_with($_SERVE
 }
 
 // If we're here... we hit a 404 I think!
-$file = '404 trigger';
+$reqid = '404 trigger';
 require_once(__DIR__ . '/pages/md.php');
 die;

@@ -1,6 +1,7 @@
 body.light-theme {
     --color-slot-01: #b38888;
-    --color-slot-02: #e7c0c0;
+    /* --color-slot-02: #e7c0c0; */
+    --color-slot-02: #e0e1ec;
     --color-slot-03: #222222;
     --color-slot-04: #d3d69f;
     --color-slot-05: #666;
@@ -24,7 +25,8 @@ body.light-theme {
 }
 body.dark-theme {
     --color-slot-01: #b38888;
-    --color-slot-02: #3b2235;
+    /* --color-slot-02: #3b2235; */
+    --color-slot-02: #292c2c;
     --color-slot-03: #484848;
     --color-slot-04: #f6fac2;
     --color-slot-05: #525151;

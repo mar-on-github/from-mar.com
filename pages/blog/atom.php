@@ -69,7 +69,7 @@ echo <<<YEO
 YEO;
 // $atomjs = '<script src="/assets/scripts/basic.js.php"></script>';
 $atomjs = '<script defer src="https://cdn.jsdelivr.net/npm/hl-img@1/hl-img.min.js"></script>';
-$MarkDownFileMetaData = Yaml::parseFile($GLOBALS['rootdir'] . "/pages/md/pages-meta.yaml");
+$MarkDownFileMetaData = Yaml::parseFile($GLOBALS['rootdir'] . "/pages/public/pages-meta.yaml");
       // echo(var_dump($MarkDownFileMetaData));
 
       foreach ($MarkDownFileMetaData as $data) {
@@ -92,7 +92,7 @@ $MarkDownFileMetaData = Yaml::parseFile($GLOBALS['rootdir'] . "/pages/md/pages-m
             $skipt = true;
           }
           if (!($skipt)) {
-            $link="blog?p=posts/" . $data['filename'];
+            $link="blog?p=" . $data['id'];
             $pubDate = date('m/d/Y H:i:s', $data['date']['posted']);
             if ($data["author"] != null) {
               $author = $data["author"];
@@ -105,10 +105,9 @@ $MarkDownFileMetaData = Yaml::parseFile($GLOBALS['rootdir'] . "/pages/md/pages-m
             if ((isset($data['content'])) and (!empty($data['content']))) {
               $ContentOnPage = $Parsedown->text($data["content"]);
             } else {
-              // echo $GLOBALS['rootdir'] . "pages/md/posts/" . $data['filename'] . ".md";
-              if (file_exists($GLOBALS['rootdir'] . "pages/md/posts/" . $data['filename'] . ".md")) {
+              if (file_exists($GLOBALS['rootdir'] . "pages/public/" . $data['id'] . ".md")) {
                 // echo 'file exists.';
-                $ContentOnPage = $Parsedown->text(file_get_contents($GLOBALS['rootdir'] . "pages/md/posts/" . $data['filename'] . ".md"));
+                $ContentOnPage = $Parsedown->text(file_get_contents($GLOBALS['rootdir'] . "pages/public/" . $data['id'] . ".md"));
               } else {
                 $ContentOnPage = "<p>unavailable.</p>";
               }

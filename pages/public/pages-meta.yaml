@@ -1,11 +1,11 @@
 # For now, new posts should be added above older ones, as the order of this file will set the order of the timeline.
 # posts
-'posts/LDo/updates-summary-august23':
+-
+  id: posts/LDo/updates-summary-august23
   title: "Logger-Diary Online: Update summary for summer '23!"
   short: Loads of updates coming to Logger-Diary.Online users in the past two months, most of them small enough to go unnoticed. However, I’ll make a small and comprehensible list so they won’t actually go unnoticed!
   type: post
   title-display: true
-  filename: LDo/updates-summary-august23
   category: Logger-Diary Online
   modeoverride: project
   og-image: https://logger-diary.strawmelonjuice.com/img/logo/logo_446x446.png
@@ -13,7 +13,8 @@
     posted: 1692014952
     edited: 1692014952
   tags: 'Logger-Diary.Online, Logger-Diary, updates, Logger-Diary updates, Logger-Diary.online updates'
-'posts/art/doh-noot_smile':
+-
+  id: posts/art/doh-noot_smile
   title: 'Doh-Noot - #1: Smiling'
   short: 'Just don''t let Doh-Noot walk into the donut shop, okay?'
   type: post
@@ -22,10 +23,10 @@
   date:
     posted: 1689726261
     edited: 1690758605
-  filename: art/doh-noot_smile
   category: My art
   tags: 'art, donut, emoji, drawing, Clip Studio Paint, OCs, OC, OCid:DN'
-'posts/art/mousemouse-3.2-textured':
+-
+  id: posts/art/mousemouse-3.2-textured
   title: MouseMouse retextured
   short: The 4K mousemouse I posted earlier in a new papertextured mix!
   type: post
@@ -34,10 +35,10 @@
   date:
     posted: 1689715712
     edited: 1690758605
-  filename: art/mousemouse-3.2-textured
   category: My art
   tags: 'art, tumblr, mouse, mousemouse, mousemaus, Clip Studio Paint, OCs, OC, OCid:MM, paper textured'
-'posts/art/brain-lost-misunderstanding':
+-
+  id: posts/art/brain-lost-misunderstanding
   title: 'A misunderstanding'
   short: 'Just trying things out lol'
   type: post
@@ -54,15 +55,14 @@
   date:
     posted: 1689354605
     edited: 1690984579
-  filename: art/brain-lost-misunderstanding
   category: My art
   tags: 'art, animals, emoji, drawing, Clip Studio Paint, OC, trying things out, paper textured, brainfart as art'
-'posts/LDo/230704':
+-
+  id: posts/LDo/230704
   title: Logger-Diary Online is coming back to Mar's home domain.
   short: Logger-Diary Online is coming back to `logger-diary.strawmelonjuice.com` for financial reasons.
   type: post
   title-display: true
-  filename: LDo/230704
   category: Logger-Diary Online
   modeoverride: project
   og-image: https://logger-diary.strawmelonjuice.com/img/logo/logo_446x446.png
@@ -70,7 +70,8 @@
     posted: 1688485329
     edited: 1688485329
   tags: 'Logger-Diary.Online, Logger-Diary, updates, Logger-Diary updates, Logger-Diary.online updates'
-'posts/art/mousemouse-3.2':
+-
+  id: posts/art/mousemouse-3.2
   title: MouseMouse in hi-res!
   short: MouseMouse redone in a 4k canvas by me!
   type: post
@@ -79,10 +80,10 @@
   date:
     posted: 1688332202
     edited: 1690758605
-  filename: art/mousemouse-3.2
   category: My art
   tags: 'art, tumblr, mouse, mousemouse, mousemaus, Clip Studio Paint, OCs, OC, OCid:MM'
-'posts/ads-no-more':
+-
+  id: posts/ads-no-more
   title: Going ad-less.
   short: First Google Adsense, now adfocus too. Going ad-less.
   type: post
@@ -90,10 +91,10 @@
   date:
     posted: 1687804698
     edited: 1687814181
-  filename: ads-no-more
   category: Meta
   tags: Google Adsense, Google, critique, adfocus, adfoc.us
-'posts/art/bb_hi':
+-
+  id: posts/art/bb_hi
   title: "Bella bee: Hi!"
   short: A first try that went exceptionally well!
   type: post
@@ -102,15 +103,14 @@
   date:
     posted: 1687541312
     edited: 1690758605
-  filename: art/bb_hi
   category: My art
   tags: 'art, tumblr, animals, bee, Clip Studio Paint, OCs, OC, OCid:BB'
-'posts/LDo/230608':
+-
+  id: posts/LDo/230608
   title: Logger-Diary News now served on Mar's website!
   short: Logger-Diary Online News is now served from `strawmelonjuice.com`.
   type: post
   title-display: true
-  filename: LDo/230608
   category: Logger-Diary Online
   og-image: https://logger-diary.strawmelonjuice.com/img/logo/logo_446x446.png
   modeoverride: project
@@ -118,10 +118,10 @@
     posted: 1686248156
     edited: 1686248156
   tags: 'Logger-Diary.Online, Logger-Diary, updates, Logger-Diary updates, Logger-Diary.online updates'
-'posts/kitton':
+-
+  id: posts/kitton
   title: Kitten!
   short: My site now has a cat following your mouse around!
-  filename: kitton
   content: |
     My site now has a cat following your mouse around. 
     The kitten will only follow you on pages of the type 'base', so not on blog pages or pages that are set to be a different type.
@@ -135,43 +135,44 @@
     posted: 1686134666
     edited: 1686139710
   tags: javascript, adryd, maia arson crimew, open-source, web, webdev
-'posts/wordpress-2023-05-30':
+-
+  id: posts/wordpress-2023-05-30
   title: No more Wordpress
   short: This site no longer runs on Wordpress, this is how and why I did it.
   type: post
-  filename: wordpress-2023-05-30
   category: Meta
   date:
     posted: 1685451731
     edited: 1685451731
   tags: blog, webdev, php, tech, CMS, GitHub, themes
-'posts/LDo/moved-to-logger-diary.online':
+-
+  id: posts/LDo/moved-to-logger-diary.online
   title: "We moved to a new adress - `https://logger-diary.online`"
   short: We moved to our own adress!
   type: post
   og-image: https://logger-diary.strawmelonjuice.com/img/logo/logo_446x446.png
   title-display: false
-  filename: LDo/moved-to-logger-diary.online
   category: Logger-Diary Online
   modeoverride: project
   date:
     posted: 1674730800
     edited: 1674730800
   tags: 'Logger-Diary.Online, Logger-Diary, updates, Logger-Diary updates, Logger-Diary.online updates, diary-app, domain name, moving'
-'posts/LDo/md':
+-
+  id: posts/LDo/md
   title: Markdown support!
   short: Logger-Diary Online now has markdown support!
   og-image: https://logger-diary.strawmelonjuice.com/img/logo/logo_446x446.png
   type: post
   title-display: true
-  filename: LDo/md
   category: Logger-Diary Online
   modeoverride: project
   date:
     posted: 1674471600
     edited: 1674730800
     tags: 'Logger-Diary.Online, Logger-Diary, updates, Logger-Diary updates, Logger-Diary.online updates, diary-app, markdown, daring fireball, updates, site, parsedown'
-'posts/farewell-gads':
+-
+  id: posts/farewell-gads
   title: Farewell Google Adsense then
   short: I dropped Google Adsense after they started acting weird. How to continue?
   type: post
@@ -179,10 +180,10 @@
   date:
     posted: 1661359098
     edited: 1687854166
-  filename: farewell-gads
   category: Meta
   tags: Google Adsense, Google, critique
-'posts/art/af-hi':
+-
+  id: posts/art/af-hi
   title: "Amigo & Ferry: Hi"
   short: Two shy best friends!
   type: post
@@ -191,33 +192,33 @@
   date:
     posted: 1668724112
     edited: 1690758605
-  filename: art/af-hi
   category: My art
   tags: 'art, discord, slug, cactus, friends, Clip Studio Paint, OCs, OC, OCid:AF'
-'posts/stories/leafornia-2':
+-
+  id: posts/stories/leafornia-2
   title: Leafornia’s travels - chapter two
   short: Today went bad. I underestimated how hard it is for me to live here. Physically, I am weaker than my lost demon. However, I don’t know if this world didn’t mess him up mentally. I also need to take in consideration that my normal me is weak in this world, and that my powers are way too strong for this world. I may no longer use my powers if unnecessarily. Regards from earth.
   type: post
   title-display: true
-  filename: stories/leafornia-2
   category: Story ideas:<br> Leafornia's travels
   date:
     posted: 1635885176
     edited: 1635885176
   tags: hell, devil, girl, fiction, 2021, Leafornia's travels, Story ideas
-'posts/stories/leafornia-1':
+-
+  id: posts/stories/leafornia-1
   title: Leafornia’s travels - chapter one
   short: “No, I beg you! I’ll do my best next time, I’ll make sure your fire is as hot as you want it! Please!” She sat back in her red velvet throne, looking him dead in the eye, making clear that his begging made no sense to her. “You foolish giant demon. I do not see why I should spare you, for it is only one human life, and you did not quite do as you promised last time.”, she spoke. “And no. I do not care about the temperature of my fire, it is only for decoration. I’ll just send you there because that’s what I do, no reason behind it.”
   type: post
   title-display: true
-  filename: stories/leafornia-1
   category: Story ideas:<br> Leafornia's travels
   date:
     posted: 1633519196
     edited: 1633519196
   tags: hell, devil, girl, fiction, 2021, satans daughter, Leafornia's travels, Story ideas
 #pages
-'1':
+-
+  id: 1
   title: About me
   title-display: false
   short: About mar
@@ -226,7 +227,8 @@
     posted: 1683723800
     edited: 1683723800
   tags: autobiographical, quotes
-'abt-site':
+-
+  id: abt-site
   title: About this site
   short: About this site
   type: page
@@ -235,7 +237,8 @@
     posted: 1686090592
     edited: 1688303399
   tags: meta, credits
-'links':
+-
+  id: links
   title: My important links
   short: Mar's links
   morelinks-display: false
@@ -244,7 +247,8 @@
     posted: 1683723800
     edited: 1683723800
   tags: linktree, social media, links
-'discord/docs/rules':
+-
+  id: discord/docs/rules
   title: Server rules
   short: Rules for the 'BLUB!!' discord server.
   modeoverride: discord
@@ -253,7 +257,8 @@
     posted: 1676247185
     edited: 1685887840
   tags: discord, moderator, moderation, discord server, rules
-'support':
+-
+  id: support
   title: Support me
   short: Like what I do? Want to support me? You'll find some links on this page!
   modeoverride: base
@@ -262,7 +267,8 @@
     posted: 1686237433
     edited: 1686237433
   tags: donation, support, paypal, buymeacoffee, open-source
-'projects':
+-
+  id: projects
   title: Projects
   short: I am a creativity addict so I jiggle around with code from time to time.
   modeoverride: project
@@ -270,13 +276,49 @@
   date:
     posted: 1686237433
     edited: 1693564413
+  langtype: markdown
   tags: donation, support, paypal, buymeacoffee, open-source, github
-'projects/hl-img':
+-
+  id: projects/hl-img
   title: HL-img.js > Home
-  short: Page (and theme) under construction!
+  short: highlightable images in js.
   modeoverride: project
   type: page
   date:
     posted: 1689201880
     edited: 1689201880
   tags: donation, support, paypal, buymeacoffee, open-source, javascript
+  external-md-url: https://raw.githubusercontent.com/strawmelonjuice/hl-img.js/main/README.md
+-
+  id: projects/bananen
+  title: Bananen! > Home
+  short: Page (and theme) under construction!
+  modeoverride: project
+  type: page
+  date:
+    posted: 1689201880
+    edited: 1689201880
+  tags: donation, support, paypal, buymeacoffee, open-source, rust, rustlang
+  external-content-url: https://raw.githubusercontent.com/strawmelonjuice/bananen/main/docs/index.md
+-
+  id: projects/bananen/changelog
+  title: Bananen! > Self-generated changelog
+  short: Auto-generated by Bananen.
+  modeoverride: project
+  type: page
+  date:
+    posted: 1689201880
+    edited: 1689201880
+  tags: example, open-source, rust, rustlang, markdown
+  external-content-url: https://raw.githubusercontent.com/strawmelonjuice/bananen/main/docs/CHANGELOG.MD
+-
+  id: projects/bananen/get
+  title: Bananen! > Get Bananen!
+  short: Get Bananen!
+  modeoverride: project
+  type: page
+  date:
+    posted: 1689201880
+    edited: 1689201880
+  tags: download, support, paypal, buymeacoffee, open-source, rust, rustlang, cli
+  external-content-url: https://raw.githubusercontent.com/strawmelonjuice/bananen/main/docs/get.md
