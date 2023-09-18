@@ -110,6 +110,7 @@ main.content {
     text-align: initial;
 }
 
+
 .bottombar .icon {
     display: none
 }
@@ -348,7 +349,8 @@ ul.timeline {
 (max-width: 800px) {
     #main {
         padding: 16px;
-        transition: margin-left .5s
+        transition: margin-left .5s;
+        text-align: center;
     }
 
     .bottombar a.icon {
