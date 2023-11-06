@@ -1,6 +1,19 @@
 # For now, new posts should be added above older ones, as the order of this file will set the order of the timeline.
 # posts
 -
+  id: posts/LDo/winding-down
+  title: "Logger-Diary Online: Winding down"
+  short: "Logger-Diary Online is slowly winding down, you need to know a few things."
+  type: post
+  title-display: true
+  category: Logger-Diary Online
+  modeoverride: project
+  og-image: https://logger-diary.strawmelonjuice.com/img/logo/logo_446x446.png
+  date:
+    posted: 1699301308
+    edited: 1699301308
+  tags: 'Logger-Diary.Online, Logger-Diary, updates, Logger-Diary updates, Logger-Diary.online updates'
+-
   id: posts/LDo/updates-summary-august23
   title: "Logger-Diary Online: Update summary for summer '23!"
   short: Loads of updates coming to Logger-Diary.Online users in the past two months, most of them small enough to go unnoticed. However, I’ll make a small and comprehensible list so they won’t actually go unnoticed!
